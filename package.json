@@ -1,7 +1,10 @@
 {
   "name": "hello-munnar-frontend",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Hello Munnar Project. ",
+  "author": "Kites Foundation Contributors",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
