@@ -15,10 +15,10 @@ function NotificationHeader() {
                         onClick={() => {
                             setActiveTab("Alert");
                         }}
-                        className={`text-center border-2 flex-shrink-0 border-blue-500 font-bold  hover:text-white rounded-full text-white px-3 py-2 transition duration-300 ease-in-out hover:bg-blue-600 w-36 mr-50${
+                        className={`text-center focus:outline-none hover:bg-teal-500 border-2 flex-shrink-0 border-teal-600 font-bold  hover:text-white rounded-full text-white px-3 py-2 transition duration-300 ease-in-out w-36 mr-50${
                             activeTab === "Alert"
-                                ? " bg-blue-500 text-white"
-                                : "bg-white-500 text-blue-500"
+                                ? " bg-teal-500 text-black"
+                                : "bg-white-500 text-teal-500"
                         }`}>
                         Alert
                     </button>
@@ -26,10 +26,10 @@ function NotificationHeader() {
                         onClick={() => {
                             setActiveTab("News");
                         }}
-                        className={`text-center ml-auto border-2 flex-shrink-0 border-blue-500 font-bold  hover:text-white  rounded-full text-white px-3 py-2 transition duration-300 ease-in-out hover:bg-blue-600 w-36 mr-50${
+                        className={`text-center focus:outline-none ml-auto hover:bg-teal-500  border-2 flex-shrink-0 border-teal-500 font-bold  hover:text-white  rounded-full text-white px-4 py-2 transition duration-300 ease-in-out w-36 mr-50${
                             activeTab === "News"
-                                ? " bg-blue-500 text-white"
-                                : "bg-white-500 text-blue-500"
+                                ? " bg-teal-500 text-black"
+                                : "bg-white-500 text-teal-500"
                         }`}>
                         News
                     </button>
