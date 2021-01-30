@@ -9,7 +9,7 @@ export default function Notification(props) {
      <div className="container box-border mx-auto m-10 max-w-sm flex flex-col justify-center items-center">
       <div className={`bg-white box-border w-11/12 flex items-center p-2 rounded-xl  border-4 ${props.isEmergency ? 'border-red-500' :  'border-grey-500'}`}>
        <div className="flex items-center ">
-       <img style={{
+       <img alt="" style={{
            width:50,
           
        }} src={props.isEmergency ? alerticon : greyicon }></img>
