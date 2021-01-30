@@ -1,8 +1,10 @@
 import React from "react";
-import NotificationContainer from './NotificationHeader';
+import NotificationHeader from "./NotificationHeader";
 
 export default function Notification() {
-    return <div>
-        <NotificationContainer />
+    return (
+        <div>
+            <NotificationHeader />
         </div>
+    );
 }
