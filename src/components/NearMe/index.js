@@ -8,7 +8,7 @@ import NearmeInfoWrapper from "./Wrappers/NearmeInfoWrapper.js";
 export default function NearMe() {
     return (
         <div>
-            <NearmeDustBinWrapper />
+            <NearmeFoodWrapper />
         </div>
     );
 }

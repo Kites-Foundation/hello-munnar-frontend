@@ -1,5 +1,5 @@
 import React from "react";
-import DustBinCard from "./Cards/DustBinCard.js";
+import NearMeCard from "./Cards/NearMeCard.js";
 
 export default function NearmeDustBinWrapper() {
     return (
@@ -13,11 +13,26 @@ export default function NearmeDustBinWrapper() {
                 </div>
             </div>
             <div class="space-y-4">
-                <DustBinCard place="Munnar" minute="10" km="5" />
-                <DustBinCard place="Devikulam" minute="100" km="50" />
-                <DustBinCard place="kozhikode" minute="40" km="45" />
-                <DustBinCard place="kochi" minute="50" km="54" />
-                <DustBinCard place="kozhikode" minute="40" km="45" />
+                <NearMeCard icon="trash" place="Munnar" minute="10" km="5" />
+                <NearMeCard
+                    icon="trash"
+                    place="Devikulam"
+                    minute="100"
+                    km="50"
+                />
+                <NearMeCard
+                    icon="trash"
+                    place="kozhikode"
+                    minute="40"
+                    km="45"
+                />
+                <NearMeCard icon="trash" place="kochi" minute="50" km="54" />
+                <NearMeCard
+                    icon="trash"
+                    place="kozhikode"
+                    minute="40"
+                    km="45"
+                />
             </div>
         </div>
     );
