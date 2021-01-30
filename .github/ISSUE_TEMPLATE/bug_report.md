@@ -39,7 +39,7 @@ For the fastest support, provide a working demo or minimal reproduction using to
 
 - Operating System(s): Linux/macOS/Windows [Variant and Version]
 - Browser: Firefox/Chrome/Safari [Version] / Other (please specify)
-
+- Node Version (please specify)
 ## Tell us more about your product/project and timeline to help prioritize this issue
 
 <!--
