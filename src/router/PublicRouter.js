@@ -3,8 +3,10 @@ import React from "react";
 import Home from "../components/Home/index";
 import NavBar from "../components/Common/NavBar";
 
+
 const routes = {
     "/": () => <Home />,
+
 };
 
 export default function PublicRouter() {

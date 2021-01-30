@@ -1,5 +1,5 @@
 import React from "react";
-import StayCard from "./Cards/StayCard.js";
+import NearMeCard from "./Cards/NearMeCard.js";
 
 export default function NearmeStayWrapper() {
     return (
@@ -13,11 +13,11 @@ export default function NearmeStayWrapper() {
                 </div>
             </div>
             <div class="space-y-4">
-                <StayCard place="Munnar" minute="10" km="5" />
-                <StayCard place="Devikulam" minute="100" km="50" />
-                <StayCard place="kochi" minute="50" km="54" />
-                <StayCard place="kozhikode" minute="40" km="45" />
-                <StayCard place="Devikulam" minute="100" km="50" />
+                <NearMeCard icon="house" place="Munnar" minute="10" km="5" />
+                <NearMeCard icon="house" place="Devikulam" minute="100" km="50" />
+                <NearMeCard icon="house" place="kozhikode" minute="40" km="45" />
+                <NearMeCard icon="house" place="kochi" minute="50" km="54" />
+                <NearMeCard icon="house" place="kozhikode" minute="40" km="45" />
             </div>
         </div>
     );

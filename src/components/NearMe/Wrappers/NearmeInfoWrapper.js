@@ -1,5 +1,5 @@
 import React from "react";
-import InfoCard from "./Cards/InfoCard.js";
+import NearMeCard from "./Cards/NearMeCard.js";
 
 export default function NearmeInfoWrapper() {
     return (
@@ -15,11 +15,11 @@ export default function NearmeInfoWrapper() {
                 </div>
             </div>
             <div class="space-y-4">
-                <InfoCard place="Munnar" minute="10" km="5" />
-                <InfoCard place="Devikulam" minute="100" km="50" />
-                <InfoCard place="kochi" minute="50" km="54" />
-                <InfoCard place="Devikulam" minute="100" km="50" />
-                <InfoCard place="kozhikode" minute="40" km="45" />
+                <NearMeCard icon="info" place="Munnar" minute="10" km="5" />
+                <NearMeCard icon="info" place="Devikulam" minute="100" km="50" />
+                <NearMeCard icon="info" place="kozhikode" minute="40" km="45" />
+                <NearMeCard icon="info" place="kochi" minute="50" km="54" />
+                <NearMeCard icon="info" place="kozhikode" minute="40" km="45" />
             </div>
         </div>
     );
