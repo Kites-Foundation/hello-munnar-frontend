@@ -1,0 +1,114 @@
+[
+    {
+        "routeName": "Munnar - Marayur - Kanthallur",
+        "assetUrl":  "https://picsum.photos/400/300",
+        "routeColor": "violet",
+        "destinations": [
+            {
+                "name": "THALAIYAR TEA PLANTATION",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Trekking", "Wildlife", "Jeep Safari"]
+            },
+            {
+                "name": "ERAVIKULAM NATIONAL PARK",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Landscape", "Bathing"]
+            },
+            {
+                "name": "LAKKAM WATERFALLS",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Landscape", "Bathing"]
+            },
+            {
+                "name": "KARIMUTTY WATERFALLS",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Sight Seeing", "Wildlife", "Photography", "Landscape"]
+            },
+            {
+                "name": "SANDALWOOD FOREST",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Shopping"]
+
+            },
+            {
+                "name": "ST.JOSEPH FARM, MARAYOOR JAGGERY, MARAYUR",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Photography", "Landscape", "Heritage Photography"]
+            },
+            {
+                "name": "KANTHALLOOR JAGGERY - VETTUKAD",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Sightseeing", "Photography", "Landscape", "Shopping"]
+            },
+            {
+                "name": "Kanthallur Farming",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Sightseeing", "Trekking", "Wildlife" , "Photography", "Landscape" ]
+            },
+            {
+                "name": "Anamudi Shola NP",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Jeep Safari", "Trekking", "Camping", "Wildlife", "Photography", "Sightseeing"]
+
+            },
+            {
+                "name": "Chinnar WLS",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Sightseeing", "Boating", "Photography"]
+            }
+        ]
+    },
+    {
+        "routeName": "Munnar - Adimali",
+        "assetUrl":  "https://picsum.photos/400/300",
+        "routeColor": "indigo",
+        "destinations": [
+            {
+                "name": "SPICE GARDEN",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Landscape", "Photography" ]
+            },
+            {
+                "name": "KALLAR WATERFALL",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Landscape", "Photography"]
+            },
+            {
+                "name": "2nd MILE POINT",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Photography", "Landscape"]
+            },
+            {
+                "name": "ATHUKAD WATERFALLS",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Landscape", "Photography" ]
+            },
+            {
+                "name": "RAMASWAMI IYER HEADWORKS DAM",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Landscape", "Photography", "Sunset Viewpoint"]
+
+            },
+            {
+                "name": "POTHANMEDU VIEW POINT",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Sightseeing", "Photography", "Fish Spa", "Zip Line"]
+            },
+            {
+                "name": "BLOSSOM HYDEL PARK",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Boating", "Sightseeing", "Photography", "Landscape", "Wedding Photography", "Fooding"]
+            },
+            {
+                "name": "SENGULAM HYDEL PARK",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Sightseeing", "Photography", "Landscape"]
+            },
+            {
+                "name": "CHITHIRPURAM VIEW POINT",
+                "assetUrl": "https://picsum.photos/400/300",
+                "activities": ["Sightseeing", "Photography", "Boating", "Shopping"]
+            }
+        ]
+    }
+]
