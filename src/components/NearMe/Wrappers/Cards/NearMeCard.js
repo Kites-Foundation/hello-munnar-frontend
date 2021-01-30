@@ -1,18 +1,16 @@
 import React from "react";
 import mapIcon from "../../icons/map.svg";
-import bedIcon from "../../icons/bed.svg";
+import Icon from "../../../Common/Icon.js";
 import carIcon from "../../icons/car.svg";
 import mapPinIcon from "../../icons/map-pin.svg";
 
-export default function RestCard(props) {
+export default function NearMeCard(props) {
     return (
         <div class="bg-white w-full flex items-center p-2  shadow border-2 border-gray-400">
             <div class="flex items-center space-x-4">
-                <img
-                    style={{
-                        width: 50,
-                    }}
-                    src={bedIcon}></img>
+            <Icon
+                        name={props.icon}
+                    />
             </div>
             <div class="flex-grow p-3">
                 <div class="flex items-center space-x-2">

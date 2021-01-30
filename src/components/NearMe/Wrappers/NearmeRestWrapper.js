@@ -1,5 +1,5 @@
 import React from "react";
-import RestCard from "./Cards/RestCard.js";
+import NearMeCard from "./Cards/NearMeCard.js";
 
 export default function NearmeRestWrapper() {
     return (
@@ -13,11 +13,11 @@ export default function NearmeRestWrapper() {
                 </div>
             </div>
             <div class="space-y-4">
-                <RestCard place="Munnar" minute="10" km="5" />
-                <RestCard place="Devikulam" minute="100" km="50" />
-                <RestCard place="kochi" minute="50" km="54" />
-                <RestCard place="kozhikode" minute="40" km="45" />
-                <RestCard place="kozhikode" minute="40" km="45" />
+                <NearMeCard icon="bed" place="Munnar" minute="10" km="5" />
+                <NearMeCard icon="bed" place="Devikulam" minute="100" km="50" />
+                <NearMeCard icon="bed" place="kozhikode" minute="40" km="45" />
+                <NearMeCard icon="bed" place="kochi" minute="50" km="54" />
+                <NearMeCard icon="bed" place="kozhikode" minute="40" km="45" />
             </div>
         </div>
     );
