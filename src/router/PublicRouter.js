@@ -5,7 +5,6 @@ import Destination from "../components/Destination/index";
 import NavBar from "../components/Common/NavBar";
 import Experiences from "../components/Experiences/Experiences";
 
-
 const routes = {
     "/": () => <Home />,
     "/experiences": () => <Experiences />,
