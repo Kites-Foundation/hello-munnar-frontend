@@ -4,6 +4,7 @@ import ExperiencesCards from "./ExperienceCards";
 
 export default function Experiences() {
     const [search, setSearch] = useState("");
+    const expArray = [1, 2, 3];
     return (
         <div className="w-full">
             <div className="mt-8 flex flex-col w-full px-6">
@@ -25,17 +26,17 @@ export default function Experiences() {
                     Outdoor Adventures
                 </h2>
                 <div className="flex overflow-scroll">
-                    <ExperiencesCards />
-                    <ExperiencesCards />
-                    <ExperiencesCards />
+                    {expArray.map((item, i) => (
+                        <ExperiencesCards item={item} key={i} />
+                    ))}
                 </div>
                 <h2 className="text-md mt-8 mb-2 font-extrabold text-gray-800 ">
                     Special days out
                 </h2>
                 <div className="flex overflow-scroll">
-                    <ExperiencesCards />
-                    <ExperiencesCards />
-                    <ExperiencesCards />
+                    {expArray.map((item, i) => (
+                        <ExperiencesCards item={item} key={i} />
+                    ))}
                 </div>
             </div>
         </div>

@@ -1,12 +1,13 @@
 import React from "react";
 import Icon from "../Common/Icon";
+import dummyImage from "../../assets/images/dummy.jpg";
 
 export default function ExperiencesCards() {
     return (
         <div className="w-48  mx-2 flex-shrink-0 relative border border-gray-300 shadow-lg mb-4 rounded-md">
             <div className="w-full  relative pb-3/4">
                 <img
-                    src="https://ik.imagekit.io/q5edmtudmz/post1_fOFO9VDzENE.jpg"
+                    src={dummyImage}
                     alt=""
                     className=" bg-gray-100 absolute object-cover rounded-t-md  w-full h-full"
                 />
