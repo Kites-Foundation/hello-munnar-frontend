@@ -9,6 +9,9 @@ import { ReactComponent as Filter } from "../../assets/images/filter.svg";
 import { ReactComponent as Location } from "../../assets/images/location.svg";
 import { ReactComponent as Run } from "../../assets/images/run.svg";
 import { ReactComponent as Clock } from "../../assets/images/clock.svg";
+import { ReactComponent as Search } from "../../assets/images/search.svg";
+import { ReactComponent as CarSide } from "../../assets/images/carside.svg";
+import { ReactComponent as Star } from "../../assets/images/star.svg";
 
 const icons = {
     nearMe: NearMe,
@@ -16,11 +19,14 @@ const icons = {
     earth: Earth,
     diary: Diary,
     user: User,
+    search: Search,
     plus: Plus,
     filter: Filter,
     location: Location,
     run: Run,
     clock: Clock,
+    carSide: CarSide,
+    star: Star,
 };
 
 export default function Icon({
