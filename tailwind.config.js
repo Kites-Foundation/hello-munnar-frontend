@@ -1,14 +1,19 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    fontFamily: {
-      sans: ['Quicksand']
+    purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+    darkMode: false, // or 'media' or 'class'
+    theme: {
+        fontFamily: {
+            sans: ["Quicksand"],
+        },
+
+        extend: {
+            spacing: {
+                "3/4": "75%",
+            },
+        },
     },
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+    variants: {
+        extend: {},
+    },
+    plugins: [],
 };
