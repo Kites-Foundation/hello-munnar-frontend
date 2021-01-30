@@ -14,10 +14,10 @@ export default function NearmeRestWrapper() {
             </div>
             <div class="space-y-4">
                 <RestCard place="Munnar" minute="10" km="5" />
-                <RestCard place="Devikulam" minute="100" km="50"/>
-                <RestCard place="kochi" minute="50" km="54"/>
-                <RestCard place="kozhikode" minute="40" km="45"/>
-                <RestCard place="kozhikode" minute="40" km="45"/>
+                <RestCard place="Devikulam" minute="100" km="50" />
+                <RestCard place="kochi" minute="50" km="54" />
+                <RestCard place="kozhikode" minute="40" km="45" />
+                <RestCard place="kozhikode" minute="40" km="45" />
             </div>
         </div>
     );

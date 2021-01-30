@@ -4,16 +4,12 @@ import trashIcon from "../../icons/trash.svg";
 import carIcon from "../../icons/car.svg";
 import mapPinIcon from "../../icons/map-pin.svg";
 
-
-
 export default function DustBinCard(props) {
-    
     return (
         <div class="bg-white w-full flex items-center p-2  shadow border-2 border-gray-400">
             <div class="flex items-center space-x-4">
                 <img
                     style={{
-                      
                         width: 50,
                     }}
                     src={trashIcon}></img>
@@ -37,7 +33,9 @@ export default function DustBinCard(props) {
                             }}
                             src={carIcon}></img>
                     </div>
-                    <div class="text-sm text-gray-500">{props.minute} min {props.km} km</div>
+                    <div class="text-sm text-gray-500">
+                        {props.minute} min {props.km} km
+                    </div>
                 </div>
             </div>
             <div class="p-2">

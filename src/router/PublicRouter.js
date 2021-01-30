@@ -5,7 +5,6 @@ import NavBar from "../components/Common/NavBar";
 
 const routes = {
     "/": () => <Home />,
-
 };
 
 export default function PublicRouter() {
