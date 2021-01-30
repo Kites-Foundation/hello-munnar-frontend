@@ -62,9 +62,5 @@ export default function NearMe() {
         </div>
         </div>
     </div>   
-        
-            
-
-        
     );
 }
