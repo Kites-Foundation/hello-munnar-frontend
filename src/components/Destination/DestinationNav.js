@@ -12,22 +12,22 @@ export default function DestinationNav() {
         <div>
             <div className="flex justify-around ">
                 <button
-                    className="font-semibold hover:text-blue-600 hover:border-b-2 hover:border-blue-600"
+                    className="font-semibold hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 focus:outline-none"
                     onClick={() => setActiveTab("details")}>
                     Details
                 </button>
                 <button
-                    className="font-semibold hover:text-blue-600 hover:border-b-2 hover:border-blue-600"
+                    className="font-semibold hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 focus:outline-none"
                     onClick={() => setActiveTab("reviews")}>
                     Reviews
                 </button>
                 <button
-                    className="font-semibold hover:text-blue-600 hover:border-b-2 hover:border-blue-600  "
+                    className="font-semibold hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 focus:outline-none "
                     onClick={() => setActiveTab("hotels")}>
                     Hotel
                 </button>
                 <button
-                    className="font-semibold hover:text-blue-600 hover:border-b-2 hover:border-blue-600"
+                    className="font-semibold hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 focus:outline-none"
                     onClick={() => setActiveTab("activities")}>
                     Activitites
                 </button>

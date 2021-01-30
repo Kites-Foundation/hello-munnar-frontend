@@ -1,13 +1,15 @@
 import React from "react";
 import DestinationNav from "./DestinationNav";
 import img from "../../assets/images/dummy.jpg";
+import Icon from "../Common/Icon";
 
-export default function Destination() {
-    // const img = require("./dummy.jpg");
+export default function Destination(id) {
+    id = 1;
     return (
-        <div className=" ">
+        <div className="relative z-20 min-h-screen ">
             <img
                 src={img}
+                alt=""
                 className="h-64 sm:bg-cover mx-auto lg:rounded-lg "
             />
             <div className="flex justify-between">
@@ -15,21 +17,7 @@ export default function Destination() {
                     Destination Name
                 </div>
                 <div className="my-auto mr-2">
-                    <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="fas"
-                        data-icon="plus-square"
-                        width="24"
-                        height="24"
-                        class="svg-inline--fa fa-plus-square fa-w-14"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512">
-                        <path
-                            fill="currentColor"
-                            d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-32 252c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92H92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path>
-                    </svg>
+                    <Icon name="plus" color={"black"} size={6} />
                 </div>
             </div>
 

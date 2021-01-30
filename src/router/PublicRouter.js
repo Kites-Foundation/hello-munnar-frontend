@@ -6,7 +6,7 @@ import NavBar from "../components/Common/NavBar";
 
 const routes = {
     "/": () => <Home />,
-    "/destination": () => <Destination />,
+    "/destination/:id": ({ id }) => <Destination id={id} />,
 };
 
 export default function PublicRouter() {
