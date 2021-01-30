@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function DestinationCard() {
-  return <div>Destination Card</div>;
+    return <div>Destination Card</div>;
 }
