@@ -14,10 +14,25 @@ export default function NearmeStayWrapper() {
             </div>
             <div class="space-y-4">
                 <NearMeCard icon="house" place="Munnar" minute="10" km="5" />
-                <NearMeCard icon="house" place="Devikulam" minute="100" km="50" />
-                <NearMeCard icon="house" place="kozhikode" minute="40" km="45" />
+                <NearMeCard
+                    icon="house"
+                    place="Devikulam"
+                    minute="100"
+                    km="50"
+                />
+                <NearMeCard
+                    icon="house"
+                    place="kozhikode"
+                    minute="40"
+                    km="45"
+                />
                 <NearMeCard icon="house" place="kochi" minute="50" km="54" />
-                <NearMeCard icon="house" place="kozhikode" minute="40" km="45" />
+                <NearMeCard
+                    icon="house"
+                    place="kozhikode"
+                    minute="40"
+                    km="45"
+                />
             </div>
         </div>
     );

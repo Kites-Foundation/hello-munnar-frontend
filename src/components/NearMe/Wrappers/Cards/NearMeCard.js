@@ -8,9 +8,7 @@ export default function NearMeCard(props) {
     return (
         <div class="bg-white w-full flex items-center p-2  shadow border-2 border-gray-400">
             <div class="flex items-center space-x-4">
-            <Icon
-                        name={props.icon}
-                    />
+                <Icon name={props.icon} />
             </div>
             <div class="flex-grow p-3">
                 <div class="flex items-center space-x-2">
