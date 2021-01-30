@@ -6,12 +6,7 @@ export default function NearMe() {
         <div>
             <Topbar/>
         </div>
-     
-        
-
-
     );
 }
-
 
 
