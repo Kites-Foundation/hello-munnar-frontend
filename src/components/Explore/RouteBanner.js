@@ -2,9 +2,7 @@ import React from "react";
 
 
 let RouteBanner = (props) => {
-
-    return <div>
-       
+    return <div>       
                 <div 
                     className="flex-shrink-0 w-72 h-40 mx-2 bg-green-500 overflow-hidden relative" 
                 >

@@ -20,14 +20,14 @@ let Home = () => {
             </div>
             <div 
                 className="flex overflow-x-auto pb-3"
-                >
-                <RouteBanner RouteName="Munnar- Marayur- Kanthallur" RouteColor="violet"/>
-                <RouteBanner RouteName="Munnar- Marayur- Kanthallur" RouteColor="indigo"/>
-                <RouteBanner RouteName="Munnar- Marayur- Kanthallur" RouteColor="blue"/>
-                <RouteBanner RouteName="Munnar- Marayur- Kanthallur" RouteColor="green"/>
-                <RouteBanner RouteName="Munnar- Marayur- Kanthallur" RouteColor="yellow"/>
-                <RouteBanner RouteName="Munnar- Marayur- Kanthallur" RouteColor="orange"/>
-                <RouteBanner RouteName="Munnar- Marayur- Kanthallur" RouteColor="red"/>
+            >
+                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="violet"/>
+                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="indigo"/>
+                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="blue"/>
+                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="green"/>
+                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="yellow"/>
+                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="orange"/>
+                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="red"/>
             </div>
         </div>
     )
