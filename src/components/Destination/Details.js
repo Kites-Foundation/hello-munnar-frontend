@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Details() {
-    return <div>Details</div>;
+    return <div className="mx-4">Details</div>;
 }
