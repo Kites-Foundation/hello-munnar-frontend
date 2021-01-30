@@ -9,10 +9,14 @@ import { ReactComponent as Filter } from "../../assets/images/filter.svg";
 import { ReactComponent as Location } from "../../assets/images/location.svg";
 import { ReactComponent as Run } from "../../assets/images/run.svg";
 import { ReactComponent as Clock } from "../../assets/images/clock.svg";
+import { ReactComponent as AddUser } from "../../assets/images/add-user.svg";
+import { ReactComponent as EditUser } from "../../assets/images/edit-user.svg";
+import { ReactComponent as Lock } from "../../assets/images/lock.svg";
 import { ReactComponent as Search } from "../../assets/images/search.svg";
-import { ReactComponent as CarSide } from "../../assets/images/carside.svg";
 import { ReactComponent as Star } from "../../assets/images/star.svg";
 import { ReactComponent as Back } from "../../assets/images/back.svg";
+import { ReactComponent as UserFilled } from "../../assets/images/user-filled.svg";
+import { ReactComponent as CarSide } from "../../assets/images/carside.svg";
 
 const icons = {
     nearMe: NearMe,
@@ -20,6 +24,11 @@ const icons = {
     earth: Earth,
     diary: Diary,
     user: User,
+    addUser: AddUser,
+    editUser: EditUser,
+    lock: Lock,
+    star: Star,
+    userFilled: UserFilled,
     search: Search,
     plus: Plus,
     filter: Filter,
