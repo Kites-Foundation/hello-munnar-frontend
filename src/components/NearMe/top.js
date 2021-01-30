@@ -14,7 +14,8 @@ export default function NearMe() {
                                 style={{
                                     width: 30,
                                 }}
-                                src={searchIcon} alt="img"></img>
+                                src={searchIcon}
+                                alt="img"></img>
                         </button>
                     </div>
                     <div class="font-thin text-gray-100">

@@ -14,7 +14,8 @@ export default function Thingstodo() {
                         <div class="bg-cover bg-center h-56 p-4 relative">
                             <img
                                 className="min-w-full min-h-full"
-                                src={munnarIcon} alt="img"></img>
+                                src={munnarIcon}
+                                alt="img"></img>
 
                             <div class="mr-2 absolute right-5 bottom-5">
                                 <button>
