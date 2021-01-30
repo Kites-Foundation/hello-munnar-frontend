@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "../../assets/images/dummy.jpg";
 import Star from "../Common/Star";
+import Icon from "../Common/Icon";
 
 export default function Hotels() {
     return (
@@ -22,21 +23,7 @@ export default function Hotels() {
                                 Name
                             </a>
                         </h1>
-                        <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fas"
-                            data-icon="plus-square"
-                            width="24"
-                            height="24"
-                            class="svg-inline--fa fa-plus-square fa-w-14"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512">
-                            <path
-                                fill="currentColor"
-                                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-32 252c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92H92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path>
-                        </svg>
+                        <Icon name="plus" color={"black"} size={6} />
                     </div>
                     <div className="flex justify-end mt-5">
                         <p className="text-grey-darker text-sm">
@@ -46,21 +33,7 @@ export default function Hotels() {
                         </p>
                     </div>
                     <div className="flex flex-row leading-none p-2 md:p-4">
-                        <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fas"
-                            data-icon="car-side"
-                            width="24"
-                            height="24"
-                            class="svg-inline--fa fa-car-side fa-w-20"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 640 512">
-                            <path
-                                fill="currentColor"
-                                d="M544 192h-16L419.22 56.02A64.025 64.025 0 0 0 369.24 32H155.33c-26.17 0-49.7 15.93-59.42 40.23L48 194.26C20.44 201.4 0 226.21 0 256v112c0 8.84 7.16 16 16 16h48c0 53.02 42.98 96 96 96s96-42.98 96-96h128c0 53.02 42.98 96 96 96s96-42.98 96-96h48c8.84 0 16-7.16 16-16v-80c0-53.02-42.98-96-96-96zM160 432c-26.47 0-48-21.53-48-48s21.53-48 48-48 48 21.53 48 48-21.53 48-48 48zm72-240H116.93l38.4-96H232v96zm48 0V96h89.24l76.8 96H280zm200 240c-26.47 0-48-21.53-48-48s21.53-48 48-48 48 21.53 48 48-21.53 48-48 48z"></path>
-                        </svg>
+                        <Icon name="carSide" color={"black"} size={6} />
 
                         <p className="ml-2 text-sm">10 min 2 km</p>
                     </div>
