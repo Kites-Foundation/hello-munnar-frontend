@@ -7,7 +7,6 @@ import Hotels from "./Hotels";
 export default function DestinationNav() {
     const defaultTab = "details";
     const [activeTab, setActiveTab] = useState(defaultTab);
-    console.log(activeTab);
     return (
         <div>
             <div className="flex justify-around ">
