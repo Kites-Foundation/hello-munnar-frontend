@@ -1,4 +1,5 @@
 import React from "react";
+import Icon from "../../../Common/Icon";
 import mapIcon from "../../icons/map.svg";
 import Icon from "../../../Common/Icon.js";
 import carIcon from "../../icons/car.svg";
