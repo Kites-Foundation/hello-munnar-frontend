@@ -6,7 +6,7 @@ import NewsContainer from './NewsContainer';
 function Notification() {
     let [activeTab,setActiveTab] = useState('Alert')
     return <div className="mx-3">
-        <div >
+        <div className="mt-10">
             <p className="text-4xl font-bold ">Notification</p><br/>
             <div className="flex justify-center">
                 <button 

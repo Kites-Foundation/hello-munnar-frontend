@@ -3,10 +3,11 @@ import React from "react";
 import Home from "../components/Home/index";
 import Destination from "../components/Destination/index";
 import NavBar from "../components/Common/NavBar";
-
+import Notification from '../components/Notification/index'
 const routes = {
     "/": () => <Home />,
     "/destination/:id": ({ id }) => <Destination id={id} />,
+    '/notifications': () => <Notification />
 };
 
 export default function PublicRouter() {
