@@ -4,7 +4,7 @@ import Home from "../components/Home/index";
 import Destination from "../components/Destination/index";
 import NavBar from "../components/Common/NavBar";
 import Experiences from "../components/Experiences/Experiences";
-import NearMe from "../components/NearMe/index.js"
+import NearMe from "../components/NearMe/index.js";
 
 const routes = {
     "/": () => <Home />,
