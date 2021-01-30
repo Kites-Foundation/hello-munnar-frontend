@@ -5,6 +5,7 @@ module.exports = {
         fontFamily: {
             sans: ["Quicksand"],
         },
+
         extend: {
             spacing: {
                 "3/4": "75%",
