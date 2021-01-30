@@ -2,8 +2,10 @@ import { useRoutes } from "hookrouter";
 import React from "react";
 import Home from "../components/Home/index";
 
+
 const routes = {
     "/": () => <Home />,
+   
 };
 
 export default function PublicRouter() {
