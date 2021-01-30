@@ -1,19 +1,24 @@
 import React from "react";
 import Icon from "../Common/Icon";
 import Star from "../Common/Star";
+import img from "../../assets/images/trek-1.jpg";
 
-export default function LocationCard({ img }) {
+export default function LocationCard({ data }) {
     return (
         <div className="shadow-lg mb-10">
             <div className="relative">
                 <div className="absolute w-full h-full bg-black bg-opacity-50" />
-                <img src={img} alt="" className="h-54 w-full object-cover" />
+                <img
+                    src={data.assetUrl}
+                    alt=""
+                    className="h-54 w-full object-cover"
+                />
                 <div className="absolute top-3 right-3 flex">
-                    <Star num={3} />
+                    <Star num={Math.ceil(Math.random() * 5)} />
                 </div>
                 <div className="absolute bottom-0 left-0 p-3 w-full flex justify-between items-center">
-                    <h3 className="text-xl text-white font-semibold">
-                        Trekking
+                    <h3 className="capitalize text-xl text-white font-semibold">
+                        {data.name}
                     </h3>
                     <div className="flex items-center box-border bg-indigo-600 bg-opacity-25 justify-center w-10 h-10 rounded-full border-indigo-600 border-2">
                         <Icon name="location" size={5} color="indigo-600" />
