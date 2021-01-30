@@ -2,26 +2,27 @@ import React from "react";
 import Image from "../../assets/images/dummy.jpg";
 import Star from "../Common/Star";
 import Icon from "../Common/Icon";
+import { A } from "hookrouter"
 
 export default function Hotels() {
     return (
         <div className="center max-w-6xl mx-auto">
             <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-4 md:grid-cols-3 md:max-w-none sm:mx-8">
                 <div className="overflow-hidden rounded-lg shadow-lg">
-                    <a href="#">
+                    <A href="#">
                         <img
                             alt="Placeholder"
                             className="block h-auto w-full"
                             src={Image}
                         />
-                    </a>
+                    </A>
                     <div className="flex items-center justify-between leading-tight p-2 md:p-4 mt-55">
                         <h1 className="text-lg">
-                            <a
+                            <A
                                 className="no-underline hover:underline text-black"
                                 href="#">
                                 Name
-                            </a>
+                            </A>
                         </h1>
                         <Icon name="plus" color={"black"} size={6} />
                     </div>
