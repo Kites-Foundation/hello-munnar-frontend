@@ -5,13 +5,9 @@ import { ReactComponent as Earth } from "../../assets/images/earth.svg";
 import { ReactComponent as Diary } from "../../assets/images/diary.svg";
 import { ReactComponent as User } from "../../assets/images/user.svg";
 import { ReactComponent as Plus } from "../../assets/images/plus.svg";
-<<<<<<< HEAD
 import { ReactComponent as Search } from "../../assets/images/search.svg";
-
-=======
 import { ReactComponent as CarSide } from "../../assets/images/carside.svg";
 import { ReactComponent as Star } from "../../assets/images/star.svg";
->>>>>>> e1f330c62331d64d362ea0cfe20227f5134106ed
 const icons = {
     nearMe: NearMe,
     ticket: Ticket,
