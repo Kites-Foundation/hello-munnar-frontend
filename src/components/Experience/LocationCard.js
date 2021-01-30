@@ -1,13 +1,16 @@
 import React from "react";
 import dummy from "../../assets/images/dummy.jpg";
 import Icon from "../Common/Icon";
+import Star from "../Common/Star";
 
 export default function LocationCard() {
     return (
         <div className="shadow-lg mb-10">
             <div className="relative">
                 <img src={dummy} alt="" className="h-54 w-full object-cover" />
-                <div className="absolute top-3 right-3"></div>
+                <div className="absolute top-3 right-3 flex">
+                    <Star num={3} />
+                </div>
                 <div className="absolute bottom-0 left-0 p-3 w-full flex justify-between items-center">
                     <h3 className="text-xl text-gray-800 font-semibold">
                         Trekking

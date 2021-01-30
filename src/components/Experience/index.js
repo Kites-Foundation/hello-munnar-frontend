@@ -2,10 +2,12 @@ import React from "react";
 import dummy from "../../assets/images/dummy.jpg";
 import Icon from "../Common/Icon";
 import LocationCard from "./LocationCard";
+import BackButton from "../Common/BackButton";
 
 export default function Experience({ id }) {
     return (
         <div className="">
+            <BackButton />
             <div className="relative">
                 <img
                     src={dummy}

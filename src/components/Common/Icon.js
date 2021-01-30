@@ -12,6 +12,7 @@ import { ReactComponent as Clock } from "../../assets/images/clock.svg";
 import { ReactComponent as Search } from "../../assets/images/search.svg";
 import { ReactComponent as CarSide } from "../../assets/images/carside.svg";
 import { ReactComponent as Star } from "../../assets/images/star.svg";
+import { ReactComponent as Back } from "../../assets/images/back.svg";
 
 const icons = {
     nearMe: NearMe,
@@ -27,6 +28,7 @@ const icons = {
     clock: Clock,
     carSide: CarSide,
     star: Star,
+    back: Back,
 };
 
 export default function Icon({
