@@ -17,6 +17,11 @@ import { ReactComponent as Star } from "../../assets/images/star.svg";
 import { ReactComponent as Back } from "../../assets/images/back.svg";
 import { ReactComponent as UserFilled } from "../../assets/images/user-filled.svg";
 import { ReactComponent as CarSide } from "../../assets/images/carside.svg";
+import { ReactComponent as Bed } from "../../assets/images/bed.svg";
+import { ReactComponent as Food } from "../../assets/images/fast-food.svg";
+import { ReactComponent as House } from "../../assets/images/house.svg";
+import { ReactComponent as Info } from "../../assets/images/info.svg";
+import { ReactComponent as Trash } from "../../assets/images/trash.svg";
 
 import { ReactComponent as Chat } from "../../assets/images/chat.svg";
 import { ReactComponent as Logout } from "../../assets/images/logout.svg";
@@ -40,6 +45,11 @@ const icons = {
     run: Run,
     clock: Clock,
     carSide: CarSide,
+    bed: Bed,
+    food: Food,
+    house: House,
+    info: Info,
+    trash: Trash,
     chat: Chat,
     logout: Logout,
     settings: Settings,

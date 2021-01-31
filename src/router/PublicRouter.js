@@ -6,6 +6,7 @@ import Experience from "../components/Experience/";
 import NavBar from "../components/Common/NavBar";
 import NearMe from "../components/NearMe";
 import Notification from "../components/Notification/index";
+import NearMeTop from "../components/NearMe/top";
 import Experiences from "../components/Experiences/Experiences";
 import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
@@ -14,10 +15,12 @@ import Profile from "../components/User/Profile";
 const routes = {
     // Explore page is the temporary default home page
     "/": () => <Explore />,
+    "/nearme": () => <NearMe />,
     "/signIn": () => <SignIn />,
     "/signOut": () => <SignOut />,
     "/profile": () => <Profile />,
     "/destination/:id": ({ id }) => <Destination id={id} />,
+    "/nearmetop": () => <NearMeTop />,
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
