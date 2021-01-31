@@ -9,7 +9,6 @@ export default function NearMe() {
         <div>
             <Topbar />
             <NearmeFoodWrapper />
-
         </div>
     );
 }

@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 module.exports = {
     purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
     darkMode: false, // or 'media' or 'class'
@@ -11,9 +11,9 @@ module.exports = {
             spacing: {
                 "3/4": "75%",
             },
-            colors:{
-                teal:colors.teal
-            }
+            colors: {
+                teal: colors.teal,
+            },
         },
     },
     variants: {
