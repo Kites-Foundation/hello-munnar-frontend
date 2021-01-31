@@ -10,7 +10,6 @@ function NotificationHeader() {
                 <p className="text-4xl font-bold ">Notification</p>
                 <br />
                 <div className="flex w-full">
-                    
                     <button
                         onClick={() => {
                             setActiveTab("Alert");

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "../../assets/images/dummy.jpg";
 import Star from "../Common/Star";
 import Icon from "../Common/Icon";
-import { A } from "hookrouter"
+import { A } from "hookrouter";
 
 export default function Hotels() {
     return (

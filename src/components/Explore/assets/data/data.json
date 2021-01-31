@@ -1,57 +1,92 @@
 [
     {
         "routeName": "Munnar - Marayur - Kanthallur",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl": "https://picsum.photos/400/300",
         "routeColor": "violet",
         "destinations": [
             {
+                "id": "v1",
                 "name": "THALAIYAR TEA PLANTATION",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Trekking", "Wildlife", "Jeep Safari"]
             },
             {
+                "id": "v2",
                 "name": "ERAVIKULAM NATIONAL PARK",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Landscape", "Bathing"]
             },
             {
+                "id": "v3",
                 "name": "LAKKAM WATERFALLS",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Landscape", "Bathing"]
             },
             {
+                "id": "v4",
                 "name": "KARIMUTTY WATERFALLS",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sight Seeing", "Wildlife", "Photography", "Landscape"]
+                "activities": [
+                    "Sight Seeing",
+                    "Wildlife",
+                    "Photography",
+                    "Landscape"
+                ]
             },
             {
+                "id": "v5",
                 "name": "SANDALWOOD FOREST",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Shopping"]
-
             },
             {
+                "id": "v6",
                 "name": "ST.JOSEPH FARM, MARAYOOR JAGGERY, MARAYUR",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Photography", "Landscape", "Heritage Photography"]
+                "activities": [
+                    "Photography",
+                    "Landscape",
+                    "Heritage Photography"
+                ]
             },
             {
+                "id": "v7",
                 "name": "KANTHALLOOR JAGGERY - VETTUKAD",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Photography", "Landscape", "Shopping"]
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Shopping"
+                ]
             },
             {
+                "id": "v8",
                 "name": "Kanthallur Farming",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Trekking", "Wildlife" , "Photography", "Landscape" ]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Wildlife",
+                    "Photography",
+                    "Landscape"
+                ]
             },
             {
+                "id": "v9",
                 "name": "Anamudi Shola NP",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Jeep Safari", "Trekking", "Camping", "Wildlife", "Photography", "Sightseeing"]
-
+                "activities": [
+                    "Jeep Safari",
+                    "Trekking",
+                    "Camping",
+                    "Wildlife",
+                    "Photography",
+                    "Sightseeing"
+                ]
             },
             {
+                "id": "v10",
                 "name": "Chinnar WLS",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Sightseeing", "Boating", "Photography"]
@@ -60,254 +95,416 @@
     },
     {
         "routeName": "Munnar - Adimali",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl": "https://picsum.photos/400/300",
         "routeColor": "indigo",
         "destinations": [
             {
+                "id": "i1",
                 "name": "SPICE GARDEN",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Landscape", "Photography" ]
+                "activities": ["Landscape", "Photography"]
             },
             {
+                "id": "i2",
                 "name": "KALLAR WATERFALL",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Landscape", "Photography"]
             },
             {
+                "id": "i3",
                 "name": "2nd MILE POINT",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Photography", "Landscape"]
             },
             {
+                "id": "i4",
                 "name": "ATHUKAD WATERFALLS",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Landscape", "Photography" ]
+                "activities": ["Landscape", "Photography"]
             },
             {
+                "id": "i5",
                 "name": "RAMASWAMI IYER HEADWORKS DAM",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Landscape", "Photography", "Sunset Viewpoint"]
-
             },
             {
+                "id": "i6",
                 "name": "POTHANMEDU VIEW POINT",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Photography", "Fish Spa", "Zip Line"]
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Fish Spa",
+                    "Zip Line"
+                ]
             },
             {
+                "id": "i7",
                 "name": "BLOSSOM HYDEL PARK",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Boating", "Sightseeing", "Photography", "Landscape", "Wedding Photography", "Fooding"]
+                "activities": [
+                    "Boating",
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Wedding Photography",
+                    "Fooding"
+                ]
             },
             {
+                "id": "i8",
                 "name": "SENGULAM HYDEL PARK",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Sightseeing", "Photography", "Landscape"]
             },
             {
+                "id": "i9",
                 "name": "CHITHIRPURAM VIEW POINT",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Photography", "Boating", "Shopping"]
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Boating",
+                    "Shopping"
+                ]
             }
         ]
-    },  
+    },
     {
         "routeName": "Munnar - Suryanelli - Kolukkumala - Chokramudi Peak",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl": "https://picsum.photos/400/300",
         "routeColor": "blue",
         "destinations": [
             {
+                "id": "b1",
                 "name": "Signal Point",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Photography", "Sightseeing", "Landscape", "Sun Set" ]
+                "activities": [
+                    "Photography",
+                    "Sightseeing",
+                    "Landscape",
+                    "Sun Set"
+                ]
             },
             {
+                "id": "b2",
                 "name": "LockHart Tea factory and Museum",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Sightseeing", "Photography", "Landscape"]
             },
             {
+                "id": "b3",
                 "name": "Chrokramudy Peak",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Trekking", "Wildlife", "Rockclimbing", "Photography", "Landscape"]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Wildlife",
+                    "Rockclimbing",
+                    "Photography",
+                    "Landscape"
+                ]
             },
             {
+                "id": "b4",
                 "name": "Lockhart Gap viewpoint",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Photography", "Sightseeing", "Landscape"]
             },
             {
+                "id": "b5",
                 "name": "KOLUKKUMALAI SUNRISE",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Trekking", "Camping", "Photography", "Landscape", "Sunrise", "Tea Plantation"]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Camping",
+                    "Photography",
+                    "Landscape",
+                    "Sunrise",
+                    "Tea Plantation"
+                ]
             },
             {
+                "id": "b6",
                 "name": "KOLUKKUMALAI TEA PLANTATION AND FACTORY",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Photography", "Tea Plantation", "Landscape"]
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Tea Plantation",
+                    "Landscape"
+                ]
             },
             {
+                "id": "b7",
                 "name": "MUNIYARA",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Photography", "Landscape", "Heritage Photography"]
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Heritage Photography"
+                ]
             },
             {
+                "id": "b8",
                 "name": "ANAYIRANKAL BOATING DESTINATION",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Boating", "Photography", "Fooding"]
             },
             {
+                "id": "b9",
                 "name": "CHATHURANGAPARA",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Trekking", "Photography", "Landscape"]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Photography",
+                    "Landscape"
+                ]
             }
         ]
     },
     {
         "routeName": "Munnar - Meesapulimala",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl": "https://picsum.photos/400/300",
         "routeColor": "green",
         "destinations": [
             {
+                "id": "g1",
                 "name": "MEESAPPULIMALA",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Trekking", "Sightseeing", "Photography" ]
+                "activities": ["Trekking", "Sightseeing", "Photography"]
             }
         ]
     },
     {
         "routeName": "Munnar - CSI Church - Marayoor",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl": "https://picsum.photos/400/300",
         "routeColor": "Yellow",
         "destinations": [
             {
+                "id": "y1",
                 "name": "CSI church",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Heritage Photography", "Memorial", "Religious Architecture"]
+                "activities": [
+                    "Heritage Photography",
+                    "Memorial",
+                    "Religious Architecture"
+                ]
             },
             {
+                "id": "y2",
                 "name": "CARMALAGIRI BOTANICAL GARDEN",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Photography", "Shopping", "Fooding" ]
+                "activities": ["Photography", "Shopping", "Fooding"]
             },
             {
+                "id": "y3",
                 "name": "munnar town",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Trekking", "Photography", "Landscape", "Heritage Photography", "Tea Plantations", "Shopping", "Boating", "Cycling", "Memorial", "Religious Architecture", "Shopping", "Fooding" ]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Photography",
+                    "Landscape",
+                    "Heritage Photography",
+                    "Tea Plantations",
+                    "Shopping",
+                    "Boating",
+                    "Cycling",
+                    "Memorial",
+                    "Religious Architecture",
+                    "Shopping",
+                    "Fooding"
+                ]
             },
             {
+                "id": "y4",
                 "name": "tea museum",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Trekking", "Photography", "Landscape", "Heritage Photography", "Tea Plantations", "Shopping" ]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Photography",
+                    "Landscape",
+                    "Heritage Photography",
+                    "Tea Plantations",
+                    "Shopping"
+                ]
             },
             {
+                "id": "y5",
                 "name": "srishti -TATA",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Welfare Centre"]
-
             },
             {
+                "id": "y6",
                 "name": "MARAYOOR DOLMENS",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Photography", "Landscape", "Sunrise/Set", "Heritage Photography", "Memorial", "Religious Architecture", "Eco-Shop"]
-
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Sunrise/Set",
+                    "Heritage Photography",
+                    "Memorial",
+                    "Religious Architecture",
+                    "Eco-Shop"
+                ]
             }
-        
         ]
     },
     {
         "routeName": "Munnar - Mankulam - Anakulam",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl": "https://picsum.photos/400/300",
         "routeColor": "orange",
         "destinations": [
             {
+                "id": "o1",
                 "name": "VIRUPARA(KAINAGIRI OR GIRIVARA WATERFALLS)",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Trekking", "Wildlife", "Photograph" ]
+                "activities": ["Trekking", "Wildlife", "Photograph"]
             },
             {
+                "id": "o2",
                 "name": "TIGER CAVE",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Trekking", "Wildlife", "Rockclimbing", "Photograph" ]
+                "activities": [
+                    "Trekking",
+                    "Wildlife",
+                    "Rockclimbing",
+                    "Photograph"
+                ]
             },
             {
+                "id": "o3",
                 "name": "PERUMBANKUTH WATERFALLS",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Trekking", "Wildlife", "Photograph", "Landscape" ]
+                "activities": [
+                    "Trekking",
+                    "Wildlife",
+                    "Photograph",
+                    "Landscape"
+                ]
             },
             {
+                "id": "o4",
                 "name": "ANAKKULAM( 2 Destination  is there) ",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Wildlife", "Bathing", "Photography", "Landscape", "Sunset", "Wedding Photography" ]
+                "activities": [
+                    "Sightseeing",
+                    "Wildlife",
+                    "Bathing",
+                    "Photography",
+                    "Landscape",
+                    "Sunset",
+                    "Wedding Photography"
+                ]
             },
             {
+                "id": "o5",
                 "name": "33 WATERFALLS",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Bathing", "Photography", "Landcsape"]
-
             }
         ]
     },
     {
         "routeName": "Munnar - Mattupetty - Vattavada",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl": "https://picsum.photos/400/300",
         "routeColor": "Red",
         "destinations": [
             {
+                "id": "r1",
                 "name": "FLOWER GARDEN",
                 "assetUrl": "https://picsum.photos/400/300",
                 "activities": ["Photography"]
             },
             {
+                "id": "r2",
                 "name": "PHOTO POINT",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Photography" ]
+                "activities": ["Sightseeing", "Photography"]
             },
             {
+                "id": "r3",
                 "name": "ELEPHANT PARK",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Wildlife", "Photography", "Elephant Safari" ]
+                "activities": ["Wildlife", "Photography", "Elephant Safari"]
             },
             {
+                "id": "r4",
                 "name": "MATTUPETTY DAM",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Boating", "Fooding", "Shopping" ]
+                "activities": ["Sightseeing", "Boating", "Fooding", "Shopping"]
             },
             {
+                "id": "r5",
                 "name": "SUN MOON VALLEY BOATING CENTRE",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Boating", "Photography", "Sightseeing", "Theme Park"]
-
+                "activities": [
+                    "Boating",
+                    "Photography",
+                    "Sightseeing",
+                    "Theme Park"
+                ]
             },
             {
+                "id": "r6",
                 "name": "ECHO POINT",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Boating", "Photography", "Shopping", "Fooding"]
-
+                "activities": [
+                    "Sightseeing",
+                    "Boating",
+                    "Photography",
+                    "Shopping",
+                    "Fooding"
+                ]
             },
             {
+                "id": "r7",
                 "name": "KUNDALAI LAKE",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing","Boating","Photography"]
-
+                "activities": ["Sightseeing", "Boating", "Photography"]
             },
             {
+                "id": "r8",
                 "name": "TOP STATION",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Photography", "Landscape", "Fooding", "Sunrise"]
-
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Fooding",
+                    "Sunrise"
+                ]
             },
             {
+                "id": "r9",
                 "name": "PAMPADUM SHOLA NATIONAL PARK",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Photography", "Landscape", "Wildlifde", "Photography" ]
-
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Wildlifde",
+                    "Photography"
+                ]
             },
             {
+                "id": "r10",
                 "name": "VATTAVADAI",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": ["Sightseeing", "Photography", "Camping", "Landscape"]
-
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Camping",
+                    "Landscape"
+                ]
             }
         ]
     }
