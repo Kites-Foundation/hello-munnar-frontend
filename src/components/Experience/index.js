@@ -2,7 +2,7 @@ import React from "react";
 import Icon from "../Common/Icon";
 import LocationCard from "./LocationCard";
 import BackButton from "../Common/BackButton";
-import allData from "../../assets/data/data.json";
+import allData from "../Explore/assets/data/data.json";
 import { activityData } from "../../data/activities";
 
 export default function Experience({ id }) {
