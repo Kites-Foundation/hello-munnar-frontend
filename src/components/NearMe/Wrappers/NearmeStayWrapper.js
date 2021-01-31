@@ -20,16 +20,16 @@ export default function NearmeStayWrapper() {
                     minute="100"
                     km="50"
                 />
+                <NearMeCard icon="house" place="Vadyar" minute="40" km="45" />
                 <NearMeCard
                     icon="house"
-                    place="kozhikode"
-                    minute="40"
-                    km="45"
+                    place="Mattupetty"
+                    minute="50"
+                    km="54"
                 />
-                <NearMeCard icon="house" place="kochi" minute="50" km="54" />
                 <NearMeCard
                     icon="house"
-                    place="kozhikode"
+                    place="Kollukkumalai"
                     minute="40"
                     km="45"
                 />
