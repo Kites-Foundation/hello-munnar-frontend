@@ -20,7 +20,9 @@ export default function NearMeCard(props) {
                             }}
                             src={mapIcon}></img>
                     </div>
-                    <div class="font-semibold text-gray-700">{props.place}</div>
+                    <div class="font-semibold truncate text-lg text-gray-700">
+                        {props.place}
+                    </div>
                 </div>
                 <div class="flex items-center space-x-2">
                     <div class="flex items-center mt-1">
