@@ -12,6 +12,11 @@ import { ReactComponent as Search } from "../../assets/images/search.svg";
 import { ReactComponent as Star } from "../../assets/images/star.svg";
 import { ReactComponent as UserFilled } from "../../assets/images/user-filled.svg";
 import { ReactComponent as CarSide } from "../../assets/images/carside.svg";
+import { ReactComponent as Bed } from "../../assets/images/bed.svg";
+import { ReactComponent as Food } from "../../assets/images/fast-food.svg";
+import { ReactComponent as House } from "../../assets/images/house.svg";
+import { ReactComponent as Info } from "../../assets/images/info.svg";
+import { ReactComponent as Trash } from "../../assets/images/trash.svg";
 
 const icons = {
     nearMe: NearMe,
@@ -27,6 +32,11 @@ const icons = {
     search: Search,
     plus: Plus,
     carSide: CarSide,
+    bed: Bed,
+    food: Food,
+    house: House,
+    info: Info,
+    trash: Trash,
 };
 
 export default function Icon({ name, size = 10, color = "gray-800" }) {

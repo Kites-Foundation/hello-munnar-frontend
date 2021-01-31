@@ -4,11 +4,13 @@ import Explore from "../components/Explore/index";
 import Destination from "../components/Destination/index";
 import NavBar from "../components/Common/NavBar";
 import Notification from '../components/Notification/index'
+import NearMe from "../components/NearMe/top";
 
 
 const routes = {
     // Explore page is the temporary default home page 
     "/": () => <Explore />,
+    "/nearme": () => <NearMe />,
     "/destination/:id": ({ id }) => <Destination id={id} />,
     '/notifications': () => <Notification />
 };

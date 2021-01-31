@@ -6,9 +6,9 @@ import Thingstodo from './thingstodo.js';
 
 export default function NearMe() {
     return (
-        <div>            
+        <div>  
+            <Topbar/>          
             <Thingstodo />
-            <Topbar/>
         </div>
     );
 }
