@@ -1,4 +1,5 @@
 import React from "react";
+import { A } from "hookrouter";
 
 let DestinationBanner = (props) => {
     return (

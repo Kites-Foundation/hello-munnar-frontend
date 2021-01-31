@@ -7,7 +7,7 @@ export default function Star({ num, size = 5 }) {
     }).map((_, i) => (
         <Icon
             name="star"
-            color={`${i < num ? "indigo-700" : "gray-200"}`}
+            color={`${i < num ? "indigo-700" : "gray-300"}`}
             size={size}
             key={i.toString()}
         />
