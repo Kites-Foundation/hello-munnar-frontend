@@ -22,9 +22,9 @@ export default function NearmeInfoWrapper() {
                     minute="100"
                     km="50"
                 />
-                <NearMeCard icon="info" place="kozhikode" minute="40" km="45" />
-                <NearMeCard icon="info" place="kochi" minute="50" km="54" />
-                <NearMeCard icon="info" place="kozhikode" minute="40" km="45" />
+                <NearMeCard icon="info" place="vadayar" minute="40" km="45" />
+                <NearMeCard icon="info" place="kolukkumala" minute="50" km="54" />
+                <NearMeCard icon="info" place="maattupetti" minute="40" km="45" />
             </div>
         </div>
     );

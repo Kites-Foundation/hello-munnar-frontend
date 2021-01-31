@@ -15,9 +15,9 @@ export default function NearmeRestWrapper() {
             <div class="space-y-4">
                 <NearMeCard icon="bed" place="Munnar" minute="10" km="5" />
                 <NearMeCard icon="bed" place="Devikulam" minute="100" km="50" />
-                <NearMeCard icon="bed" place="kozhikode" minute="40" km="45" />
-                <NearMeCard icon="bed" place="kochi" minute="50" km="54" />
-                <NearMeCard icon="bed" place="kozhikode" minute="40" km="45" />
+                <NearMeCard icon="bed" place="vadayar" minute="40" km="45" />
+                <NearMeCard icon="bed" place="kolukkumala" minute="50" km="54" />
+                <NearMeCard icon="bed" place="maattupetti" minute="40" km="45" />
             </div>
         </div>
     );
