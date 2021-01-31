@@ -9,7 +9,7 @@ export default function Details({id}) {
         #tag2
         </button>
         <div className = "text-grey justify-items-center my-5 box-border md:box-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        The only legal way to go there is to secure a booking in one of the KFDC munnar properties - Base camp, Glass house, Rhodo valley. Tariff and other details given in KFDC website. Costs about 2k per person approximately whch includes jeep, food and trek permission. Rhodo valley lies closer to Meesapulimala. Its about 2 hrs trek from Rhodo valley to the peak. Base camp is a tented accomodation,ideal for large groups, takes about an hour's trek/some 30 mins jeep drive to rhodo valley. Glass house, lies few meters above base camp offers a nice view of a waterfall, kundala dam and anamudi peak at the far end.
         </div>
     </div>
     
