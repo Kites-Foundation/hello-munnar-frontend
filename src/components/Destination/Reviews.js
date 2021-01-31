@@ -30,10 +30,7 @@ export default function Reviews() {
                 </div>
             </div>
             <RatingStars rating={3} />
-            <div className="px-4 text-sm">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-            </div>
+            <div className="px-4 text-sm">Awsome Place! Dont miss it</div>
             {showRatingModal && (
                 <ReviewRatingModal
                     setShow={setShowRatingModal}
