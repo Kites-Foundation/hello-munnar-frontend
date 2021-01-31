@@ -42,7 +42,7 @@ export default function LocationCard({ data }) {
                     </div>
                 </div>
                 <p className="text-gray-800">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                This is a fun and entertaining way to spend your free time with family and friends.
                 </p>
             </div>
         </div>
