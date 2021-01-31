@@ -8,7 +8,7 @@ export default function NearMe() {
         <div>
             <Topbar />
             <Callbookguide />
-            
+
             <Thingstodo />
         </div>
     );

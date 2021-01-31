@@ -94,9 +94,9 @@ export default function NearMe() {
                     <NearmeDustBinWrapper />
                 ) : nearBy === "Information Desk" ? (
                     <NearmeInfoWrapper />
-                ) : nearBy === "Guide" ?(
+                ) : nearBy === "Guide" ? (
                     <Callbookguide />
-                ) : ( 
+                ) : (
                     <Thingstodo />
                 )}
             </div>
