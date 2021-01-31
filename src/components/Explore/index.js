@@ -29,7 +29,6 @@ let Explore = () => {
         setSelectedRoute("violet")
         setSelectedIndex(findIndexFromData('violet'))
         setActivitySelectedIndex(0)
-        // console.log()
     },[])
 
 
