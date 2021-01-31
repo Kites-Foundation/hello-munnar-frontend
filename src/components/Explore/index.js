@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import searchIcon from './assets/img/search.svg'
 import busIcon from './assets/img/bus.svg'
@@ -13,7 +13,10 @@ import data from './assets/data/data.json'
 let Explore = () => {
     console.log(data);
     let [selectedRoute,setSelectedRoute] = useState("voilet")
-    setSelectedRoute("voilet")
+    useEffect(()=>{
+        setSelectedRoute("voilet")
+    },[])
+
     return (
         <div className="mx-4">
             <div className="flex justify-between my-10">
