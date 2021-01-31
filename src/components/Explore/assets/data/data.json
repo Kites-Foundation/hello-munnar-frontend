@@ -1,7 +1,7 @@
 [
     {
         "routeName": "Munnar - Marayur - Kanthallur",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl":  "/assets/img/routes/violet.jpg",
         "routeColor": "violet",
         "destinations": [
             {
@@ -60,7 +60,7 @@
     },
     {
         "routeName": "Munnar - Adimali",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl":  "/assets/img/routes/indigo.jpg",
         "routeColor": "indigo",
         "destinations": [
             {
@@ -113,7 +113,7 @@
     },  
     {
         "routeName": "Munnar - Suryanelli - Kolukkumala - Chokramudi Peak",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl":  "/assets/img/routes/blue.jpg",
         "routeColor": "blue",
         "destinations": [
             {
@@ -165,7 +165,7 @@
     },
     {
         "routeName": "Munnar - Meesapulimala",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl":  "/assets/img/routes/green.jpg",
         "routeColor": "green",
         "destinations": [
             {
@@ -177,7 +177,7 @@
     },
     {
         "routeName": "Munnar - CSI Church - Marayoor",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl":  "/assets/img/routes/yellow.jpg",
         "routeColor": "Yellow",
         "destinations": [
             {
@@ -217,7 +217,7 @@
     },
     {
         "routeName": "Munnar - Mankulam - Anakulam",
-        "assetUrl":  "https://picsum.photos/400/300",
+        "assetUrl":  "/assets/img/routes/orange.jpg",
         "routeColor": "orange",
         "destinations": [
             {
@@ -250,8 +250,8 @@
     },
     {
         "routeName": "Munnar - Mattupetty - Vattavada",
-        "assetUrl":  "https://picsum.photos/400/300",
-        "routeColor": "Red",
+        "assetUrl":  "/assets/img/routes/red.jpg",
+        "routeColor": "red",
         "destinations": [
             {
                 "name": "FLOWER GARDEN",
