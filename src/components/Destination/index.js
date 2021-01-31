@@ -13,7 +13,7 @@ export default function Destination(id) {
         })
     });
     return (
-        <div className="relative z-20 min-h-screen ">
+        <div className="relative min-h-screen ">
             <img
                 src={dest[0].assetUrl}
                 alt=""
