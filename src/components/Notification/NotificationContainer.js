@@ -1,18 +1,22 @@
 import React from "react";
 import NotificationCard from "./NotificationCard";
+const data = require("./assets/data");
+
 export default function NotificationContainer() {
+    const notifications = data["notifications"];
     return (
-        <div>
-            <NotificationCard
-                isEmergency={true}
-                heading={"Road Blocked"}
-                content={"The road is blocked in the route Munnar-Trivandrum."}
-            />
-            <NotificationCard
-                isEmergency={false}
-                heading={"Landslide Warning"}
-                content={"Landslide in Devikulum"}
-            />
-        </div>
+        <>
+            {notifications.map((value, index) => {
+                return (
+                    <div key={index}>
+                        <NotificationCard
+                            isEmergency={value.isEmergency}
+                            heading={value.heading}
+                            content={value.content}
+                        />
+                    </div>
+                );
+            })}
+        </>
     );
 }
