@@ -1,7 +1,9 @@
 import React from "react";
 import NearMeCard from "./Cards/NearMeCard.js";
+const data = require("../assets/data");
 
 export default function NearmeStayWrapper() {
+    const stay = data["stay"];
     return (
         <div class="m-8">
             <div>
@@ -13,26 +15,18 @@ export default function NearmeStayWrapper() {
                 </div>
             </div>
             <div class="space-y-4">
-                <NearMeCard icon="house" place="Munnar" minute="10" km="5" />
-                <NearMeCard
-                    icon="house"
-                    place="Devikulam"
-                    minute="100"
-                    km="50"
-                />
-                <NearMeCard icon="house" place="Vadyar" minute="40" km="45" />
-                <NearMeCard
-                    icon="house"
-                    place="Mattupetty"
-                    minute="50"
-                    km="54"
-                />
-                <NearMeCard
-                    icon="house"
-                    place="Kollukkumalai"
-                    minute="40"
-                    km="45"
-                />
+                {stay.map((value, index) => {
+                    return (
+                        <div key={index}>
+                            <NearMeCard
+                                icon={value.icon}
+                                place={value.place}
+                                minute={value.minute}
+                                km={value.km}
+                            />
+                        </div>
+                    );
+                })}
             </div>
         </div>
     );
