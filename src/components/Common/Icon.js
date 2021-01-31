@@ -13,6 +13,10 @@ import { ReactComponent as Star } from "../../assets/images/star.svg";
 import { ReactComponent as UserFilled } from "../../assets/images/user-filled.svg";
 import { ReactComponent as CarSide } from "../../assets/images/carside.svg";
 
+import { ReactComponent as Chat } from "../../assets/images/chat.svg";
+import { ReactComponent as Logout } from "../../assets/images/logout.svg";
+import { ReactComponent as Settings } from "../../assets/images/settings.svg";
+
 const icons = {
     nearMe: NearMe,
     ticket: Ticket,
@@ -27,6 +31,10 @@ const icons = {
     search: Search,
     plus: Plus,
     carSide: CarSide,
+
+    chat: Chat,
+    logout: Logout,
+    settings: Settings,
 };
 
 export default function Icon({ name, size = 10, color = "gray-800" }) {

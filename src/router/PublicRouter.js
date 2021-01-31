@@ -5,10 +5,16 @@ import Destination from "../components/Destination/index";
 import NavBar from "../components/Common/NavBar";
 import Notification from '../components/Notification/index'
 import Experiences from "../components/Experiences/Experiences";
+import SignIn from "../components/User/SignIn";
+import SignOut from "../components/User/SignOut";
+import Profile from "../components/User/Profile";
 
 
 const routes = {
     "/": () => <Home />,
+    "/signIn": () => <SignIn />,
+    "/signOut": () => <SignOut />,
+    "/profile": () => <Profile />,
     "/experiences": () => <Experiences />,
     "/destination/:id": ({ id }) => <Destination id={id} />,
     '/notifications': () => <Notification />
