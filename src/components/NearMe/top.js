@@ -10,7 +10,7 @@ export default function NearMe() {
                 <div className="flex space-x-4">
                     <div class="font-thin text-gray-100 ">
                         <button>
-                            <img
+                            <img alt="search icon"
                                 style={{
                                     width: 30,
                                 }}
