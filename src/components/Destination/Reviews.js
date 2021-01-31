@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import profilePic from "../../assets/images/profilePic.png";
+import RatingStars from "../Common/RatingStars";
+import ReviewRatingModal from "./ReviewRatingModal";
+
 export default function Reviews() {
+    const [rating, setRating] = useState(3);
+    const [showRatingModal, setShowRatingModal] = useState(false);
+    const handleClickRatings = (key) => {
+        setShowRatingModal(true);
+        setRating(key);
+    };
     return (
         <div>
             <div className="text-xl font-semibold m-4">Rate and Review</div>
-            <div className="flex mx-4">
+            <RatingStars
+                size={7}
+                edit={true}
+                rating={rating}
+                handleClickRatings={handleClickRatings}
+            />
+            <div className="flex mx-4 mt-4">
                 <img
                     className="rounded-full  h-8 w-8 my-1"
                     src={profilePic}
@@ -14,10 +29,17 @@ export default function Reviews() {
                     John Doe
                 </div>
             </div>
-            <div className="mx-4 text-sm">
+            <RatingStars rating={3} />
+            <div className="px-4 text-sm">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
             </div>
+            {showRatingModal && (
+                <ReviewRatingModal
+                    setShow={setShowRatingModal}
+                    rating={rating}
+                />
+            )}
         </div>
     );
 }
