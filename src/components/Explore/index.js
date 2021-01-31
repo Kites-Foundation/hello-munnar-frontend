@@ -13,6 +13,7 @@ import data from './assets/data/data.json'
 let Explore = () => {
     console.log(data);
     let [selectedRoute,setSelectedRoute] = useState("voilet")
+    setSelectedRoute("voilet")
     return (
         <div className="mx-4">
             <div className="flex justify-between my-10">
@@ -30,7 +31,7 @@ let Explore = () => {
                                     key={id}
                                     RouteName={route.routeName}
                                     RouteColor={route.routeColor}
-                                    isSelected={ ()=>{return selectedRoute === route.routeColor}}
+                                    isSelected={selectedRoute === route.routeColor}
                                 />
                     })
                 }
