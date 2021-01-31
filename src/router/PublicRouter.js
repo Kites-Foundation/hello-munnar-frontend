@@ -1,6 +1,6 @@
 import { useRoutes } from "hookrouter";
 import React from "react";
-import Home from "../components/Home/index";
+import Explore from "../components/Explore/index";
 import Destination from "../components/Destination/index";
 import NavBar from "../components/Common/NavBar";
 import Experiences from "../components/Experiences/Experiences";
@@ -11,6 +11,7 @@ const routes = {
     "/experiences": () => <Experiences />,
     "/nearme": () => <NearMe />,
     "/destination/:id": ({ id }) => <Destination id={id} />,
+    '/notifications': () => <Notification />
 };
 
 export default function PublicRouter() {
