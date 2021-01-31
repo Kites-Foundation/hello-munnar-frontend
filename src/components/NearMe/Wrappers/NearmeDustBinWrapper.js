@@ -22,17 +22,12 @@ export default function NearmeDustBinWrapper() {
                 />
                 <NearMeCard
                     icon="trash"
-                    place="kozhikode"
+                    place="vadayar"
                     minute="40"
                     km="45"
                 />
-                <NearMeCard icon="trash" place="kochi" minute="50" km="54" />
-                <NearMeCard
-                    icon="trash"
-                    place="kozhikode"
-                    minute="40"
-                    km="45"
-                />
+                <NearMeCard icon="trash" place="kolukkumala" minute="50" km="54" />
+
             </div>
         </div>
     );
