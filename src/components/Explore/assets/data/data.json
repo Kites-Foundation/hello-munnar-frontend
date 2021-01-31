@@ -1,7 +1,7 @@
 [
     {
         "routeName": "Munnar - Marayur - Kanthallur",
-        "assetUrl":  "/assets/img/routes/violet.jpg",
+        "assetUrl": "/assets/img/routes/violet.jpg",
         "routeColor": "violet",
         "destinations": [
             {
@@ -22,34 +22,59 @@
             {
                 "name": "KARIMUTTY WATERFALLS",
                 "assetUrl": "/assets/img/destinations/KARIMUTTY WATERFALLS.jpeg",
-                "activities": ["Sight Seeing", "Wildlife", "Photography", "Landscape"]
+                "activities": [
+                    "Sight Seeing",
+                    "Wildlife",
+                    "Photography",
+                    "Landscape"
+                ]
             },
             {
                 "name": "SANDALWOOD FOREST",
                 "assetUrl": "/assets/img/destinations/SANDALWOOD FOREST.jpeg",
                 "activities": ["Shopping"]
-
             },
             {
                 "name": "ST.JOSEPH FARM, MARAYOOR JAGGERY, MARAYUR",
                 "assetUrl": "/assets/img/destinations/ST.JOSEPH FARM,MARAYOOR JAGGERY,MARAYUR.jpeg",
-                "activities": ["Photography", "Landscape", "Heritage Photography"]
+                "activities": [
+                    "Photography",
+                    "Landscape",
+                    "Heritage Photography"
+                ]
             },
             {
                 "name": "KANTHALLOOR JAGGERY - VETTUKAD",
                 "assetUrl": "/assets/img/destinations/KANTHALLOOR JAGGERY - VETTUKAD.jpeg",
-                "activities": ["Sightseeing", "Photography", "Landscape", "Shopping"]
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Shopping"
+                ]
             },
             {
                 "name": "Kanthallur Farming",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Trekking", "Wildlife" , "Photography", "Landscape" ]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Wildlife",
+                    "Photography",
+                    "Landscape"
+                ]
             },
             {
                 "name": "Anamudi Shola NP",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Jeep Safari", "Trekking", "Camping", "Wildlife", "Photography", "Sightseeing"]
-
+                "activities": [
+                    "Jeep Safari",
+                    "Trekking",
+                    "Camping",
+                    "Wildlife",
+                    "Photography",
+                    "Sightseeing"
+                ]
             },
             {
                 "name": "Chinnar WLS",
@@ -60,13 +85,13 @@
     },
     {
         "routeName": "Munnar - Adimali",
-        "assetUrl":  "/assets/img/routes/indigo.jpg",
+        "assetUrl": "/assets/img/routes/indigo.jpg",
         "routeColor": "indigo",
         "destinations": [
             {
                 "name": "SPICE GARDEN",
                 "assetUrl": "/assets/img/destinations/SPICE GARDEN.jpg",
-                "activities": ["Landscape", "Photography" ]
+                "activities": ["Landscape", "Photography"]
             },
             {
                 "name": "KALLAR WATERFALL",
@@ -81,23 +106,34 @@
             {
                 "name": "ATHUKAD WATERFALLS",
                 "assetUrl": "/assets/img/destinations/ATHUKAD WATERFALLS.jpg",
-                "activities": ["Landscape", "Photography" ]
+                "activities": ["Landscape", "Photography"]
             },
             {
                 "name": "RAMASWAMI IYER HEADWORKS DAM",
                 "assetUrl": "/assets/img/destinations/RAMASWAMI IYER HEADWORKS DAM.jpg",
                 "activities": ["Landscape", "Photography", "Sunset Viewpoint"]
-
             },
             {
                 "name": "POTHANMEDU VIEW POINT",
                 "assetUrl": "/assets/img/destinations/POTHANMEDU VIEW POINT.jpg",
-                "activities": ["Sightseeing", "Photography", "Fish Spa", "Zip Line"]
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Fish Spa",
+                    "Zip Line"
+                ]
             },
             {
                 "name": "BLOSSOM HYDEL PARK",
                 "assetUrl": "/assets/img/destinations/BLOSSOM HYDEL PARK.jpg",
-                "activities": ["Boating", "Sightseeing", "Photography", "Landscape", "Wedding Photography", "Fooding"]
+                "activities": [
+                    "Boating",
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Wedding Photography",
+                    "Fooding"
+                ]
             },
             {
                 "name": "SENGULAM HYDEL PARK",
@@ -107,19 +143,29 @@
             {
                 "name": "CHITHIRPURAM VIEW POINT",
                 "assetUrl": "/assets/img/destinations/CHITHIRPURAM VIEW POINT.jpg",
-                "activities": ["Sightseeing", "Photography", "Boating", "Shopping"]
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Boating",
+                    "Shopping"
+                ]
             }
         ]
-    },  
+    },
     {
         "routeName": "Munnar - Suryanelli - Kolukkumala - Chokramudi Peak",
-        "assetUrl":  "/assets/img/routes/blue.jpg",
+        "assetUrl": "/assets/img/routes/blue.jpg",
         "routeColor": "blue",
         "destinations": [
             {
                 "name": "Signal Point",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Photography", "Sightseeing", "Landscape", "Sun Set" ]
+                "activities": [
+                    "Photography",
+                    "Sightseeing",
+                    "Landscape",
+                    "Sun Set"
+                ]
             },
             {
                 "name": "LockHart Tea factory and Museum",
@@ -129,7 +175,14 @@
             {
                 "name": "Chrokramudy Peak",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Trekking", "Wildlife", "Rockclimbing", "Photography", "Landscape"]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Wildlife",
+                    "Rockclimbing",
+                    "Photography",
+                    "Landscape"
+                ]
             },
             {
                 "name": "Lockhart Gap viewpoint",
@@ -139,17 +192,35 @@
             {
                 "name": "KOLUKKUMALAI SUNRISE",
                 "assetUrl": "/assets/img/destinations/KOLUKKUMALAI SUNRISE.jpg",
-                "activities": ["Sightseeing", "Trekking", "Camping", "Photography", "Landscape", "Sunrise", "Tea Plantation"]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Camping",
+                    "Photography",
+                    "Landscape",
+                    "Sunrise",
+                    "Tea Plantation"
+                ]
             },
             {
                 "name": "KOLUKKUMALAI TEA PLANTATION AND FACTORY",
                 "assetUrl": "/assets/img/destinations/KOLUKKUMALAI TEA PLANTATION AND FACTORY.jpg",
-                "activities": ["Sightseeing", "Photography", "Tea Plantation", "Landscape"]
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Tea Plantation",
+                    "Landscape"
+                ]
             },
             {
                 "name": "MUNIYARA",
                 "assetUrl": "/assets/img/destinations/MUNIYARA.jpg",
-                "activities": ["Sightseeing", "Photography", "Landscape", "Heritage Photography"]
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Heritage Photography"
+                ]
             },
             {
                 "name": "ANAYIRANKAL BOATING DESTINATION",
@@ -159,98 +230,152 @@
             {
                 "name": "CHATHURANGAPARA",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Trekking", "Photography", "Landscape"]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Photography",
+                    "Landscape"
+                ]
             }
         ]
     },
     {
         "routeName": "Munnar - Meesapulimala",
-        "assetUrl":  "/assets/img/routes/green.jpg",
+        "assetUrl": "/assets/img/routes/green.jpg",
         "routeColor": "green",
         "destinations": [
             {
                 "name": "MEESAPPULIMALA",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Trekking", "Sightseeing", "Photography" ]
+                "activities": ["Trekking", "Sightseeing", "Photography"]
             }
         ]
     },
     {
         "routeName": "Munnar - CSI Church - Marayoor",
-        "assetUrl":  "/assets/img/routes/yellow.jpg",
+        "assetUrl": "/assets/img/routes/yellow.jpg",
         "routeColor": "Yellow",
         "destinations": [
             {
                 "name": "CSI church",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Heritage Photography", "Memorial", "Religious Architecture"]
+                "activities": [
+                    "Heritage Photography",
+                    "Memorial",
+                    "Religious Architecture"
+                ]
             },
             {
                 "name": "CARMALAGIRI BOTANICAL GARDEN",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Photography", "Shopping", "Fooding" ]
+                "activities": ["Photography", "Shopping", "Fooding"]
             },
             {
                 "name": "munnar town",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Trekking", "Photography", "Landscape", "Heritage Photography", "Tea Plantations", "Shopping", "Boating", "Cycling", "Memorial", "Religious Architecture", "Shopping", "Fooding" ]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Photography",
+                    "Landscape",
+                    "Heritage Photography",
+                    "Tea Plantations",
+                    "Shopping",
+                    "Boating",
+                    "Cycling",
+                    "Memorial",
+                    "Religious Architecture",
+                    "Shopping",
+                    "Fooding"
+                ]
             },
             {
                 "name": "tea museum",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Trekking", "Photography", "Landscape", "Heritage Photography", "Tea Plantations", "Shopping" ]
+                "activities": [
+                    "Sightseeing",
+                    "Trekking",
+                    "Photography",
+                    "Landscape",
+                    "Heritage Photography",
+                    "Tea Plantations",
+                    "Shopping"
+                ]
             },
             {
                 "name": "srishti -TATA",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
                 "activities": ["Welfare Centre"]
-
             },
             {
                 "name": "MARAYOOR DOLMENS",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Photography", "Landscape", "Sunrise/Set", "Heritage Photography", "Memorial", "Religious Architecture", "Eco-Shop"]
-
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Sunrise/Set",
+                    "Heritage Photography",
+                    "Memorial",
+                    "Religious Architecture",
+                    "Eco-Shop"
+                ]
             }
-        
         ]
     },
     {
         "routeName": "Munnar - Mankulam - Anakulam",
-        "assetUrl":  "/assets/img/routes/orange.jpg",
+        "assetUrl": "/assets/img/routes/orange.jpg",
         "routeColor": "orange",
         "destinations": [
             {
                 "name": "VIRUPARA(KAINAGIRI OR GIRIVARA WATERFALLS)",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Trekking", "Wildlife", "Photograph" ]
+                "activities": ["Trekking", "Wildlife", "Photograph"]
             },
             {
                 "name": "TIGER CAVE",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Trekking", "Wildlife", "Rockclimbing", "Photograph" ]
+                "activities": [
+                    "Trekking",
+                    "Wildlife",
+                    "Rockclimbing",
+                    "Photograph"
+                ]
             },
             {
                 "name": "PERUMBANKUTH WATERFALLS",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Trekking", "Wildlife", "Photograph", "Landscape" ]
+                "activities": [
+                    "Trekking",
+                    "Wildlife",
+                    "Photograph",
+                    "Landscape"
+                ]
             },
             {
                 "name": "ANAKKULAM( 2 Destination  is there) ",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Wildlife", "Bathing", "Photography", "Landscape", "Sunset", "Wedding Photography" ]
+                "activities": [
+                    "Sightseeing",
+                    "Wildlife",
+                    "Bathing",
+                    "Photography",
+                    "Landscape",
+                    "Sunset",
+                    "Wedding Photography"
+                ]
             },
             {
                 "name": "33 WATERFALLS",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
                 "activities": ["Bathing", "Photography", "Landcsape"]
-
             }
         ]
     },
     {
         "routeName": "Munnar - Mattupetty - Vattavada",
-        "assetUrl":  "/assets/img/routes/red.jpg",
+        "assetUrl": "/assets/img/routes/red.jpg",
         "routeColor": "red",
         "destinations": [
             {
@@ -261,53 +386,75 @@
             {
                 "name": "PHOTO POINT",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Photography" ]
+                "activities": ["Sightseeing", "Photography"]
             },
             {
                 "name": "ELEPHANT PARK",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Wildlife", "Photography", "Elephant Safari" ]
+                "activities": ["Wildlife", "Photography", "Elephant Safari"]
             },
             {
                 "name": "MATTUPETTY DAM",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Boating", "Fooding", "Shopping" ]
+                "activities": ["Sightseeing", "Boating", "Fooding", "Shopping"]
             },
             {
                 "name": "SUN MOON VALLEY BOATING CENTRE",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Boating", "Photography", "Sightseeing", "Theme Park"]
-
+                "activities": [
+                    "Boating",
+                    "Photography",
+                    "Sightseeing",
+                    "Theme Park"
+                ]
             },
             {
                 "name": "ECHO POINT",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Boating", "Photography", "Shopping", "Fooding"]
-
+                "activities": [
+                    "Sightseeing",
+                    "Boating",
+                    "Photography",
+                    "Shopping",
+                    "Fooding"
+                ]
             },
             {
                 "name": "KUNDALAI LAKE",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing","Boating","Photography"]
-
+                "activities": ["Sightseeing", "Boating", "Photography"]
             },
             {
                 "name": "TOP STATION",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Photography", "Landscape", "Fooding", "Sunrise"]
-
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Fooding",
+                    "Sunrise"
+                ]
             },
             {
                 "name": "PAMPADUM SHOLA NATIONAL PARK",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Photography", "Landscape", "Wildlifde", "Photography" ]
-
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Landscape",
+                    "Wildlifde",
+                    "Photography"
+                ]
             },
             {
                 "name": "VATTAVADAI",
                 "assetUrl": "/assets/img/destinations/THALAIYAR_TEA_PLANTATION.jpeg",
-                "activities": ["Sightseeing", "Photography", "Camping", "Landscape"]
-
+                "activities": [
+                    "Sightseeing",
+                    "Photography",
+                    "Camping",
+                    "Landscape"
+                ]
             }
         ]
     }
