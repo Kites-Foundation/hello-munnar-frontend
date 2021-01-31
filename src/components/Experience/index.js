@@ -3,7 +3,7 @@ import Icon from "../Common/Icon";
 import LocationCard from "./LocationCard";
 import BackButton from "../Common/BackButton";
 import allData from "../../assets/data/data.json";
-import { activityData } from "../../assets/data/activities";
+import { activityData } from "../../data/activities";
 
 export default function Experience({ id }) {
     const activity = activityData.find((d) => d.name === id);

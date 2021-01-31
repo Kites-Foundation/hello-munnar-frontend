@@ -12,7 +12,7 @@ const routes = {
     "/": () => <Explore />,
     "/destination/:id": ({ id }) => <Destination id={id} />,
     "/experience/:id": ({ id }) => <Experience id={id} />,
-    "/notifications": () => <Notification />
+    "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
 };
 
