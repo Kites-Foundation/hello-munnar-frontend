@@ -18,8 +18,8 @@ export default function Activity() {
                         <h1 className="text-lg">
                             <A
                                 className="no-underline hover:underline text-white font-bold"
-                                href="#">
-                                Activity Name
+                                href="/experience/Trekking">
+                                Trekking
                             </A>
                         </h1>
                     </div>
