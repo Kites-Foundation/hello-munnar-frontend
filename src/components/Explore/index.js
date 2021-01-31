@@ -75,6 +75,7 @@ let Explore = () => {
                                 key={id}
                                 DestinationName={destination.name}
                                 assetUrl={destination.assetUrl}
+                                destinationId={destination.id}
                             />
                         );
                     })}
