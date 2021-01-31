@@ -1,5 +1,5 @@
 import React from "react";
-import locationIcon from "./map-pin.svg";
+import locationIcon from "./icons/map-pin.svg";
 import munnarIcon from "../../../src/assets/images/munnar.png";
 
 export default function Thingstodo() {
