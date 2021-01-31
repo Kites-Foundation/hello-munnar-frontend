@@ -4,7 +4,6 @@ import Explore from "../components/Explore/index";
 import Destination from "../components/Destination/index";
 import NavBar from "../components/Common/NavBar";
 import Notification from '../components/Notification/index'
-import Experiences from "../components/Experiences/Experiences";
 
 
 const routes = {
