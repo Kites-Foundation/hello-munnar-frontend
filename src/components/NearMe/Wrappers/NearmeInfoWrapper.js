@@ -5,11 +5,11 @@ export default function NearmeInfoWrapper() {
     return (
         <div class="m-8">
             <div>
-                <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
+                <div class="py-4 max-w-xl ">
                     <h2 class="text-3xl text-gray-800 font-bold">
                         Information Desk
                     </h2>
-                    <p class="mt-4 text-gray-600">
+                    <p class="mt-4 text-sm text-gray-600">
                         Lorem, ipsum dolor sit amea aperiam mollitia.
                     </p>
                 </div>
