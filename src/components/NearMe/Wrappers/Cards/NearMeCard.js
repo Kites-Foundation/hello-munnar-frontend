@@ -14,6 +14,7 @@ export default function NearMeCard(props) {
                 <div class="flex items-center space-x-2">
                     <div class="flex items-center">
                         <img
+                            alt=""
                             style={{
                                 width: 15,
                             }}
@@ -24,6 +25,7 @@ export default function NearMeCard(props) {
                 <div class="flex items-center space-x-2">
                     <div class="flex items-center mt-1">
                         <img
+                            alt=""
                             style={{
                                 width: 15,
                             }}
@@ -36,6 +38,7 @@ export default function NearMeCard(props) {
             </div>
             <div class="p-2">
                 <img
+                    alt=""
                     style={{
                         width: 30,
                     }}

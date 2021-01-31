@@ -11,9 +11,22 @@ import data from "./assets/data/data.json";
 
 let Explore = () => {
     console.log(data);
-    let [selectedRoute, setSelectedRoute] = useState("voilet");
+    let [selectedRoute, setSelectedRoute] = useState("violet");
+    let [selectedIndex, setSelectedIndex] = useState(0);
+    let [activitySelectedIndex, setActivitySelectedIndex] = useState(0);
+
+    let findIndexFromData = (color) => {
+        return data.findIndex((x) => x.routeColor === color);
+    };
+
+    // let findActivityIndexFromData = () =>{
+
+    // }
+
     useEffect(() => {
-        setSelectedRoute("voilet");
+        setSelectedRoute("violet");
+        setSelectedIndex(findIndexFromData("violet"));
+        setActivitySelectedIndex(0);
     }, []);
 
     return (
@@ -28,29 +41,55 @@ let Explore = () => {
             </div>
             <div className="flex overflow-x-auto pb-3">
                 {data.map((route, id) => {
+                    let isActive = false;
+                    if (route.routeColor === selectedRoute) {
+                        isActive = true;
+                    }
                     return (
                         <RouteBanner
                             key={id}
                             RouteName={route.routeName}
                             RouteColor={route.routeColor}
-                            isSelected={selectedRoute === route.routeColor}
+                            isSelected={isActive}
+                            setSelectedIndex={setSelectedIndex}
+                            setSelectedRoute={setSelectedRoute}
+                            findIndexFromData={findIndexFromData}
+                            assetUrl={route.assetUrl}
                         />
                     );
                 })}
             </div>
             <h1 className="mt-4 text-3xl font-black">Destination</h1>
             <div className="flex overflow-x-auto">
-                <DestinationBanner DestinationName="Meeshapulimala" />
-                <DestinationBanner DestinationName="Rajamala" />
-                <DestinationBanner DestinationName="Anamudi" />
-                <DestinationBanner DestinationName="Vagamon" />
+                {data[selectedIndex].destinations &&
+                    data[selectedIndex].destinations.map((destination, id) => {
+                        return (
+                            <DestinationBanner
+                                key={id}
+                                DestinationName={destination.name}
+                                assetUrl={destination.assetUrl}
+                            />
+                        );
+                    })}
+                {/* <DestinationBanner DestinationName="Meeshapulimala"/>
+                <DestinationBanner DestinationName="Rajamala"/>
+                <DestinationBanner DestinationName="Anamudi"/>
+                <DestinationBanner DestinationName="Vagamon"/> */}
             </div>
             <h1 className="mt-4 text-3xl font-black">Activities</h1>
             <div className="flex overflow-x-auto">
-                <DestinationBanner DestinationName="Meeshapulimala" />
-                <DestinationBanner DestinationName="Rajamala" />
-                <DestinationBanner DestinationName="Anamudi" />
-                <DestinationBanner DestinationName="Vagamon" />
+                {data[selectedIndex].destinations[activitySelectedIndex]
+                    .activities.length &&
+                    data[selectedIndex].destinations[0].activities.map(
+                        (activity, id) => {
+                            return (
+                                <DestinationBanner
+                                    key={id}
+                                    DestinationName={activity}
+                                />
+                            );
+                        }
+                    )}
             </div>
         </div>
     );

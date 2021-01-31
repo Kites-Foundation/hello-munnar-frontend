@@ -27,6 +27,7 @@ export default function NearMe() {
                     <div class="font-thin text-gray-100">
                         <button>
                             <img
+                                alt=""
                                 style={{
                                     width: 30,
                                 }}
