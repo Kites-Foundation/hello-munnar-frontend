@@ -10,7 +10,7 @@ export default function DustBinCard(props) {
             <div class="flex items-center space-x-4">
                 <img
                     style={{
-                        color:"#B4BFC9",                        
+                        color: "#B4BFC9",
                         width: 50,
                     }}
                     src={trashIcon}></img>
