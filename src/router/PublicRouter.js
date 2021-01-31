@@ -3,12 +3,11 @@ import React from "react";
 import Home from "../components/Home/index";
 import Destination from "../components/Destination/index";
 import NavBar from "../components/Common/NavBar";
-import Notification from '../components/Notification/index'
+import Notification from "../components/Notification/index";
 import Experiences from "../components/Experiences/Experiences";
 import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
-
 
 const routes = {
     "/": () => <Home />,
@@ -17,7 +16,7 @@ const routes = {
     "/profile": () => <Profile />,
     "/experiences": () => <Experiences />,
     "/destination/:id": ({ id }) => <Destination id={id} />,
-    '/notifications': () => <Notification />
+    "/notifications": () => <Notification />,
 };
 
 export default function PublicRouter() {
