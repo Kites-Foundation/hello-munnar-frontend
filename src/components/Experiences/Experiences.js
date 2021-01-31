@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { activityData } from "../../data/activities";
 import Icon from "../Common/Icon";
 import ExperiencesCards from "./ExperienceCards";
 
 export default function Experiences() {
     const [search, setSearch] = useState("");
-    const expArray = [1, 2, 3];
+    const adventure = activityData.filter((el) => el.type === "Adventure");
+    const specialDayOut = activityData.filter((el) => el.type === "Special");
     return (
         <div className="w-full">
             <div className="mt-8 flex flex-col w-full px-6">
@@ -26,7 +28,7 @@ export default function Experiences() {
                     Outdoor Adventures
                 </h2>
                 <div className="flex overflow-scroll">
-                    {expArray.map((item, i) => (
+                    {adventure.map((item, i) => (
                         <ExperiencesCards item={item} key={i} />
                     ))}
                 </div>
@@ -34,7 +36,7 @@ export default function Experiences() {
                     Special days out
                 </h2>
                 <div className="flex overflow-scroll">
-                    {expArray.map((item, i) => (
+                    {specialDayOut.map((item, i) => (
                         <ExperiencesCards item={item} key={i} />
                     ))}
                 </div>

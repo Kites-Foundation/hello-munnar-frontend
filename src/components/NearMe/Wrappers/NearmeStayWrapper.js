@@ -5,9 +5,9 @@ export default function NearmeStayWrapper() {
     return (
         <div class="m-8">
             <div>
-                <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
+                <div class="py-4 max-w-xl ">
                     <h2 class="text-3xl text-gray-800 font-bold">Stay</h2>
-                    <p class="mt-4 text-gray-600">
+                    <p class="mt-4 text-sm text-gray-600">
                         Lorem, ipsum dolor sit amea aperiam mollitia.
                     </p>
                 </div>
@@ -20,16 +20,16 @@ export default function NearmeStayWrapper() {
                     minute="100"
                     km="50"
                 />
+                <NearMeCard icon="house" place="Vadyar" minute="40" km="45" />
                 <NearMeCard
                     icon="house"
-                    place="kozhikode"
-                    minute="40"
-                    km="45"
+                    place="Mattupetty"
+                    minute="50"
+                    km="54"
                 />
-                <NearMeCard icon="house" place="kochi" minute="50" km="54" />
                 <NearMeCard
                     icon="house"
-                    place="kozhikode"
+                    place="Kollukkumalai"
                     minute="40"
                     km="45"
                 />
