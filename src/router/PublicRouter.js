@@ -1,6 +1,6 @@
 import { useRoutes } from "hookrouter";
 import React from "react";
-import Home from "../components/Home/index";
+import Explore from "../components/Explore/index";
 import Destination from "../components/Destination/index";
 import NavBar from "../components/Common/NavBar";
 import Notification from '../components/Notification/index'
@@ -11,7 +11,7 @@ import Profile from "../components/User/Profile";
 
 
 const routes = {
-    "/": () => <Home />,
+    "/": () => <Explore />,
     "/signIn": () => <SignIn />,
     "/signOut": () => <SignOut />,
     "/profile": () => <Profile />,
