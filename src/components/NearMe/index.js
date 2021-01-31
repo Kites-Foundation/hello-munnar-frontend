@@ -5,8 +5,8 @@ import Thingstodo from "./thingstodo.js";
 export default function NearMe() {
     return (
         <div>
-            <Thingstodo />
             <Topbar />
+            <Thingstodo />
         </div>
     );
 }
