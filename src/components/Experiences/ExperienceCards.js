@@ -5,7 +5,7 @@ import { A } from "hookrouter";
 export default function ExperiencesCards({ item }) {
     return (
         <A
-            href={`/destination/${item?.name}`}
+            href={`/experience/${item?.name}`}
             className="w-48  mx-2 flex-shrink-0 relative border border-gray-300 shadow-lg mb-4 rounded-md">
             <div className="w-full  relative pb-3/4">
                 <img
