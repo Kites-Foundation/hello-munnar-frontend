@@ -36,7 +36,6 @@ const icons = {
     run: Run,
     clock: Clock,
     carSide: CarSide,
-    star: Star,
     back: Back,
 };
 
