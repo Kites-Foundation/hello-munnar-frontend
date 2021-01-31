@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 import searchIcon from './assets/img/search.svg'
 import busIcon from './assets/img/bus.svg'
 import bellIcon from './assets/img/bell.svg'
+
 import RouteBanner from './RouteBanner'
+import DestinationBanner from './DestinationBanner'
+
+import data from './assets/data/data.json'
 
 
-
-let Home = () => {
+let Explore = () => {
+    console.log(data);
+    let [selectedRoute,setSelectedRoute] = useState("voilet")
     return (
         <div className="mx-4">
             <div className="flex justify-between my-10">
@@ -18,19 +23,35 @@ let Home = () => {
                     <img className="mx-2 w-6" src={bellIcon} alt=""/>
                 </div>
             </div>
-            <div 
-                className="flex overflow-x-auto pb-3"
-            >
-                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="violet"/>
-                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="indigo"/>
-                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="blue"/>
-                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="green"/>
-                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="yellow"/>
-                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="orange"/>
-                <RouteBanner RouteName="Munnar - Marayur - Kanthallur" RouteColor="red"/>
+            <div className="flex overflow-x-auto pb-3">   
+                {
+                    data.map((route,id)=>{
+                        return <RouteBanner 
+                                    key={id}
+                                    RouteName={route.routeName}
+                                    RouteColor={route.routeColor}
+                                    isSelected={ ()=>{return selectedRoute === route.routeColor}}
+                                />
+                    })
+                }
+                
+            </div>
+            <h1 className="mt-4 text-3xl font-black">Destination</h1>
+            <div className='flex overflow-x-auto'>
+                <DestinationBanner DestinationName="Meeshapulimala"/>
+                <DestinationBanner DestinationName="Rajamala"/>
+                <DestinationBanner DestinationName="Anamudi"/>
+                <DestinationBanner DestinationName="Vagamon"/>
+            </div>
+            <h1 className="mt-4 text-3xl font-black">Activities</h1>
+            <div className='flex overflow-x-auto'>
+                <DestinationBanner DestinationName="Meeshapulimala"/>
+                <DestinationBanner DestinationName="Rajamala"/>
+                <DestinationBanner DestinationName="Anamudi"/>
+                <DestinationBanner DestinationName="Vagamon"/>
             </div>
         </div>
     )
 }
 
-export default Home;
+export default Explore;
