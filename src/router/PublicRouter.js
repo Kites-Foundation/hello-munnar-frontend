@@ -6,10 +6,16 @@ import Experience from "../components/Experience/";
 import NavBar from "../components/Common/NavBar";
 import Notification from "../components/Notification/index";
 import Experiences from "../components/Experiences/Experiences";
+import SignIn from "../components/User/SignIn";
+import SignOut from "../components/User/SignOut";
+import Profile from "../components/User/Profile";
 
 const routes = {
     // Explore page is the temporary default home page
     "/": () => <Explore />,
+    "/signIn": () => <SignIn />,
+    "/signOut": () => <SignOut />,
+    "/profile": () => <Profile />,
     "/destination/:id": ({ id }) => <Destination id={id} />,
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,

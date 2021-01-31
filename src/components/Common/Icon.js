@@ -18,6 +18,10 @@ import { ReactComponent as Back } from "../../assets/images/back.svg";
 import { ReactComponent as UserFilled } from "../../assets/images/user-filled.svg";
 import { ReactComponent as CarSide } from "../../assets/images/carside.svg";
 
+import { ReactComponent as Chat } from "../../assets/images/chat.svg";
+import { ReactComponent as Logout } from "../../assets/images/logout.svg";
+import { ReactComponent as Settings } from "../../assets/images/settings.svg";
+
 const icons = {
     nearMe: NearMe,
     ticket: Ticket,
@@ -36,6 +40,9 @@ const icons = {
     run: Run,
     clock: Clock,
     carSide: CarSide,
+    chat: Chat,
+    logout: Logout,
+    settings: Settings,
     back: Back,
 };
 
