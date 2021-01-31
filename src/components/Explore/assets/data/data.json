@@ -8,29 +8,19 @@
                 "id": "v1",
                 "name": "THALAIYAR TEA PLANTATION",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Trekking",
-                    "Wildlife",
-                    "Jeep Safari"
-                ]
+                "activities": ["Trekking", "Wildlife", "Jeep Safari"]
             },
             {
                 "id": "v2",
                 "name": "ERAVIKULAM NATIONAL PARK",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Landscape",
-                    "Bathing"
-                ]
+                "activities": ["Landscape", "Bathing"]
             },
             {
                 "id": "v3",
                 "name": "LAKKAM WATERFALLS",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Landscape",
-                    "Bathing"
-                ]
+                "activities": ["Landscape", "Bathing"]
             },
             {
                 "id": "v4",
@@ -47,9 +37,7 @@
                 "id": "v5",
                 "name": "SANDALWOOD FOREST",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Shopping"
-                ]
+                "activities": ["Shopping"]
             },
             {
                 "id": "v6",
@@ -101,11 +89,7 @@
                 "id": "v10",
                 "name": "Chinnar WLS",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Sightseeing",
-                    "Boating",
-                    "Photography"
-                ]
+                "activities": ["Sightseeing", "Boating", "Photography"]
             }
         ]
     },
@@ -118,47 +102,31 @@
                 "id": "i1",
                 "name": "SPICE GARDEN",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Landscape",
-                    "Photography"
-                ]
+                "activities": ["Landscape", "Photography"]
             },
             {
                 "id": "i2",
                 "name": "KALLAR WATERFALL",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Landscape",
-                    "Photography"
-                ]
+                "activities": ["Landscape", "Photography"]
             },
             {
                 "id": "i3",
                 "name": "2nd MILE POINT",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Photography",
-                    "Landscape"
-                ]
+                "activities": ["Photography", "Landscape"]
             },
             {
                 "id": "i4",
                 "name": "ATHUKAD WATERFALLS",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Landscape",
-                    "Photography"
-                ]
+                "activities": ["Landscape", "Photography"]
             },
             {
                 "id": "i5",
                 "name": "RAMASWAMI IYER HEADWORKS DAM",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Landscape",
-                    "Photography",
-                    "Sunset Viewpoint"
-                ]
+                "activities": ["Landscape", "Photography", "Sunset Viewpoint"]
             },
             {
                 "id": "i6",
@@ -188,11 +156,7 @@
                 "id": "i8",
                 "name": "SENGULAM HYDEL PARK",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Sightseeing",
-                    "Photography",
-                    "Landscape"
-                ]
+                "activities": ["Sightseeing", "Photography", "Landscape"]
             },
             {
                 "id": "i9",
@@ -227,11 +191,7 @@
                 "id": "b2",
                 "name": "LockHart Tea factory and Museum",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Sightseeing",
-                    "Photography",
-                    "Landscape"
-                ]
+                "activities": ["Sightseeing", "Photography", "Landscape"]
             },
             {
                 "id": "b3",
@@ -250,11 +210,7 @@
                 "id": "b4",
                 "name": "Lockhart Gap viewpoint",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Photography",
-                    "Sightseeing",
-                    "Landscape"
-                ]
+                "activities": ["Photography", "Sightseeing", "Landscape"]
             },
             {
                 "id": "b5",
@@ -296,11 +252,7 @@
                 "id": "b8",
                 "name": "ANAYIRANKAL BOATING DESTINATION",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Boating",
-                    "Photography",
-                    "Fooding"
-                ]
+                "activities": ["Boating", "Photography", "Fooding"]
             },
             {
                 "id": "b9",
@@ -324,11 +276,7 @@
                 "id": "g1",
                 "name": "MEESAPPULIMALA",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Trekking",
-                    "Sightseeing",
-                    "Photography"
-                ]
+                "activities": ["Trekking", "Sightseeing", "Photography"]
             }
         ]
     },
@@ -351,11 +299,7 @@
                 "id": "y2",
                 "name": "CARMALAGIRI BOTANICAL GARDEN",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Photography",
-                    "Shopping",
-                    "Fooding"
-                ]
+                "activities": ["Photography", "Shopping", "Fooding"]
             },
             {
                 "id": "y3",
@@ -395,9 +339,7 @@
                 "id": "y5",
                 "name": "srishti -TATA",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Welfare Centre"
-                ]
+                "activities": ["Welfare Centre"]
             },
             {
                 "id": "y6",
@@ -425,11 +367,7 @@
                 "id": "o1",
                 "name": "VIRUPARA(KAINAGIRI OR GIRIVARA WATERFALLS)",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Trekking",
-                    "Wildlife",
-                    "Photograph"
-                ]
+                "activities": ["Trekking", "Wildlife", "Photograph"]
             },
             {
                 "id": "o2",
@@ -471,11 +409,7 @@
                 "id": "o5",
                 "name": "33 WATERFALLS",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Bathing",
-                    "Photography",
-                    "Landcsape"
-                ]
+                "activities": ["Bathing", "Photography", "Landcsape"]
             }
         ]
     },
@@ -488,39 +422,25 @@
                 "id": "r1",
                 "name": "FLOWER GARDEN",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Photography"
-                ]
+                "activities": ["Photography"]
             },
             {
                 "id": "r2",
                 "name": "PHOTO POINT",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Sightseeing",
-                    "Photography"
-                ]
+                "activities": ["Sightseeing", "Photography"]
             },
             {
                 "id": "r3",
                 "name": "ELEPHANT PARK",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Wildlife",
-                    "Photography",
-                    "Elephant Safari"
-                ]
+                "activities": ["Wildlife", "Photography", "Elephant Safari"]
             },
             {
                 "id": "r4",
                 "name": "MATTUPETTY DAM",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Sightseeing",
-                    "Boating",
-                    "Fooding",
-                    "Shopping"
-                ]
+                "activities": ["Sightseeing", "Boating", "Fooding", "Shopping"]
             },
             {
                 "id": "r5",
@@ -549,11 +469,7 @@
                 "id": "r7",
                 "name": "KUNDALAI LAKE",
                 "assetUrl": "https://picsum.photos/400/300",
-                "activities": [
-                    "Sightseeing",
-                    "Boating",
-                    "Photography"
-                ]
+                "activities": ["Sightseeing", "Boating", "Photography"]
             },
             {
                 "id": "r8",
