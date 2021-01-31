@@ -3,6 +3,7 @@ import React from "react";
 import Home from "../components/Home/index";
 import Destination from "../components/Destination/index";
 import NavBar from "../components/Common/NavBar";
+import NearMe from "../components/NearMe";
 
 const routes = {
     "/": () => <Home />,
