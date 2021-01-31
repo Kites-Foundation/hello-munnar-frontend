@@ -5,6 +5,7 @@ import Destination from "../components/Destination/index";
 import NavBar from "../components/Common/NavBar";
 import Notification from "../components/Notification/index";
 import NearMe from "../components/NearMe/top";
+import Experiences from "../components/Experiences/Experiences";
 
 const routes = {
     // Explore page is the temporary default home page
@@ -12,6 +13,7 @@ const routes = {
     "/nearme": () => <NearMe />,
     "/destination/:id": ({ id }) => <Destination id={id} />,
     "/notifications": () => <Notification />,
+    "/experiences": () => <Experiences />,
 };
 
 export default function PublicRouter() {

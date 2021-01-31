@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { A } from "hookrouter";
 
 import searchIcon from "./assets/img/search.svg";
 import busIcon from "./assets/img/bus.svg";
@@ -33,10 +34,16 @@ let Explore = () => {
         <div className="mx-4">
             <div className="flex justify-between my-10">
                 <h1 className="text-4xl font-black">Explore</h1>
-                <div className="flex">
-                    <img className="mx-2 w-6" src={searchIcon} alt="" />
-                    <img className="mx-2 w-6" src={busIcon} alt="" />
-                    <img className="mx-2 w-6" src={bellIcon} alt="" />
+                <div className="flex items-center">
+                    <A href="#" className="flex items-center">
+                        <img className="mx-2 w-6" src={searchIcon} alt="" />
+                    </A>
+                    <A href="#" className="flex items-center">
+                        <img className="mx-2 w-6" src={busIcon} alt="" />
+                    </A>
+                    <A href="/notifications" className="flex items-center">
+                        <img className="mx-2 w-6" src={bellIcon} alt="" />
+                    </A>
                 </div>
             </div>
             <div className="flex overflow-x-auto pb-3">
