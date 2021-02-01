@@ -12,7 +12,6 @@ const data = {
         { icon: "trash", place: "kolukkumalai", minute: "30", km: "12" },
         { icon: "trash", place: "kallar", minute: "50", km: "54" },
         { icon: "trash", place: "Eravikulam", minute: "40", km: "45" },
-
     ],
     rest: [
         { icon: "bed", place: "Munnar", minute: "10", km: "5" },
