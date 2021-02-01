@@ -31,7 +31,7 @@ const data = {
         { icon: "house", place: "Munnar", minute: "10", km: "5" },
         { icon: "house", place: "Devikulam", minute: "100", km: "50" },
         { icon: "house", place: "kolukkumalai", minute: "30", km: "12" },
-        { icon: "house", place: "kallar", minute: "50", km: "54" },
+        { icon: "house", place: "Kallar", minute: "50", km: "54" },
         { icon: "house", place: "Eravikulam", minute: "40", km: "45" },
     ],
 };
