@@ -4,21 +4,21 @@ import { IoFilter } from "react-icons/io5";
 
 export default function Callbookguide() {
     return (
-        <div class="m-8">
-            <div class="py-12 px-6">
-                <div class="flex justify-between w-full">
-                    <div class="text-3xl text-gray-800 font-bold">
+        <div className="m-8">
+            <div className="py-12 px-6">
+                <div className="flex justify-between w-full">
+                    <div className="text-3xl text-gray-800 font-bold">
                         <h2>Book A Guide</h2>
                     </div>
-                    <div class="m-1.5 ">
+                    <div className="m-1.5 ">
                         <IoFilter />
                     </div>
                 </div>
 
-                <p class="mt-4 text-gray-600">choose a guide from below</p>
+                <p className="mt-4 text-gray-600">choose a guide from below</p>
             </div>
 
-            <div class="space-y-4">
+            <div className="space-y-4">
                 <BookGuide
                     name="John Doe"
                     age="19"

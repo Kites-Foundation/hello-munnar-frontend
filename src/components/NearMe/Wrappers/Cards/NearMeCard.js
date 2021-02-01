@@ -6,13 +6,13 @@ import mapPinIcon from "../../icons/map-pin.svg";
 
 export default function NearMeCard(props) {
     return (
-        <div class="bg-white w-full flex items-center p-2  shadow border-2 border-gray-400">
-            <div class="flex items-center space-x-4">
+        <div className="bg-white w-full flex items-center p-2  shadow border-2 border-gray-400">
+            <div className="flex items-center space-x-4">
                 <Icon name={props.icon} />
             </div>
-            <div class="flex-grow p-3">
-                <div class="flex items-center space-x-2">
-                    <div class="flex items-center">
+            <div className="flex-grow p-3">
+                <div className="flex items-center space-x-2">
+                    <div className="flex items-center">
                         <img
                             alt=""
                             style={{
@@ -20,12 +20,12 @@ export default function NearMeCard(props) {
                             }}
                             src={mapIcon}></img>
                     </div>
-                    <div class="font-semibold truncate text-lg text-gray-700">
+                    <div className="font-semibold truncate text-lg text-gray-700">
                         {props.place}
                     </div>
                 </div>
-                <div class="flex items-center space-x-2">
-                    <div class="flex items-center mt-1">
+                <div className="flex items-center space-x-2">
+                    <div className="flex items-center mt-1">
                         <img
                             alt=""
                             style={{
@@ -33,12 +33,12 @@ export default function NearMeCard(props) {
                             }}
                             src={carIcon}></img>
                     </div>
-                    <div class="text-sm text-gray-500">
+                    <div className="text-sm text-gray-500">
                         {props.minute} min {props.km} km
                     </div>
                 </div>
             </div>
-            <div class="p-2">
+            <div className="p-2">
                 <img
                     alt=""
                     style={{
