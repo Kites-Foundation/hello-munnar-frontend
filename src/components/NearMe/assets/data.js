@@ -16,8 +16,8 @@ const data = {
     rest: [
         { icon: "bed", place: "Munnar", minute: "10", km: "5" },
         { icon: "bed", place: "Devikulam", minute: "100", km: "50" },
-        { icon: "bed", place: "kolukkumalai", minute: "30", km: "12" },
-        { icon: "bed", place: "kallar", minute: "50", km: "54" },
+        { icon: "bed", place: "Kolukkumalai", minute: "30", km: "12" },
+        { icon: "bed", place: "Kallar", minute: "50", km: "54" },
         { icon: "bed", place: "Eravikulam", minute: "40", km: "45" },
     ],
     food: [
