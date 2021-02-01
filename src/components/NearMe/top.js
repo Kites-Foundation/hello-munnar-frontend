@@ -6,6 +6,8 @@ import NearmeFoodWrapper from "./Wrappers/NearmeFoodWrapper";
 import NearmeStayWrapper from "./Wrappers/NearmeStayWrapper";
 import NearmeDustBinWrapper from "./Wrappers/NearmeDustBinWrapper";
 import NearmeInfoWrapper from "./Wrappers/NearmeInfoWrapper";
+import Callbookguide from "./callbookguide";
+import Thingstodo from "./thingstodo";
 
 export default function NearMe() {
     const [nearBy, setNearBy] = useState("Things to do");
@@ -92,8 +94,10 @@ export default function NearMe() {
                     <NearmeDustBinWrapper />
                 ) : nearBy === "Information Desk" ? (
                     <NearmeInfoWrapper />
+                ) : nearBy === "Guide" ? (
+                    <Callbookguide />
                 ) : (
-                    <NearmeStayWrapper />
+                    <Thingstodo />
                 )}
             </div>
         </div>
