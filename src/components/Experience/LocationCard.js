@@ -42,7 +42,8 @@ export default function LocationCard({ data }) {
                     </div>
                 </div>
                 <p className="text-gray-800">
-                This is a fun and entertaining way to spend your free time with family and friends.
+                    This is a fun and entertaining way to spend your free time
+                    with family and friends.
                 </p>
             </div>
         </div>
