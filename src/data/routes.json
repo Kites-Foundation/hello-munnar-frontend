@@ -4,21 +4,21 @@
         "routeId": "R1",
         "routeColorName": "Voilet",
         "routeColor": "#543585",
-        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "routeDescription": "Giving Name Violet is for the presence of Neelakurinji plant in Eravikulam National park and Jacaranda in kanthanalloor Route. Both the flowers are violet in colour."
     },
     {
         "routeName": "Munnar - Adimali",
         "routeId": "R2",
         "routeColorName": "Indigo",
         "routeColor": "#41458C",
-        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "routeDescription": "The highest tea plantation which is closest to the sky ( colour of the sky is blue ) is located in Kolukkumalai, one of the destinations in this route."
     },
     {
         "routeName": "Munnar - Suryanelli - Kolukkumala - Chokramudi Peak",
         "routeId": "R3",
         "routeColor": "#3089AE",
         "routeColorName": "Blue",
-        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "routeDescription": "This Route is full of Grasslands, green in colour which is also a plastic free zone"
     },
     {
         "routeName": "Munnar - Meesapulimala",
@@ -33,7 +33,7 @@
         "routeId": "R5",
         "routeColorName": "Yellow",
         "routeColor": "#EDC237",
-        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "routeDescription": "Heritage route is welcome for people who are more into history and heritages, it has destinations related to old stuffs. The colour yellow represents old.",
         "routeIllustrationUrl": "https://image.freepik.com/free-vector/purple-starry-night-sky-landscape-with-pine-forest-illustration_105940-382.jpg" 
     },
     {
@@ -41,7 +41,7 @@
         "routeId": "R6",
         "routeColorName": "Orange",
         "routeColor": "#E47E2E",
-        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "routeDescription": "The presence of Orange Cultivation",
         "routeIllustrationUrl": "https://image.freepik.com/free-vector/purple-starry-night-sky-landscape-with-pine-forest-illustration_105940-382.jpg" 
     },
     {
@@ -49,7 +49,7 @@
         "routeId": "R7",
         "routeColorName": "Red",
         "routeColor": "#E05348",
-        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "routeDescription": "A lot of species from the Red list of IUCN are protected in Pampadum Shola National Park",
         "routeIllustrationUrl": "https://image.freepik.com/free-vector/purple-starry-night-sky-landscape-with-pine-forest-illustration_105940-382.jpg" 
     }
 ]
