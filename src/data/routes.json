@@ -1,0 +1,55 @@
+[
+    {
+        "routeName": "MUNNAR-MARAYOOR-KANTHALLOOR-CHINNAR",
+        "routeId": "R1",
+        "routeColorName": "Voilet",
+        "routeColor": "#543585",
+        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "routeName": "Munnar - Adimali",
+        "routeId": "R2",
+        "routeColorName": "Indigo",
+        "routeColor": "#41458C",
+        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "routeName": "Munnar - Suryanelli - Kolukkumala - Chokramudi Peak",
+        "routeId": "R3",
+        "routeColor": "#3089AE",
+        "routeColorName": "Blue",
+        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "routeName": "Munnar - Meesapulimala",
+        "routeId": "R4",
+        "routeColorName": "Green",
+        "routeColor": "#41AD63",
+        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "routeIllustrationUrl": "https://image.freepik.com/free-vector/purple-starry-night-sky-landscape-with-pine-forest-illustration_105940-382.jpg" 
+    },
+    {
+        "routeName": "Munnar - CSI Church - Marayoor",
+        "routeId": "R5",
+        "routeColorName": "Yellow",
+        "routeColor": "#EDC237",
+        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "routeIllustrationUrl": "https://image.freepik.com/free-vector/purple-starry-night-sky-landscape-with-pine-forest-illustration_105940-382.jpg" 
+    },
+    {
+        "routeName": "Munnar - Mankulam - Anakulam",
+        "routeId": "R6",
+        "routeColorName": "Orange",
+        "routeColor": "#E47E2E",
+        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "routeIllustrationUrl": "https://image.freepik.com/free-vector/purple-starry-night-sky-landscape-with-pine-forest-illustration_105940-382.jpg" 
+    },
+    {
+        "routeName": "Munnar - Mattupetty - Vattavada",
+        "routeId": "R7",
+        "routeColorName": "Red",
+        "routeColor": "#E05348",
+        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "routeIllustrationUrl": "https://image.freepik.com/free-vector/purple-starry-night-sky-landscape-with-pine-forest-illustration_105940-382.jpg" 
+    }
+]
