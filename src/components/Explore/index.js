@@ -1,104 +1,36 @@
 import React, { useState, useEffect } from "react";
 import { A } from "hookrouter";
-
-import searchIcon from "./assets/img/search.svg";
-import busIcon from "./assets/img/bus.svg";
-import bellIcon from "./assets/img/bell.svg";
-
-import RouteBanner from "./RouteBanner";
-import DestinationBanner from "./DestinationBanner";
-
+import mainLogo from "./assets/img/main-logo.png";
+import Icon from "../Common/Icon";
 import data from "./assets/data/data.json";
 
 let Explore = () => {
-    console.log(data);
-    let [selectedRoute, setSelectedRoute] = useState("violet");
-    let [selectedIndex, setSelectedIndex] = useState(0);
-    let [activitySelectedIndex, setActivitySelectedIndex] = useState(0);
-
-    let findIndexFromData = (color) => {
-        return data.findIndex((x) => x.routeColor === color);
-    };
-
-    // let findActivityIndexFromData = () =>{
-
-    // }
-
-    useEffect(() => {
-        setSelectedRoute("violet");
-        setSelectedIndex(findIndexFromData("violet"));
-        setActivitySelectedIndex(0);
-    }, []);
-
     return (
-        <div className="mx-4">
-            <div className="flex justify-between my-10">
-                <h1 className="text-4xl font-black">Explore</h1>
-                <div className="flex items-center">
-                    <A href="#" className="flex items-center">
-                        <img className="mx-2 w-6" src={searchIcon} alt="" />
-                    </A>
-                    <A href="#" className="flex items-center">
-                        <img className="mx-2 w-6" src={busIcon} alt="" />
-                    </A>
-                    <A href="/notifications" className="flex items-center">
-                        <img className="mx-2 w-6" src={bellIcon} alt="" />
-                    </A>
+        <div className="">
+            <section className="flex justify-between items-center pt-10 pb-2 px-10">
+                <div className="w-48 md:w-64">
+                    <img src={mainLogo} className="-ml-5" />
                 </div>
-            </div>
-            <div className="flex overflow-x-auto pb-3">
-                {data.map((route, id) => {
-                    let isActive = false;
-                    if (route.routeColor === selectedRoute) {
-                        isActive = true;
-                    }
-                    return (
-                        <RouteBanner
-                            key={id}
-                            RouteName={route.routeName}
-                            RouteColor={route.routeColor}
-                            isSelected={isActive}
-                            setSelectedIndex={setSelectedIndex}
-                            setSelectedRoute={setSelectedRoute}
-                            findIndexFromData={findIndexFromData}
-                            assetUrl={route.assetUrl}
+
+                <div className="flex">
+                    <div className="p-3">
+                        <Icon name="search" size={7} color="black" />
+                    </div>
+                    <div className="p-3">
+                        <Icon
+                            name="ksrtc"
+                            size={7}
+                            color="black"
+                            stroke={true}
                         />
-                    );
-                })}
-            </div>
-            <h1 className="mt-4 text-3xl font-black">Destination</h1>
-            <div className="flex overflow-x-auto">
-                {data[selectedIndex].destinations &&
-                    data[selectedIndex].destinations.map((destination, id) => {
-                        return (
-                            <DestinationBanner
-                                key={id}
-                                DestinationName={destination.name}
-                                assetUrl={destination.assetUrl}
-                                destinationId={destination.id}
-                            />
-                        );
-                    })}
-                {/* <DestinationBanner DestinationName="Meeshapulimala"/>
-                <DestinationBanner DestinationName="Rajamala"/>
-                <DestinationBanner DestinationName="Anamudi"/>
-                <DestinationBanner DestinationName="Vagamon"/> */}
-            </div>
-            <h1 className="mt-4 text-3xl font-black">Activities</h1>
-            <div className="flex overflow-x-auto">
-                {data[selectedIndex].destinations[activitySelectedIndex]
-                    .activities.length &&
-                    data[selectedIndex].destinations[0].activities.map(
-                        (activity, id) => {
-                            return (
-                                <DestinationBanner
-                                    key={id}
-                                    DestinationName={activity}
-                                />
-                            );
-                        }
-                    )}
-            </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* <section className="px-8 md:px-10">
+                <h2 className="font-semibold text-black text-xl my-1">Discover Munnar</h2>
+                <span className="font-normal text-gray-600 text-base">Explore Munnar through these seven routes</span>
+            </section> */}
         </div>
     );
 };
