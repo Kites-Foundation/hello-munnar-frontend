@@ -12,7 +12,10 @@ module.exports = {
                 "3/4": "75%",
             },
             colors:{
-                teal:colors.teal
+                teal:colors.teal,
+                violet: colors.violet,
+                cyan: colors.cyan,
+                amber: colors.amber,
             }
         },
     },
