@@ -53,10 +53,10 @@ const Explore = () => {
 
             <DestinationContainer
                 destinations={destinations}
-                className="py-8"
+                className="py-8 pb-4 md:pd-8"
             />
 
-            <TodoContainer todos={todos} className="py-6" />
+            <TodoContainer todos={todos} className="py-6 pt-4 md:pt-6" />
         </div>
     );
 };

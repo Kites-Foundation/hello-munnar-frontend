@@ -20,20 +20,20 @@ export default function DestinationCard({ data }) {
                     alt=""
                 />
                 <button
-                    className="absolute flex items-center justify-center right-2 top-2 w-14 h-14 rounded-full focus:outline-none"
+                    className="absolute flex items-center justify-center right-2 top-2 w-12 h-12 rounded-full focus:outline-none"
                     onClick={like}>
                     <Icon
                         name="heart"
                         color={liked ? "red-500" : "white"}
                         stroke={!liked}
-                        size={10}
+                        size={9}
                     />
                 </button>
             </div>
             <A href="#">
                 <div className="py-6 px-3 md:px-6">
-                    <h3 className="text-lg font-semibold">{name}</h3>
-                    <p className="text-gray-600 text-base">{description}</p>
+                    <h3 className="font-semibold">{name}</h3>
+                    <p className="text-gray-600 text-sm">{description}</p>
                 </div>
             </A>
         </div>

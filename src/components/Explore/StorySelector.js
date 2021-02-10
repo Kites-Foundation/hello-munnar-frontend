@@ -9,7 +9,7 @@ const StorySelector = ({ title, label, color }) => {
                     {title}
                 </span>
             </div>
-            <span className="mt-2 leading-4 text-xs font-light text-center">
+            <span className="mt-2 leading-4 text-xs font-light text-center md:text-sm">
                 {label}
             </span>
         </div>

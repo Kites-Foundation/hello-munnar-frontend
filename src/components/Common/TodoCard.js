@@ -14,7 +14,7 @@ export default function TodoCard({ data }) {
                     />
                 </div>
                 <div className="absolute bottom-0">
-                    <h3 className="text-lg font-semibold text-white p-3">
+                    <h3 className="text-base font-semibold text-white p-3">
                         {name}
                     </h3>
                 </div>
