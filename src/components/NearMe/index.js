@@ -1,5 +1,5 @@
 import React from "react";
-import Topbar from './top.js';
+import Topbar from './Topbar.js';
 
 export default function NearMe() {
     return (
@@ -7,8 +7,6 @@ export default function NearMe() {
             <Topbar/>
         </div>
      
-        
-
 
     );
 }
