@@ -2,8 +2,8 @@ import React from "react";
 import mainLogo from "../../assets/images/main-logo.png";
 import Icon from "../Common/Icon";
 import StorySelector from "./StorySelector";
-import DestinationCard from "../Common/DestinationCard";
-import TodoCard from "../Common/TodoCard";
+import DestinationContainer from "../Common/DestinationContainer";
+import TodoContainer from "../Common/TodoContainer";
 
 import destinationDefault from "../../assets/images/destination-default.png";
 import todoDefault1 from "../../assets/images/package-1-default.png";
@@ -119,32 +119,9 @@ let Explore = () => {
                 </div>
             </section>
 
-            <section>
-                <h2 className="px-8 md:px-10 font-semibold text-black text-xl my-1">
-                    Destinations
-                </h2>
+            <DestinationContainer destinations={destinations} />
 
-                <div className="flex overflow-x-auto py-12 px-8 md:px-10">
-                    {destinations.map((destination) => (
-                        <DestinationCard
-                            key={destination.name}
-                            data={destination}
-                        />
-                    ))}
-                </div>
-            </section>
-
-            <section className="py-8">
-                <h2 className="px-8 md:px-10 font-semibold text-black text-xl my-1">
-                    Things To Do
-                </h2>
-
-                <div className="flex overflow-x-auto py-12 px-8 md:px-10">
-                    {todos.map((todo) => (
-                        <TodoCard key={todo.name} data={todo} />
-                    ))}
-                </div>
-            </section>
+            <TodoContainer todos={todos} />
         </div>
     );
 };
