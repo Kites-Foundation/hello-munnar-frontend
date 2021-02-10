@@ -12,8 +12,8 @@ export default function DestinationCard({ data }) {
     };
 
     return (
-        <div className="bg-gray-100 flex-none shadow-lg rounded-lg overflow-hidden w-3/4 md:w-1/2 lg:w-1/4 xl:w-96 mr-8 md:mr-16">
-            <div className="relative pb-3/4">
+        <div className="bg-white flex-none shadow-lg rounded-lg overflow-hidden w-3/4 md:w-1/2 lg:w-1/4 xl:w-96 mr-8 md:mr-16">
+            <div className="relative pb-9/16">
                 <img
                     src={image}
                     className="absolute w-full h-full object-cover"
@@ -31,13 +31,9 @@ export default function DestinationCard({ data }) {
                 </button>
             </div>
             <A href="#">
-                <div className="py-6 px-3 md:px-6 h-32">
-                    <h3 className="text-lg font-semibold overflow-ellipsis overflow-hidden">
-                        {name}
-                    </h3>
-                    <p className="text-gray-600 text-base overflow-ellipsis overflow-hidden">
-                        {description}
-                    </p>
+                <div className="py-6 px-3 md:px-6">
+                    <h3 className="text-lg font-semibold">{name}</h3>
+                    <p className="text-gray-600 text-base">{description}</p>
                 </div>
             </A>
         </div>

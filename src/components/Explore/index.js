@@ -12,6 +12,17 @@ const destinations = [
         description: "Alura ipsum divir nola ipsum koret lorsa silo enori",
         image: destinationDefault,
     },
+    {
+        name: "Consectetur adipiscing elit 2.",
+        description: "Alura ipsum divir nola ipsum koret lorsa silo enori",
+        image: destinationDefault,
+    },
+    {
+        name: "Consectetur adipiscing elit 3.",
+        description: "Alura ipsum divir nola ipsum koret lorsa silo enori",
+        image: destinationDefault,
+    },
+];
 ];
 
 let Explore = () => {
@@ -49,7 +60,7 @@ let Explore = () => {
                     Explore Munnar through these seven routes
                 </span>
 
-                <div className="flex justify-evenly py-12">
+                <div className="flex justify-evenly py-10">
                     <StorySelector
                         title="V"
                         label="Violet route"
@@ -94,7 +105,12 @@ let Explore = () => {
                 </h2>
 
                 <div className="flex overflow-x-auto py-12 px-8 md:px-10">
-                    <DestinationCard data={destinations[0]} />
+                    {destinations.map((destination) => (
+                        <DestinationCard
+                            key={destination.name}
+                            data={destination}
+                        />
+                    ))}
                 </div>
             </section>
         </div>
