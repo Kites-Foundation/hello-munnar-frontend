@@ -1,16 +1,29 @@
-import React, { useState, useEffect } from "react";
-import { A } from "hookrouter";
-import mainLogo from "./assets/img/main-logo.png";
+import React from "react";
+import mainLogo from "../../assets/images/main-logo.png";
 import Icon from "../Common/Icon";
-import data from "./assets/data/data.json";
 import StorySelector from "./StorySelector";
+import DestinationCard from "../Common/DestinationCard";
+
+import destinationDefault from "../../assets/images/destination-default.png";
+
+const destinations = [
+    {
+        name: "Consectetur adipiscing elit.",
+        description: "Alura ipsum divir nola ipsum koret lorsa silo enori",
+        image: destinationDefault,
+    },
+];
 
 let Explore = () => {
     return (
         <div className="">
-            <section className="flex justify-between items-center pt-10 pb-2 px-10">
+            <section className="flex justify-between items-center pt-10 pb-2 px-8 md:px-10">
                 <div className="w-48 md:w-64">
-                    <img src={mainLogo} className="-ml-5" />
+                    <img
+                        src={mainLogo}
+                        className="-ml-3.5 md:-ml-5"
+                        alt="Hello Munnar"
+                    />
                 </div>
 
                 <div className="flex">
@@ -72,6 +85,16 @@ let Explore = () => {
                         label="Red route"
                         color="red-500"
                     />
+                </div>
+            </section>
+
+            <section>
+                <h2 className="px-8 md:px-10 font-semibold text-black text-xl my-1">
+                    Destinations
+                </h2>
+
+                <div className="flex overflow-x-auto py-12 px-8 md:px-10">
+                    <DestinationCard data={destinations[0]} />
                 </div>
             </section>
         </div>
