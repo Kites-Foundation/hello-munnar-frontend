@@ -11,6 +11,7 @@ module.exports = {
             spacing: {
                 "3/4": "75%",
                 "9/16": "56.25%",
+                "full": "100%",
             },
             colors:{
                 teal:colors.teal,
