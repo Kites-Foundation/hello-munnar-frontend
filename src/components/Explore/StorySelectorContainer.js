@@ -14,30 +14,34 @@ const StorySelectorContainer = ({ className = "" }) => {
                 <StorySelector
                     title="V"
                     label="Violet route"
-                    color="violet-900"
+                    color="bg-violet-900"
                 />
                 <StorySelector
                     title="I"
                     label="Indigo route"
-                    color="indigo-900"
+                    color="bg-indigo-900"
                 />
-                <StorySelector title="B" label="Blue route" color="cyan-600" />
+                <StorySelector
+                    title="B"
+                    label="Blue route"
+                    color="bg-cyan-600"
+                />
                 <StorySelector
                     title="G"
                     label="Green route"
-                    color="green-500"
+                    color="bg-green-500"
                 />
                 <StorySelector
                     title="Y"
                     label="Yellow route"
-                    color="yellow-500"
+                    color="bg-yellow-500"
                 />
                 <StorySelector
                     title="O"
                     label="Orange route"
-                    color="amber-600"
+                    color="bg-amber-600"
                 />
-                <StorySelector title="R" label="Red route" color="red-500" />
+                <StorySelector title="R" label="Red route" color="bg-red-500" />
             </div>
         </section>
     );
