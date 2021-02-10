@@ -1,6 +1,6 @@
 import { useRoutes } from "hookrouter";
 import React from "react";
-gimport Explore from "../components/Explore/index";
+import Explore from "../components/Explore/index";
 import Destination from "../components/Destination/index";
 import Experience from "../components/Experience/";
 import NavBar from "../components/Common/NavBar";
@@ -10,6 +10,7 @@ import Experiences from "../components/Experiences/Experiences";
 import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
+import Topbar from "../components/NearMe/Topbar";
 
 const routes = {
     // Explore page is the temporary default home page
@@ -22,6 +23,7 @@ const routes = {
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
+    "/topbar": () => <NearMe />,
 };
 
 export default function PublicRouter() {
