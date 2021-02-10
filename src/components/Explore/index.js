@@ -1,7 +1,6 @@
 import React from "react";
-import mainLogo from "../../assets/images/main-logo.png";
-import Icon from "../Common/Icon";
-import StorySelector from "./StorySelector";
+import HeaderNav from "./HeaderNav";
+import StorySelectorContainer from "./StorySelectorContainer";
 import DestinationContainer from "../Common/DestinationContainer";
 import TodoContainer from "../Common/TodoContainer";
 
@@ -45,83 +44,19 @@ const todos = [
     },
 ];
 
-let Explore = () => {
+const Explore = () => {
     return (
-        <div className="">
-            <section className="flex justify-between items-center pt-10 pb-2 px-8 md:px-10">
-                <div className="w-48 md:w-64">
-                    <img
-                        src={mainLogo}
-                        className="-ml-3.5 md:-ml-5"
-                        alt="Hello Munnar"
-                    />
-                </div>
+        <div className="pt-9 ">
+            <HeaderNav className="pb-2 px-8 md:px-10" />
 
-                <div className="flex">
-                    <div className="p-3">
-                        <Icon name="search" size={7} color="black" />
-                    </div>
-                    <div className="p-3">
-                        <Icon
-                            name="ksrtc"
-                            size={7}
-                            color="black"
-                            stroke={true}
-                        />
-                    </div>
-                </div>
-            </section>
+            <StorySelectorContainer className="pt-2 px-8 md:px-10" />
 
-            <section className="px-8 md:px-10">
-                <h2 className="font-semibold text-black text-xl my-1">
-                    Discover Munnar
-                </h2>
-                <span className="font-normal text-gray-600 text-base">
-                    Explore Munnar through these seven routes
-                </span>
+            <DestinationContainer
+                destinations={destinations}
+                className="py-8"
+            />
 
-                <div className="flex justify-evenly py-10">
-                    <StorySelector
-                        title="V"
-                        label="Violet route"
-                        color="violet-900"
-                    />
-                    <StorySelector
-                        title="I"
-                        label="Indigo route"
-                        color="indigo-900"
-                    />
-                    <StorySelector
-                        title="B"
-                        label="Blue route"
-                        color="cyan-600"
-                    />
-                    <StorySelector
-                        title="G"
-                        label="Green route"
-                        color="green-500"
-                    />
-                    <StorySelector
-                        title="Y"
-                        label="Yellow route"
-                        color="yellow-500"
-                    />
-                    <StorySelector
-                        title="O"
-                        label="Orange route"
-                        color="amber-600"
-                    />
-                    <StorySelector
-                        title="R"
-                        label="Red route"
-                        color="red-500"
-                    />
-                </div>
-            </section>
-
-            <DestinationContainer destinations={destinations} />
-
-            <TodoContainer todos={todos} />
+            <TodoContainer todos={todos} className="py-6" />
         </div>
     );
 };
