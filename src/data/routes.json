@@ -13,7 +13,7 @@
         "routeColorName": "Indigo",
         "routeColor": "#41458C",
         "routeDescription": "The highest tea plantation which is closest to the sky ( colour of the sky is blue ) is located in Kolukkumalai, one of the destinations in this route.",
-        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/indigo.png"
+        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/indigo.png" 
     },
     {
         "routeName": "Munnar - Suryanelli - Kolukkumala - Chokramudi Peak",
@@ -21,7 +21,7 @@
         "routeColor": "#3089AE",
         "routeColorName": "Blue",
         "routeDescription": "This Route is full of Grasslands, green in colour which is also a plastic free zone",
-        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/blue.png"
+        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/blue.png" 
     },
     {
         "routeName": "Munnar - Meesapulimala",
@@ -45,7 +45,7 @@
         "routeColorName": "Orange",
         "routeColor": "#E47E2E",
         "routeDescription": "The presence of Orange Cultivation",
-        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/orange.png"
+        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/orange.png" 
     },
     {
         "routeName": "Munnar - Mattupetty - Vattavada",
@@ -53,6 +53,7 @@
         "routeColorName": "Red",
         "routeColor": "#E05348",
         "routeDescription": "A lot of species from the Red list of IUCN are protected in Pampadum Shola National Park",
-        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/red.png"
+        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/red.png" 
     }
 ]
+
