@@ -1,5 +1,7 @@
 import React from "react";
 
-export default function RouterPage() {
-    return <div>Router Page</div>;
-}
+const RoutePage = ({ route, position }) => {
+    return <div>Route Page</div>;
+};
+
+export default RoutePage;
