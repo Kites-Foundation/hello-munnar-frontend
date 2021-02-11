@@ -1,16 +1,52 @@
-import { useRoutes } from "hookrouter";
 import React from "react";
-
+import { useRoutes } from "hookrouter";
 import RoutePage from "../components/RoutePage";
 
+import routeImage from "../components/RoutePage/assets/images/route-default.png";
+
 const routesDetails = [
-    { name: "violet", text: "text-violet-900", border: "border-violet-900" },
-    { name: "indigo" },
-    { name: "blue" },
-    { name: "green" },
-    { name: "yellow" },
-    { name: "orange" },
-    { name: "red" },
+    {
+        name: "violet",
+        path: "Munnar-Marayoor-Kanthalloor-Chinnar",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        image: routeImage,
+    },
+    {
+        name: "indigo",
+        path: "Munnar-Marayoor-Kanthalloor-Chinnar",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        image: routeImage,
+    },
+    {
+        name: "blue",
+        path: "Munnar-Marayoor-Kanthalloor-Chinnar",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        image: routeImage,
+    },
+    {
+        name: "green",
+        path: "Munnar-Marayoor-Kanthalloor-Chinnar",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        image: routeImage,
+    },
+    {
+        name: "yellow",
+        path: "Munnar-Marayoor-Kanthalloor-Chinnar",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        image: routeImage,
+    },
+    {
+        name: "orange",
+        path: "Munnar-Marayoor-Kanthalloor-Chinnar",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        image: routeImage,
+    },
+    {
+        name: "red",
+        path: "Munnar-Marayoor-Kanthalloor-Chinnar",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        image: routeImage,
+    },
 ];
 
 // dynamically generate routes indtead of copying components
