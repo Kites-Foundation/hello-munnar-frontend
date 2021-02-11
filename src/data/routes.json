@@ -1,0 +1,58 @@
+[
+    {
+        "routeName": "MUNNAR-MARAYOOR-KANTHALLOOR-CHINNAR",
+        "routeId": "R1",
+        "routeColorName": "violet",
+        "routeColor": "#543585",
+        "routeDescription": "Giving Name Violet is for the presence of Neelakurinji plant in Eravikulam National park and Jacaranda in kanthanalloor Route. Both the flowers are violet in colour.",
+        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/violet.png" 
+    },
+    {
+        "routeName": "Munnar - Adimali",
+        "routeId": "R2",
+        "routeColorName": "Indigo",
+        "routeColor": "#41458C",
+        "routeDescription": "The highest tea plantation which is closest to the sky ( colour of the sky is blue ) is located in Kolukkumalai, one of the destinations in this route.",
+        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/indigo.png" 
+    },
+    {
+        "routeName": "Munnar - Suryanelli - Kolukkumala - Chokramudi Peak",
+        "routeId": "R3",
+        "routeColor": "#3089AE",
+        "routeColorName": "Blue",
+        "routeDescription": "This Route is full of Grasslands, green in colour which is also a plastic free zone",
+        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/blue.png" 
+    },
+    {
+        "routeName": "Munnar - Meesapulimala",
+        "routeId": "R4",
+        "routeColorName": "Green",
+        "routeColor": "#41AD63",
+        "routeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/green.png" 
+    },
+    {
+        "routeName": "Munnar - CSI Church - Marayoor",
+        "routeId": "R5",
+        "routeColorName": "Yellow",
+        "routeColor": "#EDC237",
+        "routeDescription": "Heritage route is welcome for people who are more into history and heritages, it has destinations related to old stuffs. The colour yellow represents old.",
+        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/yellow.png" 
+    },
+    {
+        "routeName": "Munnar - Mankulam - Anakulam",
+        "routeId": "R6",
+        "routeColorName": "Orange",
+        "routeColor": "#E47E2E",
+        "routeDescription": "The presence of Orange Cultivation",
+        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/orange.png" 
+    },
+    {
+        "routeName": "Munnar - Mattupetty - Vattavada",
+        "routeId": "R7",
+        "routeColorName": "Red",
+        "routeColor": "#E05348",
+        "routeDescription": "A lot of species from the Red list of IUCN are protected in Pampadum Shola National Park",
+        "routeIllustrationUrl": "https://cdn.hellomunnar.in/img/routes/red.png" 
+    }
+]
