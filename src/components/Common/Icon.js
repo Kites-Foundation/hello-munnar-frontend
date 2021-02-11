@@ -26,6 +26,10 @@ import { ReactComponent as Trash } from "../../assets/images/trash.svg";
 import { ReactComponent as Chat } from "../../assets/images/chat.svg";
 import { ReactComponent as Logout } from "../../assets/images/logout.svg";
 import { ReactComponent as Settings } from "../../assets/images/settings.svg";
+import { ReactComponent as Love } from "../../assets/images/love.svg";
+import { ReactComponent as Route } from "../../assets/images/route.svg";
+import { ReactComponent as Time } from "../../assets/images/time.svg";
+import { ReactComponent as Date } from "../../assets/images/date.svg";
 
 const icons = {
     nearMe: NearMe,
@@ -54,6 +58,10 @@ const icons = {
     logout: Logout,
     settings: Settings,
     back: Back,
+    love : Love,
+    route : Route,
+    time : Time,
+    date : Date,
 };
 
 export default function Icon({
