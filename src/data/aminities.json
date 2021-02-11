@@ -1,5 +1,6 @@
 [
-    {   "aminityId": "AM-001",
+    {
+        "aminityId": "AM-001",
         "aminityType": "Hospital",
         "aminityName": "Tata Global Hospital",
         "aminityLocation": "Meesapulimala",
@@ -9,7 +10,6 @@
         "isAminityPrivate": true,
         "aminityContact": "999999999",
         "aminityCoordinates": { "lat": 10.164203, "lon": 77.1251676 }
-
     },
     {
         "aminityId": "AM-002",
