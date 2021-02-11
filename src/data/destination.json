@@ -1,0 +1,19 @@
+[
+    {
+        "destinationId": "D-001",
+        "destinationName": "Aanamudi Shola National Park",
+        "destinationOpenTime": "10:30 AM",
+        "destinationCloseTime":  "08:30 PM",
+        "destinationAvailability": "All week",
+        "destinationActivitiesId": ["A1","A2","A3"],
+        "destinationRouteId": "R1",
+        "destinationDescription": "Anamudi Shola National Park is a protected area located along the Western Ghats of Idukki district in Kerala state, India. It is composed of Mannavan shola, Idivara shola and Pullardi shola, covering a total area of around 7.5 km². Draft notification of this new park was released on 21 November 2003.",
+        "destinationCoordinates": { "lat": 10.164203, "lon": 77.1251676 },
+        "destinationBannerUrl": "https://cdn.hellomunnar.in/destinations/violet/ERAVIKULAM_NATIONAL_PARK.jpeg",
+        "destinationChallangesId": ["CH1","CH2","CH3"],
+        "destinationFlauraFaunaId": ["FF1","FF2","FF3"],
+        "destinationRating": 4,
+        "destinationReviews": ["R-001","R-002"],
+        "activityTagsId": ["AT-001","AT-002"]
+    }
+] 

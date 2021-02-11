@@ -1,0 +1,22 @@
+[
+    {
+        "activityId": "AT-001",
+        "activityName": "POTHANMEDU VIEW POINT",
+        "activityRouteId": "R-1",
+        "activityAvailability": "All week",
+        "activityOpenTime": "08:10 AM",
+        "activityCloseTime": "10:10 PM",
+        "activityDifficulty": "Easy",
+        "activityPrice": "2000",
+        "destinationChallangesId": ["CH1","CH2","CH3"],
+        "activityCoordinates": { "lat": 10.164203, "lon": 77.1251676 },
+        "activityDescription": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+        "activityBookingDetails": { 
+            "bookingLink": "https://link.to/booking",
+            "bookingContact": { 
+                "bookingContactName": "Mr. Lorem Ipsum",
+                "bookingContactNumber": "+91 987654321"
+            }
+        }
+    }
+]   

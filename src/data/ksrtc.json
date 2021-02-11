@@ -1,0 +1,9 @@
+[
+    {
+        "ksrtcId": "KSRTC-001",
+        "ksrtcRoute": "Munnar - Ernakulam",
+        "kstrcTime": "10:00 AM",
+        "ksrtcType": "Super Fast",
+        "ksrtcAvailability": ["Mon","Tue","Fri"]
+    }
+]

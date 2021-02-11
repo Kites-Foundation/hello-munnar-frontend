@@ -1,0 +1,35 @@
+[
+    {   "aminityId": "AM-001",
+        "aminityType": "Hospital",
+        "aminityName": "Tata Global Hospital",
+        "aminityLocation": "Meesapulimala",
+        "aminityRouteId": "R7",
+        "aminityOpenTime": "8:00 AM",
+        "aminityCloseTime": "11:00 PM",
+        "isAminityPrivate": true,
+        "aminityContact": "999999999",
+        "aminityCoordinates": { "lat": 10.164203, "lon": 77.1251676 }
+
+    },
+    {
+        "aminityId": "AM-002",
+        "aminityType": "Food & Drink",
+        "aminityName": "Village restaurant",
+        "aminityLocation": "Sun moon valley",
+        "aminityRouteId": "R7",
+        "aminityOpenTime": "8:00 AM",
+        "aminityCloseTime": "11:00 PM",
+        "isAminityPrivate": true,
+        "aminityContact": "999999999",
+        "aminityCoordinates": { "lat": 10.164203, "lon": 77.1251676 }
+    },
+    {
+        "aminityId": "AM-002",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Sun moon valley",
+        "aminityRouteId": "R7",
+        "isBiodegradable": true,
+        "aminityCoordinates": { "lat": 10.164203, "lon": 77.1251676 }
+    }
+]
