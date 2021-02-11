@@ -14,12 +14,8 @@ export default function NearMe() {
             <div className="flex justify-between mt-6">
                 <p> Near Me </p>
                 <div className="flex space-x-4">
-                    <div className="font-thin text-gray-100 ">
-                        
-                    </div>
-                    <div className="font-thin text-gray-100">
-                        
-                    </div>
+                    <div className="font-thin text-gray-100 "></div>
+                    <div className="font-thin text-gray-100"></div>
                 </div>
             </div>
 

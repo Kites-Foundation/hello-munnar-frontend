@@ -10,7 +10,7 @@ import Experiences from "../components/Experiences/Experiences";
 import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
-import Topbar from "../components/NearMe/Topbar";
+
 
 const routes = {
     // Explore page is the temporary default home page
@@ -23,15 +23,15 @@ const routes = {
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
-    "/topbar": () => <Topbar />,
+    
 };
 
 export default function PublicRouter() {
     const pages = useRoutes(routes);
     return (
-       <div className="w-screen flex flex-col min-h-screen pb-20">
-         {pages}
-         <NavBar />
-       </div>
+        <div className="w-screen flex flex-col min-h-screen pb-20">
+            {pages}
+            <NavBar />
+        </div>
     );
 }
