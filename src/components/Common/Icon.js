@@ -58,10 +58,10 @@ const icons = {
     logout: Logout,
     settings: Settings,
     back: Back,
-    love : Love,
-    route : Route,
-    time : Time,
-    date : Date,
+    love: Love,
+    route: Route,
+    time: Time,
+    date: Date,
 };
 
 export default function Icon({

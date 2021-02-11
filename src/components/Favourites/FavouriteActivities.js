@@ -9,12 +9,15 @@ export default function FavouriteActivities() {
             {activities.map((value, index) => {
                 return (
                     <div key={index}>
-                        <FavouriteCard name={value.name} route={value.route} time={value.time} day={value.day} />
+                        <FavouriteCard
+                            name={value.name}
+                            route={value.route}
+                            time={value.time}
+                            day={value.day}
+                        />
                     </div>
                 );
             })}
-
-
         </div>
     );
 }
