@@ -11,7 +11,6 @@ import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
 
-
 const routes = {
     // Explore page is the temporary default home page
     "/": () => <Explore />,
@@ -23,7 +22,6 @@ const routes = {
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
-    
 };
 
 export default function PublicRouter() {
