@@ -9,7 +9,7 @@ export default function Favourite() {
     <div className="bg-gray-50">
         <p className="text-3xl ml-4 mt-4">Your favourites</p>
 <nav className="px-8 pt-3">
-     <div className="flex justify-center space-x-10">
+     <div className="flex justify-center space-x-10 mt-4">
          <button className="border-b-2 border-transparent text-2xl py-3 focus:outline-none focus:border-black" 
          onClick={() => setFavourite("Destinations")}>
              Destinations

@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "../Common/Icon";
+import { AiFillHeart } from "react-icons/ai";
 
 export default function FavouriteCard(props) {
     return (
@@ -21,9 +22,9 @@ export default function FavouriteCard(props) {
       <header
         className="flex items-center justify-between leading-tight p-2 mx-2"
       >
-        <h1 className="text-xl">Anamudi Shola National Park
+        <h1 className="text-xl">{props.name}
         </h1>
-        <Icon name="love" size={6} />
+        <AiFillHeart size="30" color={props.route}/>
       </header>
     </div>
 
@@ -34,7 +35,11 @@ export default function FavouriteCard(props) {
           <div className="flex items-center">
           <Icon name="route" size={4} />
           </div>
-        <p className="text-l">violet</p>
+        <p className="text-l" style={{
+                            color: `${props.route}`,
+                        }}>
+                        {props.route}
+                        </p>
           </div>
         </li>
         <li className="py-1">
@@ -42,7 +47,7 @@ export default function FavouriteCard(props) {
           <div className="flex items-center">
           <Icon name="time" size={4} />
           </div>
-        <p className="text-l">8:30-5:00</p>
+        <p className="text-l">{props.time}</p>
           </div>
         </li>
 
@@ -51,7 +56,7 @@ export default function FavouriteCard(props) {
           <div className="flex items-center">
           <Icon name="date" size={4} />
           </div>
-        <p className="text-l">All week</p>
+        <p className="text-l">{props.day}</p>
           </div>
         </li>
       </ul>
