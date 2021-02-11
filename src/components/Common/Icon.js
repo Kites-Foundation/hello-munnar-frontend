@@ -27,6 +27,8 @@ import { ReactComponent as Logout } from "../../assets/images/logout.svg";
 import { ReactComponent as Settings } from "../../assets/images/settings.svg";
 import { ReactComponent as KSRTC } from "../../assets/images/ksrtc.svg";
 import { ReactComponent as Heart } from "../../assets/images/heart.svg";
+import { ReactComponent as Close } from "../../assets/images/close.svg";
+import { ReactComponent as Information } from "../../assets/images/information.svg";
 
 const icons = {
     nearMe: NearMe,
@@ -57,6 +59,8 @@ const icons = {
     back: Back,
     ksrtc: KSRTC,
     heart: Heart,
+    close: Close,
+    information: Information,
 };
 
 export default function Icon({
