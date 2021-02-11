@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import searchIcon from "./search.svg";
-import bellIcon from "./bell.svg";
 import NearmeRestWrapper from "./Wrappers/NearmeRestWrapper";
 import NearmeFoodWrapper from "./Wrappers/NearmeFoodWrapper";
 import NearmeStayWrapper from "./Wrappers/NearmeStayWrapper";
@@ -17,24 +15,10 @@ export default function NearMe() {
                 <p> Near Me </p>
                 <div className="flex space-x-4">
                     <div className="font-thin text-gray-100 ">
-                        <button>
-                            <img
-                                alt="search icon"
-                                style={{
-                                    width: 30,
-                                }}
-                                src={searchIcon}></img>
-                        </button>
+                        
                     </div>
                     <div className="font-thin text-gray-100">
-                        <button>
-                            <img
-                                alt=""
-                                style={{
-                                    width: 30,
-                                }}
-                                src={bellIcon}></img>
-                        </button>
+                        
                     </div>
                 </div>
             </div>

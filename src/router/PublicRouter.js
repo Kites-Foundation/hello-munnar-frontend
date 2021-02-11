@@ -23,7 +23,7 @@ const routes = {
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
-    "/topbar": () => <NearMe />,
+    "/topbar": () => <Topbar />,
 };
 
 export default function PublicRouter() {
