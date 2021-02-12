@@ -1,30 +1,27 @@
 import React from "react";
-import DefaultImg from "../../assets/images/activity-test.jpg";
 import { A } from "hookrouter";
+import Icon from "../Common/Icon";
+export default function Activity({ activity }) {
+    const {
+        // activityTagId,
+        activityTagName,
+        // activityTagIconUrl
+    } = activity;
 
-export default function Activity() {
     return (
-        <div className="center max-w-6xl mx-auto px-4">
-            <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-4 md:grid-cols-3 md:max-w-none sm:mx-8">
-                <div className="overflow-hidden rounded-lg shadow-lg bg-transparent">
-                    <A href="#">
-                        <img
-                            alt=""
-                            className="block h-auto w-full bg-gradient-to-b from black-100"
-                            src={DefaultImg}
-                        />
-                    </A>
-                    <div className="flex items-center justify-between p-2 md:p-4 -mt-10 bg-transparent">
-                        <h1 className="text-lg">
-                            <A
-                                className="no-underline hover:underline text-white font-bold"
-                                href="/experience/Trekking">
-                                Trekking
-                            </A>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <A
+            href="#"
+            className="px-4 py-4 flex flex-col items-center justify-center focus:outline-none">
+            <Icon
+                // replace with img tag
+                name="todo"
+                color="black"
+                alt=""
+                className="w-12 h-12"
+                size={12}
+                // src={activityTagIconUrl}
+            />
+            <span className="text-sm mt-3">{activityTagName}</span>
+        </A>
     );
 }

@@ -12,11 +12,13 @@ export default function Destination(id) {
                     route={destination.destinationRoute}
                     image={destination.destinationBannerUrl}
                 />
-            <div className="flex justify-between">
-                <div className="text-2xl font-semibold m-4">{dest[0].name}</div>
-                <div className="my-auto mr-2">
-                    <Icon name="plus" color={"black"} size={6} />
-                </div>
+                <Heading destination={destination} className="px-8 md:px-10" />
+
+                <ActivitiesContainer
+                    activities={destination.destinationActivities}
+                    className="px-8 md:px-10 py-4"
+                />
+
             </div>
 
             <DestinationNav />
