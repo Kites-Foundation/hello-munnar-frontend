@@ -1,44 +1,43 @@
 import React from "react";
-import locationIcon from "./map-pin.svg";
-import munnarIcon from "../../../src/assets/images/munnar.png";
+import RatingStars from "../Common/RatingStars";
+import VectorIcon from "../NearMe/icons/Vector.svg";
 
-export default function Thingstodo() {
+
+
+export default function Thingstodo(props) {
     return (
-        <div className="max-w-6xl mx-auto">
-            <div className="flex items-center justify-center min-h-screen">
-                <div className="max-w-sm w-full sm:w-1/2 lg:w-1/3 py-6 px-3">
-                    <div className="bg-white shadow-xl rounded-lg overflow-hidden">
-                        <p className="font-sans font-bold text-2xl font-quicksand">
-                            Things to do
-                        </p>
-                        <div className="bg-cover bg-center h-56 p-4 relative">
-                            <img
-                                className="min-w-full min-h-full"
-                                src={munnarIcon}
-                                alt=""></img>
-
-                            <div className="mr-2 absolute right-5 bottom-5">
-                                <button>
-                                    <img src={locationIcon} alt=""></img>
-                                </button>
-                            </div>
-                        </div>
-                        <div className="mt-3 flex justify-between">
-                            <div className="uppercase tracking-wide text-sm font-bold text-gray-700 ml-4 font-quicksand">
-                                <p> Name</p>
-                            </div>
-                            <div>
-                                <button className="mr-4 bg-gray-400 hover:bg-gray-700 h-5 w-6 text-sm">
-                                    +
-                                </button>
-                            </div>
-                        </div>
-                        <div className="ml-4 font-quicksand">
-                            <p>xyz</p>
-                        </div>
+        
+            <div class="bg-white border-2 border-blue-600 w-full mr-2 p-2 rounded-xl shadow border border-blue">
+                <div class="font-Poppins font-style:normal font-weight:600 font-bold text-black-600 text-xl">
+                    {props.name}
+                </div>
+                <div class="mt-3 flex">
+                    <div>
+                        <RatingStars rating={4} />
+                    </div>
+                    <div>
+                        <img src={VectorIcon}></img>
+                    </div>
+                    <div class="ml-4 text-indigo-400">
+                        Indigo
+                    </div>
+                </div>
+                <div className="mt-2 flex flex-wrap ">
+                    <div className="flex  justify-center mt-4">
+                        <button className=" border-2 border-gray-200 bg-gray-200 rounded-xl my-auto whitespace-nowrap text-center text-xs font-bold text-black-500 px-4 py-1 hover:bg-gray-200 hover:text-black mr-2">
+                            Family friendly
+                        </button>
+                        <button className="border-2 border-gray-200 bg-gray-200 rounded-xl my-auto whitespace-nowrap text-center text-xs font-bold text-black-500 px-2 py-1  hover:bg-gray-200 hover:text-black mr-2">
+                            Disabled friendly
+                        </button>
+                        <button className="border-2 border-gray-200 bg-gray-200 rounded-xl my-auto whitespace-nowrap text-center text-xs font-bold text-black-500 px-2 py-1 hover:bg-gray-200 hover:text-black mr-2">
+                            Moderate
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>
+
+        
     );
 }
+

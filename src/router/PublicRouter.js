@@ -10,6 +10,8 @@ import Experiences from "../components/Experiences/Experiences";
 import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
+import Nearmepage from "../components/NearMe/nearmepage";
+import Amenitiespage from "../components/NearMe/amenitiespage";
 
 const routes = {
     // Explore page is the temporary default home page
@@ -22,6 +24,9 @@ const routes = {
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
+    "/nearmepage": () => <Nearmepage/>,
+    "/amenitiespage": () => <Amenitiespage/>,
+
 };
 
 export default function PublicRouter() {
