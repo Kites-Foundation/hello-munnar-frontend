@@ -4,21 +4,14 @@ import Icon from "../Common/Icon";
 import data from "../Explore/assets/data/data.json";
 
 export default function Destination(id) {
-    let dest = [];
-    data.forEach((element) => {
-        element.destinations.forEach((item) => {
-            if (item.id === id.id) {
-                dest.push(item);
-            }
-        });
-    });
+
     return (
-        <div className="relative min-h-screen ">
-            <img
-                src={dest[0].assetUrl}
-                alt=""
-                className="h-64 sm:bg-cover mx-auto lg:rounded-lg "
-            />
+        <div className="w-full bg-gray-200">
+            <div className="max-w-5xl mx-auto bg-white">
+                <Banner
+                    route={destination.destinationRoute}
+                    image={destination.destinationBannerUrl}
+                />
             <div className="flex justify-between">
                 <div className="text-2xl font-semibold m-4">{dest[0].name}</div>
                 <div className="my-auto mr-2">
@@ -35,7 +28,6 @@ export default function Destination(id) {
 // id:   str  -> id of destination
 // full: bool -> recursively expand all the contents
 export function getDestination(id, full = false) {
-    
     // currently giving dummy data
 
     const sampleDestination = {
@@ -60,37 +52,40 @@ export function getDestination(id, full = false) {
 
     let sampleDestinationFull = { ...sampleDestination };
 
-    sampleDestination.destinationFlauraFauna = [
+    sampleDestinationFull.destinationFlauraFauna = [
         {
-            "ffId": "FF-001",
-            "ffName": "Nilgiri tahr",
-            "ffScientificName": "Nilgiritragus hylocrius",
-            "ffDescription": "The Nilgiri Tahr (Nilgiritragus hylocrius, former name is Hemitragus hylocrius) is an endangered mountain ungulate endemic to the southern part of the Western Ghats. The species is found in a roughly 400 km stretch in the Western Ghats which falls in the states of Kerala and Tamil Nadu.",
-            "ffRiskLevel": "Least concern",
-            "ffWikiLink": "https://www.keralatourism.org/munnar/nilgiri-tahr.php",
-            "ffImage": "https://cdn.hellomunnar.in/falurafauna/ff-001.jpeg"
+            ffId: "FF-001",
+            ffName: "Nilgiri tahr",
+            ffScientificName: "Nilgiritragus hylocrius",
+            ffDescription:
+                "The Nilgiri Tahr (Nilgiritragus hylocrius, former name is Hemitragus hylocrius) is an endangered mountain ungulate endemic to the southern part of the Western Ghats. The species is found in a roughly 400 km stretch in the Western Ghats which falls in the states of Kerala and Tamil Nadu.",
+            ffRiskLevel: "Least concern",
+            ffWikiLink: "https://www.keralatourism.org/munnar/nilgiri-tahr.php",
+            ffImage: "https://cdn.hellomunnar.in/falurafauna/ff-001.jpeg",
         },
         {
-            "ffId": "FF-001",
-            "ffName": "Nilgiri tahr",
-            "ffScientificName": "Nilgiritragus hylocrius",
-            "ffDescription": "The Nilgiri Tahr (Nilgiritragus hylocrius, former name is Hemitragus hylocrius) is an endangered mountain ungulate endemic to the southern part of the Western Ghats. The species is found in a roughly 400 km stretch in the Western Ghats which falls in the states of Kerala and Tamil Nadu.",
-            "ffRiskLevel": "Least concern",
-            "ffWikiLink": "https://www.keralatourism.org/munnar/nilgiri-tahr.php",
-            "ffImage": "https://cdn.hellomunnar.in/falurafauna/ff-003.jpeg"
+            ffId: "FF-002",
+            ffName: "Nilgiri tahr",
+            ffScientificName: "Nilgiritragus hylocrius",
+            ffDescription:
+                "The Nilgiri Tahr (Nilgiritragus hylocrius, former name is Hemitragus hylocrius) is an endangered mountain ungulate endemic to the southern part of the Western Ghats. The species is found in a roughly 400 km stretch in the Western Ghats which falls in the states of Kerala and Tamil Nadu.",
+            ffRiskLevel: "Least concern",
+            ffWikiLink: "https://www.keralatourism.org/munnar/nilgiri-tahr.php",
+            ffImage: "https://cdn.hellomunnar.in/falurafauna/ff-003.jpeg",
         },
         {
-            "ffId": "FF-001",
-            "ffName": "Nilgiri tahr",
-            "ffScientificName": "Nilgiritragus hylocrius",
-            "ffDescription": "The Nilgiri Tahr (Nilgiritragus hylocrius, former name is Hemitragus hylocrius) is an endangered mountain ungulate endemic to the southern part of the Western Ghats. The species is found in a roughly 400 km stretch in the Western Ghats which falls in the states of Kerala and Tamil Nadu.",
-            "ffRiskLevel": "Least concern",
-            "ffWikiLink": "https://www.keralatourism.org/munnar/nilgiri-tahr.php",
-            "ffImage": "https://cdn.hellomunnar.in/falurafauna/ff-002.jpeg"
+            ffId: "FF-003",
+            ffName: "Nilgiri tahr",
+            ffScientificName: "Nilgiritragus hylocrius",
+            ffDescription:
+                "The Nilgiri Tahr (Nilgiritragus hylocrius, former name is Hemitragus hylocrius) is an endangered mountain ungulate endemic to the southern part of the Western Ghats. The species is found in a roughly 400 km stretch in the Western Ghats which falls in the states of Kerala and Tamil Nadu.",
+            ffRiskLevel: "Least concern",
+            ffWikiLink: "https://www.keralatourism.org/munnar/nilgiri-tahr.php",
+            ffImage: "https://cdn.hellomunnar.in/falurafauna/ff-002.jpeg",
         },
     ];
 
-    sampleDestinationFull.challenges = [
+    sampleDestinationFull.destinationChallanges = [
         {
             challengeId: "CH1",
             challangeName: "DIFFERENTLY ABLED",
@@ -105,30 +100,6 @@ export function getDestination(id, full = false) {
         },
     ];
 
-    // fetch reviews from backend
-    sampleDestinationFull.reviews = [
-        {
-            title: "An Exhilerating Experience!",
-            author: {
-                name: "Jane Doe",
-                image: null,
-            },
-            date: "25 June 2021",
-            rating: 4,
-            review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi non non aliquam amet nibh.",
-        },
-        {
-            title: "An Exhilerating Experience!",
-            author: {
-                name: "Jane Doe",
-                image: null,
-            },
-            date: "25 June 2021",
-            rating: 4,
-            review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi non non aliquam amet nibh.",
-        },
-    ]
-
     sampleDestinationFull.destinationActivities = [
         {
             activityTagId: "AT-001",
@@ -137,12 +108,12 @@ export function getDestination(id, full = false) {
         },
         {
             activityTagId: "AT-002",
-            activityTagName: "Trekking",
+            activityTagName: "Sightseeing",
             activityTagIconUrl: "https://cdn.hellomunnar.in/icons/AT-002.svg",
         },
         {
             activityTagId: "AT-003",
-            activityTagName: "Trekking",
+            activityTagName: "Wildlife",
             activityTagIconUrl: "https://cdn.hellomunnar.in/icons/AT-003.svg",
         },
     ];
