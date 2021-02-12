@@ -14,10 +14,10 @@ function KsrtcCard(props) {
                     <img
                         src={clockicon}
                         class="w-5 h-5 object-cover rounded-full"
-                        alt="avatar"></img>
-                    <a class="text-black font-medium text-sm mx-3" href="/#">
+                        alt="clock"></img>
+                    <span class="text-black font-medium text-sm mx-3">
                         {props.time} {props.amorpm}
-                    </a>
+                    </span>
                     <span class="font-medium px-5 text-sm text-black">
                         {props.type}
                     </span>
