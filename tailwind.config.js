@@ -4,15 +4,20 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         fontFamily: {
-            sans: ["Quicksand"],
+            sans: ["Poppins"],
         },
 
         extend: {
             spacing: {
                 "3/4": "75%",
+                "9/16": "56.25%",
+                "full": "100%",
             },
             colors:{
-                teal:colors.teal
+                teal:colors.teal,
+                violet: colors.violet,
+                cyan: colors.cyan,
+                amber: colors.amber,
             }
         },
     },
