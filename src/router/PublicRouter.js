@@ -24,9 +24,8 @@ const routes = {
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
-    "/nearmepage": () => <Nearmepage/>,
-    "/amenitiespage": () => <Amenitiespage/>,
-
+    "/nearmepage": () => <Nearmepage />,
+    "/amenitiespage": () => <Amenitiespage />,
 };
 
 export default function PublicRouter() {

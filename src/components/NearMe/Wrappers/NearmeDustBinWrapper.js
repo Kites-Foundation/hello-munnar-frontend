@@ -8,7 +8,9 @@ export default function NearmeDustBinWrapper() {
         <div className="m-8">
             <div>
                 <div className="py-4 max-w-xl ">
-                    <h2 className="text-3xl text-gray-800 font-bold">Wastebin</h2>
+                    <h2 className="text-3xl text-gray-800 font-bold">
+                        Wastebin
+                    </h2>
                     <p className="mt-4 text-sm text-gray-600">
                         Lorem, ipsum dolor sit amea aperiam mollitia.
                     </p>
