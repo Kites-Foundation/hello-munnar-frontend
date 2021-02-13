@@ -1,41 +1,98 @@
 import React, { useState } from "react";
-import profilePic from "../../assets/images/profilePic.png";
-import RatingStars from "../Common/RatingStars";
 import ReviewRatingModal from "./ReviewRatingModal";
+import Icon from "../Common/Icon";
+import Star from "../Common/Star";
 
-export default function Reviews() {
-    const [rating, setRating] = useState(3);
+// fetch reviews from backend
+const reviews = [
+    {
+        title: "An Exhilerating Experience!",
+        author: {
+            name: "Jane Doe",
+            image: null,
+        },
+        date: "25 June 2021",
+        rating: 4,
+        review:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi non non aliquam amet nibh.",
+    },
+    {
+        title: "An Exhilerating Experience!",
+        author: {
+            name: "Jane Doe",
+            image: null,
+        },
+        date: "25 June 2021",
+        rating: 4,
+        review:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi non non aliquam amet nibh.",
+    },
+];
+
+export default function Reviews({ id }) {
     const [showRatingModal, setShowRatingModal] = useState(false);
-    const handleClickRatings = (key) => {
-        setShowRatingModal(true);
-        setRating(key);
-    };
+
     return (
-        <div>
-            <div className="text-xl font-semibold m-4">Rate and Review</div>
-            <RatingStars
-                size={7}
-                edit={true}
-                rating={rating}
-                handleClickRatings={handleClickRatings}
-            />
-            <div className="flex mx-4 mt-4">
-                <img
-                    className="rounded-full  h-8 w-8 my-1"
-                    src={profilePic}
-                    alt=""
-                />
-                <div className="text-sm my-auto ml-1 font-semibold">
-                    John Doe
+        <div className="py-2 relative">
+            {reviews.length > 0 ? (
+                reviews.map((review, i) => (
+                    <div
+                        className="p-4 border-2 border-black rounded-xl my-5"
+                        key={i}>
+                        <div className="font-semibold text-lg">
+                            {review.title}
+                        </div>
+                        <div className="flex items-center mt-1">
+                            {review.author.image ? (
+                                <img
+                                    src={review.author.image}
+                                    alt=""
+                                    className="w-8 h-8 rounded-full"
+                                />
+                            ) : (
+                                <Icon
+                                    name="avatar"
+                                    className="text-black fill-current"
+                                    color="black"
+                                    size={8}
+                                />
+                            )}
+                            <span className="ml-3 font-medium">
+                                {review.author.name}
+                            </span>
+                        </div>
+                        <div className="flex items-center pt-2">
+                            <Star num={review.rating} />
+                            <div className="ml-3 flex items-center">
+                                <Icon
+                                    name="available"
+                                    className="text-black fill-current mr-2"
+                                    color="black"
+                                    size={5}
+                                />
+                                <span className="">{review.date}</span>
+                            </div>
+                        </div>
+                        <div className="pt-3">{review.review}</div>
+                    </div>
+                ))
+            ) : (
+                <div className="h-48 font-bold uppercase text-2xl text-gray-400 justify-center flex items-center">
+                    No reviews
                 </div>
-            </div>
-            <RatingStars rating={3} />
-            <div className="px-4 text-sm">Awsome Place! Dont miss it</div>
-            {showRatingModal && (
-                <ReviewRatingModal
-                    setShow={setShowRatingModal}
-                    rating={rating}
+            )}
+            <button
+                onClick={() => setShowRatingModal(true)}
+                className="fixed bottom-10 right-10 h-16 w-16 bg-black rounded-full flex justify-center items-center focus:outline-none">
+                <Icon
+                    name="edit"
+                    className="text-white fill-current mr-2 relative left-1"
+                    color="white"
+                    size={7}
                 />
+            </button>
+            {showRatingModal && (
+                <ReviewRatingModal onClose={() => setShowRatingModal(false)} />
             )}
         </div>
     );

@@ -1,40 +1,42 @@
 import React, { useState } from "react";
-import Details from "./Details";
-import Activity from "./Activity";
+import Description from "./Description";
 import Reviews from "./Reviews";
-import Hotels from "./Hotels";
 
-export default function DestinationNav() {
-    const defaultTab = "details";
+export default function DestinationNav({ destination, className }) {
+    const defaultTab = "description";
     const [activeTab, setActiveTab] = useState(defaultTab);
+
+    const {
+        destinationDescription,
+        destinationFlauraFauna,
+        destinationChallanges,
+        destinationId,
+    } = destination;
+
     return (
-        <div>
+        <div className={className}>
             <div className="flex justify-around ">
-                <button
-                    className="font-semibold hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 focus:outline-none"
-                    onClick={() => setActiveTab("details")}>
-                    Details
-                </button>
-                <button
-                    className="font-semibold hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 focus:outline-none"
-                    onClick={() => setActiveTab("reviews")}>
-                    Reviews
-                </button>
-                {/* <button
-                    className="font-semibold hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 focus:outline-none "
-                    onClick={() => setActiveTab("hotels")}>
-                    Hotel
-                </button> */}
-                <button
-                    className="font-semibold hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 focus:outline-none"
-                    onClick={() => setActiveTab("activities")}>
-                    Activitites
-                </button>
+                {["description", "reviews"].map((tabName) => (
+                    <button
+                        key={tabName}
+                        className={`font-medium py-2 ${
+                            activeTab === tabName
+                                ? "border-black"
+                                : "border-transparent"
+                        }  border-b-2 focus:outline-none capitalize`}
+                        onClick={() => setActiveTab(tabName)}>
+                        {tabName}
+                    </button>
+                ))}
             </div>
-            {activeTab === "details" && <Details />}
-            {activeTab === "reviews" && <Reviews />}
-            {activeTab === "hotels" && <Hotels />}
-            {activeTab === "activities" && <Activity />}
+            {activeTab === "description" && (
+                <Description
+                    description={destinationDescription}
+                    flaura={destinationFlauraFauna}
+                    challanges={destinationChallanges}
+                />
+            )}
+            {activeTab === "reviews" && <Reviews id={destinationId} />}
         </div>
     );
 }

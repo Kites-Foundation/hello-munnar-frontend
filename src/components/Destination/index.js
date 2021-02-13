@@ -1,9 +1,12 @@
 import React from "react";
+import Banner from "./Banner";
+import Heading from "./Heading";
 import DestinationNav from "./DestinationNav";
-import Icon from "../Common/Icon";
-import data from "../Explore/assets/data/data.json";
+import ActivitiesContainer from "./ActivitiesContainer";
 
 export default function Destination(id) {
+    // get all the details of a destination
+    const destination = getDestination(id, true);
 
     return (
         <div className="w-full bg-gray-200">
@@ -19,9 +22,11 @@ export default function Destination(id) {
                     className="px-8 md:px-10 py-4"
                 />
 
+                <DestinationNav
+                    destination={destination}
+                    className="px-8 md:px-10"
+                />
             </div>
-
-            <DestinationNav />
         </div>
     );
 }
