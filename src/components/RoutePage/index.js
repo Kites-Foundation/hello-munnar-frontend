@@ -81,7 +81,7 @@ const RoutePage = ({ route, position }) => {
     const color = routes[route.name];
 
     return (
-        <div className="w-full bg-black">
+        <div className="w-full bg-gray-200">
             <div className="max-w-5xl mx-auto bg-white">
                 <PositionIndicator
                     position={position}

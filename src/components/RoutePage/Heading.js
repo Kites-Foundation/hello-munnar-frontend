@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "../Common/Icon";
+import TruncatedText from "../Common/TruncatedText";
 
 const Heading = ({ route, color, className }) => {
     return (
@@ -21,7 +22,11 @@ const Heading = ({ route, color, className }) => {
             <h1 className="uppercase text-xl font-semibold pt-3 pb-2">
                 {route.path}
             </h1>
-            <span className="">{route.description}</span>
+            <TruncatedText
+                content={route.description}
+                maxLength={200}
+                className="leading-relaxed pt-1 pb-3"
+            />
         </div>
     );
 };

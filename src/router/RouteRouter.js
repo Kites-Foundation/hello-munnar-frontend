@@ -8,7 +8,8 @@ const routesDetails = [
     {
         name: "violet",
         path: "Munnar-Marayoor-Kanthalloor-Chinnar",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra accumsan. Sit amet porttitor eget dolor. Varius quam quisque id diam vel quam. Lorem donec massa sapien faucibus et molestie ac feugiat. Habitant morbi tristique senectus et netus et. Sagittis purus sit amet volutpat consequat mauris nunc. Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Eget nunc scelerisque viverra mauris in aliquam sem fringilla. Purus viverra accumsan in nisl nisi scelerisque eu ultrices. In dictum non consectetur a. Adipiscing diam donec adipiscing tristique risus nec. Nisl condimentum id venenatis a condimentum vitae sapien. Quam quisque id diam vel.",
         image: routeImage,
     },
     {
