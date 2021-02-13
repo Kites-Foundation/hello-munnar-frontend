@@ -1,0 +1,82 @@
+[
+	{
+		"ksrtcid": "KS-001",
+		"ksrtcroute": "KOTTAYAM",
+		"kstrctime": "1899-12-29T23:29:50.000Z",
+		"from": "MUNNAR",
+		"to": "TRIVANDRUM",
+		"ksrtctype": "SUPER FAST",
+		"availabledays": "allDay",
+		"booking": "https://online.keralartc.com/oprs-web/"
+	},
+	{
+		"ksrtcid": "KS-002",
+		"ksrtcroute": "KOTTAYAM",
+		"kstrctime": "1899-12-30T01:38:50.000Z",
+		"from": "MARAYOOR",
+		"to": "TRIVANDRUM",
+		"ksrtctype": "SUPER FAST",
+		"availabledays": "allDay",
+		"booking": "https://online.keralartc.com/oprs-web/"
+	},
+	{
+		"ksrtcid": "KS-003",
+		"ksrtcroute": "KOTTAYAM",
+		"kstrctime": "1899-12-30T05:10:50.000Z",
+		"from": "MUNNAR",
+		"to": "TRIVANDRUM",
+		"ksrtctype": "SUPER FAST",
+		"availabledays": "allDay",
+		"booking": "https://online.keralartc.com/oprs-web/"
+	},
+	{
+		"ksrtcid": "KS-004",
+		"ksrtcroute": "KOTTAYAM",
+		"kstrctime": "1899-12-30T10:08:50.000Z",
+		"from": "MUNNAR",
+		"to": "NEYYATTINKARA",
+		"ksrtctype": "SUPER FAST",
+		"availabledays": "allDay",
+		"booking": "https://online.keralartc.com/oprs-web/"
+	},
+	{
+		"ksrtcid": "KS-005",
+		"ksrtcroute": "KOZHIKODE",
+		"kstrctime": "1899-12-30T14:08:50.000Z",
+		"from": "MUNNAR",
+		"to": "SULTHAN BATHERY",
+		"ksrtctype": "SUPER EXPRESS AIR BUS",
+		"availabledays": "allDay",
+		"booking": "https://online.keralartc.com/oprs-web/"
+	},
+	{
+		"ksrtcid": "KS-006",
+		"ksrtcroute": "ALAPPUZHA",
+		"kstrctime": "1899-12-30T14:38:50.000Z",
+		"from": "MUNNAR",
+		"to": "TRIVANDRUM",
+		"ksrtctype": "MINNAL SUPER DELUXE AIR BUS",
+		"availabledays": "allDay",
+		"booking": "https://online.keralartc.com/oprs-web/"
+	},
+	{
+		"ksrtcid": "KS-007",
+		"ksrtcroute": "KOTTAYAM",
+		"kstrctime": "1899-12-30T15:39:50.000Z",
+		"from": "MUNNAR",
+		"to": "TRIVANDRUM",
+		"ksrtctype": "SUPER FAST",
+		"availabledays": "allDay",
+		"booking": "https://online.keralartc.com/oprs-web/"
+	},
+	{
+		"ksrtcid": "KS-008",
+		"ksrtcroute": "KOZHIKODE",
+		"kstrctime": "1899-12-30T10:09:50.000Z",
+		"from": "MUNNAR",
+		"to": "BANGALORE",
+		"ksrtctype": "SUPER DELUX AIR BUS",
+		"availabledays": "allDay",
+		"booking": "https://online.keralartc.com/oprs-web/"
+	}
+]
