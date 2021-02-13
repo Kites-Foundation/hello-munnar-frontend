@@ -4,7 +4,7 @@ import VectorIcon from "../NearMe/icons/Vector.svg";
 
 export default function Thingstodo(props) {
     return (
-        <div class="bg-white border-2 border-blue-600 w-full mr-2 p-2 rounded-xl shadow border border-blue">
+        <div class="bg-white border-2 border-blue-600 w-full p-1 mx-1 rounded-xl shadow border mt-3 border-blue">
             <div class="font-Poppins font-style:normal font-weight:600 font-bold text-black-600 text-xl">
                 {props.name}
             </div>

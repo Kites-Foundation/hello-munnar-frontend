@@ -12,6 +12,7 @@ import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
 import Nearmepage from "../components/NearMe/nearmepage";
 import Amenitiespage from "../components/NearMe/amenitiespage";
+import Topbar from "../components/NearMe/Topbar";
 
 const routes = {
     // Explore page is the temporary default home page
@@ -26,6 +27,8 @@ const routes = {
     "/experiences": () => <Experiences />,
     "/nearmepage": () => <Nearmepage />,
     "/amenitiespage": () => <Amenitiespage />,
+    "/Topbar": () => <Topbar />,
+
 };
 
 export default function PublicRouter() {
