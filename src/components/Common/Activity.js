@@ -1,6 +1,6 @@
 import React from "react";
 import { A } from "hookrouter";
-import Icon from "../Common/Icon";
+import Icon from "./Icon";
 export default function Activity({ activity }) {
     const {
         // activityTagId,

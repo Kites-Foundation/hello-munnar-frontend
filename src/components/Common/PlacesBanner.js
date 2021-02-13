@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import Icon from "../Common/Icon";
+import Icon from "./Icon";
 
-const Banner = ({ route, image }) => {
-    const [liked, setLiked] = useState(route.liked);
+const PlacesBanner = ({ route, image, onLike }) => {
+    // get initial like value from localStorage
+    const [liked, setLiked] = useState(false);
     const { routeColorName } = route;
 
-    const like = () => {
+    const onClickLike = () => {
+        onLike(!liked);
         setLiked(!liked);
-        // store liked destination in local storage
     };
+
     return (
         <div className="relative w-full pb-7">
             <img
@@ -37,7 +39,7 @@ const Banner = ({ route, image }) => {
 
             <button
                 className="absolute flex items-center justify-center -bottom-0 right-8 w-14 h-14 bg-white shadow-lg rounded-full focus:outline-none"
-                onClick={like}>
+                onClick={onClickLike}>
                 <Icon
                     name="heart"
                     color={liked ? "red-500" : "gray-400"}
@@ -50,4 +52,4 @@ const Banner = ({ route, image }) => {
     );
 };
 
-export default Banner;
+export default PlacesBanner;

@@ -35,7 +35,7 @@ export default function ReviewRatingModal({ rating, onClose }) {
                     />
                 </button>
                 <h2 className="text-2xl font-semibold">Write a review</h2>
-                <div className="my-3 flex">
+                <div className="mt-3 mb-6 flex">
                     <Star
                         edit={true}
                         num={form.rating}
@@ -49,7 +49,7 @@ export default function ReviewRatingModal({ rating, onClose }) {
                     name="title"
                     value={form.title}
                     onChange={handleFormChange}
-                    className="border border-black rounded-lg text-xl font-semibold px-1 py-2"
+                    className="border border-black rounded-lg text-xl font-semibold px-2 py-2 w-full"
                     placeholder="Title"
                 />
 
@@ -57,7 +57,7 @@ export default function ReviewRatingModal({ rating, onClose }) {
                     name="content"
                     value={form.content}
                     onChange={handleFormChange}
-                    className="border border-black h-32 mt-5 rounded-lg px-1 py-2 w-full"
+                    className="border border-black h-32 mt-5 rounded-lg px-2 py-2 w-full"
                     placeholder="Description"
                 />
 

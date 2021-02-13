@@ -30,7 +30,7 @@ export default function DestinationCard({ data }) {
                     />
                 </button>
             </div>
-            <A href="#">
+            <A href="/destination/1">
                 <div className="py-6 px-3 md:px-6">
                     <h3 className="font-semibold">{routeDestination}</h3>
                     <p className="text-gray-600 text-sm">{destinationDescription.substring(0, 80)+"..."}</p>

@@ -1,31 +1,41 @@
 import React from "react";
-import Banner from "./Banner";
-import Heading from "./Heading";
-import DestinationNav from "./DestinationNav";
-import ActivitiesContainer from "./ActivitiesContainer";
+import Banner from "../Common/PlacesBanner";
+import Heading from "../Common/Heading";
+import PlacesTab from "../Common/PlacesTab";
+import ActivitiesContainer from "../Common/ActivitiesContainer";
 
 export default function Destination(id) {
     // get all the details of a destination
-    const destination = getDestination(id, true);
+    const destinationFull = getDestination(id, true);
+    const destination = Object.keys(destinationFull).reduce((acc, key) => {
+        let newKey = key.replace("destination", "");
+        newKey = `${newKey.charAt(0).toLowerCase()}${newKey.slice(1)}`;
+        return {
+            ...acc,
+            [newKey]: destinationFull[key],
+        };
+    }, {});
+
+    const onLike = (status) => {
+        // save to local storage
+    };
 
     return (
         <div className="w-full bg-gray-200">
             <div className="max-w-5xl mx-auto bg-white">
                 <Banner
-                    route={destination.destinationRoute}
-                    image={destination.destinationBannerUrl}
+                    route={destination.route}
+                    image={destination.bannerUrl}
+                    onLike={onLike}
                 />
-                <Heading destination={destination} className="px-8 md:px-10" />
+                <Heading place={destination} className="pt-2 px-8 md:px-10" />
 
                 <ActivitiesContainer
-                    activities={destination.destinationActivities}
+                    activities={destination.activities}
                     className="px-8 md:px-10 py-4"
                 />
 
-                <DestinationNav
-                    destination={destination}
-                    className="px-8 md:px-10"
-                />
+                <PlacesTab place={destination} className="px-8 md:px-10" />
             </div>
         </div>
     );
