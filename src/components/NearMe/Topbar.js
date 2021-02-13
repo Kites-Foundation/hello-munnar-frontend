@@ -122,14 +122,14 @@ export default function TabsRender() {
         <div className="p-4 font-poppins font-weight=600  ">
             <div className="flex justify-between mt-6 font-semibold text-3xl">
                 <div className="flex mt-6">
-                    <img src={nearmeicon}></img>
+                    <img src={nearmeicon} alt=""></img>
                     <div class="pl-2 ml-2 text-2xl ">Near me </div>
                 </div>
             </div>
 
             <div>
                 <div className="flex mt-6 w-4 ">
-                    <img src={location}></img>
+                    <img src={location} alt=""></img>
 
                     <div class="pl-2 text-1xl font-medium">Meeshapullimala</div>
                 </div>

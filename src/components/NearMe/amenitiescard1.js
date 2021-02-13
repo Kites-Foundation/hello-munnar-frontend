@@ -62,9 +62,9 @@ export default function Amenities(props) {
                 <div class="ml-2 mr-3 mt-2">
                     <img
                         src={
-                            props.category == "Hospitals"
+                            props.category === "Hospitals"
                                 ? HospIcon
-                                : props.category == "Food_Drink"
+                                : props.category === "Food_Drink"
                                 ? RestaurantIcon
                                 : null
                         }
