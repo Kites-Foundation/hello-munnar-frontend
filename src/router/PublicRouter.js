@@ -10,6 +10,7 @@ import Experiences from "../components/Experiences/Experiences";
 import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
+import RouteRouter from "./RouteRouter";
 
 const routes = {
     // Explore page is the temporary default home page
@@ -22,6 +23,9 @@ const routes = {
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
+
+    // all routes will for VIBRGYOR routes
+    "/route*": () => <RouteRouter />,
 };
 
 export default function PublicRouter() {

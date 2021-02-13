@@ -27,6 +27,11 @@ import { ReactComponent as Logout } from "../../assets/images/logout.svg";
 import { ReactComponent as Settings } from "../../assets/images/settings.svg";
 import { ReactComponent as KSRTC } from "../../assets/images/ksrtc.svg";
 import { ReactComponent as Heart } from "../../assets/images/heart.svg";
+import { ReactComponent as Close } from "../../assets/images/close.svg";
+import { ReactComponent as Information } from "../../assets/images/information.svg";
+import { ReactComponent as Todo } from "../../assets/images/todo.svg";
+import { ReactComponent as FoodDrinks } from "../../assets/images/food.svg";
+import { ReactComponent as Amenities } from "../../assets/images/amenities.svg";
 
 const icons = {
     nearMe: NearMe,
@@ -57,6 +62,11 @@ const icons = {
     back: Back,
     ksrtc: KSRTC,
     heart: Heart,
+    close: Close,
+    information: Information,
+    todo: Todo,
+    foodDrinks: FoodDrinks,
+    amenities: Amenities,
 };
 
 export default function Icon({
