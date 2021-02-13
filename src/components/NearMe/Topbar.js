@@ -1,6 +1,5 @@
 import React from "react";
 import location from "../NearMe/icons/map-pin.svg";
-import loc2 from "./Vector.svg";
 import nearmeicon from "./Vector (2).svg";
 import Amenities from "./amenitiescard1";
 import Thingstodo from "./thingstodo";
