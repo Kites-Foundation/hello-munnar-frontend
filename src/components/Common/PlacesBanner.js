@@ -6,6 +6,15 @@ const PlacesBanner = ({ route, image, onLike }) => {
     const [liked, setLiked] = useState(false);
     const { routeColorName } = route;
 
+    const colors = {
+        violet: "text-violet-900 border-violet-900",
+        indigo: "text-indigo-900 border-indigo-900",
+        cyan: "text-cyan-600 border-cyan-600",
+        green: "text-green-500 border-green-500",
+        yellow: "text-yellow-500 border-yellow-500",
+        amber: "text-amber-600 border-amber-600",
+        red: "text-red-500 border-red-500",
+    };
     const onClickLike = () => {
         onLike(!liked);
         setLiked(!liked);
@@ -31,8 +40,15 @@ const PlacesBanner = ({ route, image, onLike }) => {
             </button>
 
             <div className="absolute flex top-8 right-8 items-center bg-white px-2 py-0.5 rounded-md shadow-md">
-                <Icon name="route" size={5} className="mr-1" />
-                <span className="uppercase font-semibold text-sm">
+                <Icon
+                    name="route"
+                    size={4}
+                    className={`mr-1 ${colors[routeColorName.toLowerCase()]}`}
+                />
+                <span
+                    className={`uppercase font-semibold text-sm ${
+                        colors[routeColorName.toLowerCase()]
+                    }`}>
                     {routeColorName} Route
                 </span>
             </div>

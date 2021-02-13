@@ -33,7 +33,7 @@ export default function Reviews({ id }) {
     const [showRatingModal, setShowRatingModal] = useState(false);
 
     return (
-        <div className="py-2 relative">
+        <div className="py-2 relative pb-24">
             {reviews.length > 0 ? (
                 reviews.map((review, i) => (
                     <div
