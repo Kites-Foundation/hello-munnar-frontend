@@ -54,7 +54,7 @@ const Tabs = ({ color }) => {
                             </a>
                         </li>
                     </ul>
-                    <div class="container mx-auto max-w-sm h-screen flex flex-col space-y-4 justify-center items-center">
+                    <div class="container mx-auto max-w-sm flex flex-col space-y-4 justify-center items-center">
                         <div
                             className={openTab === 1 ? "block" : "hidden"}
                             id="link1">
