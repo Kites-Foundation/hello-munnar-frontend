@@ -5,7 +5,7 @@ export default function TodoCard({ data }) {
     const { bannerImg, activityName } = data;
     return (
         <div className="relative bg-gray-100 flex-none shadow-lg rounded-lg overflow-hidden w-48 md:w-52 lg:w-60 mr-8 md:mr-16">
-            <A href="#">
+            <A href="/activity/1">
                 <div className="relative pb-full">
                     <img
                         src={bannerImg}
