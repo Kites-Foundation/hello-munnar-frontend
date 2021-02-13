@@ -13,7 +13,7 @@ export default function Thingstodo(props) {
                     <RatingStars rating={4} />
                 </div>
                 <div>
-                    <img src={VectorIcon}></img>
+                    <img src={VectorIcon} alt=""></img>
                 </div>
                 <div class="ml-4 text-indigo-400">Indigo</div>
             </div>
