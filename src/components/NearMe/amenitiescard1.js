@@ -67,7 +67,8 @@ export default function Amenities(props) {
                                 : props.category == "Food_Drink"
                                 ? RestaurantIcon
                                 : null
-                        } alt=""></img>
+                        }
+                        alt=""></img>
                 </div>
 
                 <div class="font-Poppins font-style:normal font-weight:600 font-bold text-black-600 text-xl">
