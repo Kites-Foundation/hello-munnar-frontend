@@ -5,14 +5,13 @@ import Destination from "../components/Destination/index";
 import Experience from "../components/Experience/";
 import NavBar from "../components/Common/NavBar";
 import Notification from "../components/Notification/index";
-import NearMe from "../components/NearMe/top";
+import NearMe from "../components/NearMe/Topbar";
 import Experiences from "../components/Experiences/Experiences";
 import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
-import Nearmepage from "../components/NearMe/nearmepage";
-import Amenitiespage from "../components/NearMe/amenitiespage";
-import Topbar from "../components/NearMe/Topbar";
+
+
 
 const routes = {
     // Explore page is the temporary default home page
@@ -24,11 +23,8 @@ const routes = {
     "/destination/:id": ({ id }) => <Destination id={id} />,
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,
-    "/experiences": () => <Experiences />,
-    "/nearmepage": () => <Nearmepage />,
-    "/amenitiespage": () => <Amenitiespage />,
-    "/Topbar": () => <Topbar />,
-
+    "/experiences": () => <Experiences />,        
+    
 };
 
 export default function PublicRouter() {
