@@ -36,11 +36,15 @@ const routes = {
 };
 
 export default function PublicRouter() {
+    const pagesToShowNavBar = ["/", "/favorites", "/nearme", "/experiences"];
+    console.log(window.location.pathname);
     const pages = useRoutes(routes);
-    return (
+    return pagesToShowNavBar.includes(window.location.pathname) ? (
         <div className="w-screen flex flex-col min-h-screen pb-20">
             {pages}
             <NavBar />
         </div>
+    ) : (
+        pages
     );
 }

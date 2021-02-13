@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "../Common/PlacesBanner";
 import Heading from "../Common/Heading";
 import PlacesTab from "../Common/PlacesTab";
@@ -7,6 +7,11 @@ import ActivitiesContainer from "../Common/ActivitiesContainer";
 export default function Destination(id) {
     // get all the details of a destination
     const destinationFull = getDestination(id, true);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const destination = Object.keys(destinationFull).reduce((acc, key) => {
         let newKey = key.replace("destination", "");
         newKey = `${newKey.charAt(0).toLowerCase()}${newKey.slice(1)}`;

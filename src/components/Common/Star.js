@@ -7,14 +7,16 @@ export default function Star({
     className,
     size = 5,
     onChange,
-    edit,
+    edit = false,
 }) {
     return Array.apply(null, {
         length: 5,
     }).map((_, i) => (
         <button
             type="button"
-            className="flex focus:outline-none"
+            className={`flex focus:outline-none ${
+                edit ? "" : "cursor-default"
+            }`}
             key={i.toString()}
             onClick={() => {
                 if (edit) onChange({ target: { name, value: i + 1 } });
