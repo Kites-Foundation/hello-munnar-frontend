@@ -1,9 +1,14 @@
 import React from "react";
+import TruncatedText from "../Common/TruncatedText";
 
 export default function Description({ description, flaura, challanges }) {
     return (
         <div className="">
-            <div className="py-6 md:py-10">{description}</div>
+            <TruncatedText
+                content={description}
+                maxLength={200}
+                className="leading-relaxed py-6 md:py-10"
+            />
             <div className="flex flex-wrap">
                 {challanges &&
                     challanges.map((challange) => (
