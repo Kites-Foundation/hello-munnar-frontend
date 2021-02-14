@@ -12,6 +12,7 @@ import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
 
 import Favourites from "../components/Favourites/index";
+import Ksrtc from "../components/Ksrtc/index";
 import RouteRouter from "./RouteRouter";
 
 
@@ -28,6 +29,7 @@ const routes = {
     "/experiences": () => <Experiences />,
 
     "/favourites": () => <Favourites />,
+    "/ksrtc": () => <Ksrtc />,
 
     // all routes will for VIBRGYOR routes
     "/route*": () => <RouteRouter />,
