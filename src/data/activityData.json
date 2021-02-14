@@ -11,6 +11,7 @@
 		"bookinglink": "https://munnar.kfdcecotourism.com/",
 		"bookingContactName": "KFDC Ecotourism MUNNAR Mattupatty Road, Munnar",
 		"bookingContactNumber": "91 4865 230332\n91 82898 21408",
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"activityDescription": "Meesapulimala is a travel destination for adventurous tourists. The trekking experience here is\rtruly challenging. Twenty-four kilometres from Munnar to Mattupetty, through the Aruvukadu\restate, you will find the basecamp of Meesapulimala. Four kilometres from here is the Rhodo\rvalley which is till where you can travel in a jeep. A night’s stay at the Rhodo Mansion is much\rneeded for the next day’s climb to the peak amidst rhododendron trees. The package includes guide service, breakfast, lunch, evening tea & dinner. The cost of the\rpackage for a two-person stay at Rhodo Mansion in Rs. 6000 and a two-person stay at Base\rCamp is Rs. 4000. For a three-person stay at Sky Cottage, the charge is Rs. 9000."
 	},
 	{
@@ -25,6 +26,7 @@
 		"activitycoordinateslat": 10.12665808,
 		"activitycoordinateslon": 77.25823467,
 		"bookinglink": "Spot booking",
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"activityDescription": "A three-hour trekking through the shola grasslands from the Pampadum Shola National Park to\rVattavada lets you through the enchanting woodlands and stunted trees of the Shola forests.\r\nTrekking is available here from 8 AM to 2 PM and it costs 250 rupees per person."
 	},
 	{
@@ -38,6 +40,7 @@
 		"activityChallangesId": ["CH-2", "CH-3", "CH-4"],
 		"activitycoordinateslat": 10.1356,
 		"activitycoordinateslon": 77.0597,
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"bookinglink": "https://eravikulamnationalpark.in/landing/index.php",
 		"bookingContactName": "Wildlife Warden Munnar, Wildlife division, Munnar",
 		"bookingContactNumber": "04865 230487\n8547603199",
@@ -55,6 +58,7 @@
 		"bookinglink": "https://eravikulamnationalpark.in/landing/index.php",
 		"bookingContactName": "Wildlife Warden Munnar, Wildlife division, Munnar",
 		"bookingContactNumber": "04865 230487\n8547603199",
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"activityDescription": "The scenic Lakkam waterfalls situated in Lakkam, on the way from Marayoor to Munnar have\rbeen attracting tourists for a long time, being a favourite destination for those who love\radventure tourism and trekking.The abundant flora and fauna blended with transfixing\rsurroundings and rocky cliffs of Eravikulam plateau provides a memorable trip for the visitors."
 	},
 	{
@@ -69,6 +73,7 @@
 		"bookinglink": "https://eravikulamnationalpark.in/landing/index.php",
 		"bookingContactName": "Wildlife Warden Munnar, Wildlife division, Munnar",
 		"bookingContactNumber": "04865 230487\n8547603199",
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"activityDescription": "The cascade walk across Lakkam waterfalls, which starts from the Eravikulam stream\rmesmerizes the travellers. The charming giggles of the rushing water and the lush greenery\ramidst the woods are an amazing experience while taking a walk. It provides stress-relief\rand a peace of mind. This is also a wonderful opportunity to snap the elegance of Munnar."
 	},
 	{
@@ -83,6 +88,7 @@
 		"activitycoordinateslat": 10.0981631951696,
 		"activitycoordinateslon": 77.2032882028,
 		"bookinglink": "https://munnar.kfdcecotourism.com/",
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"bookingContactName": "KFDC Ecotourism MUNNAR Mattupatty Road, Munnar",
 		"bookingContactNumber": "91 4865 230332\n91 82898 21408",
 		"activityDescription": "Lauded as the second highest peak in western ghats, Meesappulimala is one of the UNESCO\rheritage sites. Since the peak resembles that of the face of a tiger, it is renowned so. The\rRhodo valley trek trail along with multitudes of biodiversity, Meesapulimala is favoured by all\rkinds of travellers. Apart from trekking, jungle camp is the most exalting experience this place\roffers. Staying overnight in tents at the base camp, amidst the most delicate part of nature, this\ris one of the most exciting programs offered by Kerala Forest development Corporation."
@@ -96,6 +102,7 @@
 		"activityDifficulty": "adventure",
 		"activityPrice": 3000,
 		"activityChallangesId": ["CH-3", "CH-4", "CH-5"],
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"activitycoordinateslat": 10.0981631951696,
 		"activitycoordinateslon": 77.2032882028,
 		"bookinglink": "https://munnar.kfdcecotourism.com/",
@@ -112,6 +119,7 @@
 		"activityDifficulty": "adventure",
 		"activityPrice": 3000,
 		"activityChallangesId": ["CH-3", "CH-4", "CH-5"],
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"activitycoordinateslat": 10.0981631951696,
 		"activitycoordinateslon": 77.2032882028,
 		"bookinglink": "https://munnar.kfdcecotourism.com/",
@@ -129,6 +137,7 @@
 		"activitycoordinateslon": 77.25823467,
 		"bookinglink": "https://eravikulamnationalpark.in/landing/index.php",
 		"bookingContactName": "Wildlife Warden Munnar, Wildlife division, Munnar",
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"bookingContactNumber": "04865 230487\n8547603199",
 		"activityDescription": "Despite being the smallest national park in Kerala, the splendor of the shola forests in\r\nPampadum Shola National Park will mesmerize everyone’s mind. The Log House provides a\r\njungle camp package situated in the heart of shola forests. It costs 3000 rupees for 2 people."
 	},
@@ -141,6 +150,7 @@
 		"activityDifficulty": "adventure",
 		"activityPrice": 1500,
 		"activityChallangesId": ["CH-2", "CH-3", "CH-4"],
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"activitycoordinateslat": 10.1356,
 		"activitycoordinateslon": 77.0597,
 		"bookinglink": "https://eravikulamnationalpark.in/landing/index.php",
@@ -156,6 +166,7 @@
 		"activityDifficulty": "easy",
 		"activityPrice": 700,
 		"activityChallangesId": ["CH-2", "CH-4"],
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"bookinglink": "https://booking.munnarwildlife.com/product/marayur-heritage-safari/",
 		"bookingContactName": "Forest Information Centre Wildlife Warden’s Office, Munnar",
 		"bookingContactNumber": "91 8301024187\n91 8547603199",
@@ -171,6 +182,7 @@
 		"activityPrice": 400,
 		"activityChallangesId": ["CH-2", "CH-4"],
 		"bookingContactName": "Tourism Information Centre, Munnar",
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"bookingContactNumber": "04865 231516\n9961960555",
 		"activityDescription": "The Tea Valley tour, one of the most precious moments in Munnar, takes one through the flower\rgarden, photo point, Mattupetty Dam, speed boating location, Kundala Dam, and echo point.\rThe tour charge is rs400/- per individual."
 	},
@@ -183,6 +195,7 @@
 		"activityDifficulty": "easy",
 		"activityPrice": 400,
 		"activityChallangesId": ["CH-2"],
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"bookingContactName": "Tourism Information Centre, Munnar",
 		"bookingContactNumber": "04865 231516\n9961960555",
 		"activityDescription": "The sandal valley tour is a full day trip through Munnar covering unique experiences\rsuch as Tea garden, Lukkom waterfalls, and Anaimudi peak. The trek also includes a\rvisit to the Orange Plantations, Sandalwood Forest, Muniyara Cave, Thoovanam Falls,\rand ChinnarWildlife Sanctuary among many others. The trek is an ideal sightseeing\rexperience to explore the fauna and flora of the place and to relish the beauty and\rsplendor of the lovely hill station with your loved ones. A standard 4 seater Non A/C car\ris included in the package for transportation."
@@ -196,6 +209,7 @@
 		"activityDifficulty": "easy",
 		"activityPrice": 400,
 		"activityChallangesId": ["CH-1", "CH-2"],
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"bookingContactName": "Tourism Information Centre, Munnar",
 		"bookingContactNumber": "04865 231516\n9961960555",
 		"activityDescription": "The village tour includes a visit to the spectacular Chithirapuram, Karadipara, and\rKallimaly viewpoints, Kallar and SN Puram waterfalls, and also a look in on Sengulam\rand Ponmudy dams. Apart from these, the main highlight of the tour is the spice garden visit which mesmerizes the visitors to trail through the spices cultivated and to linger\rover the amazing aroma of the place. The suspension bridge is another wonder that\rcould be witnessed during the tour. Village tour Munnar is the best way to get away\rfrom the hassles of city life and to spend some quality time with nature."
@@ -208,6 +222,7 @@
 		"activityChallangesId": ["CH-1", "CH-2"],
 		"bookingContactName": "Tourism Information Centre, Munnar",
 		"bookingContactNumber": "04865 231516\n9961960555",
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"activityDescription": "Mankulam is a small village in the Idukki district of Kerala. It is famous worldwide as the\r\nfirst self-governing institution to produce its electricity. Mankulam is also famous as the\r\nhighest peak in south India, the Anaimudi peak is located here. The elephant viewpoint\r\nand the Valara waterfalls are just a few of the many attractions in the place. Anakulam\r\nis known for its elephant abode. In the green ambiance of Anakkulam, local people are\r\neven seen playing football on the riverbank close to the wild elephants. The Mankulam\r\nAnakulam trip is a never to miss tour as it is a one of a kind experience."
 	},
 	{
@@ -217,6 +232,7 @@
 		"activityDifficulty": "adventure",
 		"activityChallangesId": ["CH-1", "CH-2"],
 		"bookingContactName": "Tourism Information Centre, Munnar",
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"bookingContactNumber": "04865 231516\n9961960555",
 		"activityDescription": "One of the breathtaking tours you could take through Munnar would be the\r\nKolukkumalai Special Trip. Kolukkumalai is the world’s highest elevation tea plantation\r\nwhich is located at 7900 feet. It is undoubtedly one of the most beautiful and scenic\r\ndestinations in the country, known for its spectacular sunrise. An amazing view of the\r\nvistas of Munnar and Kodaikanal hills could be viewed from here on a clear-skied day.\r\nThe Kolukkumalai tea estate started in 1920 is another attraction of the trip."
 	},
@@ -225,6 +241,7 @@
 		"activityName": "KSRTC SIGHTSEEING",
 		"activityopentime": "9 : 00",
 		"activityclosetime": "17 : 00",
+		"bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
 		"activityDifficulty": "easy",
 		"activityPrice": 250,
 		"activityChallangesId": ["CH-1", "CH-2", "CH-4"],
