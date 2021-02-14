@@ -11,6 +11,7 @@ import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
 import Ksrtc from "../components/Ksrtc/index";
+import RouteRouter from "./RouteRouter";
 
 const routes = {
     // Explore page is the temporary default home page
@@ -24,6 +25,8 @@ const routes = {
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
     "/ksrtc": () => <Ksrtc />,
+    // all routes will for VIBRGYOR routes
+    "/route*": () => <RouteRouter />,
 };
 
 export default function PublicRouter() {
