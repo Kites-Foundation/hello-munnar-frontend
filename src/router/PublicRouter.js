@@ -10,6 +10,7 @@ import Experiences from "../components/Experiences/Experiences";
 import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
+import Ksrtc from "../components/Ksrtc/index";
 import RouteRouter from "./RouteRouter";
 
 const routes = {
@@ -23,7 +24,7 @@ const routes = {
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
-
+    "/ksrtc": () => <Ksrtc />,
     // all routes will for VIBRGYOR routes
     "/route*": () => <RouteRouter />,
 };
