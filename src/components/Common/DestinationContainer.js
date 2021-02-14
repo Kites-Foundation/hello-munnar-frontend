@@ -9,9 +9,9 @@ export default function DestinationContainer({ destinations, className = "" }) {
             </h2>
 
             <div className="flex overflow-x-auto py-6 md:py-12 px-8 md:px-10">
-                {destinations.map((destination) => (
+                {destinations.map((destination,id) => (
                     <DestinationCard
-                        key={destination.name}
+                        key={id}
                         data={destination}
                     />
                 ))}
