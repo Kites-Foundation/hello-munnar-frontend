@@ -1,0 +1,22 @@
+[
+	{
+		"challengeId": "CH1",
+		"challangeName": "DIFFERENTLY ABLED"
+	},
+	{
+		"challengeId": "CH2",
+		"challangeName": "KIDS FRIENDLY "
+	},
+	{
+		"challengeId": "CH3",
+		"challangeName": "SEASONAL CHALLENGE"
+	},
+	{
+		"challengeId": "CH4",
+		"challangeName": "POLICY CHALLENGE"
+	},
+	{
+		"challengeId": "CH5",
+		"challangeName": "CLIMATE CHALLENGE"
+	}
+]
