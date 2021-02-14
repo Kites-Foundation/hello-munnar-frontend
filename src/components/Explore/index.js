@@ -4,7 +4,7 @@ import StorySelectorContainer from "./StorySelectorContainer";
 import DestinationContainer from "../Common/DestinationContainer";
 import TodoContainer from "../Common/TodoContainer";
 
-import destinationDefault from "../../assets/images/destination-default.png";
+// import destinationDefault from "../../assets/images/destination-default.png";
 import todoDefault1 from "../../assets/images/package-1-default.png";
 import todoDefault2 from "../../assets/images/package-2-default.png";
 
