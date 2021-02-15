@@ -1,19 +1,22 @@
 import React from "react";
 import KsrtcCard from "./KsrtcCard";
-const data = require("./assets/data");
+import ksrtcData from "../../data/ksrtcData.json";
 
 export default function KsrtcContainer() {
-    const ksrtc = data["ksrtc"];
     return (
         <>
-            {ksrtc.map((value) => {
+            {ksrtcData.map((ksrtc) => {
                 return (
                     <KsrtcCard
-                        from={value.from}
-                        to={value.to}
-                        time={value.time}
-                        amorpm={value.amorpm}
-                        type={value.type}
+                        key={ksrtc.ksrtcId}
+                        from={ksrtc.from}
+                        to={ksrtc.to}
+                        time={new Date(ksrtc.kstrcTime).toLocaleString(
+                            "en-US",
+                            { hour: "numeric", minute: "numeric", hour12: true }
+                        )}
+                        type={ksrtc.ksrtcType}
+                        availableDays={ksrtc.availableDays}
                     />
                 );
             })}
