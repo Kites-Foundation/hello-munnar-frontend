@@ -4,14 +4,13 @@ import Description from "./Description";
 import Reviews from "./Reviews";
 
 export default function PlacesTab({ place, className }) {
-    const { description, flauraFauna, challanges, id } = place;
-
+    const { description, flauraFauna, challenges, id } = place;
     const arrangement = {
         description: (
             <Description
                 description={description}
                 flaura={flauraFauna}
-                challanges={challanges}
+                challanges={challenges}
             />
         ),
         reviews: <Reviews id={id} />,
