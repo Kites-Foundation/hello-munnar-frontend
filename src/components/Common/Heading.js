@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Star from "./Star";
 import Icon from "./Icon";
+import BookingModal from "./BookingModal";
 
 const Heading = ({ place, className }) => {
+    const [showBookingModal, setShowBookingModal] = useState(false);
+    const closeBookingModal = () => {
+        setShowBookingModal(false);
+    };
     const {
         name,
         rating,
@@ -13,7 +18,9 @@ const Heading = ({ place, className }) => {
         availability,
         latitude,
         longitude,
+        bookingDetails,
     } = place;
+
     const numReviews = place.reviews?.length || 0;
 
     const difficultyStyle = {
@@ -97,6 +104,22 @@ const Heading = ({ place, className }) => {
                             color="black"
                         />
                     </a>
+                )}
+
+                {bookingDetails && (
+                    <>
+                        <button
+                            onClick={() => setShowBookingModal(true)}
+                            className="flex font-medium py-2 items-center justify-center rounded-full border border-black bg-black text-white">
+                            <span className="text-center">Book</span>
+                        </button>
+                        {showBookingModal && (
+                            <BookingModal
+                                onClose={closeBookingModal}
+                                details={bookingDetails}
+                            />
+                        )}
+                    </>
                 )}
             </div>
         </div>

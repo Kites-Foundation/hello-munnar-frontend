@@ -59,7 +59,7 @@ const PlacesBanner = ({ route, image, onLike }) => {
                 <Icon
                     name="heart"
                     color={liked ? "red-500" : "gray-400"}
-                    className={`stroke-2 ${liked} ? "fill-current text-red-500" : "stroke-current text-gray-400"`}
+                    className={`w-7 h-7 stroke-2 ${liked} ? "fill-current text-red-500" : "stroke-current text-gray-400"`}
                     stroke={!liked}
                     size={7}
                 />

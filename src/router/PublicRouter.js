@@ -15,6 +15,7 @@ import Favourites from "../components/Favourites/index";
 import Ksrtc from "../components/Ksrtc/index";
 import RouteRouter from "./RouteRouter";
 import NotFound from "../components/Common/NotFound";
+import Activity from "../components/Activity";
 
 const routes = {
     // Explore page is the temporary default home page
@@ -25,6 +26,7 @@ const routes = {
     "/profile": () => <Profile />,
     "/destination/:id": ({ id }) => <Destination id={id} />,
     "/experience/:id": ({ id }) => <Experience id={id} />,
+    "/activity/:id": ({ id }) => <Activity id={id} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
 
@@ -37,7 +39,6 @@ const routes = {
 
 export default function PublicRouter() {
     const pagesToShowNavBar = ["/", "/favorites", "/nearme", "/experiences"];
-
     const pages = useRoutes(routes);
     return pages ? (
         pagesToShowNavBar.includes(window.location.pathname) ? (

@@ -57,8 +57,9 @@ export const getManyRoute = (ids) => {
 export const getActivity = (id, expandIds = false) => {
     let activity = getOne(activityData, id, "activities");
 
-    if (expandIds) {
-        // get all data recursively
+    if (expandIds && activity) {
+        activity.activityRoute = getRoute(activity.activityRouteId);
+        activity.activityChallanges = getManyChallenge(activity.challengesId);
     }
 
     return activity;
