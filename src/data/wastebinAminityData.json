@@ -1,0 +1,234 @@
+[
+    {
+        "wastebinAminityId": "WB-001",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Pampadumshola National Park",
+        "aminityRouteId": "R7",
+        "latitude": 77.2582
+    },
+    {
+        "wastebinAminityId": "WB-002",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Top Station",
+        "aminityRouteId": "R7",
+        "latitude": 77.2453
+    },
+    {
+        "wastebinAminityId": "WB-003",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Kundala Dam",
+        "aminityRouteId": "R7",
+        "latitude": 77.1978909
+    },
+    {
+        "wastebinAminityId": "WB-004",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Echo Point",
+        "aminityRouteId": "R7",
+        "latitude": 77.151772
+    },
+    {
+        "wastebinAminityId": "WB-005",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Sun Moon Valley",
+        "aminityRouteId": "R7",
+        "latitude": 77.1304
+    },
+    {
+        "wastebinAminityId": "WB-006",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Viripara Water Falls",
+        "aminityRouteId": "R6",
+        "latitude": 76.9618
+    },
+    {
+        "wastebinAminityId": "WB-007",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Anakkulam",
+        "aminityRouteId": "R6",
+        "latitude": 76.9138873
+    },
+    {
+        "wastebinAminityId": "WB-008",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Kolukkumalai",
+        "aminityRouteId": "R3",
+        "latitude": 77.19797
+    },
+    {
+        "wastebinAminityId": "WB-009",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Anayirangal Boating Center",
+        "aminityRouteId": "R3",
+        "latitude": 77.1981
+    },
+    {
+        "wastebinAminityId": "WB-010",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Munnar Botanical Garden",
+        "aminityRouteId": "R3",
+        "latitude": 77.0713668118554
+    },
+    {
+        "wastebinAminityId": "WB-011",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Signal Point",
+        "aminityRouteId": "R3",
+        "latitude": 77.0870202734234
+    },
+    {
+        "wastebinAminityId": "WB-012",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Lockhart Tea Plantation",
+        "aminityRouteId": "R3",
+        "latitude": 77.1076487322948
+    },
+    {
+        "wastebinAminityId": "WB-013",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "gap road view point",
+        "aminityRouteId": "R3",
+        "latitude": 77.129120326645
+    },
+    {
+        "wastebinAminityId": "WB-014",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "chokramudi peak",
+        "aminityRouteId": "R3",
+        "latitude": 77.1022907959008
+    },
+    {
+        "wastebinAminityId": "WB-015",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Blossom Hydel Park",
+        "aminityRouteId": "R2",
+        "latitude": 77.0628844511141
+    },
+    {
+        "wastebinAminityId": "WB-016",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Headworks Dam",
+        "aminityRouteId": "R2",
+        "latitude": 77.0671572624798
+    },
+    {
+        "wastebinAminityId": "WB-017",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Pothanmdeu view point",
+        "aminityRouteId": "R2",
+        "latitude": 77.0641189120369
+    },
+    {
+        "wastebinAminityId": "WB-018",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Attukad Waterfalls",
+        "aminityRouteId": "R2",
+        "latitude": 77.0588318488698
+    },
+    {
+        "wastebinAminityId": "WB-019",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "2nd mile viwe point",
+        "aminityRouteId": "R2",
+        "latitude": 77.0388812256773
+    },
+    {
+        "wastebinAminityId": "WB-020",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Karadippara view point",
+        "aminityRouteId": "R2",
+        "latitude": 77.0177317693171
+    },
+    {
+        "wastebinAminityId": "WB-021",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Shengulam Hydel Park",
+        "aminityRouteId": "R2",
+        "latitude": 77.033759693725
+    },
+    {
+        "wastebinAminityId": "WB-022",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Eravikulam National Park",
+        "aminityRouteId": "R1",
+        "latitude": 77.0594757633931
+    },
+    {
+        "wastebinAminityId": "WB-023",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Lakkam waterfalls",
+        "aminityRouteId": "R1",
+        "latitude": 77.1114812596627
+    },
+    {
+        "wastebinAminityId": "WB-024",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Karmutty waterfalls",
+        "aminityRouteId": "R1",
+        "latitude": 77.1689233894416
+    },
+    {
+        "wastebinAminityId": "WB-025",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Alampetty Ecotourism",
+        "aminityRouteId": "R1",
+        "latitude": 77.18519
+    },
+    {
+        "wastebinAminityId": "WB-026",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Marayur Jaggery",
+        "aminityRouteId": "R1",
+        "latitude": 77.161458
+    },
+    {
+        "wastebinAminityId": "WB-027",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Chinnar Wildlife Sanctuary",
+        "aminityRouteId": "R1",
+        "latitude": 77.2399759422144
+    },
+    {
+        "wastebinAminityId": "WB-028",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Carmalagiri  Botanical garden",
+        "aminityRouteId": "R5",
+        "latitude": 77.1011838
+    },
+    {
+        "wastebinAminityId": "WB-029",
+        "aminityType": "Wastebin",
+        "aminityName": "Wastebin",
+        "aminityLocation": "Tea Museum  ",
+        "aminityRouteId": "R5",
+        "latitude": 77.0506520122528
+    }
+]

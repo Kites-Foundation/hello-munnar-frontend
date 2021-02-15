@@ -1,0 +1,131 @@
+[
+    {
+        "activityTagsId": "AT-001",
+        "activityTagName": "Trekking-Easy",
+        "activitytagiconurl": "https://cdn.hellomunnar.in/icons/AT-001.svg"
+    },
+    {
+        "activityTagsId": "AT-002",
+        "activityTagName": "Trekking-Moderate"
+    },
+    {
+        "activityTagsId": "AT-003",
+        "activityTagName": "Trekking-Easy Challenge"
+    },
+    {
+        "activityTagsId": "AT-004",
+        "activityTagName": "Trekking-Wildlife"
+    },
+    {
+        "activityTagsId": "AT-005",
+        "activityTagName": "Boating"
+    },
+    {
+        "activityTagsId": "AT-006",
+        "activityTagName": "Site seeing"
+    },
+    {
+        "activityTagsId": "AT-007",
+        "activityTagName": "Camping"
+    },
+    {
+        "activityTagsId": "AT-008",
+        "activityTagName": "Cycling"
+    },
+    {
+        "activityTagsId": "AT-009",
+        "activityTagName": "Wildlife"
+    },
+    {
+        "activityTagsId": "AT-010",
+        "activityTagName": "Rock climbing"
+    },
+    {
+        "activityTagsId": "AT-011",
+        "activityTagName": "Photography"
+    },
+    {
+        "activityTagsId": "AT-012",
+        "activityTagName": "Landscape"
+    },
+    {
+        "activityTagsId": "AT-013",
+        "activityTagName": "Sunrise / Sunset"
+    },
+    {
+        "activityTagsId": "AT-014",
+        "activityTagName": "Heritage Photography"
+    },
+    {
+        "activityTagsId": "AT-015",
+        "activityTagName": "Wedding Photography"
+    },
+    {
+        "activityTagsId": "AT-016",
+        "activityTagName": "Festivals"
+    },
+    {
+        "activityTagsId": "AT-017",
+        "activityTagName": "Tea plantation / Farming"
+    },
+    {
+        "activityTagsId": "AT-018",
+        "activityTagName": "Memorials"
+    },
+    {
+        "activityTagsId": "AT-019",
+        "activityTagName": "Religious Architects"
+    },
+    {
+        "activityTagsId": "AT-020",
+        "activityTagName": "Estate Bunglow"
+    },
+    {
+        "activityTagsId": "AT-021",
+        "activityTagName": "Theme Park"
+    },
+    {
+        "activityTagsId": "AT-022",
+        "activityTagName": "Shopping"
+    },
+    {
+        "activityTagsId": "AT-023",
+        "activityTagName": "Fooding"
+    },
+    {
+        "activityTagsId": "AT-024",
+        "activityTagName": "Jeep Safari"
+    },
+    {
+        "activityTagsId": "AT-025",
+        "activityTagName": "Bathing"
+    },
+    {
+        "activityTagsId": "AT-026",
+        "activityTagName": "Adventure"
+    },
+    {
+        "activityTagsId": "AT-027",
+        "activityTagName": "Plantation walk"
+    },
+    {
+        "activityTagsId": "AT-028",
+        "activityTagName": "Welfare "
+    },
+    {
+        "activityTagsId": "AT-029",
+        "activityTagName": "View point"
+    },
+    {
+        "activityTagsId": "AT-030",
+        "activityTagName": "Elephant safari"
+    },
+    {
+        "activityTagsId": "AT-031",
+        "activityTagName": "Fish spa"
+    },
+    {
+        "activityTagsId": "AT-032",
+        "activityTagName": "Zip line"
+    }
+]
