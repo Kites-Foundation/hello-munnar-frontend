@@ -5,7 +5,7 @@ import Destination from "../components/Destination/index";
 import Experience from "../components/Experience/";
 import NavBar from "../components/Common/NavBar";
 import Notification from "../components/Notification/index";
-import NearMe from "../components/NearMe/Topbar";
+import NearMe from "../components/NearMe/index";
 import Experiences from "../components/Experiences/Experiences";
 import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
