@@ -1,12 +1,14 @@
 {
   "short_name": "Hello Munnar",
   "name": "Hello Munnar",
+  "description": "Get Ready to Explore Munnar through Vibgyor",
   "start_url": ".",
   "Scope": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "splash_pages": null,
+  "orientation": "portrait",
   "icons": [
     {
       "src": "https://cdn.hellomunnar.in/pwa/icons/icon-72x72.png",
