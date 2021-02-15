@@ -47,6 +47,7 @@ import { ReactComponent as Edit } from "../../assets/images/edit.svg";
 import { ReactComponent as UpRight } from "../../assets/images/up-right.svg";
 import { ReactComponent as OutsideLink } from "../../assets/images/outside-link.svg";
 import { ReactComponent as HotelUser } from "../../assets/images/hotel-user.svg";
+import { ReactComponent as Compass } from "../../assets/images/compass.svg";
 
 const icons = {
     nearMe: NearMe,
@@ -98,6 +99,7 @@ const icons = {
     upRight: UpRight,
     outsideLink: OutsideLink,
     hotelUser: HotelUser,
+    compass: Compass,
 };
 
 export default function Icon({
