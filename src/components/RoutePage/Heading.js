@@ -8,7 +8,7 @@ const Heading = ({ route, color, className }) => {
             <div className="pt-6 pb-2 flex justify-between items-center">
                 <div
                     className={`px-1 ${color.text} ${color.border} border-2 rounded font-semibold border-solid uppercase`}>
-                    {route.name} route
+                    {route.routeColorName} route
                 </div>
 
                 <Icon
@@ -20,10 +20,10 @@ const Heading = ({ route, color, className }) => {
                 />
             </div>
             <h1 className="uppercase text-xl font-semibold pt-3 pb-2">
-                {route.path}
+                {route.routeName}
             </h1>
             <TruncatedText
-                content={route.description}
+                content={route.routeDescription}
                 maxLength={200}
                 className="leading-relaxed pt-1 pb-3"
             />
