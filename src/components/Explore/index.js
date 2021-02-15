@@ -8,20 +8,18 @@ import TodoContainer from "../Common/TodoContainer";
 // import todoDefault1 from "../../assets/images/package-1-default.png";
 // import todoDefault2 from "../../assets/images/package-2-default.png";
 
-
-import { 
+import {
     getRandomDestinations,
-    getRandomActivities
-} from '../../data/dataUtils'
-
+    getRandomActivities,
+} from "../../data/dataUtils";
 
 const Explore = () => {
-    let [destinations,setDestinations] = useState([])
-    let [activities,setActivities] = useState([])
-    useEffect(()=>{
+    let [destinations, setDestinations] = useState([]);
+    let [activities, setActivities] = useState([]);
+    useEffect(() => {
         setDestinations(getRandomDestinations(10));
-        setActivities(getRandomActivities(10))
-    },[])
+        setActivities(getRandomActivities(10));
+    }, []);
     return (
         <div className="pt-9 ">
             <HeaderNav className="pb-2 px-8 md:px-10" />
@@ -33,7 +31,10 @@ const Explore = () => {
                 className="py-8 pb-4 md:pd-8"
             />
 
-            <TodoContainer activities={activities} className="py-6 pt-4 md:pt-6" />
+            <TodoContainer
+                activities={activities}
+                className="py-6 pt-4 md:pt-6"
+            />
         </div>
     );
 };

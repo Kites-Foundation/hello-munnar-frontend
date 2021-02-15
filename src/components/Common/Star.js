@@ -1,15 +1,32 @@
 import React from "react";
 import Icon from "../Common/Icon";
 
-export default function Star({ num, size = 5 }) {
+export default function Star({
+    num,
+    name,
+    className,
+    size = 5,
+    onChange,
+    edit = false,
+}) {
     return Array.apply(null, {
         length: 5,
     }).map((_, i) => (
-        <Icon
-            name="star"
-            color={`${i < num ? "indigo-700" : "gray-300"}`}
-            size={size}
+        <button
+            type="button"
+            className={`flex focus:outline-none ${
+                edit ? "" : "cursor-default"
+            }`}
             key={i.toString()}
-        />
+            onClick={() => {
+                if (edit) onChange({ target: { name, value: i + 1 } });
+            }}>
+            <Icon
+                name="star"
+                color={`${i < num ? "yellow-500" : "gray-400"}`}
+                className={`${i < num ? "text-yellow-500" : "text-gray-400"}`}
+                size={size}
+            />
+        </button>
     ));
 }

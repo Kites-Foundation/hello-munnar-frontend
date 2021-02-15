@@ -9,7 +9,7 @@ export default function TodoContainer({ activities, className = "" }) {
             </h2>
 
             <div className="flex overflow-x-auto py-6 md:py-12 px-8 md:px-10">
-                {activities.map((activity,id) => (
+                {activities.map((activity, id) => (
                     <TodoCard key={id} data={activity} />
                 ))}
             </div>

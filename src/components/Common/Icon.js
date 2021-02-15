@@ -38,7 +38,13 @@ import { ReactComponent as Information } from "../../assets/images/information.s
 import { ReactComponent as Todo } from "../../assets/images/todo.svg";
 import { ReactComponent as FoodDrinks } from "../../assets/images/food.svg";
 import { ReactComponent as Amenities } from "../../assets/images/amenities.svg";
-
+import { ReactComponent as CaretLeft } from "../../assets/images/caret-left.svg";
+import { ReactComponent as Rupee } from "../../assets/images/rupee.svg";
+import { ReactComponent as Alarm } from "../../assets/images/alarm.svg";
+import { ReactComponent as Available } from "../../assets/images/available.svg";
+import { ReactComponent as Avatar } from "../../assets/images/avatar.svg";
+import { ReactComponent as Edit } from "../../assets/images/edit.svg";
+import { ReactComponent as UpRight } from "../../assets/images/up-right.svg";
 
 const icons = {
     nearMe: NearMe,
@@ -81,6 +87,13 @@ const icons = {
     todo: Todo,
     foodDrinks: FoodDrinks,
     amenities: Amenities,
+    caretLeft: CaretLeft,
+    rupee: Rupee,
+    alarm: Alarm,
+    available: Available,
+    avatar: Avatar,
+    edit: Edit,
+    upRight: UpRight,
 };
 
 export default function Icon({

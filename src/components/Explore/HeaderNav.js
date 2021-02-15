@@ -3,7 +3,6 @@ import React from "react";
 import mainLogo from "../../assets/images/main-logo.png";
 import Icon from "../Common/Icon";
 
-
 const HeaderNav = ({ className }) => {
     return (
         <section className={`flex justify-between items-center ${className}`}>
