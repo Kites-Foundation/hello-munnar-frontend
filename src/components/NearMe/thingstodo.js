@@ -1,5 +1,5 @@
 import React from "react";
-import RatingStars from "../Common/RatingStars";
+import Star from "../Common/Star";
 import VectorIcon from "../NearMe/icons/Vector.svg";
 
 export default function Thingstodo(props) {
@@ -10,7 +10,7 @@ export default function Thingstodo(props) {
             </div>
             <div class="mt-3 flex">
                 <div>
-                    <RatingStars rating={4} />
+                    <Star num={4} />
                 </div>
                 <div>
                     <img src={VectorIcon} alt=""></img>

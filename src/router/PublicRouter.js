@@ -15,7 +15,6 @@ import Favourites from "../components/Favourites/index";
 import Ksrtc from "../components/Ksrtc/index";
 import RouteRouter from "./RouteRouter";
 
-
 const routes = {
     // Explore page is the temporary default home page
     "/": () => <Explore />,

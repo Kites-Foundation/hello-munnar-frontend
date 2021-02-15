@@ -46,7 +46,6 @@ import { ReactComponent as Avatar } from "../../assets/images/avatar.svg";
 import { ReactComponent as Edit } from "../../assets/images/edit.svg";
 import { ReactComponent as UpRight } from "../../assets/images/up-right.svg";
 
-
 const icons = {
     nearMe: NearMe,
     ticket: Ticket,
