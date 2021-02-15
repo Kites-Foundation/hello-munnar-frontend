@@ -2,7 +2,7 @@ import React from "react";
 import VectorIcon from "../NearMe/icons/Vector.svg";
 import clockIcon from "../NearMe/icons/clock.svg";
 import HIcon from "../NearMe/icons/H.svg";
-import ManIcon from "../NearMe/icons/man.svg";
+// import ManIcon from "../NearMe/icons/man.svg";
 import PhnIcon from "../NearMe/icons/phone.svg";
 import DirectionIcon from "../NearMe/icons/direction.svg";
 import HospIcon from "../NearMe/icons/hospital.svg";
@@ -35,20 +35,20 @@ let details = (props) => {
                     <img src={HIcon} alt=""></img>
                 </div>
                 <div className="ml-3">{props.private}</div>
-                <div className="ml-3">
+                {/* <div className="ml-3">
                     <img src={ManIcon} alt=""></img>
                 </div>
-                <div className="ml-3">{props.distance}</div>
+                <div className="ml-3">{props.distance}</div> */}
             </div>
         );
     } else {
         return (
             <div className="mt-3 flex">
-                <div className="ml-3">
+                {/* <div className="ml-3">
                     <img src={ManIcon} alt=""></img>
                 </div>
 
-                <div className="ml-3">{props.distance}</div>
+                <div className="ml-3">{props.distance}</div> */}
             </div>
         );
     }
@@ -59,7 +59,7 @@ export default function Amenities(props) {
         <div
             className={`bg-white border-2 border-${props.color}-400 w-full p-5 rounded-xl shadow border-red`}>
             <div className="flex items-center">
-                <div className="mr-3">
+                <div>
                     <img
                         src={
                             props.category === "Hospitals"

@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 import Amenities from "./amenitiescard1";
 import ThingsTodo from "./thingstodo";
+import bankAtmAminityData from "../../data/bankAtmAminityData.json";
+import hospitalAminityData from "../../data/hospitalAminityData.json";
+import wastebinAminityData from "../../data/wastebinAminityData.json";
+import fuelSatationAminityData from "../../data/fuelSatationAminityData.json";
 
 const NearMeTab = ({ color }) => {
     const [openTab, setOpenTab] = useState(1);
+    let aminitiesData = [
+        ...bankAtmAminityData,
+        ...hospitalAminityData,
+        ...wastebinAminityData,
+        ...fuelSatationAminityData,
+    ];
+
     return (
         <>
-            <div className="flex flex-wrap">
-                <div className="w-full">
+            <div className="flex flex-wrap w-100">
+                <div className="w-100">
                     <ul
                         className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
                         role="tablist">
@@ -52,11 +63,11 @@ const NearMeTab = ({ color }) => {
                             </a>
                         </li>
                     </ul>
-                    <div className="container mx-auto max-w-sm flex flex-col space-y-4 justify-center items-center">
+                    <div className="container mx-auto flex flex-col space-y-4 justify-center items-center">
                         <div
                             className={openTab === 1 ? "block" : "hidden"}
                             id="link1">
-                            <div>
+                            <div className="flex flex-col w-screen items-center">
                                 <ThingsTodo name="Trekking Meeshapulimala" />
                                 <ThingsTodo name="Destination Name" />
                             </div>
@@ -64,7 +75,7 @@ const NearMeTab = ({ color }) => {
                         <div
                             className={openTab === 2 ? "block" : "hidden"}
                             id="link2">
-                            <div className=" flex flex-wrap ">
+                            <div className="flex flex-col w-screen items-center sm:w-80 ">
                                 <div className="flex mx-auto my-3 w-full justify-center">
                                     <button className=" border-2 border-gray-600 bg-white-600 rounded-lg my-auto text-center text-xs font-medium text-black-500 px-4 py-1 hover:bg-gray-200 hover:text-black mr-2">
                                         Hospitals
@@ -76,34 +87,20 @@ const NearMeTab = ({ color }) => {
                                         Waste bins
                                     </button>
                                 </div>
-                                <div className="container my-5 mx-auto max-w-sm flex flex-col space-y-4 justify-center items-center">
-                                    <Amenities
-                                        category="Hospitals"
-                                        title="Tata Global Hospital"
-                                        place="Meeshapulimala"
-                                        color="red"
-                                        time="24 hours"
-                                        private="Private"
-                                        distance="1 KM"
-                                    />
-                                    <Amenities
-                                        category="Food_Drink"
-                                        title="Village restaurant"
-                                        place="Bodi hills"
-                                        color="indigo"
-                                        time="8AM-10PM"
-                                        private="Private"
-                                        distance="1.2 KM"
-                                    />
-                                    <Amenities
-                                        category="Wastebin"
-                                        title="Wastebin"
-                                        place="Sun moon valley"
-                                        color="green"
-                                        time="24 hours"
-                                        private="Private"
-                                        distance="1.2 KM"
-                                    />
+                                <div className="my-5 mx-auto flex flex-col space-y-4 justify-center items-center">
+                                    {aminitiesData.map((aminity) => {
+                                        return (
+                                            <Amenities
+                                                category="Hospitals"
+                                                title="Tata Global Hospital"
+                                                place="Meeshapulimala"
+                                                color="red"
+                                                time="24 hours"
+                                                private="Private"
+                                                distance="1 KM"
+                                            />
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>
