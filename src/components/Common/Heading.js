@@ -11,9 +11,10 @@ const Heading = ({ place, className }) => {
         openTime,
         closeTime,
         availability,
-        coordinates,
+        latitude,
+        longitude,
     } = place;
-    const numReviews = place.reviews.length;
+    const numReviews = place.reviews?.length || 0;
 
     const difficultyStyle = {
         easy: "text-green-500 border-green-500",
@@ -54,17 +55,19 @@ const Heading = ({ place, className }) => {
                         <span className="text-sm">{price} INR</span>
                     </div>
                 )}
-                <div className="flex items-center space-x-1 py-1 mr-6">
-                    <Icon
-                        name="alarm"
-                        color="black"
-                        className="fill-current text-black"
-                        size={5}
-                    />
-                    <span className="text-sm">
-                        {openTime} - {closeTime}
-                    </span>
-                </div>
+                {openTime && closeTime && (
+                    <div className="flex items-center space-x-1 py-1 mr-6">
+                        <Icon
+                            name="alarm"
+                            color="black"
+                            className="fill-current text-black"
+                            size={5}
+                        />
+                        <span className="text-sm">
+                            {openTime} - {closeTime}
+                        </span>
+                    </div>
+                )}
                 {availability && (
                     <div className="flex items-center space-x-1 py-1 mr-6">
                         <Icon
@@ -79,20 +82,22 @@ const Heading = ({ place, className }) => {
             </div>
 
             <div className="grid grid-cols-2 grid-rows-1 gap-4 md:gap-12 pt-2 md:pt-4">
-                <a
-                    href={`https://maps.google.com/?q=${coordinates.lat},${coordinates.lon}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex py-2 items-center justify-center rounded-full border border-black">
-                    <span className="text-center">Open In Maps</span>
-                    <Icon
-                        name="upRight"
-                        size={6}
-                        stroke={true}
-                        className="ml-2 stroke-current text-black"
-                        color="black"
-                    />
-                </a>
+                {latitude && longitude && (
+                    <a
+                        href={`https://maps.google.com/?q=${latitude},${longitude}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex py-2 items-center justify-center rounded-full border border-black">
+                        <span className="text-center">Open In Maps</span>
+                        <Icon
+                            name="upRight"
+                            size={6}
+                            stroke={true}
+                            className="ml-2 stroke-current text-black"
+                            color="black"
+                        />
+                    </a>
+                )}
             </div>
         </div>
     );

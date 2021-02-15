@@ -9,10 +9,10 @@ const PlacesBanner = ({ route, image, onLike }) => {
     const colors = {
         violet: "text-violet-900 border-violet-900",
         indigo: "text-indigo-900 border-indigo-900",
-        cyan: "text-cyan-600 border-cyan-600",
+        blue: "text-cyan-600 border-cyan-600",
         green: "text-green-500 border-green-500",
         yellow: "text-yellow-500 border-yellow-500",
-        amber: "text-amber-600 border-amber-600",
+        orange: "text-amber-600 border-amber-600",
         red: "text-red-500 border-red-500",
     };
     const onClickLike = () => {

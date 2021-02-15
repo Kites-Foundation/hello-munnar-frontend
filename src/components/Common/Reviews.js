@@ -3,34 +3,11 @@ import ReviewRatingModal from "./ReviewRatingModal";
 import Icon from "../Common/Icon";
 import Star from "../Common/Star";
 
-// fetch reviews from backend
-const reviews = [
-    {
-        title: "An Exhilerating Experience!",
-        author: {
-            name: "Jane Doe",
-            image: null,
-        },
-        date: "25 June 2021",
-        rating: 4,
-        review:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi non non aliquam amet nibh.",
-    },
-    {
-        title: "An Exhilerating Experience!",
-        author: {
-            name: "Jane Doe",
-            image: null,
-        },
-        date: "25 June 2021",
-        rating: 4,
-        review:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi non non aliquam amet nibh.",
-    },
-];
-
 export default function Reviews({ id }) {
     const [showRatingModal, setShowRatingModal] = useState(false);
+
+    // fetch reviews from backend
+    const reviews = [];
 
     return (
         <div className="py-2 relative pb-24">
