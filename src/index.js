@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
+/*eslint-disable */
 import reducer from "./redux/reducer";
 import * as serviceWorker from "./serviceWorker";
 
@@ -28,3 +29,4 @@ if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/service-worker.js");
     });
 }
+/*eslint-enable */
