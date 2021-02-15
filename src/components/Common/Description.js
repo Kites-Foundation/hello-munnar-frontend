@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import TruncatedText from "../Common/TruncatedText";
+import FlauraFaunaModal from "./FlauraFaunaModal";
 
 export default function Description({ description, flaura, challanges }) {
+    const [flauraFauna, setFlauraFauna] = useState(false);
+
+    const onClose = () => setFlauraFauna(false);
+
     return (
         <div className="">
             <TruncatedText
@@ -24,7 +29,8 @@ export default function Description({ description, flaura, challanges }) {
                 {flaura &&
                     flaura.map((item) => (
                         <div
-                            className="w-full overflow-hidden bg-white rounded-lg shadow-md"
+                            onClick={() => setFlauraFauna(item)}
+                            className="w-full overflow-hidden bg-white rounded-lg shadow-md cursor-pointer"
                             key={item.ffId}>
                             <div className="relative w-full">
                                 <img
@@ -39,6 +45,9 @@ export default function Description({ description, flaura, challanges }) {
                         </div>
                     ))}
             </div>
+            {flauraFauna && (
+                <FlauraFaunaModal data={flauraFauna} onClose={onClose} />
+            )}
         </div>
     );
 }
