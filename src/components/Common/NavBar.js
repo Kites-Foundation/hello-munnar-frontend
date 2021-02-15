@@ -4,6 +4,12 @@ import { usePath, A } from "hookrouter";
 
 const routes = [
     {
+        name: "explore",
+        icon: "compass",
+        label: "Explore",
+        route: "/",
+    },
+    {
         name: "nearMe",
         icon: "nearMe",
         label: "Near Me",
@@ -16,29 +22,18 @@ const routes = [
         route: "/experiences",
     },
     {
-        name: "explore",
-        icon: "earth",
-        label: "Explore",
-        route: "/",
-    },
-    {
-        name: "myPlans",
-        icon: "diary",
-        label: "My Plans",
-        route: "/myplans",
-    },
-    {
-        name: "profile",
-        icon: "user",
-        label: "Profile",
-        route: "/profile",
+        name: "favourite",
+        icon: "heart",
+        iconStroke: true,
+        label: "Favourite",
+        route: "/favourites",
     },
 ];
 
 export default function NavBar() {
     const path = usePath();
     return (
-        <div className="flex fixed items-stretch bottom-0 w-full bg-gray-100">
+        <div className="flex fixed items-stretch bottom-0 w-full bg-gray-100 z-30">
             {routes.map((route) => (
                 <A
                     href={route.route}
@@ -46,7 +41,9 @@ export default function NavBar() {
                     className="flex flex-1 flex-col items-center justify-center py-2">
                     <Icon
                         name={route.icon}
+                        stroke={route.iconStroke}
                         color={`${route.route === path ? "black" : "gray-400"}`}
+                        className="stroke-2"
                         size={9}
                     />
                     <span
