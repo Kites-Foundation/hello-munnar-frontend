@@ -20,7 +20,7 @@ const Heading = ({ place, className }) => {
         longitude,
         bookingDetails,
     } = place;
-    
+
     const numReviews = place.reviews?.length || 0;
 
     const difficultyStyle = {
@@ -102,9 +102,9 @@ const Heading = ({ place, className }) => {
                             stroke={true}
                             className="ml-2 stroke-current text-black"
                             color="black"
-                            />
+                        />
                     </a>
-                            )}
+                )}
 
                 {bookingDetails && (
                     <>
