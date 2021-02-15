@@ -3,6 +3,7 @@ import { useRoutes } from "hookrouter";
 import RoutePage from "../components/RoutePage";
 
 import routeImage from "../components/RoutePage/assets/images/route-default.png";
+import NotFound from "../components/Common/NotFound";
 
 const routesDetails = [
     {
@@ -63,11 +64,5 @@ const routes = routesDetails.reduce(
 
 export default function RouteRouter() {
     const pages = useRoutes(routes);
-    return (
-        pages || (
-            <div className="min-h-screen flex justify-center items-center text-3xl uppercase font-bold text-gray-500">
-                Route not found
-            </div>
-        )
-    );
+    return pages || <NotFound name="route" />;
 }

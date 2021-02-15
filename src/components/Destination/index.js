@@ -13,6 +13,10 @@ export default function Destination({ id }) {
         window.scrollTo(0, 0);
     }, []);
 
+    if (!destinationFull) {
+        return <NotFound name="destination" />;
+    }
+
     // replace the redundant "destination" in key name of data
     // example:     { destinationId: 1, destinationName: "xxx" }
     //   changes to { id: 1, name: "xxx" }

@@ -4,7 +4,12 @@ import Icon from "./Icon";
 
 export default function DestinationCard({ data }) {
     const [liked, setLiked] = useState(data.liked);
-    const { bannerImg, routeDestination, destinationDescription } = data;
+    const {
+        bannerImg,
+        routeDestination,
+        destinationDescription,
+        destinationId,
+    } = data;
 
     const like = () => {
         setLiked(!liked);
@@ -30,7 +35,7 @@ export default function DestinationCard({ data }) {
                     />
                 </button>
             </div>
-            <A href="/destination/1">
+            <A href={`/destination/${destinationId}`}>
                 <div className="py-6 px-3 md:px-6">
                     <h3 className="font-semibold">{routeDestination}</h3>
                     <p className="text-gray-600 text-sm">
