@@ -11,6 +11,8 @@
     "autoprefixer": "^9.8.6",
     "axios": "^0.21.1",
     "hookrouter": "^1.2.5",
+    "jimp": "^0.16.1",
+    "lru-cache": "^6.0.0",
     "postcss": "^7.0.35",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

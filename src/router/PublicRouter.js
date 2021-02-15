@@ -38,7 +38,7 @@ const routes = {
 };
 
 export default function PublicRouter() {
-    const pagesToShowNavBar = ["/", "/favorites", "/nearme", "/experiences"];
+    const pagesToShowNavBar = ["/", "/favourites", "/nearme", "/experiences"];
     const pages = useRoutes(routes);
     return pages ? (
         pagesToShowNavBar.includes(window.location.pathname) ? (
