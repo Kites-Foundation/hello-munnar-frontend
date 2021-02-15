@@ -14,9 +14,9 @@ const NearMeTab = ({ color }) => {
                         <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                             <a
                                 className={
-                                    "text-sm font-medium px-5 py-3 " +
+                                    "text-sm px-5 py-3 " +
                                     (openTab === 1
-                                        ? "text-gray-800 border-b-2 border-black"
+                                        ? "text-gray-800 border-b-2 border-black font-bold"
                                         : "text-" +
                                           color +
                                           "-600 focus:outline-none text-gray-800  font-medium ")
@@ -36,7 +36,7 @@ const NearMeTab = ({ color }) => {
                                 className={
                                     "text-sm font-medium  px-5 py-3  " +
                                     (openTab === 2
-                                        ? "text-gray-800 bg-white-600 border-b-2 border-black"
+                                        ? "text-gray-800 bg-white-600 font-bold border-b-2 border-black"
                                         : "text-" +
                                           color +
                                           "-600 bg-white focus:outline-none text-gray-800  font-medium ")
@@ -65,7 +65,7 @@ const NearMeTab = ({ color }) => {
                             className={openTab === 2 ? "block" : "hidden"}
                             id="link2">
                             <div className=" flex flex-wrap ">
-                                <div className="flex  justify-center mt-5">
+                                <div className="flex mx-auto my-3 w-full justify-center">
                                     <button className=" border-2 border-gray-600 bg-white-600 rounded-lg my-auto text-center text-xs font-medium text-black-500 px-4 py-1 hover:bg-gray-200 hover:text-black mr-2">
                                         Hospitals
                                     </button>
@@ -76,7 +76,7 @@ const NearMeTab = ({ color }) => {
                                         Waste bins
                                     </button>
                                 </div>
-                                <div className="container mx-auto max-w-sm h-screen flex flex-col space-y-4 justify-center items-center">
+                                <div className="container my-5 mx-auto max-w-sm flex flex-col space-y-4 justify-center items-center">
                                     <Amenities
                                         category="Hospitals"
                                         title="Tata Global Hospital"

@@ -9,13 +9,13 @@ export default function Thingstodo(props) {
                 {props.name}
             </div>
             <div className="mt-3 flex">
-                <div className="flex">
+                <div className="flex items-center">
                     <Star num={4} />
                 </div>
-                <div>
+                <div className="flex items-center ml-3">
                     <img src={VectorIcon} alt=""></img>
+                    <div className="ml-2 text-indigo-400">Indigo</div>
                 </div>
-                <div className="ml-4 text-indigo-400">Indigo</div>
             </div>
             <div className="mt-2 flex flex-wrap ">
                 <div className="flex  justify-center mt-4">

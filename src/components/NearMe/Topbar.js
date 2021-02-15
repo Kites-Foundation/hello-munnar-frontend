@@ -5,7 +5,7 @@ import nearmeicon from "./Vector (2).svg";
 export default function TabsRender() {
     return (
         <div className="p-4 font-poppins font-weight=600">
-            <div className="flex justify-between mt-6 font-semibold text-3xl">
+            <div className="flex justify-between font-semibold text-3xl">
                 <div className="flex mt-6">
                     <img src={nearmeicon} alt=""></img>
                     <div className="pl-2 ml-2 text-2xl ">Near me </div>
