@@ -13,7 +13,7 @@ export default function KsrtcContainer() {
                         to={ksrtc.to}
                         time={new Date(ksrtc.kstrcTime).toLocaleString(
                             "en-US",
-                            { hour: "numeric", minute: "numeric", hour12: true }
+                            { hour: "numeric", minute: "numeric" }
                         )}
                         type={ksrtc.ksrtcType}
                         availableDays={ksrtc.availableDays}
