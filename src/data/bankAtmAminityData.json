@@ -1,0 +1,724 @@
+[
+    {
+        "atmAminityId": "AB-001",
+        "aminityType": "BANK",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.08552083,
+        "aminityLocationLongitude": 77.06011187,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-002",
+        "aminityType": "ATM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.08549674,
+        "aminityLocationLongitude": 77.06004292,
+        "aminityRouteId": "R5"
+    },
+    {
+        "atmAminityId": "AB-003",
+        "aminityType": "BANK",
+        "aminityName": "SOUTH INDIAN BANK",
+        "aminityLocationLatitude": 10.08601934,
+        "aminityLocationLongitude": 77.05871402,
+        "aminityRouteId": "R5"
+    },
+    {
+        "atmAminityId": "AB-004",
+        "aminityType": "ATM",
+        "aminityName": "SOUTH INDIAN BANK",
+        "aminityLocationLatitude": 10.08623417,
+        "aminityLocationLongitude": 77.05883445,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-005",
+        "aminityType": "ATM",
+        "aminityName": "FEDERAL BANK",
+        "aminityLocationLatitude": 10.08629685,
+        "aminityLocationLongitude": 77.05989114,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-006",
+        "aminityType": "BANK",
+        "aminityName": "DHANALAXMI BANK",
+        "aminityLocationLatitude": 10.08586571,
+        "aminityLocationLongitude": 77.0602465,
+        "aminityRouteId": "R5"
+    },
+    {
+        "atmAminityId": "AB-007",
+        "aminityType": "ATM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.08739103,
+        "aminityLocationLongitude": 77.06021632,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-008",
+        "aminityType": "ATM",
+        "aminityName": "SOUTH INDIAN BANK",
+        "aminityLocationLatitude": 10.08743064,
+        "aminityLocationLongitude": 77.06026594,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-009",
+        "aminityType": "BANK",
+        "aminityName": "CATHOLIC SYRIAN BANK",
+        "aminityLocationLatitude": 10.08839979,
+        "aminityLocationLongitude": 77.05946262,
+        "aminityRouteId": "R5"
+    },
+    {
+        "atmAminityId": "AB-010",
+        "aminityType": "BANK",
+        "aminityName": "FEDERAL BANK",
+        "aminityLocationLatitude": 10.08861031,
+        "aminityLocationLongitude": 77.05950515,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:08:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-011",
+        "aminityType": "ATM & CDM",
+        "aminityName": "FEDERAL BANK",
+        "aminityLocationLatitude": 10.08864265,
+        "aminityLocationLongitude": 77.05947296,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-012",
+        "aminityType": "BANK",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.08862109,
+        "aminityLocationLongitude": 77.05846525,
+        "aminityRouteId": "R5 ",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "4:00PM."
+    },
+    {
+        "atmAminityId": "AB-013",
+        "aminityType": "ATM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.08849037,
+        "aminityLocationLongitude": 77.05866374,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-014",
+        "aminityType": "BANK",
+        "aminityName": "UNION BANK OF INDIA",
+        "aminityLocationLatitude": 10.08591313,
+        "aminityLocationLongitude": 77.05937285,
+        "aminityRouteId": "R5"
+    },
+    {
+        "atmAminityId": "AB-015",
+        "aminityType": "BANK",
+        "aminityName": "IDCB",
+        "aminityLocationLatitude": 10.08548577,
+        "aminityLocationLongitude": 77.05945704,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "1899-12-30T08:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T14:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-016",
+        "aminityType": "ATM",
+        "aminityName": "IDCB",
+        "aminityLocationLatitude": 10.0856401,
+        "aminityLocationLongitude": 77.05968183,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-017",
+        "aminityType": "BANK",
+        "aminityName": "MUNNAR SERVICE COOPERATIVE BANK",
+        "aminityLocationLatitude": 10.08624501,
+        "aminityLocationLongitude": 77.0608809,
+        "aminityRouteId": "R5"
+    },
+    {
+        "atmAminityId": "AB-018",
+        "aminityType": "ATM",
+        "aminityName": "INDIAN POST",
+        "aminityLocationLatitude": 10.08647901,
+        "aminityLocationLongitude": 77.06114907,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-019",
+        "aminityType": "BANK",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.2565846,
+        "aminityLocationLongitude": 77.16800868,
+        "aminityRouteId": "R1",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "4;00PM"
+    },
+    {
+        "atmAminityId": "AB-020",
+        "aminityType": "ATM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.25139074,
+        "aminityLocationLongitude": 77.17010368,
+        "aminityRouteId": "R1",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-021",
+        "aminityType": "BANK",
+        "aminityName": "UNION BANK OF INDIA",
+        "aminityLocationLatitude": 10.25030027,
+        "aminityLocationLongitude": 77.17118326,
+        "aminityRouteId": "R1",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-022",
+        "aminityType": "BANK",
+        "aminityName": "IDCB MARAYOOR",
+        "aminityLocationLatitude": 10.27561292,
+        "aminityLocationLongitude": 77.16091083,
+        "aminityRouteId": "R1",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T11:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-023",
+        "aminityType": "ATM",
+        "aminityName": "IDCB MARAYOOR",
+        "aminityLocationLatitude": 10.2764228,
+        "aminityLocationLongitude": 77.16194388,
+        "aminityRouteId": "R1",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-024",
+        "aminityType": "BANK",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.27683038,
+        "aminityLocationLongitude": 77.1617553,
+        "aminityRouteId": "R1",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T11:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-025",
+        "aminityType": "ATM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.27683038,
+        "aminityLocationLongitude": 77.1617553,
+        "aminityRouteId": "R1",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-026",
+        "aminityType": "BANK",
+        "aminityName": "STATE BANK OF TRAVANCORE (INDIA)",
+        "aminityLocationLatitude": 10.27656664,
+        "aminityLocationLongitude": 77.16290383,
+        "aminityRouteId": "R1",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T11:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-027",
+        "aminityType": "BANK",
+        "aminityName": "ESAF",
+        "aminityLocationLatitude": 10.22628207,
+        "aminityLocationLongitude": 77.19208639,
+        "aminityRouteId": "R1"
+    },
+    {
+        "atmAminityId": "AB-028",
+        "aminityType": "ATM",
+        "aminityName": "UNION BANK OF INDIA",
+        "aminityLocationLatitude": 10.21365752,
+        "aminityLocationLongitude": 77.19683624,
+        "aminityRouteId": "R1",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "aminityOpenTime": "."
+    },
+    {
+        "atmAminityId": "AB-029",
+        "aminityType": "ATM",
+        "aminityName": "ICICI BANK",
+        "aminityLocationLatitude": 10.07841403,
+        "aminityLocationLongitude": 77.06261622,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-030",
+        "aminityType": "ATM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.07474901,
+        "aminityLocationLongitude": 77.06323861,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-031",
+        "aminityType": "ATM",
+        "aminityName": "FEDERAL BANK",
+        "aminityLocationLatitude": 10.04071602,
+        "aminityLocationLongitude": 77.03574314,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-032",
+        "aminityType": "BANK",
+        "aminityName": "KALLAR BANK",
+        "aminityLocationLatitude": 10.03113333,
+        "aminityLocationLongitude": 77.04709304,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "."
+    },
+    {
+        "atmAminityId": "AB-033",
+        "aminityType": "ATM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.02351902,
+        "aminityLocationLongitude": 77.03789523,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-034",
+        "aminityType": "ATM",
+        "aminityName": "KALLAR SCB MICRO ATM",
+        "aminityLocationLatitude": 10.02402438,
+        "aminityLocationLongitude": 77.03721068,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-035",
+        "aminityType": "ATM & CDM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.01531365,
+        "aminityLocationLongitude": 76.95412303,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-036",
+        "aminityType": "BANK",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.01542788,
+        "aminityLocationLongitude": 76.95410291,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T11:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-037",
+        "aminityType": "ATM",
+        "aminityName": "SOUTH INDIAN BANK",
+        "aminityLocationLatitude": 10.01557633,
+        "aminityLocationLongitude": 76.95388157,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-038",
+        "aminityType": "BANK",
+        "aminityName": "ADIMALI SERVICE COOPERATIVE BANK",
+        "aminityLocationLatitude": 10.01559402,
+        "aminityLocationLongitude": 76.9538497,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "1899-12-30T02:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T14:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-039",
+        "aminityType": "BANK",
+        "aminityName": "FEDERAL BANK",
+        "aminityLocationLatitude": 10.01556511,
+        "aminityLocationLongitude": 76.95193782,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:08:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-040",
+        "aminityType": "ATM",
+        "aminityName": "FEDERAL BANK",
+        "aminityLocationLatitude": 10.01556511,
+        "aminityLocationLongitude": 76.95198367,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-041",
+        "aminityType": "BANK",
+        "aminityName": "IDBI",
+        "aminityLocationLatitude": 10.01532052,
+        "aminityLocationLongitude": 76.95247253,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-042",
+        "aminityType": "BANK",
+        "aminityName": "SOUTH INDIAN BANK",
+        "aminityLocationLatitude": 10.01434058,
+        "aminityLocationLongitude": 76.95293924,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-043",
+        "aminityType": "BANK",
+        "aminityName": "INDUSIND",
+        "aminityLocationLatitude": 10.01518262,
+        "aminityLocationLongitude": 76.95199711,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "1899-12-30T03:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T11:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-044",
+        "aminityType": "ATM",
+        "aminityName": "FEDERAL BANK",
+        "aminityLocationLatitude": 10.01576508,
+        "aminityLocationLongitude": 76.93834503,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-045",
+        "aminityType": "BANK",
+        "aminityName": "ADIMALI SERVICE COOPERATIVE BANK",
+        "aminityLocationLatitude": 10.01202114,
+        "aminityLocationLongitude": 76.9555908,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "1899-12-30T03:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T12:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-046",
+        "aminityType": "BANK",
+        "aminityName": "CANARA BANK",
+        "aminityLocationLatitude": 10.00960589,
+        "aminityLocationLongitude": 76.9582099,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T11:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-047",
+        "aminityType": "ATM",
+        "aminityName": "CANARA BANK",
+        "aminityLocationLatitude": 10.00960589,
+        "aminityLocationLongitude": 76.9582099,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-048",
+        "aminityType": "BANK",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.00970884,
+        "aminityLocationLongitude": 76.95823886,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-049",
+        "aminityType": "ATM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.00970884,
+        "aminityLocationLongitude": 76.95823886,
+        "aminityRouteId": "R2",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-050",
+        "aminityType": "BANK",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.0680167,
+        "aminityLocationLongitude": 77.10602718,
+        "aminityRouteId": "R3",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T11:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-051",
+        "aminityType": "ATM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.0680167,
+        "aminityLocationLongitude": 77.10602718,
+        "aminityRouteId": "R3",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-052",
+        "aminityType": "BANK",
+        "aminityName": "FEDERAL BANK",
+        "aminityLocationLatitude": 10.04148842,
+        "aminityLocationLongitude": 77.17747238,
+        "aminityRouteId": "R3"
+    },
+    {
+        "atmAminityId": "AB-053",
+        "aminityType": "BANK",
+        "aminityName": "SOUTH INDIAN BANK",
+        "aminityLocationLatitude": 10.04152526,
+        "aminityLocationLongitude": 77.17761269,
+        "aminityRouteId": "R3",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-054",
+        "aminityType": "BANK",
+        "aminityName": "UNION BANK OF INDIA",
+        "aminityLocationLatitude": 10.05099451,
+        "aminityLocationLongitude": 77.1956041,
+        "aminityRouteId": "R3",
+        "aminityOpenTime": "1899-12-30T03:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-055",
+        "aminityType": "ATM",
+        "aminityName": "SOUTH INDIAN BANK",
+        "aminityLocationLatitude": 10.05054867,
+        "aminityLocationLongitude": 77.19786163,
+        "aminityRouteId": "R3",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-056",
+        "aminityType": "ATM",
+        "aminityName": "IDCB",
+        "aminityLocationLatitude": 9.978468911,
+        "aminityLocationLongitude": 77.20766785,
+        "aminityRouteId": "R3",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-057",
+        "aminityType": "BANK",
+        "aminityName": "POOPPARA URBAN BANK",
+        "aminityLocationLatitude": 9.977531392,
+        "aminityLocationLongitude": 77.20806232,
+        "aminityRouteId": "R3"
+    },
+    {
+        "atmAminityId": "AB-058",
+        "aminityType": "BANK",
+        "aminityName": "ESAF",
+        "aminityLocationLatitude": 9.97734592,
+        "aminityLocationLongitude": 77.20841919,
+        "aminityRouteId": "R3"
+    },
+    {
+        "atmAminityId": "AB-059",
+        "aminityType": "ATM",
+        "aminityName": "ESAF",
+        "aminityLocationLatitude": 9.97734592,
+        "aminityLocationLongitude": 77.20841919,
+        "aminityRouteId": "R3",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "aminityType": "."
+    },
+    {
+        "atmAminityId": "AB-077",
+        "aminityType": "BANK",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.0806,
+        "aminityLocationLongitude": 77.0614
+    },
+    {
+        "atmAminityId": "AB-060",
+        "aminityType": "BANK",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.2565846,
+        "aminityLocationLongitude": 77.16800868,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-061",
+        "aminityType": "ATM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.25139074,
+        "aminityLocationLongitude": 77.17010368,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-062",
+        "aminityType": "BANK",
+        "aminityName": "UNION BANK OF INDIA",
+        "aminityLocationLatitude": 10.25030027,
+        "aminityLocationLongitude": 77.17118326,
+        "aminityRouteId": "R5",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "aminityRouteId": "R6",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-063",
+        "aminityType": "ATM",
+        "aminityName": "ICICI BANK",
+        "aminityLocationLatitude": 10.07841403,
+        "aminityLocationLongitude": 77.06261622,
+        "aminityRouteId": "R6",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-064",
+        "aminityType": "ATM",
+        "aminityName": "STATE BANK OF INDIA",
+        "aminityLocationLatitude": 10.07474901,
+        "aminityLocationLongitude": 77.06323861,
+        "aminityRouteId": "R6",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-065",
+        "aminityType": "BANK",
+        "aminityName": "IDCB",
+        "aminityLocationLatitude": 10.11736,
+        "aminityLocationLongitude": 76.92695,
+        "aminityRouteId": "R6",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-066",
+        "aminityType": "ATM",
+        "aminityName": "IDCB",
+        "aminityLocationLatitude": 10.11994,
+        "aminityLocationLongitude": 76.9274,
+        "aminityRouteId": "R6",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-067",
+        "aminityType": "BANK",
+        "aminityName": "FEDERAL BANK",
+        "aminityLocationLatitude": 10.12154,
+        "aminityLocationLongitude": 76.92803,
+        "aminityRouteId": "R6",
+        "aminityOpenTime": "24 HRS"
+    },
+    {
+        "atmAminityId": "AB-068",
+        "aminityType": "ATM",
+        "aminityName": "FEDERAL BANK",
+        "aminityLocationLatitude": 10.12154,
+        "aminityLocationLongitude": 76.92804,
+        "aminityRouteId": "R6",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-069",
+        "aminityType": "BANK",
+        "aminityName": "Co-operative Bank",
+        "aminityLocationLatitude": 10.11898,
+        "aminityLocationLongitude": 76.92734,
+        "aminityRouteId": "R6",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-070",
+        "aminityType": "BANK",
+        "aminityName": "Co-operative Bank",
+        "aminityLocationLatitude": 10.15755,
+        "aminityLocationLongitude": 76.91302,
+        "aminityRouteId": "R6"
+    },
+    {
+        "aminityRouteId": "          R7",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:08:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-071",
+        "aminityType": "BANK",
+        "aminityName": "Kerala Gramin Bank",
+        "aminityLocationLatitude": 10.18238945,
+        "aminityLocationLongitude": 77.25906532,
+        "aminityRouteId": "         R7",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T10:08:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-072",
+        "aminityType": "ATM",
+        "aminityName": "Kerala Gramin Bank",
+        "aminityLocationLatitude": 10.18238945,
+        "aminityLocationLongitude": 77.25906532,
+        "aminityRouteId": "          R7",
+        "aminityOpenTime": "24hrs"
+    },
+    {
+        "atmAminityId": "AB-073",
+        "aminityType": "BANK",
+        "aminityName": "IDCB Vattavad Branch",
+        "aminityLocationLatitude": 10.182424,
+        "aminityLocationLongitude": 77.259111,
+        "aminityRouteId": "           R7",
+        "aminityOpenTime": "1899-12-30T04:38:50.000Z",
+        "aminityCloseTime": "1899-12-30T11:38:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-074",
+        "aminityType": "ATM",
+        "aminityName": "IDCB ATM",
+        "aminityLocationLatitude": 10.182682,
+        "aminityLocationLongitude": 77.258586,
+        "aminityRouteId": "          R7"
+    },
+    {
+        "atmAminityId": "AB-075",
+        "aminityType": "BANK",
+        "aminityName": "ESAF small finance bank",
+        "aminityLocationLatitude": 10.183363,
+        "aminityLocationLongitude": 77.257487,
+        "aminityRouteId": "         R7",
+        "aminityOpenTime": "1899-12-30T04:08:50.000Z",
+        "aminityCloseTime": "1899-12-30T12:08:50.000Z"
+    },
+    {
+        "atmAminityId": "AB-076",
+        "aminityType": "ATM",
+        "aminityName": "ESAF small finance bank",
+        "aminityLocationLatitude": 10.183363,
+        "aminityLocationLongitude": 77.257487,
+        "aminityRouteId": "         R7"
+    }
+]

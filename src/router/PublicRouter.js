@@ -5,11 +5,14 @@ import Destination from "../components/Destination/index";
 import Experience from "../components/Experience/";
 import NavBar from "../components/Common/NavBar";
 import Notification from "../components/Notification/index";
-import NearMe from "../components/NearMe/top";
+import NearMe from "../components/NearMe/Topbar";
 import Experiences from "../components/Experiences/Experiences";
 import SignIn from "../components/User/SignIn";
 import SignOut from "../components/User/SignOut";
 import Profile from "../components/User/Profile";
+
+import Favourites from "../components/Favourites/index";
+import Ksrtc from "../components/Ksrtc/index";
 import RouteRouter from "./RouteRouter";
 
 const routes = {
@@ -23,6 +26,9 @@ const routes = {
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
+
+    "/favourites": () => <Favourites />,
+    "/ksrtc": () => <Ksrtc />,
 
     // all routes will for VIBRGYOR routes
     "/route*": () => <RouteRouter />,

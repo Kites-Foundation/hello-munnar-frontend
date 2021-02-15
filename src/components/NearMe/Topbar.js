@@ -1,7 +1,8 @@
 import React from "react";
 import location from "../NearMe/icons/map-pin.svg";
-import loc2 from "./Vector.svg";
 import nearmeicon from "./Vector (2).svg";
+import Amenities from "./amenitiescard1";
+import Thingstodo from "./thingstodo";
 
 const Tabs = ({ color }) => {
     const [openTab, setOpenTab] = React.useState(1);
@@ -53,32 +54,59 @@ const Tabs = ({ color }) => {
                             </a>
                         </li>
                     </ul>
-                    <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6">
-                        <div className="px-4 py-5 flex-auto">
-                            <div className="tab-content tab-space">
-                                <div
-                                    className={
-                                        openTab === 1 ? "block" : "hidden"
-                                    }
-                                    id="link1"></div>
-                                <div
-                                    className={
-                                        openTab === 2 ? "block" : "hidden"
-                                    }
-                                    id="link2">
-                                    <div className=" flex flex-wrap ">
-                                        <div className="flex  justify-center mt-1">
-                                            <button className=" border-2 border-gray-600 bg-white-600 rounded-lg my-auto text-center text-xs font-medium text-black-500 px-4 py-1 hover:bg-gray-200 hover:text-black mr-2">
-                                                Hospitals
-                                            </button>
-                                            <button className="border-2 border-gray-600 bg-white-600 rounded-lg my-auto text-center text-xs font-medium text-black-500 px-2 py-1  hover:bg-gray-200 hover:text-black mr-2">
-                                                Food & Drinks
-                                            </button>
-                                            <button className="border-2 border-gray-600 bg-white-600 rounded-lg my-auto text-center text-xs font-medium text-black-500 px-2 py-1 hover:bg-gray-200 hover:text-black mr-2">
-                                                Waste bins
-                                            </button>
-                                        </div>
-                                    </div>
+                    <div class="container mx-auto max-w-sm flex flex-col space-y-4 justify-center items-center">
+                        <div
+                            className={openTab === 1 ? "block" : "hidden"}
+                            id="link1">
+                            <div>
+                                <Thingstodo name="Trekking Meeshapulimala" />
+                                <Thingstodo name="Destination Name" />
+                            </div>
+                        </div>
+                        <div
+                            className={openTab === 2 ? "block" : "hidden"}
+                            id="link2">
+                            <div className=" flex flex-wrap ">
+                                <div className="flex  justify-center mt-5">
+                                    <button className=" border-2 border-gray-600 bg-white-600 rounded-lg my-auto text-center text-xs font-medium text-black-500 px-4 py-1 hover:bg-gray-200 hover:text-black mr-2">
+                                        Hospitals
+                                    </button>
+                                    <button className="border-2 border-gray-600 bg-white-600 rounded-lg my-auto text-center text-xs font-medium text-black-500 px-2 py-1  hover:bg-gray-200 hover:text-black mr-2">
+                                        Food & Drinks
+                                    </button>
+                                    <button className="border-2 border-gray-600 bg-white-600 rounded-lg my-auto text-center text-xs font-medium text-black-500 px-2 py-1 hover:bg-gray-200 hover:text-black mr-2">
+                                        Waste bins
+                                    </button>
+                                </div>
+
+                                <div class="container mx-auto max-w-sm h-screen flex flex-col space-y-4 justify-center items-center">
+                                    <Amenities
+                                        category="Hospitals"
+                                        title="Tata Global Hospital"
+                                        place="Meeshapulimala"
+                                        color="red"
+                                        time="24 hours"
+                                        private="Private"
+                                        distance="1 KM"
+                                    />
+                                    <Amenities
+                                        category="Food_Drink"
+                                        title="Village restaurant"
+                                        place="Bodi hills"
+                                        color="indigo"
+                                        time="8AM-10PM"
+                                        private="Private"
+                                        distance="1.2 KM"
+                                    />
+                                    <Amenities
+                                        category="Wastebin"
+                                        title="Wastebin"
+                                        place="Sun moon valley"
+                                        color="green"
+                                        time="24 hours"
+                                        private="Private"
+                                        distance="1.2 KM"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -94,14 +122,14 @@ export default function TabsRender() {
         <div className="p-4 font-poppins font-weight=600  ">
             <div className="flex justify-between mt-6 font-semibold text-3xl">
                 <div className="flex mt-6">
-                    <img src={nearmeicon}></img>
+                    <img src={nearmeicon} alt=""></img>
                     <div class="pl-2 ml-2 text-2xl ">Near me </div>
                 </div>
             </div>
 
             <div>
                 <div className="flex mt-6 w-4 ">
-                    <img src={location}></img>
+                    <img src={location} alt=""></img>
 
                     <div class="pl-2 text-1xl font-medium">Meeshapullimala</div>
                 </div>

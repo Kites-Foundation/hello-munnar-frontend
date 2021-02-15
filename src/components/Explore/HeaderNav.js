@@ -1,3 +1,4 @@
+import { A } from "hookrouter";
 import React from "react";
 import mainLogo from "../../assets/images/main-logo.png";
 import Icon from "../Common/Icon";
@@ -17,9 +18,9 @@ const HeaderNav = ({ className }) => {
                 <div className="p-3">
                     <Icon name="search" size={7} color="black" />
                 </div>
-                <div className="p-3">
+                <A className="p-3" href="/ksrtc">
                     <Icon name="ksrtc" size={7} color="black" stroke={true} />
-                </div>
+                </A>
             </div>
         </section>
     );
