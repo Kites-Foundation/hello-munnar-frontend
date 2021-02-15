@@ -1,6 +1,12 @@
 {
   "short_name": "Hello Munnar",
   "name": "VIBGYOR Tourism Munnar",
+  "start_url": ".",
+  "Scope": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "splash_pages": null,
   "icons": [
     {
       "src": "favicon.ico",
@@ -17,9 +23,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
