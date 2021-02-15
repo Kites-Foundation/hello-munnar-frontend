@@ -205,7 +205,6 @@
         "fuelStationAminityId": ["FS-008"],
         "wastebinAminityId": ["WB-027"]
     },
-    { "destinationAvailability": "MON-SUN" },
     {
         "destinationId": "D-014",
         "routeDestination": "DTPC INFORMATION CENTRE AND BOATING ",

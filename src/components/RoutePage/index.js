@@ -5,48 +5,16 @@ import Heading from "./Heading";
 import AmenitiesContainer from "./AmenitiesContainer";
 import DestinationContainer from "../Common/DestinationContainer";
 import TodoContainer from "../Common/TodoContainer";
-
-import destinationDefault from "../../assets/images/destination-default.png";
-import todoDefault1 from "../../assets/images/package-1-default.png";
-import todoDefault2 from "../../assets/images/package-2-default.png";
-
-const destinations = [
-    {
-        name: "Consectetur adipiscing elit.",
-        description: "Alura ipsum divir nola ipsum koret lorsa silo enori",
-        image: destinationDefault,
-    },
-    {
-        name: "Consectetur adipiscing elit 2.",
-        description: "Alura ipsum divir nola ipsum koret lorsa silo enori",
-        image: destinationDefault,
-    },
-    {
-        name: "Consectetur adipiscing elit 3.",
-        description: "Alura ipsum divir nola ipsum koret lorsa silo enori",
-        image: destinationDefault,
-    },
-];
-const todos = [
-    {
-        name: "Meeshapulimala Trekking",
-        image: todoDefault1,
-    },
-    {
-        name: "DTPC Boating",
-        image: todoDefault2,
-    },
-    {
-        name: "Meeshapulimala Trekking",
-        image: todoDefault1,
-    },
-    {
-        name: "DTPC Boating",
-        image: todoDefault2,
-    },
-];
+import destinationData from "../../data/destinationData.json";
+import activityData from "../../data/activityData.json";
 
 const RoutePage = ({ route, position }) => {
+    let destinations = destinationData.filter(
+        (destination) => destination.destinationRouteId === route.routeId
+    );
+    let activities = activityData.filter(
+        (activity) => activity.activityRouteId === route.routeId
+    );
     const routes = {
         violet: {
             text: "text-violet-900",
@@ -78,7 +46,7 @@ const RoutePage = ({ route, position }) => {
         },
     };
 
-    const color = routes[route.name];
+    const color = routes[route.routeColorName.toLowerCase()];
 
     return (
         <div className="w-full bg-gray-200">
@@ -87,7 +55,7 @@ const RoutePage = ({ route, position }) => {
                     position={position}
                     routes={Object.keys(routes)}
                 />
-                <StoryImage image={route.image} />
+                <StoryImage image={route.routeIllustrationUrl} />
 
                 <Heading
                     route={route}
@@ -96,7 +64,7 @@ const RoutePage = ({ route, position }) => {
                 />
 
                 <AmenitiesContainer
-                    routeName={route.name}
+                    routeName={route.routeColorName}
                     className="py-8 px-8 md:px-10"
                 />
 
@@ -105,7 +73,10 @@ const RoutePage = ({ route, position }) => {
                     className="py-8 pb-4 md:pd-8"
                 />
 
-                <TodoContainer todos={todos} className="py-6 pt-4 md:pt-6" />
+                <TodoContainer
+                    activities={activities}
+                    className="py-6 pt-4 md:pt-6"
+                />
             </div>
         </div>
     );
