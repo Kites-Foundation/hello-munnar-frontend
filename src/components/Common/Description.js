@@ -32,9 +32,9 @@ export default function Description({ description, flaura, challanges }) {
                             onClick={() => setFlauraFauna(item)}
                             className="w-full overflow-hidden bg-white rounded-lg shadow-md cursor-pointer"
                             key={item.ffId}>
-                            <div className="relative w-full">
+                            <div className="relative w-full pb-9/16">
                                 <img
-                                    className="pb-9/16 w-full h-full bg-gray-200"
+                                    className="absolute w-full h-full bg-gray-200"
                                     src={item.ffImage}
                                     alt={item.ffName}
                                 />
