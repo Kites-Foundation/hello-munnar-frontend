@@ -26,7 +26,7 @@ const Heading = ({ place, className }) => {
     const difficultyStyle = {
         easy: "text-green-500 border-green-500",
         challenging: "text-yellow-500 border-yellow-500",
-        adventurer: "text-red-500 border-red-500",
+        adventure: "text-red-500 border-red-500",
     };
 
     return (
@@ -88,7 +88,7 @@ const Heading = ({ place, className }) => {
                 )}
             </div>
 
-            <div className="grid grid-cols-2 grid-rows-1 gap-4 md:gap-12 pt-2 md:pt-4">
+            <div className="grid grid-cols-2 grid-rows-1 gap-4 md:gap-12 pt-2 md:pt-4 pb-6">
                 {latitude && longitude && (
                     <a
                         href={`https://maps.google.com/?q=${latitude},${longitude}`}

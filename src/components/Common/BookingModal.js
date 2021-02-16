@@ -4,13 +4,15 @@ import Modal from "./Modal";
 
 const BookingModal = ({ details, onClose }) => {
     const { bookingLink, bookingContactName, bookingContactNumber } = details;
-    const phoneNumbers = bookingContactNumber.split(" ").join("").split("\n");
+    const phoneNumbers =
+        bookingContactNumber &&
+        bookingContactNumber.toString().split(" ").join("").split("\n");
     return (
         <Modal title="Booking Options" onClose={onClose}>
             <div className="py-2 flex flex-col space-y-5">
                 {bookingLink && (
                     <a
-                        href={details.bookingLink}
+                        href={bookingLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="border border-black p-6 rounded-lg flex items-center">
@@ -47,6 +49,7 @@ const BookingModal = ({ details, onClose }) => {
                             <div className="flex space-x-2">
                                 {phoneNumbers.map((phoneNumber) => (
                                     <a
+                                        key={phoneNumber}
                                         href={`tel:${phoneNumber}`}
                                         className="text-sm font-medium underline">
                                         {phoneNumber}

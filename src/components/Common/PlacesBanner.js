@@ -4,7 +4,7 @@ import Icon from "./Icon";
 const PlacesBanner = ({ route, image, onLike }) => {
     // get initial like value from localStorage
     const [liked, setLiked] = useState(false);
-    const { routeColorName } = route;
+    const routeColorName = route?.routeColorName;
 
     const colors = {
         violet: "text-violet-900 border-violet-900",
@@ -39,19 +39,23 @@ const PlacesBanner = ({ route, image, onLike }) => {
                 />
             </button>
 
-            <div className="absolute flex top-8 right-8 items-center bg-white px-2 py-0.5 rounded-md shadow-md">
-                <Icon
-                    name="route"
-                    size={4}
-                    className={`mr-1 ${colors[routeColorName.toLowerCase()]}`}
-                />
-                <span
-                    className={`uppercase font-semibold text-sm ${
-                        colors[routeColorName.toLowerCase()]
-                    }`}>
-                    {routeColorName} Route
-                </span>
-            </div>
+            {routeColorName && (
+                <div className="absolute flex top-8 right-8 items-center bg-white px-2 py-0.5 rounded-md shadow-md">
+                    <Icon
+                        name="route"
+                        size={4}
+                        className={`mr-1 ${
+                            colors[routeColorName.toLowerCase()]
+                        }`}
+                    />
+                    <span
+                        className={`uppercase font-semibold text-sm ${
+                            colors[routeColorName.toLowerCase()]
+                        }`}>
+                        {routeColorName} Route
+                    </span>
+                </div>
+            )}
 
             <button
                 className="absolute flex items-center justify-center -bottom-0 right-8 w-14 h-14 bg-white shadow-lg rounded-full focus:outline-none"
