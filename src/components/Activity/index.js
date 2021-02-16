@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import ActivityBanner from "../Common/ActivityBanner";
 import Heading from "../Common/Heading";
 import PlacesTab from "../Common/PlacesTab";
@@ -8,7 +8,6 @@ import NotFound from "../Common/NotFound";
 export default function Activity({ id }) {
     // get all the details of a activity
     const activityFull = getActivity(id, true);
-    const [liked, setLiked] = useState(true);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -36,52 +35,34 @@ export default function Activity({ id }) {
         bookingLink: activity.bookinglink,
     };
 
-    let isActivitynAlreadyFavourite = (destinationId) => {
-        let currentAcivityFavourites = JSON.parse(
-            localStorage.getItem("hello-munnar-activities-favourites")
+    let onLike = (status, activityId, isActivityAlreadyFavourite) => {
+        let currentActivityFavourites = JSON.parse(
+            localStorage.getItem("hello-things-to-do-favourites")
         );
-        if (
-            currentAcivityFavourites &&
-            currentAcivityFavourites.includes(destinationId)
-        ) {
-            setLiked(true);
-            return true;
-        } else {
-            setLiked(false);
-            return false;
-        }
-    };
-
-    const onLike = (activityId, isDestinationAlreadyFavourite) => {
-        // save to local storage
-        console.log(isDestinationAlreadyFavourite(activityId));
-        let currentDestinationFavourites = JSON.parse(
-            localStorage.getItem("hello-munnar-activities-favourites")
-        );
-        if (isDestinationAlreadyFavourite(activityId)) {
-            currentDestinationFavourites.splice(
-                currentDestinationFavourites.indexOf(activityId),
+        if (isActivityAlreadyFavourite(activityId)) {
+            currentActivityFavourites.splice(
+                currentActivityFavourites.indexOf(activityId),
                 1
             );
             localStorage.setItem(
-                "hello-munnar-activites-favourites",
-                JSON.stringify(currentDestinationFavourites)
+                "hello-things-to-do-favourites",
+                JSON.stringify(currentActivityFavourites)
             );
         } else if (
-            currentDestinationFavourites &&
-            !currentDestinationFavourites.includes(activityId)
+            currentActivityFavourites &&
+            !currentActivityFavourites.includes(activityId)
         ) {
             localStorage.setItem(
-                "hello-munnar-activites-favourites",
-                JSON.stringify([activityId, ...currentDestinationFavourites])
+                "hello-things-to-do-favourites",
+                JSON.stringify([activityId, ...currentActivityFavourites])
             );
-        } else if (!currentDestinationFavourites && activityId) {
+        } else if (!currentActivityFavourites && activityId) {
             localStorage.setItem(
-                "hello-munnar-activites-favourites",
+                "hello-things-to-do-favourites",
                 JSON.stringify([activityId])
             );
         }
-        isActivitynAlreadyFavourite(activityId);
+        isActivityAlreadyFavourite(activityId);
     };
 
     return (
@@ -90,9 +71,8 @@ export default function Activity({ id }) {
                 <ActivityBanner
                     route={activity.route}
                     image={activity.bannerImg}
-                    onLike={() => {
-                        onLike(id, isActivitynAlreadyFavourite);
-                    }}
+                    onLike={onLike}
+                    activityId={activity.activitiesId}
                 />
                 <Heading place={activity} className="pt-2 px-8 md:px-10" />
 

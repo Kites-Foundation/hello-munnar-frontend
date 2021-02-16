@@ -34,6 +34,14 @@ export default function FavouriteDestinations() {
                     </div>
                 );
             })}
+            {!destinations.length && (
+                <>
+                    <h1 className="mt-20 font-medium text-center text-xl ">
+                        Nothing to show here. Please add your favourite
+                        destinations and activities to show up here.
+                    </h1>
+                </>
+            )}
         </div>
     );
 }
