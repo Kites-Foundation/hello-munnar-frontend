@@ -11,7 +11,8 @@
         "activitiesId": ["ACT003", "ACT004", "ACT005", "ACT010"],
         "destinationRouteId": "R1",
         "destinationDescription": "A trip to Munnar will be incomplete without having a visit to Eravikulam, the first National park in\n Kerala, which is located in the majestic Kannan Devan hills of Munnar. It is spread over 97 square kilometres and is a\n protected area which is divided into three zones. Visitors are allowed \nonly to the Rajamala tourism zone of Eravikulam park.This park is the natural habitat of many \nendangered species including the Nilgiri Tahr. Myriad varieties of flora and fauna are abundant \nhere. Strobilanthes Kunthiana(Neelakurinji) makes the splendid mountains blue once in every twelve \nyears, which adds to the  violet colour significance of this route.Kurinji trail, the soft trekking package enables the tourist \nto enjoy the magnificent beauty of Munnar. The cascade walk across Lakkam waterfalls which originates from the Eravikulam\n stream mesmerizes the travellers. The amazing view of Munnar's natural vegetation and the \nother magnificent scenery of Munnar mountains can be enjoyed and snapped by visiting this park.",
-        "destinationLatitude": 77.0597,
+        "destinationLatitude": 10.1356,
+        "destinationLongitude": 77.0597,
         "ffId": ["FF-001", "FF-002", "FF-003", "FF-004"],
         "activityTagsId": ["AT-002", "AT-009", "AT-024"],
         "wastebinAminityId": ["WB-022"]
@@ -23,7 +24,8 @@
         "fuelStationAminityId": "FS-001",
         "destinationRouteId": "R1",
         "destinationDescription": "Talayar is one of the amazing and splendid tea plantations in Munnar. Talayar tea plantation, \nwhich is covered by the lush greenery of tea plants is a paradise in real sense. It reflects the \neternal beauty of Munnar. Talayar tea factory allows visitors until noon. 'Make your own chai' is a\n unique event in this factory which enables visitors to make their own tea with the tea leaves \nplucked by them from the majestic tea plantations of Munnar.Tea manufacturing workshops are\n also organised here.The stunning view of the dense tea garden and other magnificent scenery\n of munnar can be obtained from this spot.",
-        "destinationLatitude": 77.1022063108109
+        "destinationLatitude": 10.1561942424402,
+        "destinationLongitude": 77.1022063108109
     },
     {
         "destinationId": "D-003",
@@ -38,7 +40,8 @@
         "activitiesId": ["ACT013"],
         "destinationRouteId": "R1",
         "destinationDescription": "Lakkam falls, which originates from Eravikulam stream, is a major tributary of the Pamba river. It is one of the amazing falls to visit. It is a paradise in true sense for all types of travellers around the world. The charming giggles of the rushing water and the lush greenery amidst the woods are an amazing experience mesmerizing the travellers. It provides stress relief and peace of mind. The cascade walk across Lakkam falls makes the trip more memorable to the travellers. This is an ideal destination for trekking and picnicking. Lakkam falls is the only place in Munnar to enjoy taking a shower in the Waterfalls. This is an exceptional place to capture the elegance of Munnar. These majestic falls make the experience of visiting Munnar much more enriching.",
-        "destinationLatitude": 77.1115032175578,
+        "destinationLatitude": 10.1888406372322,
+        "destinationLongitude": 77.1115032175578,
         "activityTagsId": ["AT-012", "AT-025"],
         "wastebinAminityId": ["WB-023"]
     },
@@ -54,7 +57,8 @@
         "activitiesId": ["ACT013"],
         "destinationRouteId": "R1",
         "destinationDescription": "Marayoor is well-known for its incredible sandalwood forest. It is the sole place in Kerala that has a natural growth of sandalwood trees.\nA vast area of this zone is covered with aromatic sandalwood trees and lemongrass which are fenced and belong to the protected area. Trespassing is strictly prohibited and visitors are not allowed to enter the sandalwood forest. But a traveller can enjoy the splendour of the enchanting woods from outside. Marayoor sandal has a high demand in the international market for its high quality and high oil content. The amazing view of dense sandalwoods is spectacular in every sense. This forest is a treasure in true sense.",
-        "destinationLatitude": 77.1615,
+        "destinationLatitude": 10.2762,
+        "destinationLongitude": 77.1615,
         "ffId": ["FF-005", "FF-006"],
         "activityTagsId": ["AT-006", "AT-009", "AT-011", "AT-012"]
     },
@@ -66,7 +70,8 @@
         "destinationAvailability": "SUNDAY",
         "destinationRouteId": "R1",
         "destinationDescription": "The Marayoor market is the clubhouse of all the spices, herbs, vegetables, fruits, honey, and a lot more variety of things \ncultivated by the indigenous people of Marayoor and Chinnar. The market is open every Thursday at the garden situated\n inside the forest department, monitored by the forest range officer. The market is locally called ‘Chilla’ referring to the\n branch of a forest tree. The famous‘ Marayoor sarkara ‘ ( jaggery ) is available in this weekly market. Honey cultivated \nin the forests is yet another attraction of this market.",
-        "destinationLatitude": 77.1593112816279,
+        "destinationLatitude": 10.276464809369,
+        "destinationLongitude": 77.1593112816279,
         "activityTagsId": ["AT-022"]
     },
     {
@@ -78,7 +83,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R1",
         "destinationDescription": "Marayoor is famous not only for it's great archaeological,historical and cultural significance but also natural vegetation and beautiful landscape.The mysterious prehistoric dolmens which date back to the megalithic age are scattered throughout the majestic landscape of Marayoor.It is estimated that they are built in between BC 3000 and BC 14000.Some of the historians are of the view that these dolmens are the burial chambers of the inhabitant tribe and others are of the perception that they were the dwelling places of sages because of which it is known as 'Muniyara' in Malayalam.“Muniyaras”are made of 4 vertical stones, and a large horizontal wide capstone.The place name Marayoor is derived from the Malayalam words “mara” which means “hide” and “(y)oor” means “village”, a hidden village.Under the initiative of Marayoor Grama Panchayat, this “Mount of the Spirit” is being protected and is open to visitors. Marayoor is the best destination for those who love to explore Neolithic monuments and underexplored natural topographies of western ghats.In Addition to the prehistoric dolmens, Marayoor is the land of cave paintings, the only natural sandalwood forests in Kerala, sugarcane fields and exquisite landscapes. Heritage photography is another highlight of this cultural site.",
-        "destinationLatitude": 77.175091,
+        "destinationLatitude": 10.247888,
+        "destinationLongitude": 77.175091,
         "activityTagsId": ["AT-006", "AT-011", "AT-012", "AT-013"],
         "atmAminityId": ["AB-020"],
         "bankAminityId": ["AB-019", "AB-021"]
@@ -91,7 +97,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R1",
         "destinationDescription": "‘Walking through the lap of nature and savouring the best nature can offer’.\nThere is no better way to describe your visit to Munnar’s Marayur, where you can have the best jaggery in the world directly from the place where it is made, with the wonderful climatic condition adding up to your experience. Marayur, located 42kms north of Munnar in Munnar-Udumalpet road is best known for sandalwood and sugarcane cultivation. \nWhen the unique Marayur sugarcane meets the authentic age-old skill of local people, Marayoor Jaggery becomes a unique product, hailing the heritage and delicacy of Marayoor. Visitors get to visit, watch and understand the traditional process of jaggery making done in age old huts. Marayur visit is as unique as the dark brown Marayur jaggery.",
-        "destinationLatitude": 77.187159,
+        "destinationLatitude": 10.229544,
+        "destinationLongitude": 77.187159,
         "activityTagsId": ["AT-011", "AT-022"],
         "wastebinAminityId": ["WB-026"]
     },
@@ -106,7 +113,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R1",
         "destinationDescription": "Known as the Kashmir of South India, Munnar’s Kanthalloor Farms can be compared to nothing less than the Biblical Garden of Eden. Nestled in the plethora of greenery and mist, Kanthalloor awaits you with its beautiful natural landscapes, adorned with man-made orchards as serene as a paradisiacal environment. Private farms are the main attraction of this place, which stretches upto many acres, luxuriant with trees including apple, strawberry, passion fruit, orange, tamarillo, apricot, plum, sabarjil and what not! Most of these private farms have around 200 varieties of flora including trees, flowers, and vegetables. Fruit-plucking tourism which is not so popular in Kerala is promoted in Kanthalloor where visitors stay within the farms, experience everything so close and even buy freshly-plucked fruits from the very place they are being cultivated. Kanthalloor is thus an apt escape from the hasty city life and a wonderful honeymoon place for couples.",
-        "destinationLatitude": 77.195065,
+        "destinationLatitude": 10.20767,
+        "destinationLongitude": 77.195065,
         "activityTagsId": ["AT-006", "AT-011", "AT-012", "AT-022"]
     },
     {
@@ -120,7 +128,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R1",
         "destinationDescription": "The most picturesque place in Munnar, Anamudi Shola National Park is an abode for around 174 species of herbs, 62 species of trees, 40 species of climbers. The land blessed with luxuriant grasslands and velvety patches of tea plantations rejuvenates you the purest air of high altitudes! Anamudi Shola, consisting of Mannavanshola, Idavarashola and Pullardishola (Shola means ‘Cholai’ or ‘forest’) is the perfect paradise for a nature lover. This 7.5km square forest area was declared a national park in the year 2003 and is nominated for UNESCO’s World Heritage Program.\nUntil recently, Anamudi National Park was a restricted area by the Forest Department. Now, it has been opened to visitors for activities like trekking. This ‘plastic free’ area is not just for some adventurous visits, but is also the best place to observe and study the nature of Western Ghats. \nSo the next time you pack your backpack, there is no question where you are going, right?",
-        "destinationLatitude": 77.177278,
+        "destinationLatitude": 10.190326,
+        "destinationLongitude": 77.177278,
         "ffId": ["FF-007"],
         "activityTagsId": ["AT-006", "AT-002", "AT-009", "AT-011", "AT-012"],
         "atmAminityId": ["AB-028"],
@@ -137,7 +146,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R1",
         "destinationDescription": "Karimutty waterfalls is another fascinating destination on the Munnar Marayoor route. It Comes under Karimutty Forest Station and is visible from the road side. Being a destination under Chinnar Valley Safari, Karimutty is a plastic free zone. Trekking to this perennial waterfall is open throughout the year with an entry fee of Rs. 25. Mazhanizhal tea shop sponsored by KFWD and an Ecoshop nearby are the two spots associated with Karimutty Waterfalls, refreshment and a wee bit of shopping while enjoying nature.",
-        "destinationLatitude": 77.1689,
+        "destinationLatitude": 10.2905,
+        "destinationLongitude": 77.1689,
         "activityTagsId": ["AT-006", "AT-011", "AT-012", "AT-025"],
         "atmAminityId": ["AB-023", "AB-025"],
         "bankAminityId": ["AB-022", "AB-024", "AB-026"],
@@ -153,7 +163,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R1",
         "destinationDescription": "Alampetty Eco-Tourism is one of the best tourism programs ever executed in Kerala, serving the purpose at its best. Consisting of Thoovanam Waterfalls, Cultural zone, Jallimala, Vayumala and Kannimala trekking, Alampetty project is run by Kerala Tourism Department promoting sustainable tourism along with aiding the native people. Three hours trek to the Thoovanam Waterfalls awaits you with awe-inspiring view of unfurled silver amidst lushful green carpet. Though the zenith of nature’s abundance is visible during the rainy season, the authorities instruct visitors to visit the place during the summer season for the sake of safety. Munnar is not about greenery and nature but has anecdotes of cultural heritage as indicated by the Dolemons in the cultural zone. The log huts can give you another unmatchable experience of staying in the middle of the jungle, where you can anticipate meeting any animals dwelling inside the Chinnar forest.",
-        "destinationLatitude": 77.185148,
+        "destinationLatitude": 10.310854,
+        "destinationLongitude": 77.185148,
         "activityTagsId": ["AT-002", "AT-006", "AT-014"],
         "wastebinAminityId": ["WB-025"]
     },
@@ -167,7 +178,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R1",
         "destinationDescription": "Thoovanam is a popular trekking spot in Munnar, with its destination leading to Marayoor Thoovanam Falls.The 4 km guided forest trek to Thoovanam falls is the best way to get to the soul of Chinnar Wildlife Sanctuary. It starts from Alampetty Checkpost and takes around 3 hours to reach the falls in the Pamba River stretch. A dip in the Thoovanam Falls is a soothing experience for nature-lovers. The waterfall is perennial and offers the best experience during the monsoons (July-August). The forest is rich with its rare flora and fauna species and gives a holistic experience of being close to nature. One may spend around 3-4 hours visiting the falls or may camp overnight in the forest guest house, cottages, or log houses which are available in the sanctuary for reasonable prices.",
-        "destinationLatitude": 77.187904,
+        "destinationLatitude": 10.287009,
+        "destinationLongitude": 77.187904,
         "activityTagsId": ["AT-007", "AT-002", "AT-029"]
     },
     {
@@ -183,7 +195,8 @@
         "activitiesId": ["ACT011", "ACT013"],
         "destinationRouteId": "R1",
         "destinationDescription": "Located in the rain shadow region of the Western Ghats, Chinnar Wildlife Sanctuary is a conservation zone neighbouring Tamil Nadu. Chinnar, with its unique geological features, encompasses a variety of habitat types. It is also a sanctum to a large number of unique flora and fauna accustomed to thorny vegetation. It is a repository of medicinal plants and supports a healthy population of grizzled giant squirrels, tufted grey langurs, gaurs, spotted deers, slender lorises, wild elephants, crocodiles, tigers, leopards and numerous birds, insects and plants. The Chinnar Wildlife Sanctuary is also the only rehabilitation centre for the Indian Star Tortoise - a threatened species of tortoise. The sanctuary also houses archaeologically-significant megalithic burial sites consisting of dolmens and cysts.\nThe sanctuary offers a visual charm that leaves its sightseers mesmerized with its diversity in topography and ecosystem. The two perennial water resources, namely the Chinnar and Pambar rivers, is an enchanting vista which hosts a number of waterfalls en route.\nThe major attraction in the sanctuary is trekking, The sanctuary has an Interpretation Centre at Karimutty, two eco shops (one each at Chinnar check post and Aalampetty), an amenity centre, inspection bunglow, dormitory and cafeteria at Chinnar check post to cater to the needs of the the visitors. \nThe area encompasses diverse ecosystems and is home to a rich ethno-cultural heritage. The main inhabitants are Muthuvas and Pulayars. Maize, ragi, and lemongrass are cultivated here.",
-        "destinationLatitude": 77.206,
+        "destinationLatitude": 10.3068,
+        "destinationLongitude": 77.206,
         "ffId": ["FF-008", "FF-009", "FF-010"],
         "activityTagsId": [
             "AT-024",
@@ -205,7 +218,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R2",
         "destinationDescription": "The boating services provided by the DTPC (District Tourism Promotion Council) mainly involve pedal boating, which is the only available form of boating. It only covers 3km of the Muthirapuzha River. Currently, there is only one working boat with which they run the boating service . The fare charged is Rs 100 every half hour. It is open on all 7 days. It also provides all necessary facilities including toilets, hotels, ATM, and various other accessories. It is not a well-established boating service. It has minimum congestion and has only one boat that works from 9 to 5.",
-        "destinationLatitude": 77.063235,
+        "destinationLatitude": 10.075609,
+        "destinationLongitude": 77.063235,
         "activityTagsId": ["AT-012", "AT-005"],
         "atmAminityId": ["AB-029"]
     },
@@ -220,7 +234,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R2",
         "destinationDescription": "Blossom Hydel Park is located around 3 km away from Munnar town, towards the old Munnar. This park is a part of the Sylvan Hill resort of Munna. Nearby attractions are the Muthirapuzha River and the Misty Kannan Devan Hill Tea Estates.\nThe Hydel Park offers many facilities including adventure trails, nature walks, bird-watching, roller skating, badminton, and many more. Visitors can admire the spectacle of Nature’s most scenic landscapes and delight in the aroma of fresh mountain flowers that are found abundantly in the park. They can also enjoy boating through the serene waters of Muthirapuzha River. The Blossom Hydel Park is also famous for other facilities like campfire with music.The park’s scenic lookout points include the exquisite Western Ghats and the misty folds of Kannan Devan Hill Tea Estates (also known to be another major attraction in Munnar). \nThe best time to visit here is between December and February. This destination allows tourists to enjoy the splash of air and tranquil walks through nature which will leave them feeling euphoric throughout the journey.",
-        "destinationLatitude": 77.0665255672478,
+        "destinationLatitude": 10.0691218188624,
+        "destinationLongitude": 77.0665255672478,
         "activityTagsId": ["AT-006", "AT-011", "AT-031", "AT-032"],
         "atmAminityId": ["AB-030"],
         "wastebinAminityId": ["WB-015"]
@@ -236,7 +251,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R2",
         "destinationDescription": "Built in 1940 and named after C P Ramaswami Iyer, the Munnar Headworks Dam was constructed under the Pallivasal Hydro Electric Project to collect water. The water reaches the reservoir through Muthirapuzha, which carries water from the Nallathanni and Kannimala Rivers and also from Mattupetty Dam. The dam was opened for 24 hours, but after 9 in the evenings till 7 in the mornings, heavy vehicles were not allowed. By this way, the tourists can visit the Pothamedu View Point.\nThe tourists can visit the place for 15-20 minutes.",
-        "destinationLatitude": 77.0671,
+        "destinationLatitude": 10.0681,
+        "destinationLongitude": 77.0671,
         "activityTagsId": ["AT-012", "AT-011"],
         "wastebinAminityId": ["WB-016"]
     },
@@ -252,7 +268,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R2",
         "destinationDescription": "4.5 km away from Munnar, a lush green space of plantations with the aroma of cardamom, tea and coffee await you! And what if the space is goldenly lit by the setting sun?! Pothamedu offers a magnificent view for nature lovers and photographers! The view of the tea plantation gives you flourishing our happiness and also give you the soothing sunset view.",
-        "destinationLatitude": 77.0641,
+        "destinationLatitude": 10.0597,
+        "destinationLongitude": 77.0641,
         "activityTagsId": ["AT-012", "AT-011", "AT-013"],
         "wastebinAminityId": ["WB-017"]
     },
@@ -266,7 +283,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R2",
         "destinationDescription": "The roaring, cascading down Attukadu waterfalls is an ethereal beauty in itself! If you are a photographer and nature lover or just want to eliven your spirits up, this green hills with its pleasant misty atmosphere is for you! The place is just enchanting during monsoon and is recommended for a visit!",
-        "destinationLatitude": 77.0589,
+        "destinationLatitude": 10.0534,
+        "destinationLongitude": 77.0589,
         "wastebinAminityId": ["WB-018"]
     },
     {
@@ -282,7 +300,8 @@
         "activitiesId": ["ACT014"],
         "destinationRouteId": "R2",
         "destinationDescription": "8.5 km away from Munnar town, the 2 nd mile valley welcomes you to the tea plantations of Munnar. It offers picturesque views of wide landscapes, hills and tea plantations and wide view of Idukki dam! Since it's on the way to Munnar town, you can spend as much time as you want photographing from different angles and enjoying the sunset!",
-        "destinationLatitude": 77.0393,
+        "destinationLatitude": 10.0414,
+        "destinationLongitude": 77.0393,
         "activityTagsId": ["AT-011", "AT-012"],
         "atmAminityId": ["AB-031"],
         "wastebinAminityId": ["WB-019"]
@@ -297,7 +316,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R2",
         "destinationDescription": "Situated amidst the waters, hills and forests, Wonder Valley Anachal offers a wide range of adventures from Dashing cars to Burma bridge to Rock climbing to Bungee jumping to nature walks and tree houses and what not?! Designed for kids and grownups alike, this place is a feast and is sure to enliven your spirits! It is open from 8:30 am to 6:45 pm( varies on some days).",
-        "destinationLatitude": 77.035503,
+        "destinationLatitude": 10.026998,
+        "destinationLongitude": 77.035503,
         "activityTagsId": ["AT-026"],
         "atmAminityId": ["AB-033", "AB-034"],
         "bankAminityId": ["AB-032"]
@@ -315,7 +335,8 @@
         "activitiesId": ["ACT014"],
         "destinationRouteId": "R2",
         "destinationDescription": "Shengulam dam which is a part of Shengulam hydroelectric project offers a mesmerising view since the dam is surrounded by Letchmi hills with an enchanting sky! It offers a view of pettumudi peaks, adding to its beauty! The place is ideal for photography, sightseeing and some fun activities such as boating in pedal boats and speed boats! The boating is open from 8:30 am to 4:30 pm. The small park by the side of the dam is an exact place for relaxing and to have fun time with kids and family with kayaking and coracle.",
-        "destinationLatitude": 77.0337932261429,
+        "destinationLatitude": 10.0089882808287,
+        "destinationLongitude": 77.0337932261429,
         "activityTagsId": [
             "AT-005",
             "AT-006",
@@ -338,7 +359,8 @@
         "activitiesId": ["ACT014"],
         "destinationRouteId": "R2",
         "destinationDescription": "Spice garden is famous for the variety of spices that have. Visiting here will forever be a cultural experience. You can find Spices that make your mouth water that have exceptional medicinal values. Spice garden is the place where spice shops and along with that spice cultivation garden could be seen. Vast plantations, cultivation, and harvesting of these exotic flavours are remarkable sights to behold. The enriching aroma from the fresh-cut spices can keep you tethered to this place. The place is misty with fragrance, but it’s not all pungent. Sweet-toothed travellers are lucky enough to watch live chocolate making. By hook or by crook you are sure to be dribbling.\nThe whole spice garden area can be covered within 1 hour; the duration depends on one’s interest.  Guided plantation walks include visits to sites of live chocolate making.",
-        "destinationLatitude": 76.8853,
+        "destinationLatitude": 10.0278,
+        "destinationLongitude": 76.8853,
         "ffId": ["FF-011", "FF-012", "FF-013", "FF-014"],
         "activityTagsId": ["AT-006", "AT-005", "AT-011"]
     },
@@ -353,7 +375,8 @@
         "activitiesId": ["ACT014"],
         "destinationRouteId": "R2",
         "destinationDescription": "The very sight of green bushy tea plantations and high range mountains itself is rejuvenating. The best spot to capture this excellent view is karadippara view point. A couple of park benches on the spot are useful to enjoy the wonderful landscape. This spot is best enjoyed during the months from December to February when the hillocks are covered in green stretches. A panoramic view of the Munnar valleys is indeed a spectacular view. The multi-cuisine highway restaurants are serviceable refreshment centers.",
-        "destinationLatitude": 77.01833,
+        "destinationLatitude": 10.0365,
+        "destinationLongitude": 77.01833,
         "activityTagsId": ["AT-012", "AT-013"],
         "wastebinAminityId": ["WB-020"]
     },
@@ -369,7 +392,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R3",
         "destinationDescription": "A drive through the mist covered roads of Munnar and you will arrive at this beautiful paradise - the botanical garden. This area is packed with exquisite flowers and lush green bushy shrubs is the perfect place for nature enthusiasts to explore. Botanical Garden in Munnar is a museum of living plants that attracts photographers, gardeners, botanists, scientists, and nature lovers from around the world. The diverse flora also includes medicinal herbs. This is the place in Munnar where leisure meets knowledge. Along with flora and fauna of distinct varieties, the garden is designed as an entertainment park for tourists including facilities Coffee Shop, Spices Shop, playing area, and plant nursery. Recreational activities like boating also go along with this visit.\nA well-maintained garden with a variety of rare species including cacti and a good collection of their hybrids too. A walk through the garden is blissful enough to make you feel alive from inside. The park is open on all days from 8 AM to 5 PM and all it takes is 1hr to stroll the entire area.",
-        "destinationLatitude": 77.07133597,
+        "destinationLatitude": 10.08311389,
+        "destinationLongitude": 77.07133597,
         "activityTagsId": ["AT-006", "AT-011", "AT-012", "AT-022"],
         "wastebinAminityId": ["WB-010"]
     },
@@ -384,7 +408,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R3",
         "destinationDescription": "The best spot to witness the enchanting beauty of Munnar tea plantations. It is a must-visit destination if you cannot relate to what a place with a view means. May it be solo bullet lovers or SUV holiday visitors, all could just sit back and relax, looking at the burgeoning tea sprouts forming a spectrum with infinite shades of green.",
-        "destinationLatitude": 77.0869822847567,
+        "destinationLatitude": 10.078214718346,
+        "destinationLongitude": 77.0869822847567,
         "activityTagsId": ["AT-011", "AT-006", "AT-012", "AT-013"],
         "wastebinAminityId": ["WB-011"]
     },
@@ -400,7 +425,8 @@
         "destinationAvailability": "TUE-SUN",
         "destinationRouteId": "R3",
         "destinationDescription": "Lockhart is the first estate in Munnar believed to have been planted in 1879 by Scottish planter Baron Von Rosenberg. Place with such historical significance, this tourist destination is known for showcasing orthodox tea processing and the operations that go into the making of black tea, green tea, and white tea in traditional ways. Some tourists are fond of the older equipment used in the plantation like Shears, Mechanical Harvesting Machine, Drake and Fletcher Sprayer, etc. Vintage is the word; this tea museum gives great aesthetic pleasure. Situated here is also the chokramudi peak 7000 feet elevated isolated from other hill ranges but provides a fabulous view of the surrounding valleys & mountains covered with stunning dense forestation and the lush green tea plantations.\nAt the tea factory, you can also avail fun activities like tea trials and making your tea. The factory is open from 8 AM to 5 PM permitting plantation walk and tea tasting. The most and tastiest section of  Lockhart Museum is  Lockhart kiosk, which provides their customers with different varieties of Teas, Ice – creams, crispy crunchier delightful deep-fried delicious foods.",
-        "destinationLatitude": 77.10909185,
+        "destinationLatitude": 10.05433034,
+        "destinationLongitude": 77.10909185,
         "activityTagsId": ["AT-011", "AT-012", "AT-006"],
         "atmAminityId": ["AB-051"],
         "bankAminityId": ["AB-050"],
@@ -417,7 +443,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R3",
         "destinationDescription": "Chokramudi Peak, one of the highest peaks of Munnar, is located at an elevation of 7200 ft in the Eravikulam National Park. This is an isolated hill range, which offers fascinating views of lush Shola forests, shrubs, tea plantations, meadows, and more. For those who love nature and adventure, Chokramudi Peak is the perfect destination to visit. When you reach the top of the peak, your eyes capture an amazingly mesmerizing view of Munnar. Trekking through unique places will bring unique experiences - Chokramudi is also a place that offers unique experiences. The winter months between December and February is the best time to visit this place. The Kerala Forest Department charges an entry fee of Rs 400 for Indians and Rs 600 for Foreigners to trek.",
-        "destinationLatitude": 77.10241954,
+        "destinationLatitude": 10.027118132,
+        "destinationLongitude": 77.10241954,
         "ffId": ["FF-001", "FF-002", "FF-015"],
         "activityTagsId": [
             "AT-006",
@@ -440,7 +467,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R3",
         "destinationDescription": "To explore the breathtaking panoramic view of the magnificent scenery of Munnar, the Lockhart gap viewpoint is the best. It is known as the gateway of Dhanushkodi. Surrounded by lush green valleys filled with dense tea plantations, vast grasslands, and rolling hills wrapped by blankets of mist, this viewpoint is mesmerizing. It offers a mind-blowing and sublime visual treat to tourists, which is probably a photographer's delight and a traveller's desire. A traveller can snap the incredible beauty of Munnar and watch the spectacular sunset and sunrise from this point. It offers a feast for the eyes and brings a peace of mind. Lockhart viewpoint is an ideal place for obtaining an overview of other places at the foothills of the Mountains of Munnar. Enjoying this beautiful view by experiencing the cold breeze in total connection with the wild nature, is an incredible moment in its truest sense.",
-        "destinationLatitude": 77.13667343,
+        "destinationLatitude": 10.03596068,
+        "destinationLongitude": 77.13667343,
         "activityTagsId": ["AT-011", "AT-006", "AT-012"],
         "wastebinAminityId": ["WB-013"]
     },
@@ -455,7 +483,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R3",
         "destinationDescription": "Popularly known as power house waterfalls, Chinnakanal has its origin in Devikulam river. Surrounded by tea estates, mountain ranges and lush greenery, the place is a classic beauty in itself! The place is the best escape to nature and would indeed give you a beautiful experience with its cool, fresh water pool, misty atmosphere, dense greenery, chirping birds and innumerable wildlife!\nThe site is ideal for nature photography and is at its best in monsoon when the flow of water becomes wider.",
-        "destinationLatitude": 77.1549122555909,
+        "destinationLatitude": 10.0376527603314,
+        "destinationLongitude": 77.1549122555909,
         "activityTagsId": ["AT-011", "AT-006", "AT-012"]
     },
     {
@@ -468,7 +497,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R3",
         "destinationDescription": "Suryanelli Tea factory, located in the Suryanelli estate is where one of the world's renowned Suryanelli tea originates.\nThe place offers good spots for photography, sightseeing and activities like zipline and kayaking in addition to the factory tour and relishing a sip of some classic tea! A must visit place for tea- nature lover combo!\nThe place is open from Tuesday to Saturday from 8 am to 4 pm. One can visit the place in 2 hrs.",
-        "destinationLatitude": 77.061386,
+        "destinationLatitude": 10.079732,
+        "destinationLongitude": 77.061386,
         "activityTagsId": ["AT-001", "AT-012", "AT-011"],
         "atmAminityId": ["AB-055"],
         "bankAminityId": ["AB-052", "AB-053", "AB-054"]
@@ -485,7 +515,8 @@
         "activitiesId": ["ACT016"],
         "destinationRouteId": "R3",
         "destinationDescription": "Located at a height of 7,900 ft above sea level, Kolukkumalai offers an ethereal experience! The jeep ride through bumpy routes of aroma filled tea plantations, misty hills and humble villages are worthwhile!\nThe tour through the tea factory is an enlightening experience since it dates back to the colonial era and the orthodox tea making employed there itself is an enthralling story! \nThe place produces one of the richest, flavoursome world's highest organic tea! The place is a must visit for those who want an ideal escape from the monotonous routine of their daily lives since the place offers a combo of tea, nature and trekking and what more is needed?!",
-        "destinationLatitude": 77.2149625,
+        "destinationLatitude": 10.0808615,
+        "destinationLongitude": 77.2149625,
         "ffId": ["FF-002"],
         "activityTagsId": ["AT-006", "AT-011", "AT-012", "AT-017"],
         "wastebinAminityId": ["WB-008"]
@@ -501,7 +532,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R3",
         "destinationDescription": "Anayirangal area is enriched with so many attractions. The journey through the beautiful tea gardens at Lockhart estate and the rock roads at Gap gives immense pleasure to your eyes. The name has come like that because elephants come down in to that spot, lake, from the forests adjoining the lake.Anayirankal dam one of the largest earthen dams built in the 1960s is located 28 km from Munnar. The dam was built with a mixture of mud, gravel and boulders. Located in the midst of a verdant carpet of tea plantations, Anayirankal is an ideal picnic spot for travellers from around the world. The Anayirankal Dam is flanked by the Tata Tea Plantation and a thick cover of evergreen forests. Anayirankal is located 22 km from Munnar, the beloved hill station of Kerala. A boat ride on the splendid reservoir is an unforgettable experience that no visitor should miss. Ranked amongst the top scenic places to visit in Munnar, Anayirankal Dam is an ideal picnic spot for travellers and locals alike. Almost 22km away from Munnar, the dam is located amidst tea plantations and dense green forests. The word Anayirankal is a mix of two words, ‘Aana’ meaning ‘elephants’ and ‘irankal’ meaning ‘coming down’. There’s  a boating centre by anayirangal dam ‘elephant abode boating centre’.",
-        "destinationLatitude": 77.2051307983159,
+        "destinationLatitude": "10.014517384245202,",
+        "destinationLongitude": 77.2051307983159,
         "activityTagsId": ["AT-005", "AT-023", "AT-011"],
         "wastebinAminityId": ["WB-009"]
     },
@@ -515,7 +547,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R3",
         "destinationDescription": "Poopara is a village in Idukki district in the Indian state of Kerala.It is located in the cardamom-growing region of Kerala, and also houses a number of tea and coffee plantations. The place also intersects the Munnar - Kumily state highway (SH-19) and Kochi - Dhanushkodi national highway (NH-49). The Anayirankal reservoir is 4 km up the road from Poopara. Though we do not normally experience the four seasons in their full strength, variations in climatic conditions make on all life forms. A dense forest turns thin during summer, taking away much of its greenery.A view from Bodimettu, near here, to the plains bordering Tamil Nadu, is clear. Fast spreading fogs that affect vision are a rare phenomenon, thanks to the presence of large rocky barren grasslands on the north-eastern side. During December and January for appears, but not to any great extent.Going on a visit to Poopara",
-        "destinationLatitude": 77.1263,
+        "destinationLatitude": 10.03279,
+        "destinationLongitude": 77.1263,
         "activityTagsId": ["AT-022"],
         "atmAminityId": ["AB-056", "AB-059"],
         "bankAminityId": ["AB-057", "AB-058"]
@@ -530,7 +563,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R3",
         "destinationDescription": "Bodimettu is a locality in Theni district in the state of Tamil Nadu in India, near the border with Kerala.It is 10 km from Poopara on the way to Bodinayakanur by the side of National Highway 85, which runs from Dhanushkkodi to Kochi. Bodimettu is the main cardamom-growing area of Tamil Nadu. It is close to famous tourist destinations such as Munnar, Marayur, Thekkady, Kodaikanal, Anayirangal Dam. it is just 30 minutes from Bodinayakanur, and the perfect place for picnic and spend a nice time with mountain views and chill weather of hill station, lot of developments are going to promote this place for tourist who come to visit Munnar during summer is a real pleasure, Chinnakanal and near by hill & tea gardens. New Hotels and Homestays have come up in the last few years..",
-        "destinationLatitude": 77.2621,
+        "destinationLatitude": 10.022,
+        "destinationLongitude": 77.2621,
         "activityTagsId": ["AT-029", "AT-011"]
     },
     {
@@ -546,7 +580,8 @@
         "activitiesId": ["ACT001", "ACT006", "ACT007", "ACT008"],
         "destinationRouteId": "R4",
         "destinationDescription": "The beauty of the mountain range can only be fully appreciated if you trek to the top of the mountain. To that end, first, you have to take a jeep to the base camp and then hike to the top of the mountain. However, this route should only be undertaken by veteran hiking enthusiasts, as it can be quite grueling. Perched at a height of 2640 meters above the sea level, Meesapulimala is the second highest peak when it comes to the mountain ranges in the Western Ghat. This mountain range is a trekker’s paradise in the Southern parts of India, and is located just a small distance away from the beautiful Munnar town of Idukki district in Kerala. The name of the peak is derived from the fact that it is made of a total of eight peaks. All of these mountains are spread out and have a moustache like formation. The mountain range is sandwiched between Anaimalai Hills and the Palani Hills, which are located near Suryanelli. You can also hike to the mountains from Silent Valley, which is located 6 km away from Rhodo Valley. It is best to plan your trek to  Meesapulimala in the months of winter, that is, between October and February. The average temperature in this region of the country is a pleasant 19.4 degrees centigrade, and the average precipitation received by the hills is 2640 mm.",
-        "destinationLatitude": 77.2032882028,
+        "destinationLatitude": 10.0981631951696,
+        "destinationLongitude": 77.2032882028,
         "ffId": ["FF-016", "FF-017", "FF-018"],
         "activityTagsId": ["AT-003", "AT-006", "AT-011"]
     },
@@ -597,7 +632,8 @@
         "destinationAvailability": "MON-SAT",
         "destinationRouteId": "R5",
         "destinationDescription": "This congregation is additionally affectionately known as the \"Taj Mahal of Munnar\". \nThe internment burial place of Eleanor Isabel May approaches the congregation remains as an image of never-ending love, singing to us of the sentimental story of Munnar. \nA visit to this extremely old construction of the congregation with its gothic style and a strange touch, celebrated for its strict and memorable importance, will leave you charmed with the remainders of a rich culture. \nThis building made of stone blocks welcomes the consideration of history specialists and legacy photographic artists because of its old engineering tastefulness. Hints of Roman design in the Church with its stained glass windows, stone floor, inclined rooftops, the detailed light fixtures improving the insides of the structure, and the old graveyard close to it, add to its compositional expert articulation",
-        "destinationLatitude": 77.061452,
+        "destinationLatitude": 10.080955,
+        "destinationLongitude": 77.061452,
         "activityTagsId": ["AT-014", "AT-018", "AT-019"],
         "atmAminityId": [
             "AB-002",
@@ -633,7 +669,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R5",
         "destinationDescription": "Situated at the core of Munnar town, this is a church that is perhaps the most renowned Christian church in Kerala state. Set up in the year 1898, Mount Carmel Church is one of Munnar's significant spots of strict significance. Known to be the principal Catholic Church in the locale, this strict building was begun by Father Alphonse of the Spanish Missionary.After Father Alphonse's destruction, his body was covered in this congregation. Delightful sculptures of Jesus Christ and Mother Mary add huge effortlessness to this congregation. One can invest quality energy in the serene environs of this spot.",
-        "destinationLatitude": 77.0596886641843,
+        "destinationLatitude": 10.0879785588462,
+        "destinationLongitude": 77.0596886641843,
         "activityTagsId": ["AT-014", "AT-019"],
         "atmAminityId": [
             "AB-002",
@@ -670,7 +707,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R5",
         "destinationDescription": "Shopping in the Munnar market is a unique travel experience in itself, with the fresh mountain air perfumed with the aromas of coffee or spices.Your trip to Munnar might even seem incomplete without a visit to this shopper's paradise in Munnar which is known worldwide for its tea and spice plantation.With an amazing array of local products, organically grown fresh vegetables and fruits or be it handicrafts, fabrics, spices aromatic essential oils, varieties of tea and coffee powders, homemade chocolate and many more, a stroll through the streets of this market is sure to leave you with a memorable souvenir or gift items specific to this region to take home, maybe even without burning a hole in your pocket as the market is known for its wholesale reasonable prices",
-        "destinationLatitude": 77.0607481966956,
+        "destinationLatitude": 10.0878664576273,
+        "destinationLongitude": 77.0607481966956,
         "activityTagsId": ["AT-022"],
         "atmAminityId": [
             "AB-002",
@@ -707,7 +745,8 @@
         "destinationAvailability": "TUE-SUN",
         "destinationRouteId": "R5",
         "destinationDescription": "Tea has had a fundamental impact all through the whole presence of Munnar. Tea museum welcomes the tourists with a \nhalf an hour documentary which shows the history of Munnar and the connection between people and the green tea gardens.\n We can also trek through the misty tea plants with the cool breeze welcoming us aboard. The estates accepted an enormous\n part in attracting people to the zone. Farewell Tea set up a Tea Museum in 2005 which has photographs and equipment, which \narchive the journey of tea in the locale. The presentation corridor set up at the Nallathanni Estate of Tata Tea ensures that the\n convention of the people who tried to ensure the tea houses persevere through this long is seen straightforwardly. \nOne can see the arrangement of encounters and advancement of tea areas in the district. We will watch the change from the straightforward tea roller to the high-level robotized tea creation line. Various periods of tea planning can be seen, which\n consolidates the production of dim tea. \n                                     An indicating space for tea tasting is another interest where one would go over different groupings of tea.\n One can taste indisputably the most captivating groupings of tea available around the planet here. The outlet which is arranged \nhere in the museum helps us to recreate the refreshment within our  place. It has reliably changed into an obvious necessity visit\n spot for the people who wish to delve into the soul of Munnar.",
-        "destinationLatitude": 77.050661,
+        "destinationLatitude": 10.094095,
+        "destinationLongitude": 77.050661,
         "activityTagsId": [
             "AT-04",
             "AT-06",
@@ -753,7 +792,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R5",
         "destinationDescription": "Srishti is an administration help center in Munnar which is directed and run by Tata Tea. It goes under Tata Global Beverages' Corporate Social Responsibility exercises. It targets giving a quality life to the gatherings of tea pluckers in Munnar. Srishti moreover encourages in getting the destiny of contrastingly abled adolescents of who have a spot with these families. The tea pluckers are paid on a reliable timetable and clearly, they don't obtain liberal aggregates. Srishti runs various exercises that target getting a nice future for these youngsters. The assignments which describe Srishti are Development Activities in Rehabilitations (DARE), Aranya, Athulya, and Strawberry Preserve Making Unit.\nThe estate arranging and cycles going on the spot totally draws in the consideration of the travelers. One would go staggering around the confused tea house and assimilate everything green. Amidst the typical visit when the guide suggested visiting Srishti, I was enraptured to get some answers concerning it. He in like manner referred to that it isn't something touristy so if I could have done without it he shouldn't be denounced for consuming the time, as we had just a single day to meander around in Munnar. I promised him nothing of that sort will happen.",
-        "destinationLatitude": 77.0404,
+        "destinationLatitude": 10.0948,
+        "destinationLongitude": 77.0404,
         "activityTagsId": ["AT-028"],
         "atmAminityId": [
             "AB-002",
@@ -788,7 +828,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R5",
         "destinationDescription": "Apart from the breathtaking landscapes and scenic beauty, Munnar is also a place marked by rich heritage and prehistoric cave paintings. Marayoor, Ezhuthala, Attala, etc. in Munnar are few of the crucial historical sites in Kerala. The makers of these cave paintings were the first storytellers who illustrated the origin of gods, religion, folk tales, myths, legends, etc. They have portrayed the many facets of their lifestyles through the demonstrations in these cave walls.These cave paintings serve as a primitive communication and connecting link between the ages.\nMarayoor is known for a plethora of cave paintings and prehistoric dolmens. Ezhuthala cave paintings are fading due to the absence of scientific preservation and protection nowadays.",
-        "destinationLatitude": 77.161458,
+        "destinationLatitude": 10.2761663,
+        "destinationLongitude": 77.161458,
         "activityTagsId": ["AT-04", "AT-012", "AT-014"]
     },
     {
@@ -802,7 +843,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R6",
         "destinationDescription": "Laxmi Hills is an alluring trekking point that offers a mesmerizing panoramic view of the Western Ghats. The cool breeze and the enthralling meadows give energy to the trekking. This place is a heavily weekend getaway for travelers and visitors from the cities. One side of the mountain ranges is rocky, and the other side of the valley is tea plantations, shola forests, etc. The place offers moderately difficult trekking experience to adventure loving visitors, thus making it restricted to individuals above 11 years of age. Laxmi Estate Trek is one of the most popular trekking sites in Munnar It is a paradise for those who love to add a pinch of adventure to their leisure trips with trekking, cycling, rope activities, etc.\nAlthough the major parts of the ranges are open to the public, some are under ownership of The Tata Group.",
-        "destinationLatitude": 77.077823,
+        "destinationLatitude": 10.082979,
+        "destinationLongitude": 77.077823,
         "activityTagsId": ["AT-002", "AT-006"],
         "atmAminityId": ["AB-063", "AB-064"]
     },
@@ -817,7 +859,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R6",
         "destinationDescription": "Viripara Waterfalls in Kallar river-protected under the Department of Forest- is one of the best tourist destinations in Munnar with its enchanting lush green backdrops. Located 15 km away from Munnar town, one may take the three-hour trek from Kannadipara through the forest trails at reasonable rates ranging from ₹300/-₹500/- to finally take a cold dip in the waterfalls. One may spot rare Gopher trees on their way to the falls. Best time to visit the waterfalls is during Monsoons. Another attraction en route is the unexplored waterfalls near Laxmi Estate Tea Plantations (entry fee is ₹20/- for visiting and ₹50/- for a refreshing dip in the falls).",
-        "destinationLatitude": 76.961816,
+        "destinationLatitude": 10.07842,
+        "destinationLongitude": 76.961816,
         "ffId": ["FF-020"],
         "activityTagsId": ["AT-002", "AT-009", "AT-011", "AT-025"],
         "wastebinAminityId": ["WB-006"]
@@ -833,7 +876,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R6",
         "destinationDescription": "En route to the Nakshatrakuthu waterfalls in the Mankulam Range, one could trek along panoramic water streams and picturesque bamboo covered forests to reach the magnificent Nakshatrakuthu caves or the tiger caves. A small hanging bridge takes visitors across the river to the destination, about 300m into the forest. The place is historically known to have been a habitat of tigers. Cameras are placed at different points in the cave, as occasional sightings of the tigers are still observed. Officers are on constant check and tourists will not be allowed into the caves in such a scenario. It is situated 3km away from Viripara. Since it is a little distant from the usual trek circuit, not many people know about or get a chance to see this amazing natural wonder. From trekking along a rough terrain through the forests to the Nakshatrakuthu waterfalls, to sighting wild animals to bird watching, the place promises a wide range of nature experiences to the visitors.",
-        "destinationLatitude": 76.947994,
+        "destinationLatitude": 10.08912,
+        "destinationLongitude": 76.947994,
         "ffId": ["FF-019"],
         "activityTagsId": ["AT-002", "AT-009", "AT-011", "AT-010"]
     },
@@ -849,7 +893,8 @@
         "activitiesId": ["ACT015"],
         "destinationRouteId": "R6",
         "destinationDescription": "Amidst the mighty green mountains of the Western ghats lies the valley of Mankulam, one of the many secrets hidden in Munnar for its biodiversity, culture, and scenery. The place is far away from the hassles of a city and opens a nature paradise to its visitors. Crystal clear streams and waterfalls flow abundantly through the valley, refreshing the soul of the earth. The blue skies and the cool mountain breeze meets the dreams and fantasies of every traveler who visits it. Mankulam village is famously known as the first local self-governing institution in Asia to generate its electricity using waterfalls. Cultivations of spices, coffee, cocoa, and rubber are enthralling and take the tourists to the lap of nature. Apart from these attractions, the place offers a jeep safari through the uneven terrain to trigger an adrenaline rush. The resorts in Mankulam provide a safe and comfortable stay with tent campings to relax your body and soul.",
-        "destinationLatitude": 76.9269,
+        "destinationLatitude": 10.1173,
+        "destinationLongitude": 76.9269,
         "activityTagsId": ["AT-012", "AT-006", "AT-011"],
         "atmAminityId": ["AB-066", "AB-068"],
         "bankAminityId": ["AB-065", "AB-067", "AB-069"]
@@ -865,7 +910,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R6",
         "destinationDescription": "The incredible Perambankuthu waterfall is highly underrated amongst the many large and small waterfalls around the area. 43 kilometers from Pallivasal, it is located at Anakkulam, Munnar. Around 50 meters in height, the fall is surrounded by large rocks and boulders. The lush green bamboo forests abut the roaring waterfalls on one side and the spice plantations on the other. Herds of elephants are often sighted feeding on the bamboo trees to meet their hunger needs. To explore the breathtaking views of mountain water plunging down the slopes, take a short hike through the rubber plantations to seek a majestic panoramic view of the Peranbankuthu falls. Tourists often take a shower in the trickling waters that fall from about a height of 20 meters. The waterfall is violent during monsoon, compared to the other seasons. If you are visiting during the rainy months, it is best to be accompanied by a local. Even if the weather can’t always be guaranteed, the beauty and drama of Perambankuthu will certainly not disappoint the travelers.",
-        "destinationLatitude": 76.9141,
+        "destinationLatitude": 10.1387,
+        "destinationLongitude": 76.9141,
         "ffId": ["FF-019", "FF-020"],
         "activityTagsId": ["AT-002", "AT-009", "AT-011"]
     },
@@ -881,7 +927,8 @@
         "activitiesId": ["ACT015"],
         "destinationRouteId": "R6",
         "destinationDescription": "Situated around 40 kilometers from Munnar is the elephant paradise, Anakkulam, offering a perfect getaway from the hustle and bustle of everyday life. The place is a small forest locked village with villagers whose livelihood depends on selling honey collected from honeycombs. Herds of wild elephants frequently drop by at the Anakkulam river to quench their thirst. There is no better place to watch adorable calves taking a shower in the cold waters. Breathtakingly amazing waters add to the aesthetic as we gaze at the mighty tuskers, wild boars, peacocks, and deer descent down the forest to visit the brook. The streamlets, Ittacholayaar and Nallathanniyar, two tributaries of Periyar, wet the place through all seasons. A nice long walk through the forest and a cool bath in the stream is enough to reinvigorate oneself.",
-        "destinationLatitude": 76.913894,
+        "destinationLatitude": 10.159245,
+        "destinationLongitude": 76.913894,
         "ffId": ["FF-020"],
         "activityTagsId": [
             "AT-009",
@@ -906,7 +953,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R6",
         "destinationDescription": "35 kilometers from Munnar and 8 kilometers from Mankulam, on the Aluva-Munnar road one can discover the 33 waterfalls. It is an unspoiled, least explored waterfall in Munnar where the mountain water plunges down the slopes into the valley. The caressing water flowing down the cascade engulfs visitors with a sense of serenity. This place is ideal for people who wish to have a one on one time with nature. Trek to the falls to experience and appreciate the stunning views and to take in the tranquil splendour. Off-roaders could bike or take a jeep from Mankulam to reach this beautiful destination.",
-        "destinationLatitude": 76.929887,
+        "destinationLatitude": 10.128489,
+        "destinationLongitude": 76.929887,
         "activityTagsId": ["AT-025", "AT-012", "AT-011"]
     },
     {
@@ -921,7 +969,8 @@
         "activitiesId": ["ACT012"],
         "destinationRouteId": "R7",
         "destinationDescription": "Munnar Flower Garden is additionally known by the name Rose Garden. It is a greenhouse that exists in the quiet excellence of Munnar slope station. The nursery is worked by Kerala Forest Development Center (KFDC), a Govt. of Kerala undertaking institution. It is spread across a couple of sections of land, with many uncommon assortments of flowers, desert plants, bushes, creepers, and herbal plants. Large tea manors structure the foundation of the nursery and the area is considered as perhaps the most should visit objections in Munnar. This spot is a paradise for photographers. The region is clogged with harvests, for example, vanilla and cardamom. It is likewise the home spot of numerous flavours and natural product trees, for example, Litchi, Strawberry, Rambutan, and Amla. A similarly huge assortment of blossoming plants can be seen here. Occasional tropical organic products develop here the entire year, and new vegetables and organic products like cabbage, potato, cauliflowers, bananas, and beans can be acquired from the ranches farm within the nursery. You can likewise purchase seeds of blooming plants from here and develop them as a journal of this enchanting spot.",
-        "destinationLatitude": 77.07565959,
+        "destinationLatitude": 10.08604325,
+        "destinationLongitude": 77.07565959,
         "activityTagsId": ["AT-011"]
     },
     {
@@ -936,7 +985,8 @@
         "activitiesId": ["ACT012"],
         "destinationRouteId": "R7",
         "destinationDescription": "This is one of the primary places of interest in Munnar. Just 3 km away from the primary commercial center of this slope station, this site is a photographic artist's favorite spot. Encircled by the Tata Tea nurseries of the Kannan Devan Hills and a lining of silver oak trees, this point is directly by the fundamental highway. It is the ideal spot to catch the inconceivable minutes, which the geomorphology and the beauty of the slope station mix into the most flawless type of profoundness.",
-        "destinationLatitude": 77.0796829,
+        "destinationLatitude": 10.08652123,
+        "destinationLongitude": 77.0796829,
         "activityTagsId": ["AT-011", "AT-006"]
     },
     {
@@ -950,7 +1000,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R7",
         "destinationDescription": "Found 3kms away from the photo point, the Carmelagiri Elephant Park is an awesome spot for individuals who love the wild and gutsy excursion through timberlands. A short drive of 7 minutes will carry you to a subdued crowd of elephants. Prepared by mahouts, these elephants are prepared to take travelers out on an audacious and astonishing ride on their backs. Wandering through the profound backwoods, the 1-km ride. offers an incredible opportunity to encounter and appreciate the excellence of nature from an alternate point of view. Excursions on elephants inside their wild natural surroundings gives an encounter which can be rarely failed to remember. It is considered an unquestionable watch spot in Munnar.",
-        "destinationLatitude": 77.09901941,
+        "destinationLatitude": 10.09510845,
+        "destinationLongitude": 77.09901941,
         "activityTagsId": ["AT-009", "AT-011", "AT-030"]
     },
     {
@@ -964,7 +1015,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R7",
         "destinationDescription": "Carmelgiri Botanical Garden Munnar is arranged at Korandikkadu in the Munnar – Mattupetty course. The distance from Munnar is only 8 Kms which is a paradise for nature sweethearts. Carmelgiri Botanical Garden Munnar targets safeguarding characteristics and ecological excellence. The spot is an unquestionable requirement on your Munnar itinerary on the off chance that you are a nature enthusiast. The Botanical Garden is an immense scope of lavish green nursery stuffed with plenty of restrictive plants in the country. The nursery impeccably embodies Mother Nature in its most noticeably terrible structure with tranquil environmental factors and uncommon types of plants and flowers. Varieties of restorative plants and huge organic product segments are some different plants the nursery gloats of. The Botanical Garden is an ideal spot to visit with loved ones for a short trip, running, and photography. This Botanical Garden is spread across a huge region accommodating the most dazzling assortments of greenery. Aside from having various segments for restorative plants, uncommon plants(Pista natural product), wiped out plants, the nursery additionally houses a part of organic product plants and trees.",
-        "destinationLatitude": 77.1013164966957,
+        "destinationLatitude": "10.096277634874953,",
+        "destinationLongitude": 77.1013164966957,
         "activityTagsId": ["AT-011", "AT-022", "AT-023"],
         "wastebinAminityId": ["WB-028"]
     },
@@ -975,7 +1027,8 @@
         "challengesId": ["CH-1", "CH-2"],
         "destinationRouteId": "R7",
         "destinationDescription": "The Tea industrial facility visit in Munnar Tea Factory will give you all the data for your inquiries concerning the handling of tea leaves. An additional delight; you can see the cycle for yourself face to face! During the tea plant visit, see with your own eyes and appreciate each progression during which the tea leaves are handled and toward the finish of the visit, appreciate some delightful newly arranged tea! There are arrangements inside the manufacturing plant premises to purchase the newly arranged tea leaves all prepared and stuffed. With cool temperatures, Munnar has good climatic conditions that are reasonable for its development. Henceforth, the spot has various tea estates that have a place with the best tea makers in the business market. A significant sight for which Munnar is very popular is the green tea manors that one can spot as they show up at Munnar. Seeing the tea manors enhanced in nature's great tone, the impeccable green itself is a stunning one. Without a doubt, one would have given it an idea regarding how the tea leaves that we buy from the market are produced using these plants.",
-        "destinationLatitude": 77.1193783009143,
+        "destinationLatitude": "10.104382728969373,",
+        "destinationLongitude": 77.1193783009143,
         "activityTagsId": ["AT-012", "AT-017"]
     },
     {
@@ -990,7 +1043,8 @@
         "activitiesId": ["ACT012"],
         "destinationRouteId": "R7",
         "destinationDescription": "Mattupetty Dam is located in the Top Station Highway, Munnar. It was opened in the year 1953 and serves as a major source of power generation. The dam has a holding capacity of around 55.4 million cubic metres and covers a surface area of 323.75 hectares. The dam has an enthralling view that does not disappoint its visitors. Mattupetty Dam is the perfect destination for adventure lovers as there are many water sport activities organised by the District District Tourism Promotion Department of Idukki.This concrete gravity dam also creates a natural habitat for wild animals and birds. The Shola Forest is only a few miles away from the dam where one can go for an adventure trekking.",
-        "destinationLatitude": 77.12414412,
+        "destinationLatitude": 10.1066121,
+        "destinationLongitude": 77.12414412,
         "ffId": ["FF-021"],
         "activityTagsId": ["AT-011", "AT-022", "AT-023", "AT-006", "AT-005"]
     },
@@ -1006,7 +1060,8 @@
         "activitiesId": ["ACT012"],
         "destinationRouteId": "R7",
         "destinationDescription": "Sun Moon Valley Boating Centre is located near Mattupetty Dam, Munnar. This tourist destination is surrounded by tea gardens and boating. One may choose among various types of boats such as Speed Boats, Slow Boats, Pedal Boats, Shikkaras for the boating. In Addition to boating, the place interests nature lovers with its breathtaking views.\nThe amusement park, 'Cow Boy Park' is very close to the boating centre. It offers multiple adrenaline rush adventures for children and adults both. The entry fee Rs.100 per perso",
-        "destinationLatitude": 77.1303497678604,
+        "destinationLatitude": 10.1091117251704,
+        "destinationLongitude": 77.1303497678604,
         "activityTagsId": ["AT-005", "AT-006", "AT-021", "AT-011"],
         "wastebinAminityId": ["WB-005"]
     },
@@ -1022,7 +1077,8 @@
         "activitiesId": ["ACT012"],
         "destinationRouteId": "R7",
         "destinationDescription": "Echo Point is a tourist destination at Kannan Devan Hills located 15 Kilometres from Munnar. As the name suggests, visitors enjoy the natural phenomenon of hearing their voice breaking through the reservoir and returning back. This is the second most popular spot in Munnar after Top Station.\nApart from this, Echo point is a destination for various adventure activities such as nature walk, trekking, boating etc. The picturesque view of valleys from the echo point makes it preferred for nature lovers as well as photographers.",
-        "destinationLatitude": 77.15254979,
+        "destinationLatitude": 10.12069256,
+        "destinationLongitude": 77.15254979,
         "activityTagsId": ["AT-011", "AT-022", "AT-023", "AT-006", "AT-005"],
         "wastebinAminityId": ["WB-004"]
     },
@@ -1038,7 +1094,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R7",
         "destinationDescription": "Kundala Dam is a picturesque water-adventure spot, at a height of 1700 meters above sea level. Kundala is the first artificial arch dam in Asia, constructed as part of the Pallivasal Power Project. Located 20 km from Munnar, Kundala Dam, -otherwise known as Sethuparvathypuram- is a destination for water sports and water adventures.\nKundala Dam is a picturesque water-adventure spot, at a height of 1700 meters above sea level. Kundala is the first artificial arch dam in Asia, constructed as part of the Pallivasal Power Project. Located 20 km from Munnar, Kundala Dam, -otherwise known as Sethuparvathypuram-  is a destination for water sports and water adventures.",
-        "destinationLatitude": 77.19890056,
+        "destinationLatitude": 10.14378719,
+        "destinationLongitude": 77.19890056,
         "ffId": ["FF-021"],
         "activityTagsId": ["AT-006", "AT-005", "AT-011"],
         "wastebinAminityId": ["WB-003"]
@@ -1053,7 +1110,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R7",
         "destinationDescription": "‘Yellappetty’, which is known as ‘last village’ in Tamil, marks the border between Kerala and Tamilnadu on the giant mountain ranges of Western Ghats. Covered by mist and soft lights, Yellappetty lies to the East of Munnar, located away from crowd and rush. It's the place where the sun rises in two states. These hills are home to breathtaking sunrises – ones that will be etched in eyes and hearts like the memory of the desired glance. The camping area at Yellappetty can be reached by trekking up the eastern side of the hills. The mountainside is shaped as steps so as to plant tea. The charming land of Yellapetty is also an important cultivation area in Munnar. Fresh vegetables grown in farmlands are directly delivered and sold around the area. Campers who stay up to watch the sunrise over the hills often break into a song, yet others prefer a glance in silence, in their world. The last village attracts travelers from around the country.",
-        "destinationLatitude": 77.2094,
+        "destinationLatitude": 10.1287,
+        "destinationLongitude": 77.2094,
         "activityTagsId": ["AT-017", "AT-012"]
     },
     {
@@ -1067,7 +1125,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R7",
         "destinationDescription": "Hidden within the greenish valleys of Munnar, Top Station is a mainstay among all who foray into the majestic hills of Munnar. This location is one of the perfect tourist destinations in town. People visit here to explore the unseen beauty of the town, get cuddled by the clouds, and feel its exquisiteness in absolute peace. Famous for its sprawling tea gardens, it also served as the transshipment point for the delivery of tea between Munnar and Bodinayakanur. The location, which is the highest point in Munnar which falls at a height above 1700 meters above sea level, also gives the panoramic view of the Western Ghats and the green stretched valleys of the Theni in Tamilnadu. It is the meeting point of Pandi Desom and Malayala Desom. Strobilanthes kunthiana, locally known by the name Kurinji and Neelakurinji, which blooms once every 12 years, is the main attraction top station. The drive, on a winding path decorated with rare flora, is one among the most exhilarating in the entire world. This location is the main tourist spot in the ‘Kashmir of South India’, simply a ‘Heaven in Earth’.",
-        "destinationLatitude": 77.24238027,
+        "destinationLatitude": 10.12536402,
+        "destinationLongitude": 77.24238027,
         "activityTagsId": ["AT-006", "AT-011", "AT-013", "AT-012", "AT-023"],
         "wastebinAminityId": ["WB-002"]
     },
@@ -1081,7 +1140,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R7",
         "destinationDescription": "The blue sky, soothing air, stretched green meadows and deep green foliage teeming with flora and fauna make it a dream for tourists. It's one of the smallest national parks in India, also a home for various endangered species of plants and animals. Ethnic huts and stay in log houses make it the perfect destination for families. Undulated terrain with hillocks is covered by green patches of grass and plants. Many endangered species like Nymphalidae, Pantoporia ranga, Rohana pariasitis, etc. are the species included in the Red List of UN seen here. The misty and cloudy climate seen throughout the year makes it one of the most perfect solutions, which relieves all your stress. Trekking to the Shola forests and Bison swamps qualifies the location as an adventurous as well as an exciting tourist spot.",
-        "destinationLatitude": 77.25823467,
+        "destinationLatitude": 10.12665808,
+        "destinationLongitude": 77.25823467,
         "ffId": ["FF-022", "FF-023", "FF-024"],
         "activityTagsId": ["AT-006", "AT-011", "AT-002", "AT-009", "AT-012"],
         "wastebinAminityId": ["WB-001"]
@@ -1097,7 +1157,8 @@
         "activitiesId": ["ACT002", "ACT009"],
         "destinationRouteId": "R7",
         "destinationDescription": "A village within the town of Munnar is famous for its vast serene agricultural lands and fields. A place to discover nature by discovering yourself. The greenery of the land and the innocence of the people welcome you to the village. Visit vast farming areas and experience the whole-heartedness of the village people. Food served here, fresh from farms to your plates will fill your heart as well as your tummy. Green meadows and the cool breeze out there will give you the perfect blend of love and nature. Bag organic vegetables from the vast green farmlands. Fruit selling centers here will give you fresh natively grown fruits.",
-        "destinationLatitude": 77.2580939899492,
+        "destinationLatitude": 10.1816686312386,
+        "destinationLongitude": 77.2580939899492,
         "activityTagsId": ["AT-006", "AT-011", "AT-022", "AT-017", "AT-012"],
         "atmAminityId": ["AB-072", "AB-074", "AB-076"],
         "bankAminityId": ["AB-071", "AB-073", "AB-075"]
@@ -1114,7 +1175,8 @@
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R7",
         "destinationDescription": "This place is known by the name ‘Market of Kerala’. This region produces a wide variety of crops, \nwhich are usually not seen in other parts of Kerala. Wide varieties of apple, orange, strawberry,\n blackberry, plums, gooseberry, egg fruits, peaches, passion fruits are available here. This region \nis home to various species of flora and fauna. Vattavada offers trekking, jeep safari, mountain biking\n, and jungle camping for those who live their life with some adventure and spice. Availability of fruits\n transferred fresh into the markets from the fields is an important specialty of this area. Vattavada is\n known for its diversity in the topography so that we can see both undulating terrains as well as plain\n farmlands in the location. The serene beauty of nature and cool winds breezing into our body will \ncleanse us from every stress and problem. All those fresh strawberries which welcome you there\n will make your mouth sail a ship. Fresh strawberry farms and Pazhamthottam farm, will make you feel \nnature pleasantly and exotically.",
-        "destinationLatitude": 77.2428325660134,
+        "destinationLatitude": "10.190167902029252,",
+        "destinationLongitude": 77.2428325660134,
         "ffId": ["FF-021"],
         "activityTagsId": ["AT-006", "AT-017", "AT-011", "AT-007", "AT-012"]
     }
