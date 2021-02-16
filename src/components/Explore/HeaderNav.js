@@ -15,9 +15,9 @@ const HeaderNav = ({ className }) => {
             </div>
 
             <div className="flex">
-                <div className="p-3">
+                {/* <div className="p-3">
                     <Icon name="search" size={7} color="black" />
-                </div>
+                </div> */}
                 <A className="p-3" href="/ksrtc">
                     <Icon name="ksrtc" size={7} color="black" stroke={true} />
                 </A>
