@@ -29,6 +29,8 @@ export default function Destination({ id }) {
         };
     }, {});
     destination.name = destination.routeDestination;
+    destination.openTime = destination.openingTime;
+    destination.closeTime = destination.closingTime;
 
     const onLike = (status, destinationId, isDestinationAlreadyFavourite) => {
         // save to local storage

@@ -32,7 +32,7 @@ export default function Activity({ id }) {
     activity.bookingDetails = {
         bookingContactNumber: activity.bookingContactNumber,
         bookingContactName: activity.bookingContactName,
-        bookingLink: activity.bookinglink,
+        bookingLink: activity.bookingLink,
     };
 
     let onLike = (status, activityId, isActivityAlreadyFavourite) => {

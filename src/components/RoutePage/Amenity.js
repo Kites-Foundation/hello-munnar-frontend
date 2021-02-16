@@ -5,7 +5,7 @@ import Icon from "../Common/Icon";
 const Amenity = ({ routeName, iconName, name }) => {
     return (
         <A
-            href={`/route/${routeName}`}
+            href="#"
             className="flex-1 flex flex-col border-2 border-black rounded-xl">
             <div className="p-3 flex justify-center items-center">
                 <Icon
