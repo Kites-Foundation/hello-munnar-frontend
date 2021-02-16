@@ -32,7 +32,6 @@ export default function Destination({ id }) {
 
     const onLike = (status, destinationId, isDestinationAlreadyFavourite) => {
         // save to local storage
-        console.log(isDestinationAlreadyFavourite(destinationId));
         let currentDestinationFavourites = JSON.parse(
             localStorage.getItem("hello-munnar-activites-favourites")
         );

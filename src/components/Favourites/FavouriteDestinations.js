@@ -9,7 +9,6 @@ export default function FavouriteDestinations() {
     let [destinations, setDestinations] = useState(
         getManyDestination(currentDestinationFavourites)
     );
-    console.log(destinations);
     return (
         <div className="m-4">
             {destinations.map((destination, index) => {

@@ -34,7 +34,6 @@ const PlacesBanner = ({ route, image, onLike, destinationId }) => {
     };
 
     const onClickLike = () => {
-        console.log(destinationId);
         onLike(!liked, destinationId, isDestinationAlreadyFavourite);
     };
     useEffect(() => {

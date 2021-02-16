@@ -33,7 +33,6 @@ const PlacesBanner = ({ route, image, onLike, activityId }) => {
         }
     };
     const onClickLike = () => {
-        console.log(activityId);
         onLike(!liked, activityId, isActivityAlreadyFavourite);
     };
     useEffect(() => {
