@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
-const TruncatedText = ({ content, maxLength, className }) => {
+const TruncatedText = ({
+    content,
+    maxLength,
+    className,
+    showReadMore = true,
+}) => {
     const [showFull, setShowFull] = useState(false);
     return (
         <div className={className}>
@@ -9,7 +14,7 @@ const TruncatedText = ({ content, maxLength, className }) => {
             ) : (
                 content
             )}
-            {content.length > maxLength && (
+            {showReadMore && content.length > maxLength && (
                 <button
                     className="font-semibold ml-2 focus:outline-none"
                     onClick={() => setShowFull((c) => !c)}>

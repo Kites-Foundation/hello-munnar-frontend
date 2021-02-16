@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Icon from "./Icon";
 
-const PlacesBanner = ({ route, image, onLike, destinationId }) => {
+const PlacesBanner = ({ route, image, onLike, activityId }) => {
     // get initial like value from localStorage
 
     const [liked, setLiked] = useState(false);
-    const routeColorName = route?.routeColorName;
+    const { routeColorName } = route;
 
     const colors = {
         violet: "text-violet-900 border-violet-900",
@@ -17,13 +17,13 @@ const PlacesBanner = ({ route, image, onLike, destinationId }) => {
         red: "text-red-500 border-red-500",
     };
 
-    let isDestinationAlreadyFavourite = (destinationId) => {
-        let currentDestinationFavourites = JSON.parse(
-            localStorage.getItem("hello-munnar-activites-favourites")
+    let isActivityAlreadyFavourite = (activityId) => {
+        let currentActivityFavourites = JSON.parse(
+            localStorage.getItem("hello-things-to-do-favourites")
         );
         if (
-            currentDestinationFavourites &&
-            currentDestinationFavourites.includes(destinationId)
+            currentActivityFavourites &&
+            currentActivityFavourites.includes(activityId)
         ) {
             setLiked(true);
             return true;
@@ -32,13 +32,12 @@ const PlacesBanner = ({ route, image, onLike, destinationId }) => {
             return false;
         }
     };
-
     const onClickLike = () => {
-        onLike(!liked, destinationId, isDestinationAlreadyFavourite);
+        onLike(!liked, activityId, isActivityAlreadyFavourite);
     };
     useEffect(() => {
-        isDestinationAlreadyFavourite(destinationId);
-    }, [destinationId]);
+        isActivityAlreadyFavourite(activityId);
+    }, [activityId]);
 
     return (
         <div className="relative w-full pb-7">
@@ -59,23 +58,19 @@ const PlacesBanner = ({ route, image, onLike, destinationId }) => {
                 />
             </button>
 
-            {routeColorName && (
-                <div className="absolute flex top-8 right-8 items-center bg-white px-2 py-0.5 rounded-md shadow-md">
-                    <Icon
-                        name="route"
-                        size={4}
-                        className={`mr-1 ${
-                            colors[routeColorName.toLowerCase()]
-                        }`}
-                    />
-                    <span
-                        className={`uppercase font-semibold text-sm ${
-                            colors[routeColorName.toLowerCase()]
-                        }`}>
-                        {routeColorName} Route
-                    </span>
-                </div>
-            )}
+            <div className="absolute flex top-8 right-8 items-center bg-white px-2 py-0.5 rounded-md shadow-md">
+                <Icon
+                    name="route"
+                    size={4}
+                    className={`mr-1 ${colors[routeColorName.toLowerCase()]}`}
+                />
+                <span
+                    className={`uppercase font-semibold text-sm ${
+                        colors[routeColorName.toLowerCase()]
+                    }`}>
+                    {routeColorName} Route
+                </span>
+            </div>
 
             <button
                 className="absolute flex items-center justify-center -bottom-0 right-8 w-14 h-14 bg-white shadow-lg rounded-full focus:outline-none"

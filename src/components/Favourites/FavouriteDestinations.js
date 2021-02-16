@@ -1,23 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import FavouriteCard from "./FavouriteCard";
-const data = require("./assets/data");
+import { getManyDestination, getRoute } from "../../data/dataUtils";
 
 export default function FavouriteDestinations() {
-    const destinations = data["destinations"];
+    let currentDestinationFavourites = JSON.parse(
+        localStorage.getItem("hello-munnar-activites-favourites")
+    );
+    let [destinations, setDestinations] = useState(
+        getManyDestination(currentDestinationFavourites)
+    );
     return (
         <div className="m-4">
-            {destinations.map((value, index) => {
+            {destinations.map((destination, index) => {
                 return (
                     <div key={index}>
                         <FavouriteCard
-                            name={value.name}
-                            route={value.route}
-                            time={value.time}
-                            day={value.day}
+                            destinationId={destination.destinationId}
+                            name={destination.routeDestination || null}
+                            route={
+                                getRoute(destination.destinationRouteId)
+                                    .routeColorName || null
+                            }
+                            time={
+                                destination.openingTime ||
+                                destination.closingTime ||
+                                null
+                            }
+                            day={destination.day || null}
+                            setDestinations={setDestinations}
+                            image={destination.bannerImg}
                         />
                     </div>
                 );
             })}
+            {!destinations.length && (
+                <>
+                    <h1 className="mt-20 font-medium text-center text-xl ">
+                        Nothing to show here. Please add your favourite
+                        destinations and activities to show up here.
+                    </h1>
+                </>
+            )}
         </div>
     );
 }

@@ -1,45 +1,72 @@
-import React, { useState } from "react";
-import { activityData } from "../../data/activities";
+import React, { useEffect, useState } from "react";
 import Icon from "../Common/Icon";
 import ExperiencesCards from "./ExperienceCards";
+import activityData from "../../data/activityData.json";
 
 export default function Experiences() {
     const [search, setSearch] = useState("");
-    const adventure = activityData.filter((el) => el.type === "Adventure");
-    const specialDayOut = activityData.filter((el) => el.type === "Special");
+    const [activities, setActivities] = useState(activityData);
+
+    useEffect(() => {
+        // delayed search 400ms (to decrease load)
+        const timeout = setTimeout(() => {
+            // search with precedence for name
+            const newActivities = [
+                ...new Set([
+                    ...activityData.filter(
+                        (activity) =>
+                            activity.activityName
+                                ?.toLowerCase()
+                                .indexOf(search.toLowerCase()) !== -1
+                    ),
+                    ...activityData.filter(
+                        (activity) =>
+                            activity.activityDescription
+                                ?.toLowerCase()
+                                .indexOf(search.toLowerCase()) !== -1
+                    ),
+                ]),
+            ];
+            setActivities(newActivities);
+        }, 400);
+        return () => clearTimeout(timeout);
+    }, [search]);
+
     return (
-        <div className="w-full">
-            <div className="mt-8 flex flex-col w-full px-6">
-                <h1 className="text-xl mb-2 font-extrabold text-gray-800 ">
-                    Experiences
+        <div className="bg-gray-200">
+            <div className="px-8 md:px-10 pt-9 m-auto bg-white max-w-5xl min-h-screen">
+                <h1 className="text-2xl font-semibold text-black pb-5">
+                    Experience Places
                 </h1>
-                <div className=" relative group flex w-full">
+                <div className="relative flex items-center w-full py-3">
                     <input
-                        className=" pl-4 pr-12 py-1 text-gray-800 w-full text-sm  group rounded-full border-2 border-gray-300 focus:outline-none  focus:border- "
-                        type="text"
+                        className="py-3 px-5 pl-12 text-gray-800 w-full group rounded-full border-2 border-gray-300 focus:outline-none focus:border-black transition-all"
+                        type="search"
+                        placeholder="Search"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                     />
-                    <button className="absolute right-0 text-gray-300  group group-hover:text-gray-500 pr-4 pt-2 top-0">
-                        <Icon name="search" size={5} color="current" />
+                    <button className="absolute left-5">
+                        <Icon
+                            name="search"
+                            size={5}
+                            color="gray-500"
+                            className="fill-current text-gray-500"
+                        />
                     </button>
                 </div>
-                <h2 className="text-md mt-8  mb-2 font-extrabold text-gray-800 ">
-                    Outdoor Adventures
-                </h2>
-                <div className="flex overflow-scroll">
-                    {adventure.map((item, i) => (
-                        <ExperiencesCards item={item} key={i} />
-                    ))}
-                </div>
-                <h2 className="text-md mt-8 mb-2 font-extrabold text-gray-800 ">
-                    Special days out
-                </h2>
-                <div className="flex overflow-scroll">
-                    {specialDayOut.map((item, i) => (
-                        <ExperiencesCards item={item} key={i} />
-                    ))}
-                </div>
+
+                {activities?.length > 0 ? (
+                    <div className="mt-12 grid grid-cols-1 gap-6 md:gap-10 md:grid-cols-2 lg:grid-cols-3">
+                        {activities.map((item, i) => (
+                            <ExperiencesCards item={item} key={i} />
+                        ))}
+                    </div>
+                ) : (
+                    <div className="mt-12 w-full text-center text-2xl text-gray-600 font-medium">
+                        No results
+                    </div>
+                )}
             </div>
         </div>
     );
