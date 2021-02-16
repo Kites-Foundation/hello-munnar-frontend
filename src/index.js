@@ -8,7 +8,6 @@ import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 /*eslint-disable */
 import reducer from "./redux/reducer";
-import * as serviceWorker from "./serviceWorker";
 
 const store = createStore(reducer, applyMiddleware(thunk));
 
@@ -26,7 +25,7 @@ reportWebVitals();
 
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-        navigator.serviceWorker.register("./service-worker.js");
+        navigator.serviceWorker.register("/service-worker.js");
     });
 }
 /*eslint-enable */
