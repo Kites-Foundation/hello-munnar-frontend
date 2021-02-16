@@ -30,8 +30,35 @@ export default function Destination({ id }) {
     }, {});
     destination.name = destination.routeDestination;
 
-    const onLike = (status) => {
+    const onLike = (status, destinationId, isDestinationAlreadyFavourite) => {
         // save to local storage
+        let currentDestinationFavourites = JSON.parse(
+            localStorage.getItem("hello-munnar-activites-favourites")
+        );
+        if (isDestinationAlreadyFavourite(destinationId)) {
+            currentDestinationFavourites.splice(
+                currentDestinationFavourites.indexOf(destinationId),
+                1
+            );
+            localStorage.setItem(
+                "hello-munnar-activites-favourites",
+                JSON.stringify(currentDestinationFavourites)
+            );
+        } else if (
+            currentDestinationFavourites &&
+            !currentDestinationFavourites.includes(destinationId)
+        ) {
+            localStorage.setItem(
+                "hello-munnar-activites-favourites",
+                JSON.stringify([destinationId, ...currentDestinationFavourites])
+            );
+        } else if (!currentDestinationFavourites && destinationId) {
+            localStorage.setItem(
+                "hello-munnar-activites-favourites",
+                JSON.stringify([destinationId])
+            );
+        }
+        isDestinationAlreadyFavourite(destinationId);
     };
 
     return (
@@ -41,6 +68,7 @@ export default function Destination({ id }) {
                     route={destination.route}
                     image={destination.bannerImg}
                     onLike={onLike}
+                    destinationId={id}
                 />
                 <Heading place={destination} className="pt-2 px-8 md:px-10" />
 

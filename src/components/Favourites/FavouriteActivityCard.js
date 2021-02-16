@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import Icon from "../Common/Icon";
-import { getManyDestination } from "../../data/dataUtils";
+import { getManyActivity } from "../../data/dataUtils";
 
 // import { AiFillHeart } from "react-icons/ai";
 
 export default function FavouriteCard(props) {
     const [liked, setLiked] = useState(true);
-    let destinationId = props.destinationId;
-    let isDestinationAlreadyFavourite = (destinationId) => {
-        let currentDestinationFavourites = JSON.parse(
-            localStorage.getItem("hello-munnar-activites-favourites")
+    let activityId = props.activityId;
+    let isActivityAlreadyFavourite = (activityId) => {
+        let currentActivityFavourites = JSON.parse(
+            localStorage.getItem("hello-things-to-do-favourites")
         );
         if (
-            currentDestinationFavourites &&
-            currentDestinationFavourites.includes(destinationId)
+            currentActivityFavourites &&
+            currentActivityFavourites.includes(activityId)
         ) {
             setLiked(true);
             return true;
@@ -24,41 +24,41 @@ export default function FavouriteCard(props) {
     };
 
     let onClickLikeButton = () => {
-        let currentDestinationFavourites = JSON.parse(
-            localStorage.getItem("hello-munnar-activites-favourites")
+        let currentActivityFavourites = JSON.parse(
+            localStorage.getItem("hello-things-to-do-favourites")
         );
-        if (isDestinationAlreadyFavourite(destinationId)) {
-            currentDestinationFavourites.splice(
-                currentDestinationFavourites.indexOf(destinationId),
+        if (isActivityAlreadyFavourite(activityId)) {
+            currentActivityFavourites.splice(
+                currentActivityFavourites.indexOf(activityId),
                 1
             );
             localStorage.setItem(
-                "hello-munnar-activites-favourites",
-                JSON.stringify(currentDestinationFavourites)
+                "hello-things-to-do-favourites",
+                JSON.stringify(currentActivityFavourites)
             );
         } else if (
-            currentDestinationFavourites &&
-            !currentDestinationFavourites.includes(destinationId)
+            currentActivityFavourites &&
+            !currentActivityFavourites.includes(activityId)
         ) {
             localStorage.setItem(
-                "hello-munnar-activites-favourites",
-                JSON.stringify([destinationId, ...currentDestinationFavourites])
+                "hello-things-to-do-favourites",
+                JSON.stringify([activityId, ...currentActivityFavourites])
             );
-        } else if (!currentDestinationFavourites && destinationId) {
+        } else if (!currentActivityFavourites && activityId) {
             localStorage.setItem(
-                "hello-munnar-activites-favourites",
-                JSON.stringify([destinationId])
+                "hello-things-to-do-favourites",
+                JSON.stringify([activityId])
             );
         }
-        isDestinationAlreadyFavourite(destinationId);
-        currentDestinationFavourites = JSON.parse(
-            localStorage.getItem("hello-munnar-activites-favourites")
+        isActivityAlreadyFavourite(activityId);
+        currentActivityFavourites = JSON.parse(
+            localStorage.getItem("hello-things-to-do-favourites")
         );
-        props.setDestinations(getManyDestination(currentDestinationFavourites));
+        props.setActivities(getManyActivity(currentActivityFavourites));
     };
 
     useEffect(() => {
-        isDestinationAlreadyFavourite(destinationId);
+        isActivityAlreadyFavourite(activityId);
     });
     return (
         <div className="mb-6">

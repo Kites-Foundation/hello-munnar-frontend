@@ -1,20 +1,64 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { A } from "hookrouter";
 import Icon from "./Icon";
 
 export default function DestinationCard({ data }) {
-    const [liked, setLiked] = useState(data.liked);
     const {
         bannerImg,
         routeDestination,
         destinationDescription,
         destinationId,
     } = data;
-
-    const like = () => {
-        setLiked(!liked);
-        // store liked destination in local storage
+    const [liked, setLiked] = useState(true);
+    let isDestinationAlreadyFavourite = (destinationId) => {
+        let currentDestinationFavourites = JSON.parse(
+            localStorage.getItem("hello-munnar-activites-favourites")
+        );
+        if (
+            currentDestinationFavourites &&
+            currentDestinationFavourites.includes(destinationId)
+        ) {
+            setLiked(true);
+            return true;
+        } else {
+            setLiked(false);
+            return false;
+        }
     };
+
+    let onClickLikeButton = () => {
+        let currentDestinationFavourites = JSON.parse(
+            localStorage.getItem("hello-munnar-activites-favourites")
+        );
+        if (isDestinationAlreadyFavourite(destinationId)) {
+            currentDestinationFavourites.splice(
+                currentDestinationFavourites.indexOf(destinationId),
+                1
+            );
+            localStorage.setItem(
+                "hello-munnar-activites-favourites",
+                JSON.stringify(currentDestinationFavourites)
+            );
+        } else if (
+            currentDestinationFavourites &&
+            !currentDestinationFavourites.includes(destinationId)
+        ) {
+            localStorage.setItem(
+                "hello-munnar-activites-favourites",
+                JSON.stringify([destinationId, ...currentDestinationFavourites])
+            );
+        } else if (!currentDestinationFavourites && destinationId) {
+            localStorage.setItem(
+                "hello-munnar-activites-favourites",
+                JSON.stringify([destinationId])
+            );
+        }
+        isDestinationAlreadyFavourite(destinationId);
+    };
+
+    useEffect(() => {
+        isDestinationAlreadyFavourite(destinationId);
+    });
 
     return (
         <div className="bg-white flex-none shadow-lg rounded-lg overflow-hidden w-3/4 md:w-1/2 lg:w-1/4 xl:w-96 mr-8 md:mr-16">
@@ -26,7 +70,9 @@ export default function DestinationCard({ data }) {
                 />
                 <button
                     className="absolute flex items-center justify-center right-2 top-2 w-12 h-12 rounded-full focus:outline-none"
-                    onClick={like}>
+                    onClick={() => {
+                        onClickLikeButton();
+                    }}>
                     <Icon
                         name="heart"
                         color={liked ? "red-500" : "white"}

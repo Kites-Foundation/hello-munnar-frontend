@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Icon from "./Icon";
 
-const PlacesBanner = ({ route, image, onLike, destinationId }) => {
+const PlacesBanner = ({ route, image, onLike, activityId }) => {
     // get initial like value from localStorage
 
     const [liked, setLiked] = useState(false);
@@ -17,13 +17,13 @@ const PlacesBanner = ({ route, image, onLike, destinationId }) => {
         red: "text-red-500 border-red-500",
     };
 
-    let isDestinationAlreadyFavourite = (destinationId) => {
-        let currentDestinationFavourites = JSON.parse(
-            localStorage.getItem("hello-munnar-activites-favourites")
+    let isActivityAlreadyFavourite = (activityId) => {
+        let currentActivityFavourites = JSON.parse(
+            localStorage.getItem("hello-things-to-do-favourites")
         );
         if (
-            currentDestinationFavourites &&
-            currentDestinationFavourites.includes(destinationId)
+            currentActivityFavourites &&
+            currentActivityFavourites.includes(activityId)
         ) {
             setLiked(true);
             return true;
@@ -32,13 +32,12 @@ const PlacesBanner = ({ route, image, onLike, destinationId }) => {
             return false;
         }
     };
-
     const onClickLike = () => {
-        onLike(!liked, destinationId, isDestinationAlreadyFavourite);
+        onLike(!liked, activityId, isActivityAlreadyFavourite);
     };
     useEffect(() => {
-        isDestinationAlreadyFavourite(destinationId);
-    }, [destinationId]);
+        isActivityAlreadyFavourite(activityId);
+    }, [activityId]);
 
     return (
         <div className="relative w-full pb-7">
