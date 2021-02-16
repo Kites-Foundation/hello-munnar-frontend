@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import Banner from "../Common/PlacesBanner";
+import React, { useEffect, useState } from "react";
+import ActivityBanner from "../Common/ActivityBanner";
 import Heading from "../Common/Heading";
 import PlacesTab from "../Common/PlacesTab";
 import { getActivity } from "../../data/dataUtils";
@@ -8,6 +8,7 @@ import NotFound from "../Common/NotFound";
 export default function Activity({ id }) {
     // get all the details of a activity
     const activityFull = getActivity(id, true);
+    const [liked, setLiked] = useState(true);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -35,17 +36,63 @@ export default function Activity({ id }) {
         bookingLink: activity.bookinglink,
     };
 
-    const onLike = (status) => {
+    let isActivitynAlreadyFavourite = (destinationId) => {
+        let currentAcivityFavourites = JSON.parse(
+            localStorage.getItem("hello-munnar-activities-favourites")
+        );
+        if (
+            currentAcivityFavourites &&
+            currentAcivityFavourites.includes(destinationId)
+        ) {
+            setLiked(true);
+            return true;
+        } else {
+            setLiked(false);
+            return false;
+        }
+    };
+
+    const onLike = (activityId, isDestinationAlreadyFavourite) => {
         // save to local storage
+        console.log(isDestinationAlreadyFavourite(activityId));
+        let currentDestinationFavourites = JSON.parse(
+            localStorage.getItem("hello-munnar-activities-favourites")
+        );
+        if (isDestinationAlreadyFavourite(activityId)) {
+            currentDestinationFavourites.splice(
+                currentDestinationFavourites.indexOf(activityId),
+                1
+            );
+            localStorage.setItem(
+                "hello-munnar-activites-favourites",
+                JSON.stringify(currentDestinationFavourites)
+            );
+        } else if (
+            currentDestinationFavourites &&
+            !currentDestinationFavourites.includes(activityId)
+        ) {
+            localStorage.setItem(
+                "hello-munnar-activites-favourites",
+                JSON.stringify([activityId, ...currentDestinationFavourites])
+            );
+        } else if (!currentDestinationFavourites && activityId) {
+            localStorage.setItem(
+                "hello-munnar-activites-favourites",
+                JSON.stringify([activityId])
+            );
+        }
+        isActivitynAlreadyFavourite(activityId);
     };
 
     return (
         <div className="w-full bg-gray-200">
             <div className="max-w-5xl mx-auto bg-white">
-                <Banner
+                <ActivityBanner
                     route={activity.route}
                     image={activity.bannerImg}
-                    onLike={onLike}
+                    onLike={() => {
+                        onLike(id, isActivitynAlreadyFavourite);
+                    }}
                 />
                 <Heading place={activity} className="pt-2 px-8 md:px-10" />
 
