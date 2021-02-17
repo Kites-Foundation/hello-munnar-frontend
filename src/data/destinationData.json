@@ -559,7 +559,7 @@
   },
   {
     "destinationId": "D-035",
-    "routeDestination": "-",
+    "routeDestination": "MEESAPULIMALA",
     "bannerImg": "https://cdn.hellomunnar.in/destinations/green/MEESAPPULIMALA.jpg",
     "challengesId": ["CH-3", "CH-4", "CH-5"],
     "fuelStationAminityId": "FS-028",
