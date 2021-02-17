@@ -8,6 +8,15 @@ import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 /*eslint-disable */
 import reducer from "./redux/reducer";
+import * as Sentry from "@sentry/react";
+import { Integrations } from "@sentry/tracing";
+
+Sentry.init({
+    dsn: process.env.SENTRY_DSN,
+    release: "hello-munnar-frontend@" + process.env.npm_package_version,
+    integrations: [new Integrations.BrowserTracing()],
+    tracesSampleRate: 1.0,
+});
 
 const store = createStore(reducer, applyMiddleware(thunk));
 
@@ -18,9 +27,6 @@ ReactDOM.render(
     document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
 if ("serviceWorker" in navigator) {
