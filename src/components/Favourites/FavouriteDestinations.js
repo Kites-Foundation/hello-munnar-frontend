@@ -10,10 +10,12 @@ export default function FavouriteDestinations() {
         getManyDestination(currentDestinationFavourites)
     );
     return (
-        <div className="m-4">
+        <div className="px-8 md:px-10 mt-8 grid grid-cols-1 gap-6 md1:gap-0 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {destinations.map((destination, index) => {
                 return (
-                    <div key={index}>
+                    <div
+                        key={index}
+                        className="w-full overflow-hidden bg-white rounded-lg shadow-md cursor-pointer">
                         <FavouriteCard
                             destinationId={destination.destinationId}
                             name={destination.routeDestination || null}

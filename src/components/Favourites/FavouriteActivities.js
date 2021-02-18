@@ -10,7 +10,7 @@ export default function FavouriteActivities() {
         getManyActivity(currentActivityFavourites)
     );
     return (
-        <div className="m-4">
+        <div className="m-4 ">
             {activities.map((activity, index) => {
                 return (
                     <div key={index}>
