@@ -6,7 +6,9 @@ export default function Favourite() {
     const [favourite, setFavourite] = useState("Destinations");
     return (
         <div className="bg-gray-50">
-            <p className="text-2xl font-semibold ml-4 mt-8">Your favourites</p>
+            <p className="text-2xl font-semibold mt-8 px-8 md:px-10 text-black">
+                Your favourites
+            </p>
             <nav className="px-8 pt-3">
                 <div className="flex justify-center space-x-10 mt-2">
                     <button
