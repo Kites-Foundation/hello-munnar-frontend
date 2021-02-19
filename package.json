@@ -1,9 +1,11 @@
 {
   "name": "hello-munnar-frontend",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.0",
+    "@sentry/react": "^6.1.0",
+    "@sentry/tracing": "^6.1.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
@@ -16,6 +18,7 @@
     "postcss": "^7.0.35",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-ga": "^3.3.0",
     "react-icons": "^4.1.0",
     "react-redux": "^7.2.2",
     "react-scripts": "4.0.1",
