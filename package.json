@@ -25,7 +25,7 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-    "web-vitals": "^0.2.4",
+    "web-vitals": "^1.1.0",
     "workbox-webpack-plugin": "^5.1.4"
   },
   "scripts": {
