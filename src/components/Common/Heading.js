@@ -106,7 +106,8 @@ const Heading = ({ place, className }) => {
                     </a>
                 )}
 
-                {bookingDetails && (
+                {(bookingDetails?.bookingContactNumber ||
+                    bookingDetails?.bookingLink) && (
                     <>
                         <button
                             onClick={() => setShowBookingModal(true)}
