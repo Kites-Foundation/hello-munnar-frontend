@@ -4,9 +4,9 @@ import StorySelector from "./StorySelector";
 const StorySelectorContainer = ({ className = "" }) => {
     return (
         <section className={className}>
-            <h2 className="font-semibold text-black text-xl my-1">
+            <h1 className="font-semibold text-black text-xl my-1">
                 Discover Munnar
-            </h2>
+            </h1>
             <span className="font-normal text-gray-600 text-base">
                 Explore Munnar through these seven routes
             </span>
