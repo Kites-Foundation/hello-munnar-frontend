@@ -65,43 +65,43 @@
       "name": "Violet Route",
       "short_name": "Violet Route",
       "description": "MUNNAR - MARAYOOR - KANTHALLOOR - CHINNAR",
-      "url": "https://hellomunnar.in/route/violet"
+      "url": "/route/violet"
     },
     {
       "name": "Indigo Route",
       "short_name": "Indigo Route",
       "description": "Munnar - Adimali",
-      "url": "https://hellomunnar.in/route/indigo"
+      "url": "/route/indigo"
     },
     {
       "name": "Blue route",
       "short_name": "Blue route",
       "description": "Munnar - Chokramudi peak- Suryanelli-Kolukkumalai",
-      "url": "https://hellomunnar.in/route/blue"
+      "url": "/route/blue"
     },
     {
       "name": "Green Route",
       "short_name": "Green Route",
       "description": "Munnar - Meesapulimala",
-      "url": "https://hellomunnar.in/route/green"
+      "url": "/route/green"
     },
     {
       "name": "Yellow route",
       "short_name": "Yellow route",
       "description": "Heritage Route",
-      "url": "https://hellomunnar.in/route/yellow"
+      "url": "/route/yellow"
     },
     {
       "name": "Orange route",
       "short_name": "Orange route",
       "description": "Munnar - Mankulam - Anakulam",
-      "url": "https://hellomunnar.in/route/orange"
+      "url": "/route/orange"
     },
     {
       "name": "Red route",
       "short_name": "Red route",
       "description": "Munnar - Mattupetty - Vattavada",
-      "url": "https://hellomunnar.in/route/red"
+      "url": "/route/red"
     }
   ],
   "screenshots" : [
