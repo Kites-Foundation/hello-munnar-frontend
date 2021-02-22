@@ -51,7 +51,12 @@
     <link rel="apple-touch-startup-image" href="https://cdn.hellomunnar.in/pwa/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="https://cdn.hellomunnar.in/pwa/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="https://cdn.hellomunnar.in/pwa/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
 
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+    </script>
     <!-- structured data  -->
     <script type="application/ld+json">
         {
