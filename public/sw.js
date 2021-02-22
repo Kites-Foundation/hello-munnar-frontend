@@ -1,5 +1,5 @@
 importScripts(
-    "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"
+    "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js",
 );
 
 const HTML_CACHE = "html";
@@ -8,7 +8,8 @@ const STYLE_CACHE = "stylesheets";
 const IMAGE_CACHE = "images";
 const FONT_CACHE = "fonts";
 const QUEUE_NAME = "bgSyncQueue";
-const CACHE = "pwabuilder-offline";
+const CACHE = "pwa-offline";
+const CACHE_CFIRST = "pwa-cfirst";
 
 self.addEventListener("message", (event) => {
     if (event.data && event.data.type === "SKIP_WAITING") {
@@ -17,10 +18,10 @@ self.addEventListener("message", (event) => {
 });
 
 workbox.routing.registerRoute(
-    new RegExp('/*'),
+    new RegExp("/*"),
     new workbox.strategies.StaleWhileRevalidate({
-        cacheName: CACHE
-    })
+        cacheName: CACHE,
+    }),
 );
 
 workbox.routing.registerRoute(
@@ -32,7 +33,7 @@ workbox.routing.registerRoute(
                 maxEntries: 10,
             }),
         ],
-    })
+    }),
 );
 
 workbox.routing.registerRoute(
@@ -44,7 +45,7 @@ workbox.routing.registerRoute(
                 maxEntries: 15,
             }),
         ],
-    })
+    }),
 );
 
 workbox.routing.registerRoute(
@@ -56,7 +57,7 @@ workbox.routing.registerRoute(
                 maxEntries: 15,
             }),
         ],
-    })
+    }),
 );
 
 workbox.routing.registerRoute(
@@ -68,7 +69,7 @@ workbox.routing.registerRoute(
                 maxEntries: 15,
             }),
         ],
-    })
+    }),
 );
 
 workbox.routing.registerRoute(
@@ -80,27 +81,30 @@ workbox.routing.registerRoute(
                 maxEntries: 15,
             }),
         ],
-    })
+    }),
 );
 workbox.routing.registerRoute(
-    ({url}) => url.origin === 'https://fonts.googleapis.com' ||
-        url.origin === 'https://fonts.gstatic.com',
+    ({ url }) => url.origin === "https://fonts.googleapis.com" ||
+        url.origin === "https://fonts.gstatic.com",
     new workbox.strategies.StaleWhileRevalidate({
-        cacheName: 'google-fonts',
+        cacheName: "google-fonts",
         plugins: [
-            new workbox.expiration.ExpirationPlugin({maxEntries: 20}),
+            new workbox.expiration.ExpirationPlugin({ maxEntries: 20 }),
         ],
     }),
 );
 
 workbox.routing.registerRoute(
-    new RegExp('/*'),
+    new RegExp("/*"),
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: CACHE,
         plugins: [
             new workbox.backgroundSync.BackgroundSyncPlugin(QUEUE_NAME, {
-                maxRetentionTime: 24 * 60 // Retry for max of 24 Hours (specified in minutes)
-            })
-        ]
-    })
+                maxRetentionTime: 24 * 60, // Retry for max of 24 Hours (specified in minutes)
+            }),
+        ],
+    }),
+    new workbox.strategies.CacheFirst({
+        cacheName: CACHE_CFIRST,
+    }),
 );
