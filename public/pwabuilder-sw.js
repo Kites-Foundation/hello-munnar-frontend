@@ -7,7 +7,7 @@ const JS_CACHE = "javascript";
 const STYLE_CACHE = "stylesheets";
 const IMAGE_CACHE = "images";
 const FONT_CACHE = "fonts";
-// const QUEUE_NAME = "bgSyncQueue";
+const QUEUE_NAME = "bgSyncQueue";
 const CACHE = "pwabuilder-offline";
 
 self.addEventListener("message", (event) => {
@@ -15,6 +15,13 @@ self.addEventListener("message", (event) => {
         self.skipWaiting();
     }
 });
+
+workbox.routing.registerRoute(
+    new RegExp('/*'),
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: CACHE
+    })
+);
 
 workbox.routing.registerRoute(
     ({ event }) => event.request.destination === "document",
@@ -75,17 +82,29 @@ workbox.routing.registerRoute(
         ],
     })
 );
+workbox.routing.registerRoute(
+    ({url}) => url.origin === 'https://fonts.googleapis.com' ||
+        url.origin === 'https://fonts.gstatic.com',
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: 'google-fonts',
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({maxEntries: 20}),
+        ],
+    }),
+);
 
-// const bgSyncPlugin = new workbox.backgroundSync.Plugin(QUEUE_NAME, {
-//     maxRetentionTime: 24 * 60 // Retry for max of 24 Hours (specified in minutes)
-// });
-//
-// workbox.routing.registerRoute(
-//     new RegExp('/*'),
-//     new workbox.strategies.StaleWhileRevalidate({
-//         cacheName: CACHE,
-//         plugins: [
-//             bgSyncPlugin
-//         ]
-//     })
-// );
+
+
+const bgSyncPlugin = new workbox.backgroundSync.Plugin(QUEUE_NAME, {
+    maxRetentionTime: 24 * 60 // Retry for max of 24 Hours (specified in minutes)
+});
+
+workbox.routing.registerRoute(
+    new RegExp('/*'),
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: CACHE,
+        plugins: [
+            bgSyncPlugin
+        ]
+    })
+);

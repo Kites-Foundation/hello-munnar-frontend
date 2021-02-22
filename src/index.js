@@ -29,9 +29,9 @@ ReactDOM.render(
 
 reportWebVitals();
 
-// if ("serviceWorker" in navigator) {
-//     window.addEventListener("load", () => {
-//         navigator.serviceWorker.register("/pwabuilder-sw.js");
-//     });
-// }
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/pwabuilder-sw.js");
+    });
+}
 /*eslint-enable */
