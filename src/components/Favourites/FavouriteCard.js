@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Icon from "../Common/Icon";
 import { getManyDestination } from "../../data/dataUtils";
-
+import { A } from "hookrouter";
 // import { AiFillHeart } from "react-icons/ai";
 
 export default function FavouriteCard(props) {
@@ -69,23 +69,24 @@ export default function FavouriteCard(props) {
                     className="absolute w-full h-full bg-gray-200"
                 />
             </div>
-
-            <div className="col-span-3 row-span-1">
-                <header className="mt-3 flex items-center justify-between leading-tight p-2 mx-2">
-                    <h1 className="text-base font-semibold lowercase">
-                        {props.name}
-                    </h1>
-                    <div onClick={() => onClickLikeButton()}>
-                        <Icon
-                            name="heart"
-                            color={liked ? "red-500" : "gray-400"}
-                            className={`w-7 h-7 stroke-2 ${liked} ? "fill-current text-red-500" : "stroke-current text-gray-400"`}
-                            stroke={!liked}
-                            size={7}
-                        />
-                    </div>
-                </header>
-            </div>
+            <A href={`/destination/${destinationId}`}>
+                <div className="col-span-3 row-span-1">
+                    <header className="mt-3 flex items-center justify-between leading-tight p-2 mx-2">
+                        <h1 className="text-base font-semibold lowercase">
+                            {props.name}
+                        </h1>
+                        <div onClick={() => onClickLikeButton()}>
+                            <Icon
+                                name="heart"
+                                color={liked ? "red-500" : "gray-400"}
+                                className={`w-7 h-7 stroke-2 ${liked} ? "fill-current text-red-500" : "stroke-current text-gray-400"`}
+                                stroke={!liked}
+                                size={7}
+                            />
+                        </div>
+                    </header>
+                </div>
+            </A>
 
             <div className="p-4 py-2 col-span-3 row-span-1 mb-1">
                 <ul className="flex flex-row text-gray-600 space-x-4">
