@@ -1,4 +1,6 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+importScripts(
+    "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"
+);
 
 const HTML_CACHE = "html";
 const JS_CACHE = "javascript";
@@ -15,7 +17,7 @@ self.addEventListener("message", (event) => {
 });
 
 workbox.routing.registerRoute(
-    ({event}) => event.request.destination === 'document',
+    ({ event }) => event.request.destination === "document",
     new workbox.strategies.NetworkFirst({
         cacheName: HTML_CACHE,
         plugins: [
@@ -27,7 +29,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-    ({event}) => event.request.destination === 'script',
+    ({ event }) => event.request.destination === "script",
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: JS_CACHE,
         plugins: [
@@ -39,7 +41,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-    ({event}) => event.request.destination === 'style',
+    ({ event }) => event.request.destination === "style",
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: STYLE_CACHE,
         plugins: [
@@ -51,7 +53,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-    ({event}) => event.request.destination === 'image',
+    ({ event }) => event.request.destination === "image",
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: IMAGE_CACHE,
         plugins: [
@@ -63,7 +65,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-    ({event}) => event.request.destination === 'font',
+    ({ event }) => event.request.destination === "font",
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: FONT_CACHE,
         plugins: [
