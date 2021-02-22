@@ -98,7 +98,7 @@ workbox.routing.registerRoute(
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: CACHE,
         plugins: [
-            new workbox.backgroundSyncPlugin(QUEUE_NAME, {
+            new workbox.backgroundSync.BackgroundSyncPlugin(QUEUE_NAME, {
                 maxRetentionTime: 24 * 60 // Retry for max of 24 Hours (specified in minutes)
             })
         ]
