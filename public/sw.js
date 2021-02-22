@@ -1,5 +1,5 @@
 importScripts(
-    "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js",
+    "https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js",
 );
 
 const HTML_CACHE = "html";
