@@ -65,43 +65,50 @@
       "name": "Violet Route",
       "short_name": "Violet Route",
       "description": "MUNNAR - MARAYOOR - KANTHALLOOR - CHINNAR",
-      "url": "/route/violet"
+      "url": "/route/violet",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/violet.png", "sizes": "96x96" }]
     },
     {
       "name": "Indigo Route",
       "short_name": "Indigo Route",
       "description": "Munnar - Adimali",
-      "url": "/route/indigo"
+      "url": "/route/indigo",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/indigo.png", "sizes": "96x96" }]
     },
     {
       "name": "Blue route",
       "short_name": "Blue route",
       "description": "Munnar - Chokramudi peak- Suryanelli-Kolukkumalai",
-      "url": "/route/blue"
+      "url": "/route/blue",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/blue.png", "sizes": "96x96" }]
     },
     {
       "name": "Green Route",
       "short_name": "Green Route",
       "description": "Munnar - Meesapulimala",
-      "url": "/route/green"
+      "url": "/route/green",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/green.png", "sizes": "96x96" }]
     },
     {
       "name": "Yellow route",
       "short_name": "Yellow route",
       "description": "Heritage Route",
-      "url": "/route/yellow"
+      "url": "/route/yellow",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/yellow.jpg", "sizes": "96x96" }]
     },
     {
       "name": "Orange route",
       "short_name": "Orange route",
       "description": "Munnar - Mankulam - Anakulam",
-      "url": "/route/orange"
+      "url": "/route/orange",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/orange.jpg", "sizes": "96x96" }]
     },
     {
       "name": "Red route",
       "short_name": "Red route",
       "description": "Munnar - Mattupetty - Vattavada",
-      "url": "/route/red"
+      "url": "/route/red",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/red.png", "sizes": "96x96" }]
     }
   ],
   "screenshots" : [
