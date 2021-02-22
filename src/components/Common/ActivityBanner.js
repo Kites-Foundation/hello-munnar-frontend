@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Icon from "./Icon";
 import { navigate } from "hookrouter";
 
-const PlacesBanner = ({ route, image, onLike, activityId }) => {
+const ActivityBanner = ({ route, image, onLike, activityId }) => {
     // get initial like value from localStorage
 
     const [liked, setLiked] = useState(false);
@@ -92,4 +92,4 @@ const PlacesBanner = ({ route, image, onLike, activityId }) => {
     );
 };
 
-export default PlacesBanner;
+export default ActivityBanner;
