@@ -1,4 +1,4 @@
-const WorkboxPlugin = require("workbox-webpack-plugin");
+// const WorkboxPlugin = require("workbox-webpack-plugin");
 
 module.exports = {
     style: {
@@ -6,13 +6,13 @@ module.exports = {
             plugins: [require("tailwindcss"), require("autoprefixer")],
         },
     },
-    webpack: {
-        plugins: [
-            new WorkboxPlugin.GenerateSW({
-                clientsClaim: true,
-                skipWaiting: true,
-                maximumFileSizeToCacheInBytes: 7340032
-            })
-        ]
-    }
+    // webpack: {
+    //     plugins: [
+    //         new WorkboxPlugin.GenerateSW({
+    //             clientsClaim: true,
+    //             skipWaiting: true,
+    //             maximumFileSizeToCacheInBytes: 7340032
+    //         })
+    //     ]
+    // }
 };

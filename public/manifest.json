@@ -4,11 +4,13 @@
   "description": "Get Ready to Explore Munnar through Vibgyor",
   "start_url": ".",
   "Scope": "/",
+  "lang": "en",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "splash_pages": null,
   "orientation": "portrait",
+  "categories": ["tourism", "travel","weekend", "destinations", "munnar", ""],
   "icons": [
     {
       "src": "https://cdn.hellomunnar.in/pwa/manifest-icon-192.png",
@@ -56,6 +58,107 @@
       "src": "https://cdn.hellomunnar.in/pwa/favicon.ico",
       "type": "image/x-icon",
       "sizes": "64x64 32x32 34x34 16x16"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Violet Route",
+      "short_name": "Violet Route",
+      "description": "MUNNAR - MARAYOOR - KANTHALLOOR - CHINNAR",
+      "url": "/route/violet",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/violet.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Indigo Route",
+      "short_name": "Indigo Route",
+      "description": "Munnar - Adimali",
+      "url": "/route/indigo",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/indigo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Blue route",
+      "short_name": "Blue route",
+      "description": "Munnar - Chokramudi peak- Suryanelli-Kolukkumalai",
+      "url": "/route/blue",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/blue.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Green Route",
+      "short_name": "Green Route",
+      "description": "Munnar - Meesapulimala",
+      "url": "/route/green",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/green.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Yellow route",
+      "short_name": "Yellow route",
+      "description": "Heritage Route",
+      "url": "/route/yellow",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/yellow.jpg", "sizes": "96x96" }]
+    },
+    {
+      "name": "Orange route",
+      "short_name": "Orange route",
+      "description": "Munnar - Mankulam - Anakulam",
+      "url": "/route/orange",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/orange.jpg", "sizes": "96x96" }]
+    },
+    {
+      "name": "Red route",
+      "short_name": "Red route",
+      "description": "Munnar - Mattupetty - Vattavada",
+      "url": "/route/red",
+      "icons": [{ "src": "https://cdn.hellomunnar.in/icons/pwaicons/red.png", "sizes": "96x96" }]
+    }
+  ],
+  "screenshots" : [
+    {
+      "src": "https://cdn.hellomunnar.in/screenshots/home.png",
+      "sizes": "347x685",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.hellomunnar.in/screenshots/experiences.png",
+      "sizes": "347x685",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.hellomunnar.in/screenshots/favorites.png.png",
+      "sizes": "347x685",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.hellomunnar.in/screenshots/violet.png",
+      "sizes": "347x685",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.hellomunnar.in/screenshots/indigo.png",
+      "sizes": "347x685",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.hellomunnar.in/screenshots/blue.png",
+      "sizes": "347x685",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.hellomunnar.in/screenshots/green.png",
+      "sizes": "347x685",
+      "type": "image/png"
+    }, {
+      "src": "https://cdn.hellomunnar.in/screenshots/yellow.png",
+      "sizes": "347x685",
+      "type": "image/png"
+    }, {
+      "src": "https://cdn.hellomunnar.in/screenshots/orange.png",
+      "sizes": "347x685",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.hellomunnar.in/screenshots/red.png",
+      "sizes": "347x685",
+      "type": "image/png"
     }
   ]
 }
