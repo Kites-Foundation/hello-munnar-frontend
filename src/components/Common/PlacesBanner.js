@@ -50,7 +50,11 @@ const PlacesBanner = ({ route, image, onLike, destinationId }) => {
             />
             <button
                 className="absolute flex bg-white items-center shadow-md justify-center left-8 top-8 w-8 h-8 rounded-full focus:outline-none"
-                onClick={() => navigate("/")}>
+                onClick={() =>
+                    window.history.length === 1
+                        ? navigate("/")
+                        : window.history.back()
+                }>
                 <Icon
                     name="caretLeft"
                     color="black"
