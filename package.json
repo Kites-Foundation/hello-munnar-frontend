@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^6.1.0",
+    "@craco/craco": "^6.1.1",
     "@sentry/react": "^6.1.0",
     "@sentry/tracing": "^6.1.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
