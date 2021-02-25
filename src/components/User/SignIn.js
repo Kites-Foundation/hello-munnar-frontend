@@ -7,7 +7,6 @@ import GoogleLogin from "react-google-login";
 
 //for testing  . Need to be put in .env file
 const config = { cliendId: process.env.REACT_APP_GOOGLE_CLIENT_ID };
-console.log(config);
 const SignIn = () => {
     const responseGoogle = (response) => {
         console.log(response.profileObj);
