@@ -3,7 +3,13 @@ import Icon from "../Common/Icon";
 import ProgressBar from "./Common/Progressbar";
 
 const UserHome = () => {
-    const name = "John Doe";
+    const name = localStorage.getItem("userName")
+        ? localStorage.getItem("userName")
+        : "John Doe";
+    const logout = () => {
+        localStorage.removeItem("userName");
+        window.location.reload();
+    };
     const placeholder =
         "https://i.pinimg.com/736x/50/df/34/50df34b9e93f30269853b96b09c37e3b.jpg";
     return (
@@ -34,7 +40,6 @@ const UserHome = () => {
                     </div>
                 </div>
             </div>
-
             {/* Grid Images */}
             <div className="flex justify-center">
                 <div className="container w-11/12">
@@ -88,7 +93,6 @@ const UserHome = () => {
                     </div>
                 </div>
             </div>
-
             <div className="mt-4 flex flex-center w-full h-30 justify-center">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -135,6 +139,15 @@ const UserHome = () => {
                     <h3>30 of 360 locations visited</h3>
                 </div>
             </div>
+            {localStorage.getItem("userName") ? (
+                <div className="m-0 m-auto outline-none  text-center w-full">
+                    <button
+                        onClick={logout}
+                        className="bg-gray-300 outline-none rounded-md m-0 p-2 m-auto ">
+                        Logout
+                    </button>
+                </div>
+            ) : null}
         </div>
     );
 };
