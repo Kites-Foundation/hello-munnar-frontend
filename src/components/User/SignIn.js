@@ -6,7 +6,7 @@ import { navigate } from "hookrouter";
 import GoogleLogin from "react-google-login";
 
 //for testing  . Need to be put in .env file
-const config = { cliendId: process.env.REACT_APP_GOOGLE_CLIENT_ID };
+const config = { clientId: process.env.REACT_APP_GOOGLE_CLIENT_ID };
 const SignIn = () => {
     const responseGoogle = (response) => {
         localStorage.setItem("userName", response.profileObj.name);
@@ -37,7 +37,7 @@ const SignIn = () => {
                 <div>
                     <GoogleLogin
                         className="bg-inherit border-blue-300"
-                        clientId={config.cliendId}
+                        clientId={config.clientId}
                         buttonText="Sign In"
                         onSuccess={responseGoogle}
                         onFailure={() => alert("Error")}
