@@ -1,42 +1,32 @@
 import React from "react";
-import locationIcon from "./map-pin.svg";
-import munnarIcon from "../../../src/assets/images/munnar.png";
+import Star from "../Common/Star";
+import VectorIcon from "../NearMe/icons/Vector.svg";
 
-export default function Thingstodo() {
+export default function Thingstodo(props) {
     return (
-        <div class="max-w-6xl mx-auto">
-            <div class="flex items-center justify-center min-h-screen">
-                <div class="max-w-sm w-full sm:w-1/2 lg:w-1/3 py-6 px-3">
-                    <div class="bg-white shadow-xl rounded-lg overflow-hidden">
-                        <p class="font-sans font-bold text-2xl font-quicksand">
-                            Things to do
-                        </p>
-                        <div class="bg-cover bg-center h-56 p-4 relative">
-                            <img
-                                className="min-w-full min-h-full"
-                                src={munnarIcon}></img>
-
-                            <div class="mr-2 absolute right-5 bottom-5">
-                                <button>
-                                    <img src={locationIcon}></img>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="mt-3 flex justify-between">
-                            <div class="uppercase tracking-wide text-sm font-bold text-gray-700 ml-4 font-quicksand">
-                                <p> Name</p>
-                            </div>
-                            <div>
-                                <button class="mr-4 bg-gray-400 hover:bg-gray-700 h-5 w-6 text-sm">
-                                    +
-                                </button>
-                            </div>
-                        </div>
-                        <div class="ml-4 font-quicksand">
-                            <p>xyz</p>
-                        </div>
-                    </div>
+        <div className="w-80 focus-within:box-border p-5 bg-white border-2 border-blue-600 rounded-xl shadow my-5 border-blue">
+            <div className="font-Poppins font-style:normal font-weight:600 font-bold text-black-600 text-xl">
+                {props.name}
+            </div>
+            <div className="mt-3 flex">
+                <div className="flex items-center">
+                    <Star num={4} />
                 </div>
+                <div className="flex items-center ml-3">
+                    <img src={VectorIcon} alt=""></img>
+                    <div className="ml-2 text-indigo-400">Indigo</div>
+                </div>
+            </div>
+            <div className="flex flex-wrap justify-center mt-4">
+                <button className="border-2 border-gray-200 bg-gray-200 rounded-xl my-1 whitespace-nowrap text-center text-xs font-bold text-black-500 px-2 py-1 hover:bg-gray-200 hover:text-black mr-2">
+                    Family friendly
+                </button>
+                <button className="border-2 border-gray-200 bg-gray-200 rounded-xl my-1 whitespace-nowrap text-center text-xs font-bold text-black-500 px-2 py-1  hover:bg-gray-200 hover:text-black mr-2">
+                    Disabled friendly
+                </button>
+                <button className="border-2 border-gray-200 bg-gray-200 rounded-xl my-1 whitespace-nowrap text-center text-xs font-bold text-black-500 px-2 py-1 hover:bg-gray-200 hover:text-black mr-2">
+                    Moderate
+                </button>
             </div>
         </div>
     );

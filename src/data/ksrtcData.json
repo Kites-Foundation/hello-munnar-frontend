@@ -1,0 +1,82 @@
+[
+    {
+        "ksrtcId": "KS-001",
+        "ksrtcRoute": "KOTTAYAM",
+        "kstrcTime": "1899-12-29T23:29:50.000Z",
+        "from": "MUNNAR",
+        "to": "TRIVANDRUM",
+        "ksrtcType": "SUPER FAST",
+        "availableDays": "allDay",
+        "booking": "https://online.keralartc.com/oprs-web/"
+    },
+    {
+        "ksrtcId": "KS-002",
+        "ksrtcRoute": "KOTTAYAM",
+        "kstrcTime": "1899-12-30T01:38:50.000Z",
+        "from": "MARAYOOR",
+        "to": "TRIVANDRUM",
+        "ksrtcType": "SUPER FAST",
+        "availableDays": "allDay",
+        "booking": "https://online.keralartc.com/oprs-web/"
+    },
+    {
+        "ksrtcId": "KS-003",
+        "ksrtcRoute": "KOTTAYAM",
+        "kstrcTime": "1899-12-30T05:10:50.000Z",
+        "from": "MUNNAR",
+        "to": "TRIVANDRUM",
+        "ksrtcType": "SUPER FAST",
+        "availableDays": "allDay",
+        "booking": "https://online.keralartc.com/oprs-web/"
+    },
+    {
+        "ksrtcId": "KS-004",
+        "ksrtcRoute": "KOTTAYAM",
+        "kstrcTime": "1899-12-30T10:08:50.000Z",
+        "from": "MUNNAR",
+        "to": "NEYYATTINKARA",
+        "ksrtcType": "SUPER FAST",
+        "availableDays": "allDay",
+        "booking": "https://online.keralartc.com/oprs-web/"
+    },
+    {
+        "ksrtcId": "KS-005",
+        "ksrtcRoute": "KOZHIKODE",
+        "kstrcTime": "1899-12-30T14:08:50.000Z",
+        "from": "MUNNAR",
+        "to": "SULTHAN BATHERY",
+        "ksrtcType": "SUPER EXPRESS AIR BUS",
+        "availableDays": "allDay",
+        "booking": "https://online.keralartc.com/oprs-web/"
+    },
+    {
+        "ksrtcId": "KS-006",
+        "ksrtcRoute": "ALAPPUZHA",
+        "kstrcTime": "1899-12-30T14:38:50.000Z",
+        "from": "MUNNAR",
+        "to": "TRIVANDRUM",
+        "ksrtcType": "MINNAL SUPER DELUXE AIR BUS",
+        "availableDays": "allDay",
+        "booking": "https://online.keralartc.com/oprs-web/"
+    },
+    {
+        "ksrtcId": "KS-007",
+        "ksrtcRoute": "KOTTAYAM",
+        "kstrcTime": "1899-12-30T15:39:50.000Z",
+        "from": "MUNNAR",
+        "to": "TRIVANDRUM",
+        "ksrtcType": "SUPER FAST",
+        "availableDays": "allDay",
+        "booking": "https://online.keralartc.com/oprs-web/"
+    },
+    {
+        "ksrtcId": "KS-008",
+        "ksrtcRoute": "KOZHIKODE",
+        "kstrcTime": "1899-12-30T10:09:50.000Z",
+        "from": "MUNNAR",
+        "to": "BANGALORE",
+        "ksrtcType": "SUPER DELUX AIR BUS",
+        "availableDays": "allDay",
+        "booking": "https://online.keralartc.com/oprs-web/"
+    }
+]

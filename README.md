@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Hello Munnar
+Hello Munnar guides you through every nook and corner of VIBGYOR tourism. The app helps you in understanding Munnar better, finding and learning the significance of each route, and making your journey a smooth one. This project intends to make your travel experience to Munnar a colourful one.
 
+![hello Munnar](https://user-images.githubusercontent.com/8397274/108430929-27831780-7268-11eb-8c3c-1076b808431c.png)
+
+### What is VIBGYOR
+Just as the rainbow, Munnar is an abode blessed by nature, colourfully and diverse. With VIBGYOR tourism, we take you on a journey to explore the colourful beauty of Munnar, the history, and it's culture. We have split Munnar into 7 routes, named by each colour of the rainbow. Each route has it's own significance and charm, apt to the colour. Get set to understand and enjoy Munnar to it's fullest.
+
+### Some tech stuff
+Hello Munnar PWA (Progressive Web Application) is created using the following technologies:
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Hook Router](https://github.com/Paratron/hookrouter)
+- [Redux](https://redux.js.org/)
+- [And many more](./package.json)
+
+### Contributing
+If you are willing to contribute to Hello Munnar project, you are awesome! Just follow the steps given in [CONTRIBUTING.md](CONTRIBUTING.md) 😃
+
+### Getting started
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+- Run the following commands to get started, make sure you have Node JS and NPM installed. Type the following commands:
+```shell script
+cp .env.example .env
+npm i
+```
+- Run the following command to start the development server:
+```shell script
+npm run-script start
+```
+- Run the tests and make sure that it is passing before submitting a pull request:
+```shell script
+npm run-script test
+```
 
-In the project directory, you can run:
+### License
+Hello Munnar is [MIT Licensed](LICENSE)
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Thanks
+- Thanks to the [contributors](https://github.com/Kites-Foundation/hello-munnar-frontend/graphs/contributors)
