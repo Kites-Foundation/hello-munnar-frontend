@@ -9,7 +9,6 @@ import GoogleLogin from "react-google-login";
 const config = { cliendId: process.env.REACT_APP_GOOGLE_CLIENT_ID };
 const SignIn = () => {
     const responseGoogle = (response) => {
-        console.log(response.profileObj);
         localStorage.setItem("userName", response.profileObj.name);
         navigate("/profile");
     };
