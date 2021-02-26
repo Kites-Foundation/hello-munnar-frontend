@@ -37,14 +37,16 @@ const SignIn = () => {
                     <Input placeholder="Sign In or Sign Up" icon="addUser" />
                 </div>
                 <div>
-                    <GoogleLogin
-                        className="bg-inherit border-blue-300"
-                        clientId={config.clientId}
-                        buttonText="Sign In"
-                        onSuccess={responseGoogle}
-                        onFailure={() => alert("Error")}
-                        cookiePolicy={"single_host_origin"}
-                    />
+                    {!localStorage.getItem("userName") && (
+                        <GoogleLogin
+                            className="bg-inherit border-blue-300"
+                            clientId={config.clientId}
+                            buttonText="Sign In"
+                            onSuccess={responseGoogle}
+                            onFailure={() => alert("Error")}
+                            cookiePolicy={"single_host_origin"}
+                        />
+                    )}
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Icon from "../Common/Icon";
 import ProgressBar from "./Common/Progressbar";
+import { navigate } from "hookrouter";
 
 const UserHome = () => {
     const name = localStorage.getItem("userName")
@@ -8,7 +9,7 @@ const UserHome = () => {
         : "John Doe";
     const logout = () => {
         localStorage.removeItem("userName");
-        window.location.reload();
+        navigate("/signIn");
     };
     const placeholder =
         "https://i.pinimg.com/736x/50/df/34/50df34b9e93f30269853b96b09c37e3b.jpg";
