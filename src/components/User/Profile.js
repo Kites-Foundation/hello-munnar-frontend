@@ -26,11 +26,6 @@ const UserHome = () => {
                     </h1>
                 </div>
                 <div className="flex">
-                    <Icon
-                        name="editUser"
-                        className="text-gray-900 slider "
-                        size="7"
-                    />
                     <div className="ml-3">
                         <Icon
                             name="settings"
