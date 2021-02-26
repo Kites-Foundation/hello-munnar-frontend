@@ -1,5 +1,6 @@
 import React from "react";
 import TodoCard from "./TodoCard";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function TodoContainer({ activities, className = "" }) {
     return (
@@ -9,11 +10,14 @@ export default function TodoContainer({ activities, className = "" }) {
                     <h2 className="px-8 md:px-10 font-semibold text-black text-xl">
                         Things To Do
                     </h2>
-
-                    <div className="flex overflow-x-auto py-6 md:py-12 px-8 md:px-10">
-                        {activities.map((activity, id) => (
-                            <TodoCard key={id} data={activity} />
-                        ))}
+                    <div className="py-6 md:py-12 pl-8 md:pl-10">
+                        <Swiper spaceBetween={10} slidesPerView="auto">
+                            {activities.map((activity, id) => (
+                                <SwiperSlide style={{ width: "unset" }}>
+                                    <TodoCard key={id} data={activity} />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
                     </div>
                 </>
             )}

@@ -61,7 +61,7 @@ export default function DestinationCard({ data }) {
     });
 
     return (
-        <div className="bg-white flex-none shadow-lg rounded-lg overflow-hidden w-3/4 md:w-1/2 lg:w-1/4 xl:w-96 mr-8 md:mr-16">
+        <div className="bg-white flex-none shadow-lg rounded-lg overflow-hidden w-64 xl:w-96 mr-8 md:mr-16">
             <div className="relative pb-9/16">
                 <img
                     src={bannerImg}
