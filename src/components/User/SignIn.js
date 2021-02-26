@@ -3,8 +3,15 @@ import Navbar from "./Common/Navbar";
 import Switchcomp from "./Common/Switchcomp/Switchcomp";
 import Input from "./Common/Input";
 import { navigate } from "hookrouter";
+import GoogleLogin from "react-google-login";
 
+//for testing  . Need to be put in .env file
+const config = { clientId: process.env.REACT_APP_GOOGLE_CLIENT_ID };
 const SignIn = () => {
+    const responseGoogle = (response) => {
+        localStorage.setItem("userName", response.profileObj.name);
+        navigate("/profile");
+    };
     return (
         <div>
             <Navbar name="John Doe" />
@@ -26,6 +33,16 @@ const SignIn = () => {
                     className="w-10/12 flex items-center justify-center "
                     onClick={() => navigate("/signOut")}>
                     <Input placeholder="Sign In or Sign Up" icon="addUser" />
+                </div>
+                <div>
+                    <GoogleLogin
+                        className="bg-inherit border-blue-300"
+                        clientId={config.clientId}
+                        buttonText="Sign In"
+                        onSuccess={responseGoogle}
+                        onFailure={() => alert("Error")}
+                        cookiePolicy={"single_host_origin"}
+                    />
                 </div>
             </div>
         </div>
