@@ -4,11 +4,13 @@ import Switchcomp from "./Common/Switchcomp/Switchcomp";
 import Input from "./Common/Input";
 import { navigate } from "hookrouter";
 import GoogleLogin from "react-google-login";
+import { Logger } from "../../utils/logger";
 
 //for testing  . Need to be put in .env file
 const config = { clientId: process.env.REACT_APP_GOOGLE_CLIENT_ID };
 const SignIn = () => {
     const responseGoogle = (response) => {
+        Logger("UserData: ", response);
         localStorage.setItem("userName", response.profileObj.name);
         navigate("/profile");
     };
