@@ -1,5 +1,6 @@
 import React from "react";
 import DestinationCard from "./DestinationCard";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function DestinationContainer({ destinations, className = "" }) {
     return (
@@ -8,11 +9,17 @@ export default function DestinationContainer({ destinations, className = "" }) {
                 Destinations
             </h2>
 
-            <div className="flex overflow-x-auto py-6 md:py-12 px-8 md:px-10">
+            <Swiper
+                spaceBetween={10}
+                slidesPerView="auto"
+                className="py-6 md:py-12 pl-8 md:pl-10"
+                Zz>
                 {destinations.map((destination, id) => (
-                    <DestinationCard key={id} data={destination} />
+                    <SwiperSlide style={{ width: "unset" }}>
+                        <DestinationCard key={id} data={destination} />
+                    </SwiperSlide>
                 ))}
-            </div>
+            </Swiper>
         </section>
     );
 }
