@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Icon from "../Common/Icon";
 import ProgressBar from "./Common/Progressbar";
 import { navigate } from "hookrouter";
+import { getUser } from "../../redux/actions";
+import { useDispatch } from "react-redux";
+import { Logger } from "../../utils/logger";
 
 const UserHome = () => {
-    const name = localStorage.getItem("userName")
-        ? localStorage.getItem("userName")
-        : "John Doe";
+    const dispatch = useDispatch();
+    const [userNow, setuserNow] = useState({ image: null, name: null });
+    useEffect(() => {
+        if (localStorage.getItem("access_token"))
+            dispatch(getUser()).then((res) => {
+                if (res && res.data) {
+                    setuserNow({
+                        image: res.data.data.googleImageUrl,
+                        name: res.data.data.name,
+                    });
+                } else {
+                    Logger("Invalid token");
+                    logout();
+                }
+            });
+    }, [dispatch]);
+
     const logout = () => {
-        localStorage.removeItem("userName");
+        localStorage.removeItem("access_token");
+        setuserNow({ image: null, name: null });
         navigate("/signIn");
     };
     const placeholder =
@@ -17,13 +35,23 @@ const UserHome = () => {
         <div className="user">
             <div className="Navbar flex justify-between content-center pt-8 pb-12 pl-8 pr-8">
                 <div className="flex content-center">
-                    <Icon
-                        name="userFilled"
-                        className="text-gray-900"
-                        size="7"
-                    />
+                    {userNow.image ? (
+                        <div className="w-8 h-8">
+                            <img
+                                alt="profile"
+                                src={userNow.image}
+                                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                            />
+                        </div>
+                    ) : (
+                        <Icon
+                            name="userFilled"
+                            className="text-gray-900"
+                            size="7"
+                        />
+                    )}
                     <h1 className="ml-4 text-2xl font-bold text-gray-900">
-                        {name}
+                        {userNow.name ? userNow.name : "John Doe"}
                     </h1>
                 </div>
                 <div className="flex">
@@ -135,7 +163,7 @@ const UserHome = () => {
                     <h3>30 of 360 locations visited</h3>
                 </div>
             </div>
-            {localStorage.getItem("userName") ? (
+            {userNow.name !== null ? (
                 <div className="m-0 m-auto outline-none  text-center w-full">
                     <button
                         onClick={logout}

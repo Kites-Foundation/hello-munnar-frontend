@@ -5,14 +5,22 @@ import Input from "./Common/Input";
 import { navigate } from "hookrouter";
 import GoogleLogin from "react-google-login";
 import { Logger } from "../../utils/logger";
+import { googleLogin } from "../../redux/actions";
+import { useDispatch } from "react-redux";
 
-//for testing  . Need to be put in .env file
 const config = { clientId: process.env.REACT_APP_GOOGLE_CLIENT_ID };
 const SignIn = () => {
+    const dispatch = useDispatch();
     const responseGoogle = (response) => {
-        Logger("UserData: ", response);
-        localStorage.setItem("userName", response.profileObj.name);
-        navigate("/profile");
+        const googleToken = response.tokenObj.id_token;
+        dispatch(googleLogin({ googleToken: googleToken })).then((res) => {
+            if (res && res.data) {
+                localStorage.setItem("access_token", res.data.access_token);
+                navigate("/profile");
+            } else {
+                Logger("error..! cant login");
+            }
+        });
     };
     return (
         <div>
@@ -37,13 +45,13 @@ const SignIn = () => {
                     <Input placeholder="Sign In or Sign Up" icon="addUser" />
                 </div>
                 <div>
-                    {!localStorage.getItem("userName") && (
+                    {!localStorage.getItem("access_token") && (
                         <GoogleLogin
                             className="bg-inherit border-blue-300"
                             clientId={config.clientId}
                             buttonText="Sign In"
                             onSuccess={responseGoogle}
-                            onFailure={() => alert("Error")}
+                            onFailure={() => Logger("login failed")}
                             cookiePolicy={"single_host_origin"}
                         />
                     )}
