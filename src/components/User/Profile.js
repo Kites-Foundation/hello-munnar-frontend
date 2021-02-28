@@ -15,6 +15,9 @@ const UserHome = () => {
                         image: res.data.data.googleImageUrl,
                         name: res.data.data.name,
                     });
+                } else {
+                    alert("an error occured");
+                    logout();
                 }
             });
     }, [dispatch]);

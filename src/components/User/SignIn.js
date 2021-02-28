@@ -15,8 +15,12 @@ const SignIn = () => {
         Logger("UserData: ", response);
         const googleToken = response.tokenObj.id_token;
         dispatch(googleLogin({ googleToken: googleToken })).then((res) => {
-            localStorage.setItem("access_token", res.data.access_token);
-            navigate("/profile");
+            if (res.data) {
+                localStorage.setItem("access_token", res.data.access_token);
+                navigate("/profile");
+            } else {
+                alert("error");
+            }
         });
     };
     return (
