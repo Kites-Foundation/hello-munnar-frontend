@@ -34,11 +34,11 @@ const UserHome = () => {
             <div className="Navbar flex justify-between content-center pt-8 pb-12 pl-8 pr-8">
                 <div className="flex content-center">
                     {userNow.image ? (
-                        <div class="w-8 h-8">
+                        <div className="w-8 h-8">
                             <img
                                 alt="profile"
                                 src={userNow.image}
-                                class="shadow rounded-full max-w-full h-auto align-middle border-none"
+                                className="shadow rounded-full max-w-full h-auto align-middle border-none"
                             />
                         </div>
                     ) : (
