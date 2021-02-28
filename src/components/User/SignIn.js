@@ -12,14 +12,13 @@ const config = { clientId: process.env.REACT_APP_GOOGLE_CLIENT_ID };
 const SignIn = () => {
     const dispatch = useDispatch();
     const responseGoogle = (response) => {
-        Logger("UserData: ", response);
         const googleToken = response.tokenObj.id_token;
         dispatch(googleLogin({ googleToken: googleToken })).then((res) => {
             if (res && res.data) {
                 localStorage.setItem("access_token", res.data.access_token);
                 navigate("/profile");
             } else {
-                alert("error..! cant login");
+                Logger("error..! cant login");
             }
         });
     };
@@ -52,7 +51,7 @@ const SignIn = () => {
                             clientId={config.clientId}
                             buttonText="Sign In"
                             onSuccess={responseGoogle}
-                            onFailure={() => alert("Error")}
+                            onFailure={() => Logger("login failed")}
                             cookiePolicy={"single_host_origin"}
                         />
                     )}

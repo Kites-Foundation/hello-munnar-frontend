@@ -4,6 +4,8 @@ import ProgressBar from "./Common/Progressbar";
 import { navigate } from "hookrouter";
 import { getUser } from "../../redux/actions";
 import { useDispatch } from "react-redux";
+import { Logger } from "../../utils/logger";
+
 const UserHome = () => {
     const dispatch = useDispatch();
     const [userNow, setuserNow] = useState({ image: null, name: null });
@@ -16,7 +18,7 @@ const UserHome = () => {
                         name: res.data.data.name,
                     });
                 } else {
-                    alert("an error occured");
+                    Logger("Invalid token");
                     logout();
                 }
             });

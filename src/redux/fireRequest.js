@@ -103,7 +103,7 @@ export const APIRequest = (
 
     // set authorization header in the request header
     const config = {
-        baseURL: process.env.REACT_APP_BASE_URL,
+        baseURL: process.env.REACT_APP_API_URL,
         headers: {},
     };
     if (!request.noAuth && localStorage.getItem("access_token")) {
