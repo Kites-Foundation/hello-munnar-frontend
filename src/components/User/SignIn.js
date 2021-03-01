@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Common/Navbar";
 import Switchcomp from "./Common/Switchcomp/Switchcomp";
-import Input from "./Common/Input";
+import Button from "./Common/Button";
 import { navigate } from "hookrouter";
 import GoogleLogin from "react-google-login";
 import { Logger } from "../../utils/logger";
@@ -31,18 +31,27 @@ const SignIn = () => {
             </div>
             <div className="flex flex-col items-center justify-center mt-10">
                 <div className="w-10/12 flex items-center justify-center ">
-                    <Input placeholder="Rate Our App" icon="star" />
+                    <Button
+                        onClick={() => {
+                            window.location.href =
+                                "https://github.com/Kites-Foundation/hello-munnar-frontend";
+                        }}
+                        text="Star on GitHub"
+                        icon="star"
+                    />
                 </div>
                 <div className="w-10/12 flex items-center justify-center ">
-                    <Input placeholder="Send Feedback" icon="chat" />
+                    <Button
+                        onClick={() => {
+                            window.location.href =
+                                "https://github.com/Kites-Foundation/hello-munnar-frontend/issues/new/choose";
+                        }}
+                        text="Send Feedback"
+                        icon="chat"
+                    />
                 </div>
                 <div className="w-10/12 flex items-center justify-center ">
-                    <Input placeholder="Privacy and legal" icon="lock" />
-                </div>
-                <div
-                    className="w-10/12 flex items-center justify-center "
-                    onClick={() => navigate("/signOut")}>
-                    <Input placeholder="Sign In or Sign Up" icon="addUser" />
+                    <Button text="Privacy and legal" icon="lock" />
                 </div>
                 <div>
                     {!localStorage.getItem("access_token") && (
