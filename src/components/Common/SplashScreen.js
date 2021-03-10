@@ -7,14 +7,23 @@ import logoKites from "../../assets/images/logo-kites.png";
 const SplashScreen = ({ duration }) => {
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        setTimeout(() => setLoading(false), duration);
-    });
+    // state to trigger element hide after animation is done
+    const [animationEnded, setAnimationEnded] = useState(false);
 
-    if (!loading) return null;
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+            setTimeout(() => setAnimationEnded(true), 500); // hard-coded animation duration
+        }, duration);
+    }, [duration]);
+
+    // if (!loading) return null;
 
     return (
-        <div className="fixed top-0 left-0 min-w-full min-h-screen flex flex-col z-40 bg-white">
+        <div
+            className={`top-0 left-0 min-w-full min-h-screen flex flex-col z-40 bg-white transition-opacity duration-500 ease-in-out ${
+                loading ? "opactiy-100" : "opacity-0"
+            }  ${animationEnded ? "hidden" : "fixed"}`}>
             <div className="flex-1 flex items-center justify-center px-10">
                 <img src={logoHelloMunnar} className="w-full max-w-xl" alt="" />
             </div>
