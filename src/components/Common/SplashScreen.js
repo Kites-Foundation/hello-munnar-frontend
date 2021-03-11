@@ -11,13 +11,20 @@ const SplashScreen = ({ duration }) => {
     const [animationEnded, setAnimationEnded] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => {
+        const hideSplashTimeout = setTimeout(() => {
             setLoading(false);
-            setTimeout(() => setAnimationEnded(true), 500); // hard-coded animation duration
         }, duration);
-    }, [duration]);
 
-    // if (!loading) return null;
+        const endAnimationTimeout = setTimeout(
+            () => setAnimationEnded(true),
+            duration + 500
+        ); // hard-coded animation duration
+
+        return () => {
+            clearTimeout(hideSplashTimeout);
+            clearTimeout(endAnimationTimeout);
+        };
+    }, [duration]);
 
     return (
         <div
@@ -27,7 +34,7 @@ const SplashScreen = ({ duration }) => {
             <div className="flex-1 flex items-center justify-center px-10">
                 <img src={logoHelloMunnar} className="w-full max-w-xl" alt="" />
             </div>
-            <div className="pb-16 flex justify-center w-full space-x-2">
+            <div className="pb-32 flex justify-center w-full space-x-2">
                 <img src={logoDistrictAdmin} className="h-16 md:h-20" alt="" />
                 <img src={logoDtpc} className="h-16 md:h-20" alt="" />
                 <img src={logoKites} className="h-16 md:h-20" alt="" />
