@@ -1,18 +1,11 @@
-/*
-sample code
-
-
+// eslint-disable-next-line
 export default {
-  login: {
-    path: "/api/v1/account/login",
-    method: "POST",
-    noAuth: true,
-  },
-  currentUser: {
-    path: "/api/v1/account/user",
-    method: "GET",
-    noAuth: false,
-  },
+    googleLogin: {
+        path: "/google",
+        method: "POST",
+    },
+    getUser: {
+        path: "/api/v1/auth/user",
+        method: "get",
+    },
 };
-
-*/
