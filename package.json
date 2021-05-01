@@ -28,7 +28,7 @@
     "swiper": "^6.4.15",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "web-vitals": "^0.2.4",
-    "workbox-webpack-plugin": "^5.1.4"
+    "workbox-webpack-plugin": "^6.1.5"
   },
   "scripts": {
     "start": "craco start",
