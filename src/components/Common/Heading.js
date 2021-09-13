@@ -36,8 +36,9 @@ const Heading = ({ place, className }) => {
             <div className="flex py-1.5 items-center space-x-4">
                 {difficulty && (
                     <div
-                        className={`px-2 py-0.5 border-2 mr-1 text-sm rounded-md flex items-center justify-center font-semibold capitalize ${difficultyStyle[difficulty.toLowerCase()]
-                            }`}>
+                        className={`px-2 py-0.5 border-2 mr-1 text-sm rounded-md flex items-center justify-center font-semibold capitalize ${
+                            difficultyStyle[difficulty.toLowerCase()]
+                        }`}>
                         {difficulty}
                     </div>
                 )}
@@ -107,20 +108,20 @@ const Heading = ({ place, className }) => {
 
                 {(bookingDetails?.bookingContactNumber ||
                     bookingDetails?.bookingLink) && (
-                        <>
-                            <button
-                                onClick={() => setShowBookingModal(true)}
-                                className="flex font-medium py-2 items-center justify-center rounded-full border border-black bg-black text-white">
-                                <span className="text-center">Book</span>
-                            </button>
-                            {showBookingModal && (
-                                <BookingModal
-                                    onClose={closeBookingModal}
-                                    details={bookingDetails}
-                                />
-                            )}
-                        </>
-                    )}
+                    <>
+                        <button
+                            onClick={() => setShowBookingModal(true)}
+                            className="flex font-medium py-2 items-center justify-center rounded-full border border-black bg-black text-white">
+                            <span className="text-center">Book</span>
+                        </button>
+                        {showBookingModal && (
+                            <BookingModal
+                                onClose={closeBookingModal}
+                                details={bookingDetails}
+                            />
+                        )}
+                    </>
+                )}
             </div>
         </div>
     );
