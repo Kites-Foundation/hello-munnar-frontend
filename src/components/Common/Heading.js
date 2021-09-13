@@ -95,12 +95,12 @@ const Heading = ({ place, className }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex py-2 items-center justify-center rounded-full border border-black">
-                        <span className="text-center">Open In Maps</span>
+                        <span className="ml-1 mr-1 text-center">Open Map</span>
                         <Icon
                             name="upRight"
                             size={6}
                             stroke={true}
-                            className="ml-2 stroke-current text-black"
+                            className="stroke-current text-black"
                             color="black"
                         />
                     </a>
