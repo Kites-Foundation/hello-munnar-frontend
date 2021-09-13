@@ -25,7 +25,7 @@
     "react-scripts": "4.0.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "swiper": "^6.4.15",
+    "swiper": "^7.0.5",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "web-vitals": "^0.2.4",
     "workbox-webpack-plugin": "^5.1.4"
