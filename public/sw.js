@@ -7,22 +7,13 @@ const JS_CACHE = "javascript";
 const STYLE_CACHE = "stylesheets";
 const IMAGE_CACHE = "images";
 const FONT_CACHE = "fonts";
-const QUEUE_NAME = "bgSyncQueue";
 const CACHE = "pwa-offline";
-const CACHE_CFIRST = "pwa-cfirst";
 
 self.addEventListener("message", (event) => {
     if (event.data && event.data.type === "SKIP_WAITING") {
         self.skipWaiting();
     }
 });
-
-workbox.routing.registerRoute(
-    new RegExp("/*"),
-    new workbox.strategies.StaleWhileRevalidate({
-        cacheName: CACHE,
-    }),
-);
 
 workbox.routing.registerRoute(
     ({ event }) => event.request.destination === "document",
@@ -61,7 +52,8 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-    ({ event }) => event.request.destination === "image",
+    ({ event, url }) => event.request.destination === "image" &&
+        url.origin.indexOf(self.origin),
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: IMAGE_CACHE,
         plugins: [
@@ -91,20 +83,5 @@ workbox.routing.registerRoute(
         plugins: [
             new workbox.expiration.ExpirationPlugin({ maxEntries: 20 }),
         ],
-    }),
-);
-
-workbox.routing.registerRoute(
-    new RegExp("/*"),
-    new workbox.strategies.StaleWhileRevalidate({
-        cacheName: CACHE,
-        plugins: [
-            new workbox.backgroundSync.BackgroundSyncPlugin(QUEUE_NAME, {
-                maxRetentionTime: 24 * 60, // Retry for max of 24 Hours (specified in minutes)
-            }),
-        ],
-    }),
-    new workbox.strategies.CacheFirst({
-        cacheName: CACHE_CFIRST,
     }),
 );
