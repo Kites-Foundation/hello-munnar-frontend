@@ -12,11 +12,10 @@ export default function DestinationContainer({ destinations, className = "" }) {
             <Swiper
                 spaceBetween={10}
                 slidesPerView="auto"
-                className="py-6 md:py-12 pl-8 md:pl-10"
-                Zz>
+                className="py-6 md:py-12 pl-8 md:pl-10">
                 {destinations.map((destination, id) => (
-                    <SwiperSlide style={{ width: "unset" }}>
-                        <DestinationCard key={id} data={destination} />
+                    <SwiperSlide key={id} style={{ width: "unset" }}>
+                        <DestinationCard data={destination} />
                     </SwiperSlide>
                 ))}
             </Swiper>

@@ -13,8 +13,8 @@ export default function TodoContainer({ activities, className = "" }) {
                     <div className="py-6 md:py-12 pl-8 md:pl-10">
                         <Swiper spaceBetween={10} slidesPerView="auto">
                             {activities.map((activity, id) => (
-                                <SwiperSlide style={{ width: "unset" }}>
-                                    <TodoCard key={id} data={activity} />
+                                <SwiperSlide key={id} style={{ width: "unset" }}>
+                                    <TodoCard data={activity} />
                                 </SwiperSlide>
                             ))}
                         </Swiper>
