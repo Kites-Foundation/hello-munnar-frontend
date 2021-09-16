@@ -53,8 +53,7 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
     ({ event, url }) => event.request.destination === "image" &&
-        (url.origin.indexOf('localhost') !== -1 ||
-            url.origin.indexOf('hellomunnar.in') !== -1),
+        url.origin.indexOf(self.origin),
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: IMAGE_CACHE,
         plugins: [
