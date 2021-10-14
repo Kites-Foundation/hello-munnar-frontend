@@ -11,7 +11,7 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.8.0",
     "autoprefixer": "^9.8.6",
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "hookrouter": "^1.2.5",
     "jimp": "^0.16.1",
     "lru-cache": "^6.0.0",
