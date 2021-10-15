@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import TruncatedText from "../Common/TruncatedText";
 import FlauraFaunaModal from "./FlauraFaunaModal";
 
-export default function Description({ description, floraAndFaunas, challanges }) {
+export default function Description({
+    description,
+    floraAndFaunas,
+    challanges,
+}) {
     const [flauraFaunaMoadalData, setFlauraFaunaMoadalData] = useState(false);
 
     const onClose = () => setFlauraFaunaMoadalData(false);
@@ -16,7 +20,7 @@ export default function Description({ description, floraAndFaunas, challanges })
             />
             <div className="flex flex-wrap">
                 {challanges &&
-                    challanges.map((challange,id) => (
+                    challanges.map((challange, id) => (
                         <div
                             key={id}
                             className="rounded-full mr-3 text-sm font-semibold bg-gray-300 py-0.5 px-3 my-1 capitalize">
@@ -35,7 +39,9 @@ export default function Description({ description, floraAndFaunas, challanges })
                             <div className="relative w-full pb-9/16">
                                 <img
                                     className="absolute w-full h-full bg-gray-200"
-                                    src={item.images[0].formats["thumbnail"].url}
+                                    src={
+                                        item.images[0].formats["thumbnail"].url
+                                    }
                                     alt={item.name}
                                 />
                             </div>
@@ -46,7 +52,10 @@ export default function Description({ description, floraAndFaunas, challanges })
                     ))}
             </div>
             {flauraFaunaMoadalData && (
-                <FlauraFaunaModal data={flauraFaunaMoadalData} onClose={onClose} />
+                <FlauraFaunaModal
+                    data={flauraFaunaMoadalData}
+                    onClose={onClose}
+                />
             )}
         </div>
     );

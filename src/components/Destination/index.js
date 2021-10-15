@@ -3,41 +3,38 @@ import Banner from "../Common/PlacesBanner";
 import Heading from "../Common/Heading";
 import PlacesTab from "../Common/PlacesTab";
 import ActivitiesContainer from "../Common/ActivitiesContainer";
-import { getDestination } from "../../data/dataUtils";
 import NotFound from "../Common/NotFound";
 import { ApiContext } from "../../ApiContext";
 
-export default function Destination({slug}) {
+export default function Destination({ slug }) {
     let api = useContext(ApiContext);
-    let [destinationData,setDestionationData]=useState(null)
-    let [isLoading,setIsLoading]=useState(true)
-    let [id,setId]=useState(null)
-    let [liked,setLiked]=useState(false) 
-    
-    let getDestinationBySlug = useCallback(async()=>{
-        setIsLoading(true)
+    let [destinationData, setDestionationData] = useState(null);
+    let [isLoading, setIsLoading] = useState(true);
+    let [id, setId] = useState(null);
+    let [liked, setLiked] = useState(false);
+
+    let getDestinationBySlug = useCallback(async () => {
+        setIsLoading(true);
         await api.get(`/destinations?slug=${slug}`)
-        .then((response) => {
-            let { status, data } = response;
-            if (status === 200) {
-                console.log(data[0]);
-                setDestionationData(data[0]);
-                setId(data[0].id)
-            }
-            setIsLoading(false)
-        })
-        .catch((error) => {
-                setIsLoading(false)
+            .then((response) => {
+                let { status, data } = response;
+                if (status === 200) {
+                    console.log(data[0]);
+                    setDestionationData(data[0]);
+                    setId(data[0].id);
+                }
+                setIsLoading(false);
+            })
+            .catch((error) => {
+                setIsLoading(false);
                 console.log(error);
             });
-    },[api,slug])
+    }, [api, slug]);
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        getDestinationBySlug()
+        getDestinationBySlug();
     }, [getDestinationBySlug]);
-
-    
 
     let getCurrentDestinationFavourites = () => {
         return JSON.parse(
@@ -88,16 +85,18 @@ export default function Destination({slug}) {
         }
         isDestinationAlreadyFavourite();
     };
-    
+
     if (!destinationData && !isLoading) {
         return <NotFound name="destination" />;
     }
-    
+
     return (
         <div className="w-full bg-gray-200">
-            {isLoading ? 
-                <h3 className="text-center text-black text-xl mt-12 bg-white">Loading.....</h3>
-                :
+            {isLoading ? (
+                <h3 className="text-center text-black text-xl mt-12 bg-white">
+                    Loading.....
+                </h3>
+            ) : (
                 <div className="max-w-5xl mx-auto bg-white">
                     <Banner
                         route={destinationData.route}
@@ -106,16 +105,22 @@ export default function Destination({slug}) {
                         destinationId={id}
                         hasLiked={liked}
                     />
-                    <Heading destinationData={destinationData} className="pt-2 px-8 md:px-10" />
+                    <Heading
+                        destinationData={destinationData}
+                        className="pt-2 px-8 md:px-10"
+                    />
 
                     <ActivitiesContainer
                         destinationData={destinationData}
                         className="px-8 md:px-10 py-4"
                     />
 
-                    <PlacesTab destinationData={destinationData} className="px-8 md:px-10" />
+                    <PlacesTab
+                        destinationData={destinationData}
+                        className="px-8 md:px-10"
+                    />
                 </div>
-            }
+            )}
         </div>
     );
 }

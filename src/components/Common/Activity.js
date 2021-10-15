@@ -2,10 +2,7 @@ import React from "react";
 import { A } from "hookrouter";
 
 export default function Activity({ activity }) {
-    const {
-        name,
-        icon,
-    } = activity;
+    const { name, icon } = activity;
 
     return (
         <A

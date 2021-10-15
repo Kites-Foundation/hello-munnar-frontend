@@ -4,7 +4,12 @@ import Description from "./Description";
 import Reviews from "./Reviews";
 
 export default function PlacesTab({ destinationData, className }) {
-    const { description, floraAndFaunas, challenges, reviews } = destinationData;
+    const {
+        description,
+        floraAndFaunas,
+        challenges,
+        reviews,
+    } = destinationData;
     const arrangement = {
         description: (
             <Description

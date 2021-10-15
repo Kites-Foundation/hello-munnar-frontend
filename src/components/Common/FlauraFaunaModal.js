@@ -17,12 +17,11 @@ const FlauraFaunaModal = ({ data, onClose }) => {
                     <h3 className="font-semibold text-lg">{data.name}</h3>
                     <span className="italic mt-1">{data.scientificName}</span>
                 </div>
-                {   
-                    data.riskLevel &&
+                {data.riskLevel && (
                     <div className="px-3 py-1 bg-teal-800 text-white rounded text-center text-sm font-medium uppercase">
                         {data.riskLevel}
                     </div>
-                }
+                )}
             </div>
             <p className="py-8">{data.description}</p>
             <div className="flex w-full justify-center">

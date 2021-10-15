@@ -5,7 +5,6 @@ import { navigate } from "hookrouter";
 const PlacesBanner = ({ route, image, onLike, destinationId, hasLiked }) => {
     // get initial like value from localStorage
 
-    
     const routeColorName = route?.routes[0].colorName.toLowerCase();
 
     const colors = {
@@ -18,10 +17,7 @@ const PlacesBanner = ({ route, image, onLike, destinationId, hasLiked }) => {
         red: "text-red-500 border-red-500",
     };
 
-
-    const onClickLike = () => {
-            
-    };
+    const onClickLike = () => {};
 
     return (
         <div className="relative w-full pb-7">

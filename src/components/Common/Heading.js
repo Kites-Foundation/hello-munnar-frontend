@@ -9,7 +9,7 @@ const Heading = ({ destinationData, className }) => {
         setShowBookingModal(false);
     };
     const {
-        name,        
+        name,
         openingTime,
         closingTime,
         days,
@@ -17,7 +17,7 @@ const Heading = ({ destinationData, className }) => {
         reviews,
         difficulty,
         price,
-        bookingDetails
+        bookingDetails,
     } = destinationData;
 
     const difficultyStyle = {
@@ -27,16 +27,21 @@ const Heading = ({ destinationData, className }) => {
     };
 
     let getAvailableDays = (days) => {
-        let availableDays = Object.keys(days).filter(key => days[key] === true);
-        
-        let formatedAvailableDays = []
-        
-        availableDays.forEach((day,id) =>{
-            formatedAvailableDays.push(`${day.substring(0,3).toUpperCase()} ${id!==availableDays.length-1 ? '• ' : ''}`)
-        })
+        let availableDays = Object.keys(days).filter(
+            (key) => days[key] === true
+        );
+
+        let formatedAvailableDays = [];
+
+        availableDays.forEach((day, id) => {
+            formatedAvailableDays.push(
+                `${day.substring(0, 3).toUpperCase()} ${
+                    id !== availableDays.length - 1 ? "• " : ""
+                }`
+            );
+        });
         return formatedAvailableDays;
-    }
-      
+    };
 
     return (
         <div className={className}>
@@ -82,13 +87,25 @@ const Heading = ({ destinationData, className }) => {
                             size={5}
                         />
                         <span className="text-sm">
-                            {new Date(`7/10/2013 ${openingTime}`).toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} 
+                            {new Date(
+                                `7/10/2013 ${openingTime}`
+                            ).toLocaleString("en-US", {
+                                hour: "numeric",
+                                minute: "numeric",
+                                hour12: true,
+                            })}
                             -
-                            {new Date(`7/10/2013 ${closingTime}`).toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}
+                            {new Date(
+                                `7/10/2013 ${closingTime}`
+                            ).toLocaleString("en-US", {
+                                hour: "numeric",
+                                minute: "numeric",
+                                hour12: true,
+                            })}
                         </span>
                     </div>
                 )}
-                {days && ( 
+                {days && (
                     <div className="flex items-center space-x-1 py-1 mr-6">
                         <Icon
                             name="available"
@@ -96,9 +113,9 @@ const Heading = ({ destinationData, className }) => {
                             className="fill-current text-black"
                             size={5}
                         />
-                        <span className="text-sm">{
-                            getAvailableDays(days)
-                        }</span>
+                        <span className="text-sm">
+                            {getAvailableDays(days)}
+                        </span>
                     </div>
                 )}
             </div>
