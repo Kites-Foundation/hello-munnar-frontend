@@ -1,23 +1,11 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import HeaderNav from "./HeaderNav";
 import StorySelectorContainer from "./StorySelectorContainer";
-import DestinationContainer from "../Common/DestinationContainer";
-import TodoContainer from "../Common/TodoContainer";
 import Carousal from "../Common/Rails/Carousal";
-
-// import destinationDefault from "../../assets/images/destination-default.png";
-// import todoDefault1 from "../../assets/images/package-1-default.png";
-// import todoDefault2 from "../../assets/images/package-2-default.png";
-
-import {
-    getRandomDestinations,
-    getRandomActivities,
-} from "../../data/dataUtils";
 import { ApiContext } from "../../ApiContext";
+import StoryContainer from "../Common/Rails/Story";
 
 const Explore = () => {
-    let [destinations, setDestinations] = useState([]);
-    let [activities, setActivities] = useState([]);
     let [homePageData, setHomePageData] = useState(null);
     let api = useContext(ApiContext);
 
@@ -25,13 +13,9 @@ const Explore = () => {
         await api
             .get(`/home-page`)
             .then((response) => {
-                // handle success
-                console.log(response);
                 let { status, data } = response;
                 if (status === 200) {
-                    console.log(data);
                     setHomePageData(data);
-                    // setReviewsCount(data);
                 }
             })
             .catch((error) => {
@@ -39,8 +23,6 @@ const Explore = () => {
             });
     }, [api]);
     useEffect(() => {
-        setDestinations(getRandomDestinations(10));
-        setActivities(getRandomActivities(10));
         fetchHomePage();
     }, [fetchHomePage]);
     return (
@@ -53,25 +35,24 @@ const Explore = () => {
                 if (rail.railType === "Carousel") {
                     return (
                         <Carousal
-                            title={rail.title}
                             key={rail.order}
+                            title={rail.title}
                             destinations={rail.destinations}
                             className="py-6 pt-4 md:pt-6"
                         />
                     );
                 } else if (rail.railType === "Story") {
+                    return (
+                        <StoryContainer
+                            key={rail.order}
+                            title={rail.title}
+                            activities={rail.thingsToDo}
+                        />
+                    );
+                } else {
+                    return null;
                 }
             })}
-
-            {/* <DestinationContainer
-                destinations={destinations}
-                className="py-8 pb-4 md:pd-8"
-            />
-
-            <TodoContainer
-                activities={activities}
-                className="py-6 pt-4 md:pt-6"
-            /> */}
         </div>
     );
 };
