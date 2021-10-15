@@ -3,9 +3,8 @@ import { A } from "hookrouter";
 
 export default function Activity({ activity }) {
     const {
-        // activityTagId,
-        activityTagName,
-        activityTagIconUrl,
+        name,
+        icon,
     } = activity;
 
     return (
@@ -18,9 +17,9 @@ export default function Activity({ activity }) {
                 alt=""
                 className="w-12 h-12"
                 size={12}
-                src={activityTagIconUrl}
+                src={icon.url}
             />
-            <span className="text-sm mt-3">{activityTagName}</span>
+            <span className="text-sm mt-3">{name}</span>
         </A>
     );
 }

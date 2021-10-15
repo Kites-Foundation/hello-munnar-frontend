@@ -1,86 +1,121 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import Banner from "../Common/PlacesBanner";
 import Heading from "../Common/Heading";
 import PlacesTab from "../Common/PlacesTab";
 import ActivitiesContainer from "../Common/ActivitiesContainer";
 import { getDestination } from "../../data/dataUtils";
 import NotFound from "../Common/NotFound";
+import { ApiContext } from "../../ApiContext";
 
-export default function Destination({ id }) {
-    const destinationFull = getDestination(id, true);
+export default function Destination({slug}) {
+    let api = useContext(ApiContext);
+    let [destinationData,setDestionationData]=useState(null)
+    let [isLoading,setIsLoading]=useState(true)
+    let [id,setId]=useState(null)
+    let [liked,setLiked]=useState(false) 
+    
+    let getDestinationBySlug = useCallback(async()=>{
+        setIsLoading(true)
+        await api.get(`/destinations?slug=${slug}`)
+        .then((response) => {
+            let { status, data } = response;
+            if (status === 200) {
+                console.log(data[0]);
+                setDestionationData(data[0]);
+                setId(data[0].id)
+            }
+            setIsLoading(false)
+        })
+        .catch((error) => {
+                setIsLoading(false)
+                console.log(error);
+            });
+    },[api,slug])
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
+        getDestinationBySlug()
+    }, [getDestinationBySlug]);
 
-    if (!destinationFull) {
-        return <NotFound name="destination" />;
-    }
+    
 
-    // replace the redundant "destination" in key name of data
-    // example:     { destinationId: 1, destinationName: "xxx" }
-    //   changes to { id: 1, name: "xxx" }
-    let destination = Object.keys(destinationFull).reduce((acc, key) => {
-        let newKey = key.replace("destination", "");
-        newKey = `${newKey.charAt(0).toLowerCase()}${newKey.slice(1)}`;
-        return {
-            ...acc,
-            [newKey]: destinationFull[key],
-        };
-    }, {});
-    destination.name = destination.routeDestination;
-    destination.openTime = destination.openingTime;
-    destination.closeTime = destination.closingTime;
-
-    const onLike = (status, destinationId, isDestinationAlreadyFavourite) => {
-        // save to local storage
-        let currentDestinationFavourites = JSON.parse(
-            localStorage.getItem("hello-munnar-activites-favourites")
+    let getCurrentDestinationFavourites = () => {
+        return JSON.parse(
+            localStorage.getItem("hello-munnar-destination-favourites")
         );
-        if (isDestinationAlreadyFavourite(destinationId)) {
-            currentDestinationFavourites.splice(
-                currentDestinationFavourites.indexOf(destinationId),
-                1
-            );
-            localStorage.setItem(
-                "hello-munnar-activites-favourites",
-                JSON.stringify(currentDestinationFavourites)
-            );
-        } else if (
-            currentDestinationFavourites &&
-            !currentDestinationFavourites.includes(destinationId)
-        ) {
-            localStorage.setItem(
-                "hello-munnar-activites-favourites",
-                JSON.stringify([destinationId, ...currentDestinationFavourites])
-            );
-        } else if (!currentDestinationFavourites && destinationId) {
-            localStorage.setItem(
-                "hello-munnar-activites-favourites",
-                JSON.stringify([destinationId])
-            );
-        }
-        isDestinationAlreadyFavourite(destinationId);
     };
 
+    let isDestinationAlreadyFavourite = useCallback(() => {
+        // Get existing favourites from localstorage
+        let currentDestinationFavourites = getCurrentDestinationFavourites();
+        console.log(currentDestinationFavourites);
+        if (
+            currentDestinationFavourites &&
+            currentDestinationFavourites.includes(id)
+        ) {
+            setLiked(true);
+            return true;
+        } else {
+            setLiked(false);
+            return false;
+        }
+    }, [id]);
+
+    let onClickLikeButton = () => {
+        console.log("cliked");
+        let currentDestinationFavourites = getCurrentDestinationFavourites();
+        if (currentDestinationFavourites && liked) {
+            const index = currentDestinationFavourites.indexOf(id);
+            if (index > -1) {
+                currentDestinationFavourites.splice(index, 1);
+            }
+            localStorage.setItem(
+                "hello-munnar-destination-favourites",
+                JSON.stringify(currentDestinationFavourites)
+            );
+        } else if (currentDestinationFavourites && !liked) {
+            currentDestinationFavourites.push(id);
+            localStorage.setItem(
+                "hello-munnar-destination-favourites",
+                JSON.stringify(currentDestinationFavourites)
+            );
+        } else if (!currentDestinationFavourites) {
+            console.log("here");
+            localStorage.setItem(
+                "hello-munnar-destination-favourites",
+                JSON.stringify([id])
+            );
+        }
+        isDestinationAlreadyFavourite();
+    };
+    
+    if (!destinationData && !isLoading) {
+        return <NotFound name="destination" />;
+    }
+    
     return (
         <div className="w-full bg-gray-200">
-            <div className="max-w-5xl mx-auto bg-white">
-                <Banner
-                    route={destination.route}
-                    image={destination.bannerImg}
-                    onLike={onLike}
-                    destinationId={id}
-                />
-                <Heading place={destination} className="pt-2 px-8 md:px-10" />
+            {isLoading ? 
+                <h3 className="text-center text-black text-xl mt-12 bg-white">Loading.....</h3>
+                :
+                <div className="max-w-5xl mx-auto bg-white">
+                    <Banner
+                        route={destinationData.route}
+                        image={destinationData.image[0].url}
+                        onLike={onClickLikeButton}
+                        destinationId={id}
+                        hasLiked={liked}
+                    />
+                    <Heading destinationData={destinationData} className="pt-2 px-8 md:px-10" />
 
-                <ActivitiesContainer
-                    activities={destination.activityTags}
-                    className="px-8 md:px-10 py-4"
-                />
+                    <ActivitiesContainer
+                        destinationData={destinationData}
+                        className="px-8 md:px-10 py-4"
+                    />
 
-                <PlacesTab place={destination} className="px-8 md:px-10" />
-            </div>
+                    <PlacesTab destinationData={destinationData} className="px-8 md:px-10" />
+                </div>
+            }
         </div>
     );
 }

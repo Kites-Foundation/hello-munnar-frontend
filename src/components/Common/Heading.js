@@ -3,25 +3,22 @@ import Star from "./Star";
 import Icon from "./Icon";
 import BookingModal from "./BookingModal";
 
-const Heading = ({ place, className }) => {
+const Heading = ({ destinationData, className }) => {
     const [showBookingModal, setShowBookingModal] = useState(false);
     const closeBookingModal = () => {
         setShowBookingModal(false);
     };
     const {
-        name,
-        rating,
-        price,
+        name,        
+        openingTime,
+        closingTime,
+        days,
+        location,
+        reviews,
         difficulty,
-        openTime,
-        closeTime,
-        availability,
-        latitude,
-        longitude,
-        bookingDetails,
-    } = place;
-
-    const numReviews = place.reviews?.length || 0;
+        price,
+        bookingDetails
+    } = destinationData;
 
     const difficultyStyle = {
         easy: "text-green-500 border-green-500",
@@ -29,11 +26,24 @@ const Heading = ({ place, className }) => {
         adventure: "text-red-500 border-red-500",
     };
 
+    let getAvailableDays = (days) => {
+        let availableDays = Object.keys(days).filter(key => days[key] === true);
+        
+        let formatedAvailableDays = []
+        
+        availableDays.forEach((day,id) =>{
+            formatedAvailableDays.push(`${day.substring(0,3).toUpperCase()} ${id!==availableDays.length-1 ? '• ' : ''}`)
+        })
+        return formatedAvailableDays;
+    }
+      
+
     return (
         <div className={className}>
             <h1 className="font-semibold text-xl">{name}</h1>
 
             <div className="flex py-1.5 items-center space-x-4">
+                {/*todo*/}
                 {difficulty && (
                     <div
                         className={`px-2 py-0.5 border-2 mr-1 text-sm rounded-md flex items-center justify-center font-semibold capitalize ${
@@ -43,14 +53,15 @@ const Heading = ({ place, className }) => {
                     </div>
                 )}
                 <div className="flex">
-                    <Star num={rating} />
+                    <Star num={0} /> {/*todo*/}
                 </div>
                 <div className="text-cyan-600">
-                    {numReviews} Review{numReviews !== 1 && "s"}
+                    {reviews.length} Review{reviews.length !== 1 && "s"}
                 </div>
             </div>
 
             <div className="flex flex-wrap justify-start py-2">
+                {/*todo*/}
                 {price && (
                     <div className="flex items-center space-x-1 py-1 mr-6">
                         <Icon
@@ -62,7 +73,7 @@ const Heading = ({ place, className }) => {
                         <span className="text-sm">{price} INR</span>
                     </div>
                 )}
-                {openTime && closeTime && (
+                {openingTime && closingTime && (
                     <div className="flex items-center space-x-1 py-1 mr-6">
                         <Icon
                             name="alarm"
@@ -71,11 +82,13 @@ const Heading = ({ place, className }) => {
                             size={5}
                         />
                         <span className="text-sm">
-                            {openTime} - {closeTime}
+                            {new Date(`7/10/2013 ${openingTime}`).toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} 
+                            -
+                            {new Date(`7/10/2013 ${closingTime}`).toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}
                         </span>
                     </div>
                 )}
-                {availability && (
+                {days && ( 
                     <div className="flex items-center space-x-1 py-1 mr-6">
                         <Icon
                             name="available"
@@ -83,15 +96,17 @@ const Heading = ({ place, className }) => {
                             className="fill-current text-black"
                             size={5}
                         />
-                        <span className="text-sm">{availability}</span>
+                        <span className="text-sm">{
+                            getAvailableDays(days)
+                        }</span>
                     </div>
                 )}
             </div>
 
             <div className="grid grid-cols-2 grid-rows-1 gap-4 md:gap-12 pt-2 md:pt-4 pb-6">
-                {latitude && longitude && (
+                {location.latitude && location.latitude && (
                     <a
-                        href={`https://maps.google.com/?q=${latitude},${longitude}`}
+                        href={`https://maps.google.com/?q=${location.latitude},${location.latitude}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex py-2 items-center justify-center rounded-full border border-black">
@@ -105,7 +120,7 @@ const Heading = ({ place, className }) => {
                         />
                     </a>
                 )}
-
+                {/*todo*/}
                 {(bookingDetails?.bookingContactNumber ||
                     bookingDetails?.bookingLink) && (
                     <>

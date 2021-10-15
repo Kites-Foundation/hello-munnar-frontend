@@ -25,7 +25,7 @@ const routes = {
     "/signIn": () => <SignIn />,
     "/signOut": () => <SignOut />,
     "/profile": () => <Profile />,
-    "/destination/:id": ({ id }) => <Destination id={id} />,
+    "/destination/:slug": ({ slug }) => <Destination slug={slug} />,
     "/experience/:id": ({ id }) => <Experience id={id} />,
     "/activity/:id": ({ id }) => <Activity id={id} />,
     "/notifications": () => <Notification />,
