@@ -3,56 +3,62 @@ import { A } from "hookrouter";
 import Icon from "../../Icon";
 
 export default function CarousalCard({ data }) {
-    const {
-        name,
-        description,
-        image,
-        slug,
-        id
-    } = data;
+    const { name, description, image, slug, id } = data;
     const [liked, setLiked] = useState(true);
 
-    let getCurrentDestinationFavourites=()=>{
+    let getCurrentDestinationFavourites = () => {
         return JSON.parse(
             localStorage.getItem("hello-munnar-destination-favourites")
         );
-    }
-    
+    };
+
     let isDestinationAlreadyFavourite = useCallback(() => {
         // Get existing favourites from localstorage
         let currentDestinationFavourites = getCurrentDestinationFavourites();
         console.log(currentDestinationFavourites);
-        if(currentDestinationFavourites && currentDestinationFavourites.includes(id)){
-            setLiked(true)
+        if (
+            currentDestinationFavourites &&
+            currentDestinationFavourites.includes(id)
+        ) {
+            setLiked(true);
             return true;
-        }else{
-            setLiked(false)
+        } else {
+            setLiked(false);
             return false;
         }
-    },[id])
+    }, [id]);
 
     let onClickLikeButton = () => {
-        console.log('cliked');
+        console.log("cliked");
         let currentDestinationFavourites = getCurrentDestinationFavourites();
-        if(currentDestinationFavourites && liked){
+        if (currentDestinationFavourites && liked) {
             const index = currentDestinationFavourites.indexOf(id);
             if (index > -1) {
                 currentDestinationFavourites.splice(index, 1);
             }
-            localStorage.setItem("hello-munnar-destination-favourites",JSON.stringify(currentDestinationFavourites))
-        }else if(currentDestinationFavourites && !liked){
-            currentDestinationFavourites.push(id)
-            localStorage.setItem("hello-munnar-destination-favourites",JSON.stringify(currentDestinationFavourites))
-        }else if(!currentDestinationFavourites){
-            console.log('here');
-            localStorage.setItem("hello-munnar-destination-favourites",JSON.stringify([id]))
+            localStorage.setItem(
+                "hello-munnar-destination-favourites",
+                JSON.stringify(currentDestinationFavourites)
+            );
+        } else if (currentDestinationFavourites && !liked) {
+            currentDestinationFavourites.push(id);
+            localStorage.setItem(
+                "hello-munnar-destination-favourites",
+                JSON.stringify(currentDestinationFavourites)
+            );
+        } else if (!currentDestinationFavourites) {
+            console.log("here");
+            localStorage.setItem(
+                "hello-munnar-destination-favourites",
+                JSON.stringify([id])
+            );
         }
-        isDestinationAlreadyFavourite()
+        isDestinationAlreadyFavourite();
     };
 
     useEffect(() => {
         isDestinationAlreadyFavourite();
-    },[isDestinationAlreadyFavourite]);
+    }, [isDestinationAlreadyFavourite]);
 
     return (
         <div className="bg-white flex-none shadow-lg rounded-lg overflow-hidden w-64 xl:w-96 mr-8 md:mr-16">

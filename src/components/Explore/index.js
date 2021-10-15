@@ -18,51 +18,50 @@ import { ApiContext } from "../../ApiContext";
 const Explore = () => {
     let [destinations, setDestinations] = useState([]);
     let [activities, setActivities] = useState([]);
-    let [homePageData, setHomePageData] = useState(null)
-    let api = useContext(ApiContext)
-    
-    let fetchHomePage = useCallback(async() =>{
-        await api.get(`/home-page`)
-        .then(response => {
-            // handle success
-            console.log(response);
-            let { status, data } = response;
-            if(status === 200){
-                console.log(data);
-                setHomePageData(data)
-                // setReviewsCount(data);
-            }
-        })
-        .catch(error => {
-            console.log(error);
-        })
+    let [homePageData, setHomePageData] = useState(null);
+    let api = useContext(ApiContext);
 
-    },[api])
+    let fetchHomePage = useCallback(async () => {
+        await api
+            .get(`/home-page`)
+            .then((response) => {
+                // handle success
+                console.log(response);
+                let { status, data } = response;
+                if (status === 200) {
+                    console.log(data);
+                    setHomePageData(data);
+                    // setReviewsCount(data);
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }, [api]);
     useEffect(() => {
         setDestinations(getRandomDestinations(10));
         setActivities(getRandomActivities(10));
-        fetchHomePage()
+        fetchHomePage();
     }, [fetchHomePage]);
     return (
         <div className="pt-9 ">
             <HeaderNav className="pb-2 px-8 md:px-10" />
 
             <StorySelectorContainer className="pt-2 px-8 md:px-10" />
-            
-            {
-                homePageData?.rails.map((rail)=>{
-                    if(rail.railType === 'Carousel'){
-                        return <Carousal 
+
+            {homePageData?.rails.map((rail) => {
+                if (rail.railType === "Carousel") {
+                    return (
+                        <Carousal
                             title={rail.title}
                             key={rail.order}
                             destinations={rail.destinations}
                             className="py-6 pt-4 md:pt-6"
                         />
-                    }else if(rail.railType === 'Story'){
-
-                    }
-                })
-            }
+                    );
+                } else if (rail.railType === "Story") {
+                }
+            })}
 
             {/* <DestinationContainer
                 destinations={destinations}
