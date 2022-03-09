@@ -17,7 +17,8 @@ export default function Destination({ slug }) {
 
     let getDestinationBySlug = useCallback(async () => {
         setIsLoading(true);
-        await api.get(`/destinations?slug=${slug}`)
+        await api
+            .get(`/destinations?slug=${slug}`)
             .then((response) => {
                 let { status, data } = response;
                 if (status === 200) {
@@ -30,7 +31,7 @@ export default function Destination({ slug }) {
             .catch((error) => {
                 setIsLoading(false);
                 console.log(error);
-                setHasError(error)
+                setHasError(error);
             });
     }, [api, slug]);
 
@@ -95,19 +96,13 @@ export default function Destination({ slug }) {
 
     return (
         <div className="w-full bg-gray-200">
-            {
-                isLoading && (
-                    <h3 className="text-center text-black text-xl mt-12 bg-white">
-                        Loading.....
-                    </h3>
-                )
-            } 
-            {
-                !isLoading && hasError &&
-                <SomeErrorOccured />
-            }
-            {
-                !isLoading && !hasError  &&
+            {isLoading && (
+                <h3 className="text-center text-black text-xl mt-12 bg-white">
+                    Loading.....
+                </h3>
+            )}
+            {!isLoading && hasError && <SomeErrorOccured />}
+            {!isLoading && !hasError && (
                 <div className="max-w-5xl mx-auto bg-white">
                     <Banner
                         route={destinationData.route}
@@ -131,8 +126,7 @@ export default function Destination({ slug }) {
                         className="px-8 md:px-10"
                     />
                 </div>
-            }               
-                
+            )}
         </div>
     );
 }

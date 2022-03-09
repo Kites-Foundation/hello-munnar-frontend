@@ -19,7 +19,8 @@ export default function Activity({ slug }) {
 
     let getActivityBySlug = useCallback(async () => {
         setIsLoading(true);
-        await api.get(`/things-to-dos?slug=${slug}`)
+        await api
+            .get(`/things-to-dos?slug=${slug}`)
             .then((response) => {
                 let { status, data } = response;
                 if (status === 200) {
@@ -33,7 +34,7 @@ export default function Activity({ slug }) {
                     // difficulty,
                     // price,
                     // bookingDetails
-                    let dataRequired = {}
+                    let dataRequired = {};
                     dataRequired.name = data[0].name;
                     dataRequired.openingTime = data[0].openTime;
                     dataRequired.closingTime = data[0].closingTime;
@@ -42,10 +43,10 @@ export default function Activity({ slug }) {
                     dataRequired.reviews = data[0].reviews;
                     dataRequired.difficulty = data[0].difficultyLevel;
                     dataRequired.price = data[0].price;
-                    dataRequired.bookingDetails = { 
-                        bookingContactName: data[0].booking.contactName, 
-                        bookingContactNumber: data[0].booking.contactNumber, 
-                        bookingLink: data[0].booking.url 
+                    dataRequired.bookingDetails = {
+                        bookingContactName: data[0].booking.contactName,
+                        bookingContactNumber: data[0].booking.contactNumber,
+                        bookingLink: data[0].booking.url,
                     };
                     setActivityData(dataRequired);
                 }
@@ -54,7 +55,7 @@ export default function Activity({ slug }) {
             .catch((error) => {
                 setIsLoading(false);
                 console.log(error);
-                setHasError(error)
+                setHasError(error);
             });
     }, [api, slug]);
 
@@ -62,7 +63,7 @@ export default function Activity({ slug }) {
         window.scrollTo(0, 0);
         getActivityBySlug();
     }, [getActivityBySlug]);
-    
+
     if (!activityData) {
         return <NotFound name="activity" />;
     }
@@ -115,8 +116,6 @@ export default function Activity({ slug }) {
         isActivityAlreadyFavourite(activityId);
     };
 
-    
-
     return (
         <div className="w-full bg-gray-200">
             <div className="max-w-5xl mx-auto bg-white">
@@ -126,7 +125,10 @@ export default function Activity({ slug }) {
                     onLike={onLike}
                     activityId={activityData.activitiesId}
                 /> */}
-                <Heading destinationData={activityData} className="pt-2 px-8 md:px-10" />
+                <Heading
+                    destinationData={activityData}
+                    className="pt-2 px-8 md:px-10"
+                />
 
                 {/* <PlacesTab place={activityData} className="px-8 md:px-10" /> */}
             </div>

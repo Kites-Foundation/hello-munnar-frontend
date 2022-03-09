@@ -57,10 +57,19 @@ const Heading = ({ destinationData, className }) => {
                     </div>
                 )}
                 <div className="flex">
-                    <Star num={reviews?.length && reviews.reduce((initial, current) => initial + current.rating, 0) } />
+                    <Star
+                        num={
+                            reviews?.length &&
+                            reviews.reduce(
+                                (initial, current) => initial + current.rating,
+                                0
+                            )
+                        }
+                    />
                 </div>
                 <div className="text-cyan-600">
-                    {reviews?.length || '0'} Review{reviews?.length !== 1 && "s"}
+                    {reviews?.length || "0"} Review
+                    {reviews?.length !== 1 && "s"}
                 </div>
             </div>
 
