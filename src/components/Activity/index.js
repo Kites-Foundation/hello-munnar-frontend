@@ -51,8 +51,8 @@ export default function Activity({ slug }) {
                         bookingContactNumber: data[0].booking.contactNumber,
                         bookingLink: data[0].booking.url,
                     };
-                    dataRequired.route ={
-                        routeColorName: data[0].route.routes[0].colorName
+                    dataRequired.route = {
+                        routeColorName: data[0].route.routes[0].colorName,
                     };
                     dataRequired.description = data[0].description;
                     dataRequired.challenges = data[0].challenges;
@@ -132,8 +132,7 @@ export default function Activity({ slug }) {
                 </h3>
             )}
             {!isLoading && hasError && <SomeErrorOccured />}
-            {
-                !isLoading && !hasError && activityData && (
+            {!isLoading && !hasError && activityData && (
                 <div className="max-w-5xl mx-auto bg-white">
                     <ActivityBanner
                         route={activityData?.route}
@@ -146,9 +145,12 @@ export default function Activity({ slug }) {
                         className="pt-2 px-8 md:px-10"
                     />
 
-                    <PlacesTab destinationData={activityData} className="px-8 md:px-10" />
-                </div>)
-            }
+                    <PlacesTab
+                        destinationData={activityData}
+                        className="px-8 md:px-10"
+                    />
+                </div>
+            )}
         </div>
     );
 }
