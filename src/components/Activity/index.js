@@ -4,6 +4,7 @@ import Heading from "../Common/Heading";
 import PlacesTab from "../Common/PlacesTab";
 import NotFound from "../Common/NotFound";
 import { ApiContext } from "../../ApiContext";
+import SomeErrorOccured from "../Common/SomeErrorOccured";
 
 export default function Activity({ slug }) {
     // get all the details of a activity
@@ -35,19 +36,26 @@ export default function Activity({ slug }) {
                     // price,
                     // bookingDetails
                     let dataRequired = {};
-                    dataRequired.name = data[0].name;
-                    dataRequired.openingTime = data[0].openTime;
-                    dataRequired.closingTime = data[0].closingTime;
-                    dataRequired.days = data[0].days;
-                    dataRequired.location = data[0].location;
-                    dataRequired.reviews = data[0].reviews;
-                    dataRequired.difficulty = data[0].difficultyLevel;
-                    dataRequired.price = data[0].price;
+                    dataRequired.id = data[0].id;
+                    dataRequired.name = data[0]?.name;
+                    dataRequired.openingTime = data[0]?.openTime;
+                    dataRequired.closingTime = data[0]?.closingTime;
+                    dataRequired.days = data[0]?.days;
+                    dataRequired.location = data[0]?.location;
+                    dataRequired.reviews = data[0]?.reviews;
+                    dataRequired.difficulty = data[0]?.difficultyLevel;
+                    dataRequired.price = data[0]?.price;
+                    dataRequired.bannerImg = data[0]?.images[0]?.url;
                     dataRequired.bookingDetails = {
-                        bookingContactName: data[0].booking.contactName,
+                        bookingContactName: data[0]?.booking?.contactName,
                         bookingContactNumber: data[0].booking.contactNumber,
                         bookingLink: data[0].booking.url,
                     };
+                    dataRequired.route ={
+                        routeColorName: data[0].route.routes[0].colorName
+                    };
+                    dataRequired.description = data[0].description;
+                    dataRequired.challenges = data[0].challenges;
                     setActivityData(dataRequired);
                 }
                 setIsLoading(false);
@@ -64,7 +72,7 @@ export default function Activity({ slug }) {
         getActivityBySlug();
     }, [getActivityBySlug]);
 
-    if (!activityData) {
+    if (!isLoading && !activityData) {
         return <NotFound name="activity" />;
     }
 
@@ -118,20 +126,29 @@ export default function Activity({ slug }) {
 
     return (
         <div className="w-full bg-gray-200">
-            <div className="max-w-5xl mx-auto bg-white">
-                {/* <ActivityBanner
-                    route={activityData.route}
-                    image={activityData.bannerImg}
-                    onLike={onLike}
-                    activityId={activityData.activitiesId}
-                /> */}
-                <Heading
-                    destinationData={activityData}
-                    className="pt-2 px-8 md:px-10"
-                />
+            {isLoading && (
+                <h3 className="text-center text-black text-xl mt-12 bg-white">
+                    Loading.....
+                </h3>
+            )}
+            {!isLoading && hasError && <SomeErrorOccured />}
+            {
+                !isLoading && !hasError && activityData && (
+                <div className="max-w-5xl mx-auto bg-white">
+                    <ActivityBanner
+                        route={activityData?.route}
+                        image={activityData?.bannerImg}
+                        onLike={onLike}
+                        activityId={activityData.id}
+                    />
+                    <Heading
+                        destinationData={activityData}
+                        className="pt-2 px-8 md:px-10"
+                    />
 
-                {/* <PlacesTab place={activityData} className="px-8 md:px-10" /> */}
-            </div>
+                    <PlacesTab destinationData={activityData} className="px-8 md:px-10" />
+                </div>)
+            }
         </div>
     );
 }
