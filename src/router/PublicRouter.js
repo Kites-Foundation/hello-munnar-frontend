@@ -27,7 +27,7 @@ const routes = {
     "/profile": () => <Profile />,
     "/destination/:slug": ({ slug }) => <Destination slug={slug} />,
     "/experience/:id": ({ id }) => <Experience id={id} />,
-    "/activity/:id": ({ id }) => <Activity id={id} />,
+    "/activity/:slug": ({ slug }) => <Activity slug={slug} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
 

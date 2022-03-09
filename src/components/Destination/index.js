@@ -5,11 +5,13 @@ import PlacesTab from "../Common/PlacesTab";
 import ActivitiesContainer from "../Common/ActivitiesContainer";
 import NotFound from "../Common/NotFound";
 import { ApiContext } from "../../ApiContext";
+import SomeErrorOccured from "../Common/SomeErrorOccured";
 
 export default function Destination({ slug }) {
     let api = useContext(ApiContext);
     let [destinationData, setDestionationData] = useState(null);
     let [isLoading, setIsLoading] = useState(true);
+    let [hasError, setHasError] = useState(null);
     let [id, setId] = useState(null);
     let [liked, setLiked] = useState(false);
 
@@ -28,6 +30,7 @@ export default function Destination({ slug }) {
             .catch((error) => {
                 setIsLoading(false);
                 console.log(error);
+                setHasError(error)
             });
     }, [api, slug]);
 
@@ -92,11 +95,19 @@ export default function Destination({ slug }) {
 
     return (
         <div className="w-full bg-gray-200">
-            {isLoading ? (
-                <h3 className="text-center text-black text-xl mt-12 bg-white">
-                    Loading.....
-                </h3>
-            ) : (
+            {
+                isLoading && (
+                    <h3 className="text-center text-black text-xl mt-12 bg-white">
+                        Loading.....
+                    </h3>
+                )
+            } 
+            {
+                !isLoading && hasError &&
+                <SomeErrorOccured />
+            }
+            {
+                !isLoading && !hasError  &&
                 <div className="max-w-5xl mx-auto bg-white">
                     <Banner
                         route={destinationData.route}
@@ -120,7 +131,8 @@ export default function Destination({ slug }) {
                         className="px-8 md:px-10"
                     />
                 </div>
-            )}
+            }               
+                
         </div>
     );
 }
