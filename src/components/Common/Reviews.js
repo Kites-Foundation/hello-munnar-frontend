@@ -50,13 +50,14 @@ export default function Reviews({ reviews }) {
                                 />
                                 <span className="">
                                     {review?.date &&
-                                        new Date(
-                                            review.date
-                                        ).toLocaleString("en-US", {
-                                            year: "numeric",
-                                            month: "numeric",
-                                            day: "numeric",
-                                        })}
+                                        new Date(review.date).toLocaleString(
+                                            "en-US",
+                                            {
+                                                year: "numeric",
+                                                month: "numeric",
+                                                day: "numeric",
+                                            }
+                                        )}
                                 </span>
                             </div>
                         </div>

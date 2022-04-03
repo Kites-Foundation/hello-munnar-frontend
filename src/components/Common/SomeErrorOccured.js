@@ -4,7 +4,9 @@ import { A } from "hookrouter";
 const SomeErrorOccured = () => {
     return (
         <div className="min-h-screen flex flex-col justify-center items-center">
-            <p className="text-2xl uppercase font-bold text-gray-500 text-center">Some Error Occured.</p>
+            <p className="text-2xl uppercase font-bold text-gray-500 text-center">
+                Some Error Occured.
+            </p>
             <div className="flex mt-3">
                 <A
                     href="/"

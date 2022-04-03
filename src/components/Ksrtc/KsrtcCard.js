@@ -3,13 +3,13 @@ import clockicon from "./assets/img/alarm-clock.svg";
 
 function KsrtcCard(props) {
     const days = {
-        "sunday": "S",
-        "monday": "M",
-        "tuesday": "T",
-        "wednesday": "W",
-        "thursday": "Th",
-        "friday": "F",
-        "saturday": "Sa",
+        sunday: "S",
+        monday: "M",
+        tuesday: "T",
+        wednesday: "W",
+        thursday: "Th",
+        friday: "F",
+        saturday: "Sa",
     };
     const availableDays = props.availableDays;
     return (

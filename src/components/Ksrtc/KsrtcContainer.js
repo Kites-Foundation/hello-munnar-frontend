@@ -4,7 +4,6 @@ import { ApiContext } from "../../ApiContext";
 import SomeErrorOccured from "../Common/SomeErrorOccured";
 
 export default function KsrtcContainer() {
-    
     let api = useContext(ApiContext);
     let [isLoading, setIsLoading] = useState(true);
     let [hasError, setHasError] = useState(null);
@@ -14,7 +13,7 @@ export default function KsrtcContainer() {
         window.scrollTo(0, 0);
     }, []);
 
-    let getActivityBySlug = useCallback(async () => {
+    let getKSRTCs = useCallback(async () => {
         setIsLoading(true);
         await api
             .get(`/ksrtcs`)
@@ -22,7 +21,7 @@ export default function KsrtcContainer() {
                 let { status, data } = response;
                 if (status === 200) {
                     console.log(data);
-                    setKsrtcData(data)
+                    setKsrtcData(data);
                 }
                 setIsLoading(false);
             })
@@ -35,8 +34,8 @@ export default function KsrtcContainer() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        getActivityBySlug();
-    }, [getActivityBySlug]);
+        getKSRTCs();
+    }, [getKSRTCs]);
     return (
         <>
             {isLoading && (
@@ -45,29 +44,26 @@ export default function KsrtcContainer() {
                 </h3>
             )}
             {!isLoading && hasError && <SomeErrorOccured />}
-            {
-                !isLoading && !hasError && ksrtcData && (
-                    ksrtcData.map((ksrtc,id) => {
-                        return (
-                            <KsrtcCard
-                                key={ksrtc.id}
-                                from={ksrtc.from}
-                                to={ksrtc.to}
-                                time={ksrtc.time}
-                                type={ksrtc.type}
-                                availableDays={ksrtc.days}
-                            />
-                        );
-                    })
-                )
-            }
-            {
-                !isLoading && !hasError && !ksrtcData && (
-                    <div className="h-56 flex items-center justify-center">
-                        <p>No KSRTC Data found.</p>
-                    </div>
-                )
-            }
+            {!isLoading &&
+                !hasError &&
+                ksrtcData &&
+                ksrtcData.map((ksrtc, id) => {
+                    return (
+                        <KsrtcCard
+                            key={ksrtc.id}
+                            from={ksrtc.from}
+                            to={ksrtc.to}
+                            time={ksrtc.time}
+                            type={ksrtc.type}
+                            availableDays={ksrtc.days}
+                        />
+                    );
+                })}
+            {!isLoading && !hasError && !ksrtcData && (
+                <div className="h-56 flex items-center justify-center">
+                    <p>No KSRTC Data found.</p>
+                </div>
+            )}
         </>
     );
 }
