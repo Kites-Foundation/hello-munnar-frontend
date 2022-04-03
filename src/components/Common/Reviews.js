@@ -35,7 +35,7 @@ export default function Reviews({ reviews }) {
                                 />
                             )}
                             <span className="ml-2 text-xs font-extrabold">
-                                {review?.author?.name || "No Username" }
+                                {review?.author?.name || "No Username"}
                             </span>
                         </div>
                         {/* needs update from Backend -->*/}
@@ -47,8 +47,17 @@ export default function Reviews({ reviews }) {
                                     className="text-black fill-current mr-2"
                                     color="black"
                                     size={5}
-                                    />
-                                <span className="">{review?.date && new Date(review.date).toLocaleString('en-US',{ year: 'numeric', month: 'numeric', day: 'numeric' })}</span>
+                                />
+                                <span className="">
+                                    {review?.date &&
+                                        new Date(
+                                            review.date
+                                        ).toLocaleString("en-US", {
+                                            year: "numeric",
+                                            month: "numeric",
+                                            day: "numeric",
+                                        })}
+                                </span>
                             </div>
                         </div>
                         <div className="pt-3">{review?.description}</div>
