@@ -3,11 +3,10 @@ import ReviewRatingModal from "./ReviewRatingModal";
 import Icon from "../Common/Icon";
 import Star from "../Common/Star";
 
-export default function Reviews({ id }) {
+export default function Reviews({ reviews }) {
     const [showRatingModal, setShowRatingModal] = useState(false);
 
     // fetch reviews from backend
-    const reviews = [];
 
     return (
         <div className="py-2 relative pb-24">
@@ -17,10 +16,11 @@ export default function Reviews({ id }) {
                         className="p-4 border-2 border-black rounded-xl my-5"
                         key={i}>
                         <div className="font-semibold text-lg">
-                            {review.title}
+                            {review?.title}
                         </div>
+                        {/*<-- needs update from Backend */}
                         <div className="flex items-center mt-1">
-                            {review.author.image ? (
+                            {review?.author?.image ? (
                                 <img
                                     src={review.author.image}
                                     alt=""
@@ -34,10 +34,11 @@ export default function Reviews({ id }) {
                                     size={8}
                                 />
                             )}
-                            <span className="ml-3 font-medium">
-                                {review.author.name}
+                            <span className="ml-2 text-xs font-extrabold">
+                                {review?.author?.name || "No Username" }
                             </span>
                         </div>
+                        {/* needs update from Backend -->*/}
                         <div className="flex items-center pt-2">
                             <Star num={review.rating} />
                             <div className="ml-3 flex items-center">
@@ -46,11 +47,11 @@ export default function Reviews({ id }) {
                                     className="text-black fill-current mr-2"
                                     color="black"
                                     size={5}
-                                />
-                                <span className="">{review.date}</span>
+                                    />
+                                <span className="">{review?.date && new Date(review.date).toLocaleString('en-US',{ year: 'numeric', month: 'numeric', day: 'numeric' })}</span>
                             </div>
                         </div>
-                        <div className="pt-3">{review.review}</div>
+                        <div className="pt-3">{review?.description}</div>
                     </div>
                 ))
             ) : (
