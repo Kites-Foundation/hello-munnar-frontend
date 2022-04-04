@@ -11,17 +11,17 @@ const config = { clientId: process.env.REACT_APP_GOOGLE_CLIENT_ID };
 const SignIn = () => {
     let api = useContext(ApiContext);
     let { user, setUser, logout } = useContext(UserContext);
-    let [apiMsg,setApiMsg] = useState(null);
-    let [loading,setIsLoading] = useState(null);
+    let [apiMsg, setApiMsg] = useState(null);
+    let [loading, setIsLoading] = useState(null);
 
     const onAuthFail = () => {
-        setIsLoading(false)
-        setApiMsg({ 
+        setIsLoading(false);
+        setApiMsg({
             msg: "Login failed, Please try again.",
-            isError: true
-        })
-    }
-    
+            isError: true,
+        });
+    };
+
     let authBackend = async (accessToken) => {
         return api
             .get(`/auth/google/callback?access_token=${accessToken}`)
@@ -35,21 +35,21 @@ const SignIn = () => {
             })
             .catch((error) => {
                 setIsLoading(false);
-                onAuthFail()
+                onAuthFail();
                 console.log(error);
             });
-    }
+    };
 
     const responseGoogle = (response) => {
         console.log(response);
         let userObj = {
             google: null,
-            backend: null
-        }
+            backend: null,
+        };
         userObj.google = response;
         const googleToken = response?.accessToken;
-        if(googleToken){
-            authBackend(googleToken).then((res)=>{
+        if (googleToken) {
+            authBackend(googleToken).then((res) => {
                 userObj.backend = res;
                 console.log(res);
                 setUser(userObj);
@@ -59,7 +59,6 @@ const SignIn = () => {
             });
         }
     };
-    
 
     return (
         <div>
@@ -101,20 +100,32 @@ const SignIn = () => {
                             onSuccess={responseGoogle}
                             onFailure={onAuthFail}
                             cookiePolicy={"single_host_origin"}
-                            onRequest={()=>{ setIsLoading(true) }}
-                        />)
-                        :
-                        <button className="px-4 py-2 shadow-md hover:shadow-lg transition-shadow  border-2 text-center font-medium" onClick={()=>{ logout() }}>logout.</button>
-                
-                    }
-                    {
-                        apiMsg?.msg &&
-                        <p className={`text-lg font-medium ${apiMsg.isError ? 'text-red-600': 'text-black'}`}>{apiMsg.msg}</p>
-                    }
-                    {
-                        loading &&
-                        <p className={`text-lg font-medium text-black`}>Logging In...</p>
-                    }
+                            onRequest={() => {
+                                setIsLoading(true);
+                            }}
+                        />
+                    ) : (
+                        <button
+                            className="px-4 py-2 shadow-md hover:shadow-lg transition-shadow  border-2 text-center font-medium"
+                            onClick={() => {
+                                logout();
+                            }}>
+                            logout.
+                        </button>
+                    )}
+                    {apiMsg?.msg && (
+                        <p
+                            className={`text-lg font-medium ${
+                                apiMsg.isError ? "text-red-600" : "text-black"
+                            }`}>
+                            {apiMsg.msg}
+                        </p>
+                    )}
+                    {loading && (
+                        <p className={`text-lg font-medium text-black`}>
+                            Logging In...
+                        </p>
+                    )}
                 </div>
             </div>
         </div>
