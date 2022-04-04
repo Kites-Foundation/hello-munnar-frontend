@@ -3,6 +3,7 @@ import PublicRouter from "./router/PublicRouter";
 import ReactGA from "react-ga";
 import SplashScreen from "./components/Common/SplashScreen";
 import ApiProvider from "./ApiContext";
+import UserProvider from "./UserContext";
 
 function App() {
     // Initialize GA
@@ -10,8 +11,10 @@ function App() {
     return (
         <div className="App">
             <ApiProvider>
-                <SplashScreen duration={2000} />
-                <PublicRouter />
+                <UserProvider>
+                    <SplashScreen duration={2000} />
+                    <PublicRouter />
+                </UserProvider>
             </ApiProvider>
         </div>
     );
