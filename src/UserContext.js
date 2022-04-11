@@ -11,10 +11,10 @@ const UserProvider = (props) => {
         localStorage.removeItem("jwt_token");
         localStorage.removeItem("user");
     };
-    
+
     const authInit = () => {
-        let savedUser =  JSON.parse(localStorage.getItem("user"));
-        if(savedUser && savedUser.google.profileObj.name){
+        let savedUser = JSON.parse(localStorage.getItem("user"));
+        if (savedUser && savedUser.google.profileObj.name) {
             setUser(savedUser);
         }
     };

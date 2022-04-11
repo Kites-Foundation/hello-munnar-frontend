@@ -53,7 +53,7 @@ export default function PublicRouter() {
     // useEffect(()=>{
     //     authInit();
     // },[authInit])
-    
+
     const pages = useRoutes(routes);
     return pages ? (
         pagesToShowNavBar.includes(window.location.pathname) ? (

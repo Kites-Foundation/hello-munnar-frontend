@@ -7,12 +7,12 @@ import { UserContext } from "../../UserContext";
 const UserHome = () => {
     let { user, setUser, logout } = useContext(UserContext);
 
-    useEffect(()=>{
-        
-        if(!user) navigate("/signIn")
-    },[user]);
+    useEffect(() => {
+        if (!user) navigate("/signIn");
+    }, [user]);
 
-    const placeholder = "https://i.pinimg.com/736x/50/df/34/50df34b9e93f30269853b96b09c37e3b.jpg";
+    const placeholder =
+        "https://i.pinimg.com/736x/50/df/34/50df34b9e93f30269853b96b09c37e3b.jpg";
     return (
         <div className="user">
             <div className="Navbar flex justify-between content-center pt-8 pb-12 pl-8 pr-8">
@@ -33,7 +33,9 @@ const UserHome = () => {
                         />
                     )}
                     <h1 className="ml-4 text-2xl font-bold text-gray-900">
-                        {user?.google.profileObj.name ? user?.google.profileObj.name : "No Name"}
+                        {user?.google.profileObj.name
+                            ? user?.google.profileObj.name
+                            : "No Name"}
                     </h1>
                 </div>
                 <div className="flex">
