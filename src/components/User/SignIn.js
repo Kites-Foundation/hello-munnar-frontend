@@ -53,9 +53,10 @@ const SignIn = () => {
                 userObj.backend = res;
                 console.log(res);
                 setUser(userObj);
+                localStorage.setItem("user", JSON.stringify(userObj));
                 localStorage.setItem("access_token", googleToken);
                 localStorage.setItem("jwt_token", res.jwt);
-                // navigate("/profile");
+                navigate("/profile");
             });
         }
     };

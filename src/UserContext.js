@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const UserContext = createContext();
 
@@ -7,7 +7,21 @@ const UserProvider = (props) => {
 
     const logout = () => {
         setUser(null);
+        localStorage.removeItem("access_token");
+        localStorage.removeItem("jwt_token");
+        localStorage.removeItem("user");
     };
+    
+    const authInit = () => {
+        let savedUser =  JSON.parse(localStorage.getItem("user"));
+        if(savedUser && savedUser.google.profileObj.name){
+            setUser(savedUser);
+        }
+    };
+
+    // useEffect(()=>{
+    //     authInit()
+    // },[]);
 
     return (
         <UserContext.Provider
@@ -15,6 +29,7 @@ const UserProvider = (props) => {
                 user: user,
                 setUser: setUser,
                 logout: logout,
+                authInit: authInit,
             }}>
             {props.children}
         </UserContext.Provider>

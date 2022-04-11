@@ -1,45 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Icon from "../Common/Icon";
 import ProgressBar from "./Common/Progressbar";
 import { navigate } from "hookrouter";
-import { getUser } from "../../redux/actions";
-import { useDispatch } from "react-redux";
-import { Logger } from "../../utils/logger";
+import { UserContext } from "../../UserContext";
 
 const UserHome = () => {
-    const dispatch = useDispatch();
-    const [userNow, setuserNow] = useState({ image: null, name: null });
-    useEffect(() => {
-        if (localStorage.getItem("access_token"))
-            dispatch(getUser()).then((res) => {
-                if (res && res.data) {
-                    setuserNow({
-                        image: res.data.data.googleImageUrl,
-                        name: res.data.data.name,
-                    });
-                } else {
-                    Logger("Invalid token");
-                    logout();
-                }
-            });
-    }, [dispatch]);
+    let { user, setUser, logout } = useContext(UserContext);
 
-    const logout = () => {
-        localStorage.removeItem("access_token");
-        setuserNow({ image: null, name: null });
-        navigate("/signIn");
-    };
-    const placeholder =
-        "https://i.pinimg.com/736x/50/df/34/50df34b9e93f30269853b96b09c37e3b.jpg";
+    useEffect(()=>{
+        
+        if(!user) navigate("/signIn")
+    },[user]);
+
+    const placeholder = "https://i.pinimg.com/736x/50/df/34/50df34b9e93f30269853b96b09c37e3b.jpg";
     return (
         <div className="user">
             <div className="Navbar flex justify-between content-center pt-8 pb-12 pl-8 pr-8">
                 <div className="flex content-center">
-                    {userNow.image ? (
+                    {user?.google.profileObj.imageUrl ? (
                         <div className="w-8 h-8">
                             <img
                                 alt="profile"
-                                src={userNow.image}
+                                src={user.google.profileObj.imageUrl}
                                 className="shadow rounded-full max-w-full h-auto align-middle border-none"
                             />
                         </div>
@@ -51,7 +33,7 @@ const UserHome = () => {
                         />
                     )}
                     <h1 className="ml-4 text-2xl font-bold text-gray-900">
-                        {userNow.name ? userNow.name : "John Doe"}
+                        {user?.google.profileObj.name ? user?.google.profileObj.name : "No Name"}
                     </h1>
                 </div>
                 <div className="flex">
@@ -163,7 +145,7 @@ const UserHome = () => {
                     <h3>30 of 360 locations visited</h3>
                 </div>
             </div>
-            {userNow.name !== null ? (
+            {user?.google.profileObj.name !== null ? (
                 <div className="m-0 m-auto outline-none  text-center w-full">
                     <button
                         onClick={logout}
