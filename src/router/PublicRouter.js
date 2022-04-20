@@ -1,5 +1,5 @@
-import { useRoutes, usePath, useEffect } from "hookrouter";
-import React, { useContext } from "react";
+import { useRoutes } from "hookrouter";
+import React from "react";
 import Explore from "../components/Explore/index";
 import Destination from "../components/Destination/index";
 import Experience from "../components/Experience/";
@@ -16,8 +16,7 @@ import Ksrtc from "../components/Ksrtc/index";
 import RouteRouter from "./RouteRouter";
 import NotFound from "../components/Common/NotFound";
 import Activity from "../components/Activity";
-import ReactGA from "react-ga";
-// import { UserContext } from "../UserContext";
+
 
 const routes = {
     // Explore page is the temporary default home page
@@ -40,19 +39,8 @@ const routes = {
 };
 
 export default function PublicRouter() {
-    // let { authInit } = useContext(UserContext);
 
     const pagesToShowNavBar = ["/", "/favourites", "/nearme", "/experiences"];
-    const path = usePath();
-    // useEffect(() => {
-    //     // Send page view event
-    //     ReactGA.set({ page: path });
-    //     ReactGA.pageview(window.location.pathname + window.location.search);
-    // }, [path]);
-
-    // useEffect(()=>{
-    //     authInit();
-    // },[authInit])
 
     const pages = useRoutes(routes);
     return pages ? (
