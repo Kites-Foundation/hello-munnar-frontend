@@ -3,10 +3,9 @@ import { createContext } from "react";
 
 export const ApiContext = createContext();
 
-let baseURL = process.env.REACT_APP_API_URL;
 
 const api = axios.create({
-    baseURL: baseURL,
+    baseURL: process.env.REACT_APP_API_URL,
 });
 
 const ApiProvider = (props) => {

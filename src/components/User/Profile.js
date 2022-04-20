@@ -1,11 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import Icon from "../Common/Icon";
 import ProgressBar from "./Common/Progressbar";
 import { navigate } from "hookrouter";
 import { UserContext } from "../../UserContext";
 
-const UserHome = () => {
-    let { user, setUser, logout } = useContext(UserContext);
+const Profile = () => {
+    let { user, logout } = useContext(UserContext);
 
     useEffect(() => {
         if (!user) navigate("/signIn");
@@ -160,4 +160,4 @@ const UserHome = () => {
     );
 };
 
-export default UserHome;
+export default Profile;

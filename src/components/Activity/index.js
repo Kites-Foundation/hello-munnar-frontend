@@ -7,8 +7,6 @@ import { ApiContext } from "../../ApiContext";
 import SomeErrorOccured from "../Common/SomeErrorOccured";
 
 export default function Activity({ slug }) {
-    // get all the details of a activity
-    // const activityFull = getActivity(slug, true);
     let api = useContext(ApiContext);
     let [isLoading, setIsLoading] = useState(true);
     let [hasError, setHasError] = useState(null);
@@ -25,16 +23,6 @@ export default function Activity({ slug }) {
             .then((response) => {
                 let { status, data } = response;
                 if (status === 200) {
-                    console.log(data);
-                    // name,
-                    // openingTime,
-                    // closingTime,
-                    // days,
-                    // location,
-                    // reviews,
-                    // difficulty,
-                    // price,
-                    // bookingDetails
                     let dataRequired = {};
                     dataRequired.id = data[0].id;
                     dataRequired.name = data[0]?.name;
@@ -62,7 +50,6 @@ export default function Activity({ slug }) {
             })
             .catch((error) => {
                 setIsLoading(false);
-                console.log(error);
                 setHasError(error);
             });
     }, [api, slug]);
@@ -76,25 +63,7 @@ export default function Activity({ slug }) {
         return <NotFound name="activity" />;
     }
 
-    // const activity = Object.keys(activityFull).reduce((acc, key) => {
-    //     let newKey = key.replace("activity", "");
-    //     newKey = `${newKey.charAt(0).toLowerCase()}${newKey.slice(1)}`;
-    //     return {
-    //         ...acc,
-    //         [newKey]: activityFull[key],
-    //     };
-    // }, {});
-
-    // change the coordinate keys for reusing components
-    // activity.latitude = activity.coordinateslat;
-    // activity.longitude = activity.coordinateslon;
-    // activity.bookingDetails = {
-    //     bookingContactNumber: activity.bookingContactNumber,
-    //     bookingContactName: activity.bookingContactName,
-    //     bookingLink: activity.bookingLink,
-    // };
-
-    let onLike = (status, activityId, isActivityAlreadyFavourite) => {
+    let onLike = (activityId, isActivityAlreadyFavourite) => {
         let currentActivityFavourites = JSON.parse(
             localStorage.getItem("hello-things-to-do-favourites")
         );

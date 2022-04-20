@@ -20,14 +20,12 @@ export default function KsrtcContainer() {
             .then((response) => {
                 let { status, data } = response;
                 if (status === 200) {
-                    console.log(data);
                     setKsrtcData(data);
                 }
                 setIsLoading(false);
             })
             .catch((error) => {
                 setIsLoading(false);
-                console.log(error);
                 setHasError(error);
             });
     }, [api]);
@@ -47,7 +45,7 @@ export default function KsrtcContainer() {
             {!isLoading &&
                 !hasError &&
                 ksrtcData &&
-                ksrtcData.map((ksrtc, id) => {
+                ksrtcData.map((ksrtc) => {
                     return (
                         <KsrtcCard
                             key={ksrtc.id}

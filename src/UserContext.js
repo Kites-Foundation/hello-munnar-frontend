@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 
 export const UserContext = createContext();
 
@@ -18,10 +18,6 @@ const UserProvider = (props) => {
             setUser(savedUser);
         }
     };
-
-    // useEffect(()=>{
-    //     authInit()
-    // },[]);
 
     return (
         <UserContext.Provider

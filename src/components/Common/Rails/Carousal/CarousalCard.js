@@ -15,7 +15,6 @@ export default function CarousalCard({ data }) {
     let isDestinationAlreadyFavourite = useCallback(() => {
         // Get existing favourites from localstorage
         let currentDestinationFavourites = getCurrentDestinationFavourites();
-        console.log(currentDestinationFavourites);
         if (
             currentDestinationFavourites &&
             currentDestinationFavourites.includes(id)
@@ -29,7 +28,6 @@ export default function CarousalCard({ data }) {
     }, [id]);
 
     let onClickLikeButton = () => {
-        console.log("cliked");
         let currentDestinationFavourites = getCurrentDestinationFavourites();
         if (currentDestinationFavourites && liked) {
             const index = currentDestinationFavourites.indexOf(id);
@@ -47,7 +45,6 @@ export default function CarousalCard({ data }) {
                 JSON.stringify(currentDestinationFavourites)
             );
         } else if (!currentDestinationFavourites) {
-            console.log("here");
             localStorage.setItem(
                 "hello-munnar-destination-favourites",
                 JSON.stringify([id])

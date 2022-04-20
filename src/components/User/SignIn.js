@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import Navbar from "./Common/Navbar";
 import Switchcomp from "./Common/Switchcomp/Switchcomp";
 import Button from "./Common/Button";
@@ -28,20 +28,17 @@ const SignIn = () => {
             .then((response) => {
                 let { status, data } = response;
                 if (status === 200) {
-                    console.log(data);
                     setIsLoading(false);
                     return data;
                 }
             })
-            .catch((error) => {
+            .catch(() => {
                 setIsLoading(false);
                 onAuthFail();
-                console.log(error);
             });
     };
 
     const responseGoogle = (response) => {
-        console.log(response);
         let userObj = {
             google: null,
             backend: null,
@@ -51,7 +48,6 @@ const SignIn = () => {
         if (googleToken) {
             authBackend(googleToken).then((res) => {
                 userObj.backend = res;
-                console.log(res);
                 setUser(userObj);
                 localStorage.setItem("user", JSON.stringify(userObj));
                 localStorage.setItem("access_token", googleToken);

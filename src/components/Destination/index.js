@@ -22,7 +22,6 @@ export default function Destination({ slug }) {
             .then((response) => {
                 let { status, data } = response;
                 if (status === 200) {
-                    console.log(data[0]);
                     setDestionationData(data[0]);
                     setId(data[0].id);
                 }
@@ -30,7 +29,6 @@ export default function Destination({ slug }) {
             })
             .catch((error) => {
                 setIsLoading(false);
-                console.log(error);
                 setHasError(error);
             });
     }, [api, slug]);
@@ -49,7 +47,6 @@ export default function Destination({ slug }) {
     let isDestinationAlreadyFavourite = useCallback(() => {
         // Get existing favourites from localstorage
         let currentDestinationFavourites = getCurrentDestinationFavourites();
-        console.log(currentDestinationFavourites);
         if (
             currentDestinationFavourites &&
             currentDestinationFavourites.includes(id)
@@ -63,7 +60,6 @@ export default function Destination({ slug }) {
     }, [id]);
 
     let onClickLikeButton = () => {
-        console.log("cliked");
         let currentDestinationFavourites = getCurrentDestinationFavourites();
         if (currentDestinationFavourites && liked) {
             const index = currentDestinationFavourites.indexOf(id);
@@ -81,7 +77,6 @@ export default function Destination({ slug }) {
                 JSON.stringify(currentDestinationFavourites)
             );
         } else if (!currentDestinationFavourites) {
-            console.log("here");
             localStorage.setItem(
                 "hello-munnar-destination-favourites",
                 JSON.stringify([id])

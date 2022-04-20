@@ -19,16 +19,15 @@ const Heading = ({ destinationData, className }) => {
         price,
         bookingDetails,
     } = destinationData;
-    console.log(destinationData);
     const difficultyStyle = {
         easy: "text-green-500 border-green-500",
         moderate: "text-yellow-500 border-yellow-500",
         difficult: "text-red-500 border-red-500",
     };
 
-    let getAvailableDays = (days) => {
-        let availableDays = Object.keys(days).filter(
-            (key) => days[key] === true
+    let getAvailableDays = (daysData) => {
+        let availableDays = Object.keys(daysData).filter(
+            (key) => daysData[key] === true
         );
 
         let formatedAvailableDays = [];

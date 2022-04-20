@@ -10,17 +10,12 @@ const Explore = () => {
     let api = useContext(ApiContext);
 
     let fetchHomePage = useCallback(async () => {
-        await api
-            .get(`/home-page`)
-            .then((response) => {
-                let { status, data } = response;
-                if (status === 200) {
-                    setHomePageData(data);
-                }
-            })
-            .catch((error) => {
-                console.log(error);
-            });
+        await api.get(`/home-page`).then((response) => {
+            let { status, data } = response;
+            if (status === 200) {
+                setHomePageData(data);
+            }
+        });
     }, [api]);
     useEffect(() => {
         fetchHomePage();
