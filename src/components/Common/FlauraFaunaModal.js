@@ -7,25 +7,27 @@ const FlauraFaunaModal = ({ data, onClose }) => {
         <Modal onClose={onClose}>
             <div className="relative w-full mb-12">
                 <img
-                    src={data.ffImage}
+                    src={data.images[0].url}
                     alt=""
                     className="rounded-md h-64 w-full"
                 />
             </div>
             <div className="flex justify-between items-start">
                 <div className="flex flex-col">
-                    <h3 className="font-semibold text-lg">{data.ffName}</h3>
-                    <span className="italic mt-1">{data.ffScientificName}</span>
+                    <h3 className="font-semibold text-lg">{data.name}</h3>
+                    <span className="italic mt-1">{data.scientificName}</span>
                 </div>
-                <div className="px-3 py-1 bg-teal-800 text-white rounded text-center text-sm font-medium">
-                    {data.ffRiskLevel}
-                </div>
+                {data.riskLevel && (
+                    <div className="px-3 py-1 bg-teal-800 text-white rounded text-center text-sm font-medium uppercase">
+                        {data.riskLevel}
+                    </div>
+                )}
             </div>
-            <p className="py-8">{data.ffDescription}</p>
+            <p className="py-8">{data.description}</p>
             <div className="flex w-full justify-center">
                 <a
                     className="px-5 rounded-full py-3 bg-black text-white flex items-center justify-centers"
-                    href={data.ffWikiLink}
+                    href={data.wikiLink}
                     target="_blank"
                     rel="noopener noreferrer">
                     <Icon

@@ -15,7 +15,7 @@ const BookingModal = ({ details, onClose }) => {
                         href={bookingLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="border border-black p-6 rounded-lg flex items-center">
+                        className="border border-black p-6 rounded-lg flex items-center w-full">
                         <Icon
                             name="outsideLink"
                             color="black"
@@ -23,11 +23,11 @@ const BookingModal = ({ details, onClose }) => {
                             className="stroke-current text-black"
                             size={12}
                         />
-                        <div className="flex flex-1 flex-col ml-4 justify-center">
+                        <div className="flex flex-col justify-center">
                             <div className="text-lg font-semibold mb-1">
                                 Book Online
                             </div>
-                            <div className="text-sm text-gray-600">
+                            <div className="text-sm text-gray-600 truncate">
                                 {bookingLink}
                             </div>
                         </div>
@@ -43,7 +43,7 @@ const BookingModal = ({ details, onClose }) => {
                             size={12}
                         />
                         <div className="flex flex-1 flex-col ml-4 justify-center">
-                            <div className="text-lg font-semibold mb-1">
+                            <div className="text-xs font-semibold mb-1">
                                 {bookingContactName}
                             </div>
                             <div className="flex space-x-2">

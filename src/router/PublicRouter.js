@@ -1,4 +1,4 @@
-import { useRoutes, usePath } from "hookrouter";
+import { useRoutes } from "hookrouter";
 import React from "react";
 import Explore from "../components/Explore/index";
 import Destination from "../components/Destination/index";
@@ -16,7 +16,7 @@ import Ksrtc from "../components/Ksrtc/index";
 import RouteRouter from "./RouteRouter";
 import NotFound from "../components/Common/NotFound";
 import Activity from "../components/Activity";
-import ReactGA from "react-ga";
+
 
 const routes = {
     // Explore page is the temporary default home page
@@ -25,9 +25,9 @@ const routes = {
     "/signIn": () => <SignIn />,
     "/signOut": () => <SignOut />,
     "/profile": () => <Profile />,
-    "/destination/:id": ({ id }) => <Destination id={id} />,
+    "/destination/:slug": ({ slug }) => <Destination slug={slug} />,
     "/experience/:id": ({ id }) => <Experience id={id} />,
-    "/activity/:id": ({ id }) => <Activity id={id} />,
+    "/activity/:slug": ({ slug }) => <Activity slug={slug} />,
     "/notifications": () => <Notification />,
     "/experiences": () => <Experiences />,
 
@@ -39,13 +39,9 @@ const routes = {
 };
 
 export default function PublicRouter() {
+
     const pagesToShowNavBar = ["/", "/favourites", "/nearme", "/experiences"];
-    const path = usePath();
-    React.useEffect(() => {
-        // Send page view event
-        ReactGA.set({ page: path });
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }, [path]);
+
     const pages = useRoutes(routes);
     return pages ? (
         pagesToShowNavBar.includes(window.location.pathname) ? (

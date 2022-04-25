@@ -3,30 +3,43 @@ import Star from "./Star";
 import Icon from "./Icon";
 import BookingModal from "./BookingModal";
 
-const Heading = ({ place, className }) => {
+const Heading = ({ destinationData, className }) => {
     const [showBookingModal, setShowBookingModal] = useState(false);
     const closeBookingModal = () => {
         setShowBookingModal(false);
     };
     const {
         name,
-        rating,
-        price,
+        openingTime,
+        closingTime,
+        days,
+        location,
+        reviews,
         difficulty,
-        openTime,
-        closeTime,
-        availability,
-        latitude,
-        longitude,
+        price,
         bookingDetails,
-    } = place;
-
-    const numReviews = place.reviews?.length || 0;
-
+    } = destinationData;
     const difficultyStyle = {
         easy: "text-green-500 border-green-500",
-        challenging: "text-yellow-500 border-yellow-500",
-        adventure: "text-red-500 border-red-500",
+        moderate: "text-yellow-500 border-yellow-500",
+        difficult: "text-red-500 border-red-500",
+    };
+
+    let getAvailableDays = (daysData) => {
+        let availableDays = Object.keys(daysData).filter(
+            (key) => daysData[key] === true
+        );
+
+        let formatedAvailableDays = [];
+
+        availableDays.forEach((day, id) => {
+            formatedAvailableDays.push(
+                `${day.substring(0, 3).toUpperCase()} ${
+                    id !== availableDays.length - 1 ? "• " : ""
+                }`
+            );
+        });
+        return formatedAvailableDays;
     };
 
     return (
@@ -43,10 +56,19 @@ const Heading = ({ place, className }) => {
                     </div>
                 )}
                 <div className="flex">
-                    <Star num={rating} />
+                    <Star
+                        num={
+                            reviews?.length &&
+                            reviews.reduce(
+                                (initial, current) => initial + current.rating,
+                                0
+                            )
+                        }
+                    />
                 </div>
                 <div className="text-cyan-600">
-                    {numReviews} Review{numReviews !== 1 && "s"}
+                    {reviews?.length || "0"} Review
+                    {reviews?.length !== 1 && "s"}
                 </div>
             </div>
 
@@ -59,10 +81,10 @@ const Heading = ({ place, className }) => {
                             className="fill-current text-black"
                             size={5}
                         />
-                        <span className="text-sm">{price} INR</span>
+                        <span className="text-sm">{price}</span>
                     </div>
                 )}
-                {openTime && closeTime && (
+                {openingTime && closingTime && (
                     <div className="flex items-center space-x-1 py-1 mr-6">
                         <Icon
                             name="alarm"
@@ -71,11 +93,25 @@ const Heading = ({ place, className }) => {
                             size={5}
                         />
                         <span className="text-sm">
-                            {openTime} - {closeTime}
+                            {new Date(
+                                `7/10/2013 ${openingTime}`
+                            ).toLocaleString("en-US", {
+                                hour: "numeric",
+                                minute: "numeric",
+                                hour12: true,
+                            })}
+                            -
+                            {new Date(
+                                `7/10/2013 ${closingTime}`
+                            ).toLocaleString("en-US", {
+                                hour: "numeric",
+                                minute: "numeric",
+                                hour12: true,
+                            })}
                         </span>
                     </div>
                 )}
-                {availability && (
+                {days && (
                     <div className="flex items-center space-x-1 py-1 mr-6">
                         <Icon
                             name="available"
@@ -83,15 +119,17 @@ const Heading = ({ place, className }) => {
                             className="fill-current text-black"
                             size={5}
                         />
-                        <span className="text-sm">{availability}</span>
+                        <span className="text-sm">
+                            {getAvailableDays(days)}
+                        </span>
                     </div>
                 )}
             </div>
 
             <div className="grid grid-cols-2 grid-rows-1 gap-4 md:gap-12 pt-2 md:pt-4 pb-6">
-                {latitude && longitude && (
+                {location && location.latitude && location.longitude && (
                     <a
-                        href={`https://maps.google.com/?q=${latitude},${longitude}`}
+                        href={`https://maps.google.com/?q=${location.latitude},${location.longitude}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex py-2 items-center justify-center rounded-full border border-black">
@@ -105,7 +143,7 @@ const Heading = ({ place, className }) => {
                         />
                     </a>
                 )}
-
+                {/*todo*/}
                 {(bookingDetails?.bookingContactNumber ||
                     bookingDetails?.bookingLink) && (
                     <>

@@ -8,9 +8,9 @@ const InnerTab = ({ arrangement, defaultTab, className }) => {
     return (
         <div className={className}>
             <div className="flex justify-around ">
-                {labels.map((tabName) => (
+                {labels.map((tabName, id) => (
                     <button
-                        key={tabName}
+                        key={id}
                         className={`font-medium py-2 ${
                             activeTab === tabName
                                 ? "border-black"

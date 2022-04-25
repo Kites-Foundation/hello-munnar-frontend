@@ -2,11 +2,16 @@ import React from "react";
 import clockicon from "./assets/img/alarm-clock.svg";
 
 function KsrtcCard(props) {
-    const days = ["S", "M", "T", "W", "Th", "F", "Sa"];
-    const availableDays =
-        props.availableDays === "allDay"
-            ? days
-            : props.availableDays.split(",");
+    const days = {
+        sunday: "S",
+        monday: "M",
+        tuesday: "T",
+        wednesday: "W",
+        thursday: "Th",
+        friday: "F",
+        saturday: "Sa",
+    };
+    const availableDays = props.availableDays;
     return (
         <div className="flex flex-col border-2 border-black w-11/12 bg-white px-7 py-7 p-1 max-w-sm mx-auto m-5 rounded-lg ">
             <div className="mt-0.1">
@@ -29,15 +34,15 @@ function KsrtcCard(props) {
                 </div>
             </div>
             <div className="flex text-center py-2 mt-0.5 space-x-2">
-                {days.map((day) => (
+                {Object.keys(days).map((day) => (
                     <div
                         key={day}
                         className={`flex-1 border-2 border-black font-normal text-sm rounded-sm h-6.5 w-6.5 ${
-                            availableDays.includes(day)
+                            availableDays[day]
                                 ? "bg-black text-white"
                                 : "bg-white text-black"
                         }`}>
-                        {day}
+                        {days[day]}
                     </div>
                 ))}
             </div>

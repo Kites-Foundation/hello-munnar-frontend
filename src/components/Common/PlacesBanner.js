@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Icon from "./Icon";
 import { navigate } from "hookrouter";
 
-const PlacesBanner = ({ route, image, onLike, destinationId }) => {
+const PlacesBanner = ({ route, image, onLike, destinationId, hasLiked }) => {
     // get initial like value from localStorage
 
-    const [liked, setLiked] = useState(false);
-    const routeColorName = route?.routeColorName;
+    const routeColorName = route?.routes[0].colorName.toLowerCase();
 
     const colors = {
         violet: "text-violet-900 border-violet-900",
@@ -18,28 +17,7 @@ const PlacesBanner = ({ route, image, onLike, destinationId }) => {
         red: "text-red-500 border-red-500",
     };
 
-    let isDestinationAlreadyFavourite = (destinationId) => {
-        let currentDestinationFavourites = JSON.parse(
-            localStorage.getItem("hello-munnar-activites-favourites")
-        );
-        if (
-            currentDestinationFavourites &&
-            currentDestinationFavourites.includes(destinationId)
-        ) {
-            setLiked(true);
-            return true;
-        } else {
-            setLiked(false);
-            return false;
-        }
-    };
-
-    const onClickLike = () => {
-        onLike(!liked, destinationId, isDestinationAlreadyFavourite);
-    };
-    useEffect(() => {
-        isDestinationAlreadyFavourite(destinationId);
-    }, [destinationId]);
+    const onClickLike = () => {};
 
     return (
         <div className="relative w-full pb-7">
@@ -87,9 +65,9 @@ const PlacesBanner = ({ route, image, onLike, destinationId }) => {
                 onClick={onClickLike}>
                 <Icon
                     name="heart"
-                    color={liked ? "red-500" : "gray-400"}
-                    className={`w-7 h-7 stroke-2 ${liked} ? "fill-current text-red-500" : "stroke-current text-gray-400"`}
-                    stroke={!liked}
+                    color={hasLiked ? "red-500" : "gray-400"}
+                    className={`w-7 h-7 stroke-2 ${hasLiked} ? "fill-current text-red-500" : "stroke-current text-gray-400"`}
+                    stroke={!hasLiked}
                     size={7}
                 />
             </button>
