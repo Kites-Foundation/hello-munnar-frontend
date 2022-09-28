@@ -16,9 +16,7 @@ export default function TabsRender() {
                 <div className="flex mt-6 w-4 ">
                     <img src={location} alt=""></img>
 
-                    <div className="pl-2 text-1xl font-medium">
-                        Meeshapullimala
-                    </div>
+                    <div className="pl-2 text-1xl font-medium">Munnar</div>
                 </div>
             </div>
         </div>
