@@ -1,0 +1,42 @@
+[
+    {
+        "toiletAminityId": "TT-002",
+        "aminityType": "toilet",
+        "aminityName": "Old Munnar Parking",
+        "aminityLocation": "Munnar",
+        "route": "green",
+        "aminityRouteId": "R7",
+        "latitude": 10.07645287,
+        "longitude": 77.06336577
+    },
+    {
+        "toiletAminityId": "TT-003",
+        "aminityType": "toilet",
+        "aminityName": "Homeo Dispensary",
+        "aminityLocation": "Munnar",
+        "route": "red",
+        "aminityRouteId": "R7",
+        "latitude": 10.07656183,
+        "longitude": 77.06336611
+    },
+    {
+        "toiletAminityId": "TT-004",
+        "aminityType": "toilet",
+        "aminityName": "Old Munnar Parking",
+        "aminityLocation": "Munnar",
+        "route": "violet",
+        "aminityRouteId": "R7",
+        "latitude": 10.07656183,
+        "longitude": 77.06336611
+    },
+    {
+        "toiletAminityId": "TT-001",
+        "aminityType": "toilet",
+        "aminityName": "Lakhsmi Parking ground",
+        "aminityLocation": "Moolakkadai",
+        "route": "blue",
+        "aminityRouteId": "R7",
+        "latitude": 10.07379491,
+        "longitude": 77.06082309
+    }
+]

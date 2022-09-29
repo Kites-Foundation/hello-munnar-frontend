@@ -49,7 +49,7 @@ export default function PublicRouter() {
     const pages = useRoutes(routes);
     return pages ? (
         pagesToShowNavBar.includes(window.location.pathname) ? (
-            <div className="w-screen flex flex-col min-h-screen pb-20">
+            <div className="flex flex-col min-h-screen pb-20">
                 {pages}
                 <NavBar />
             </div>
