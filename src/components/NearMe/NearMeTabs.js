@@ -5,8 +5,6 @@ import toiletAminityData from "../../data/toiletAminityData.json";
 
 const NearMeTab = ({ color }) => {
     const [openTab, setOpenTab] = useState(1);
-    let aminitiesData = [...wastebinAminityData, ...toiletAminityData];
-
     return (
         <>
             <div className="w-full">

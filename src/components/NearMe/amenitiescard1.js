@@ -1,17 +1,30 @@
 import React from "react";
 import VectorIcon from "../NearMe/icons/Vector.svg";
-import clockIcon from "../NearMe/icons/clock.svg";
-import HIcon from "../NearMe/icons/H.svg";
-// import ManIcon from "../NearMe/icons/man.svg";
-import PhnIcon from "../NearMe/icons/phone.svg";
 import DirectionIcon from "../NearMe/icons/direction.svg";
-import HospIcon from "../NearMe/icons/hospital.svg";
-import RestaurantIcon from "../NearMe/icons/restaurant.svg";
 
 export default function Amenities(props) {
+    const borderColors = {
+        violet: "border-violet-900",
+        indigo: "border-indigo-900",
+        blue: "border-cyan-600",
+        green: "border-green-500",
+        yellow: "border-yellow-500",
+        orange: "border-amber-600",
+        red: "border-red-500",
+    };
+
+    const textColors = {
+        violet: "text-violet-900",
+        indigo: "text-indigo-900",
+        blue: "text-cyan-600",
+        green: "text-green-500",
+        yellow: "text-yellow-500",
+        orange: "text-amber-600",
+        red: "text-red-500",
+    };
     return (
         <div
-            className={`bg-white border-2 border-${props.color}-400 w-full p-5 rounded-xl shadow border-red`}>
+            className={`bg-white border-2 ${borderColors[props.color]} w-full p-5 rounded-xl shadow`}>
             <div className="flex items-center">
                 <div className="font-Poppins font-style:normal font-weight:600 font-bold text-black-600 text-xl">
                     {props.title}
@@ -21,7 +34,7 @@ export default function Amenities(props) {
                 <div className="mr-5">{props.place}</div>
                 <div className="flex">
                     <img src={VectorIcon} alt=""></img>
-                    <div className={`ml-2 text-${props.color}-400`}>
+                    <div className={`ml-2 ${textColors[props.color]}`}>
                         {props.color}
                     </div>
                 </div>
