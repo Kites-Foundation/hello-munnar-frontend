@@ -2,7 +2,7 @@
     {
         "destinationId": "D-001",
         "routeDestination": "ERAVIKULAM NATIONAL PARK",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/ERAVIKULAM_NATIONAL_PARK.jpeg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/ERAVIKULAM_NATIONAL_PARK.jpeg",
         "challengesId": ["CH-1", "CH-2", "CH-3", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-002",
         "openingTime": "7:30 AM",
@@ -20,7 +20,7 @@
     {
         "destinationId": "D-002",
         "routeDestination": "TALAYAR TEA PLANTATION \n( Temporarily Closed )",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/THALAIYAR_TEA_PLANTATION.jpeg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/THALAIYAR_TEA_PLANTATION.jpeg",
         "fuelStationAminityId": "FS-001",
         "destinationRouteId": "R1",
         "destinationDescription": "Talayar is one of the amazing and splendid tea plantations in Munnar. Talayar tea plantation, \nwhich is covered by the lush greenery of tea plants is a paradise in real sense. It reflects the \neternal beauty of Munnar. Talayar tea factory allows visitors until noon. 'Make your own chai' is a\n unique event in this factory which enables visitors to make their own tea with the tea leaves \nplucked by them from the majestic tea plantations of Munnar.Tea manufacturing workshops are\n also organised here.The stunning view of the dense tea garden and other magnificent scenery\n of munnar can be obtained from this spot.",
@@ -30,7 +30,7 @@
     {
         "destinationId": "D-003",
         "routeDestination": "LAKKAM WATERFALLS",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/LAKKAM_WATERFALLS.jpeg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/LAKKAM_WATERFALLS.jpeg",
         "challengesId": ["CH-1", "CH-2", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-003",
         "hospitalAminityId": ["HL-005"],
@@ -48,7 +48,7 @@
     {
         "destinationId": "D-004",
         "routeDestination": "SANDAL WOOD FOREST MARAYOOR",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/SANDALWOOD_FOREST.jpeg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/SANDALWOOD_FOREST.jpeg",
         "challengesId": ["CH-1", "CH-2", "CH-4"],
         "fuelStationAminityId": "FS-005",
         "is24hours": true,
@@ -64,7 +64,7 @@
     {
         "destinationId": "D-005",
         "routeDestination": "MARAYOOR MARKET",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/MARAYOOR_MARKET.jpeg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/MARAYOOR_MARKET.jpeg",
         "hospitalAminityId": ["HL-008"],
         "destinationAvailability": "SUNDAY",
         "destinationRouteId": "R1",
@@ -76,7 +76,7 @@
     {
         "destinationId": "D-006",
         "routeDestination": "MARAYUR DOLMENS",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/MARAYOOR_DOLMENS.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/MARAYOOR_DOLMENS.jpg",
         "challengesId": ["CH-2"],
         "hospitalAminityId": ["HL-023"],
         "destinationAvailability": "MON-SUN",
@@ -91,7 +91,7 @@
     {
         "destinationId": "D-007",
         "routeDestination": "MARAYUR JAGGERY",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/MARAYOOR_JAGGERY.jpeg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/MARAYOOR_JAGGERY.jpeg",
         "challengesId": ["CH-1", "CH-2"],
         "destinationAvailability": "MON-SUN",
         "destinationRouteId": "R1",
@@ -104,7 +104,7 @@
     {
         "destinationId": "D-008",
         "routeDestination": "KANTHALLUR FARMING",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/KANTHALLOOR_JAGGERY_VETTUKAD.jpeg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/KANTHALLOOR_JAGGERY_VETTUKAD.jpeg",
         "challengesId": ["CH-2", "CH-3", "CH-5"],
         "fuelStationAminityId": "FS-006",
         "openingTime": "9:00 AM",
@@ -119,7 +119,7 @@
     {
         "destinationId": "D-009",
         "routeDestination": "ANAMUDI SHOLA NATIONAL PARK",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Anamudishola.jpeg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/Anamudishola.jpeg",
         "challengesId": ["CH-2", "CH-3", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-007",
         "openingTime": "8:30 AM",
@@ -137,7 +137,7 @@
     {
         "destinationId": "D-010",
         "routeDestination": "KARIMUTTY WATERFALLS",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/KARIMUTTY_WATERFALLS.jpeg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/KARIMUTTY_WATERFALLS.jpeg",
         "challengesId": ["CH-2", "CH-4"],
         "fuelStationAminityId": "FS-004",
         "openingTime": "8:00 AM",
@@ -155,7 +155,7 @@
     {
         "destinationId": "D-011",
         "routeDestination": "ALAMPETTY ECOTOURISM",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/ALAMPETTY_ECOTOURISM.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/ALAMPETTY_ECOTOURISM.jpg",
         "challengesId": ["CH-2", "CH-4"],
         "openingTime": "8:00 AM",
         "closingTime": "3:00 PM",
@@ -170,7 +170,7 @@
     {
         "destinationId": "D-012",
         "routeDestination": "THOOVANAM WATERFALLS",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/thoovanam_waterfalls.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/thoovanam_waterfalls.jpg",
         "challengesId": ["CH-2", "CH-3", "CH-5"],
         "openingTime": "9:00 AM",
         "closingTime": "2:00 PM",
@@ -184,7 +184,7 @@
     {
         "destinationId": "D-013",
         "routeDestination": "CHINNAR WILDLIFE SANCTUARY",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/violet/Chinnar.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/violet/Chinnar.jpg",
         "challengesId": ["CH-2", "CH-3", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-008",
         "hospitalAminityId": ["HL-006", "HL-007"],
@@ -210,7 +210,7 @@
     {
         "destinationId": "D-014",
         "routeDestination": "DTPC INFORMATION CENTRE AND BOATING",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/indigo/DTPC_information_centre.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/indigo/DTPC_information_centre.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-4"],
         "openingTime": "9:00 AM",
         "closingTime": "5:00 PM",
@@ -225,7 +225,7 @@
     {
         "destinationId": "D-015",
         "routeDestination": "BLOSSOM HYDEL PARK",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/indigo/BLOSSOM_HYDEL_PARK.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/indigo/BLOSSOM_HYDEL_PARK.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-4"],
         "fuelStationAminityId": "FS-015",
         "openingTime": "9:00 AM",
@@ -242,7 +242,7 @@
     {
         "destinationId": "D-016",
         "routeDestination": "HEADWORKS DAM",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/indigo/RAMASWAMI_IYER_HEADWORKS_DAM.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/indigo/RAMASWAMI_IYER_HEADWORKS_DAM.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-013",
         "openingTime": "7:30 AM",
@@ -258,7 +258,7 @@
     {
         "destinationId": "D-017",
         "routeDestination": "POTHENMEDU VIEW POINT",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/indigo/POTHANMEDU_VIEW_POINT.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/indigo/POTHANMEDU_VIEW_POINT.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-014",
         "is24hours": true,
@@ -274,7 +274,7 @@
     {
         "destinationId": "D-018",
         "routeDestination": "ATTUKADU WATERFALLS",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/indigo/attukad_waterfalls.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/indigo/attukad_waterfalls.jpg",
         "fuelStationAminityId": "FS-012",
         "is24hours": true,
         "destinationAvailability": "MON-SUN",
@@ -287,7 +287,7 @@
     {
         "destinationId": "D-019",
         "routeDestination": "2nd MILE VIEWPOINT",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/indigo/2nd_MILE_POINT.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/indigo/2nd_MILE_POINT.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-5"],
         "fuelStationAminityId": "FS-017",
         "is24hours": true,
@@ -305,7 +305,7 @@
     {
         "destinationId": "D-020",
         "routeDestination": "WONDER VALLEY THEME PARK",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/indigo/WONDER_VALLEY.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/indigo/WONDER_VALLEY.jpg",
         "challengesId": ["CH-2", "CH-4"],
         "openingTime": "8:30 AM",
         "closingTime": "6:30 PM",
@@ -321,7 +321,7 @@
     {
         "destinationId": "D-021",
         "routeDestination": "SHENGULAM DAM AND\n SHENGULAM HYDEL PARK",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/indigo/SENGULAM_HYDEL_PARK.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/indigo/SENGULAM_HYDEL_PARK.jpg",
         "challengesId": ["CH-2", "CH-4"],
         "fuelStationAminityId": "FS-016",
         "hospitalAminityId": ["HL-013"],
@@ -346,7 +346,7 @@
     {
         "destinationId": "D-022",
         "routeDestination": "SPICE GARDEN",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/indigo/SPICE_GARDEN.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/indigo/SPICE_GARDEN.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-009",
         "openingTime": "8:00 AM",
@@ -363,7 +363,7 @@
     {
         "destinationId": "D-023",
         "routeDestination": "KARADIPPARA VIEWPOINT",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/indigo/KARADIPPARA_VIEW_POINT.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/indigo/KARADIPPARA_VIEW_POINT.jpg",
         "challengesId": ["CH-2"],
         "is24hours": true,
         "destinationAvailability": "MON-SUN",
@@ -378,7 +378,7 @@
     {
         "destinationId": "D-024",
         "routeDestination": "BOTANICAL GARDEN",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/blue/botanical_garden.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/blue/botanical_garden.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-4"],
         "fuelStationAminityId": "FS-018",
         "hospitalAminityId": ["HL-001"],
@@ -395,7 +395,7 @@
     {
         "destinationId": "D-025",
         "routeDestination": "SIGNAL POINT",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/blue/SIGNAL_POINT.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/blue/SIGNAL_POINT.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-019",
         "is24hours": true,
@@ -410,7 +410,7 @@
     {
         "destinationId": "D-026",
         "routeDestination": "LOCKHART TEA PLANT& MUSEUM",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/blue/LOCKHART_TEA_PLANT.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/blue/LOCKHART_TEA_PLANT.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-020",
         "hospitalAminityId": ["HL-002"],
@@ -429,7 +429,7 @@
     {
         "destinationId": "D-027",
         "routeDestination": "CHOKKRAMUDI PEAK",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/blue/chokramudi.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/blue/chokramudi.jpg",
         "challengesId": ["CH-3", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-021",
         "openingTime": "5:00 AM",
@@ -453,7 +453,7 @@
     {
         "destinationId": "D-028",
         "routeDestination": "LOCKHART GAP VIEWPOINT",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/blue/LOCKHART_GAP_VIEWPOINT.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/blue/LOCKHART_GAP_VIEWPOINT.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-022",
         "is24hours": true,
@@ -468,7 +468,7 @@
     {
         "destinationId": "D-029",
         "routeDestination": "CHINNAKKANAL WATERFALLS",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/blue/CHINNAKKANAL_WATERFALLS.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/blue/CHINNAKKANAL_WATERFALLS.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-3"],
         "is24hours": true,
         "hospitalAminityId": ["HL-003", "HL-004"],
@@ -482,7 +482,7 @@
     {
         "destinationId": "D-030",
         "routeDestination": "SURYANELLI TEA FACTORY",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/blue/SURYANELI_TEA_FACTORY.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/blue/SURYANELI_TEA_FACTORY.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-4"],
         "openingTime": "9:00 AM",
         "closingTime": "4:00 PM",
@@ -498,7 +498,7 @@
     {
         "destinationId": "D-031",
         "routeDestination": "KOLUKKUMALAI TEA FACTORY",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/blue/KOLUKKUMALAI_TEA_PLANTATION_AND_FACTORY.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/blue/KOLUKKUMALAI_TEA_PLANTATION_AND_FACTORY.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-024",
         "openingTime": "6:00 AM",
@@ -516,7 +516,7 @@
     {
         "destinationId": "D-032",
         "routeDestination": "ANAYIRANGAL DAM",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/blue/ANAYIRANKAL_BOATING.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/blue/ANAYIRANKAL_BOATING.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-3", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-026",
         "openingTime": "9:00 AM",
@@ -532,7 +532,7 @@
     {
         "destinationId": "D-033",
         "routeDestination": "POOPPARA",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/blue/POOPPARA.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/blue/POOPPARA.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "is24hours": true,
         "destinationAvailability": "MON-SUN",
@@ -547,7 +547,7 @@
     {
         "destinationId": "D-034",
         "routeDestination": "BODIMETTU",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/blue/BODIMETTU.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/blue/BODIMETTU.jpg",
         "challengesId": ["CH-2"],
         "is24hours": true,
         "destinationAvailability": "MON-SUN",
@@ -560,7 +560,7 @@
     {
         "destinationId": "D-035",
         "routeDestination": "MEESAPULIMALA",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/green/MEESAPPULIMALA.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/green/MEESAPPULIMALA.jpg",
         "challengesId": ["CH-3", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-028",
         "is24hours": true,
@@ -577,7 +577,7 @@
     {
         "destinationId": "D-036",
         "routeDestination": "SECOND WORLD WAR MEMORIAL (CENOTAPH)",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/yellow/second_world_war_memorial.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/yellow/second_world_war_memorial.jpg",
         "challengesId": ["CH1", "CH2"],
         "fuelStationAminityId": "FS-035",
         "is24hours": true,
@@ -611,7 +611,7 @@
     {
         "destinationId": "D-037",
         "routeDestination": "CSI CHURCH",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/yellow/CSI_CHURCH_MUNNAR.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/yellow/CSI_CHURCH_MUNNAR.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-029",
         "hospitalAminityId": ["HL-018", "HL-017"],
@@ -649,7 +649,7 @@
     {
         "destinationId": "D-038",
         "routeDestination": "ROMEN CATHOLIC CHURCH",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/yellow/roman_catholic_chruch.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/yellow/roman_catholic_chruch.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-036",
         "openingTime": "6:00 AM",
@@ -686,7 +686,7 @@
     {
         "destinationId": "D-039",
         "routeDestination": "MUNNAR MARKET",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/yellow/munnar_town.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/yellow/munnar_town.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-031",
         "is24hours": true,
@@ -723,7 +723,7 @@
     {
         "destinationId": "D-040",
         "routeDestination": "TEA MUSEUM",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/yellow/tea_museum.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/yellow/tea_museum.jpg",
         "challengesId": ["CH-2"],
         "fuelStationAminityId": "FS-032",
         "hospitalAminityId": ["HL-021"],
@@ -770,7 +770,7 @@
     {
         "destinationId": "D-041",
         "routeDestination": "SRISHTI-TATA",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/yellow/srishti_TATA.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/yellow/srishti_TATA.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-033",
         "hospitalAminityId": ["HL-022"],
@@ -808,7 +808,7 @@
     {
         "destinationId": "D-042",
         "routeDestination": "CAVE PAINTING",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/yellow/cave_painting_munnar.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/yellow/cave_painting_munnar.jpg",
         "challengesId": ["CH-2"],
         "is24hours": true,
         "destinationAvailability": "MON-SUN",
@@ -821,7 +821,7 @@
     {
         "destinationId": "D-043",
         "routeDestination": "LAXMI ESTATE TREK",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/orange/LAXMI_ESTATE_TREK.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/orange/LAXMI_ESTATE_TREK.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-5"],
         "fuelStationAminityId": "FS-037",
         "openingTime": "9:00 AM",
@@ -837,7 +837,7 @@
     {
         "destinationId": "D-044",
         "routeDestination": "VIRIPARA (KAINAGIRI OR\n GIRIVARA WATERFALLS)",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/orange/VIRUPARA.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/orange/VIRUPARA.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-3", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-038",
         "openingTime": "8:00 AM",
@@ -854,7 +854,7 @@
     {
         "destinationId": "D-045",
         "routeDestination": "TIGER CAVE",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/orange/TIGER_CAVE.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/orange/TIGER_CAVE.jpg",
         "challengesId": ["CH-3", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-039",
         "openingTime": "8:00 AM",
@@ -870,7 +870,7 @@
     {
         "destinationId": "D-046",
         "routeDestination": "MANKULAM",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/orange/MANKULAM.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/orange/MANKULAM.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "is24hours": true,
         "hospitalAminityId": ["HL-011", "HL-012"],
@@ -887,7 +887,7 @@
     {
         "destinationId": "D-047",
         "routeDestination": "PERUMBANKUTHU WATERFALLS",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/orange/PERUMBAKUTHU_WATERFALLS.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/orange/PERUMBAKUTHU_WATERFALLS.jpg",
         "challengesId": ["CH-3", "CH-5"],
         "fuelStationAminityId": "FS-040",
         "is24hours": true,
@@ -902,7 +902,7 @@
     {
         "destinationId": "D-048",
         "routeDestination": "ANAKKULAM",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/orange/ANAKKULAM.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/orange/ANAKKULAM.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-041",
         "is24hours": true,
@@ -928,7 +928,7 @@
     {
         "destinationId": "D-049",
         "routeDestination": "33 WATERFALLS",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/orange/33_WATERFALLS.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/orange/33_WATERFALLS.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-5"],
         "fuelStationAminityId": "FS-042",
         "is24hours": true,
@@ -942,7 +942,7 @@
     {
         "destinationId": "D-050",
         "routeDestination": "FLOWER GARDEN",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/FLOWER_GARDEN.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/FLOWER_GARDEN.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-3", "CH-5"],
         "fuelStationAminityId": "FS-043",
         "openingTime": "9:00 AM",
@@ -958,7 +958,7 @@
     {
         "destinationId": "D-051",
         "routeDestination": "PHOTO POINT",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/PHOTO_POINT.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/PHOTO_POINT.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "fuelStationAminityId": "FS-044",
         "is24hours": true,
@@ -973,7 +973,7 @@
     {
         "destinationId": "D-052",
         "routeDestination": "ELEPHANT PARK",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/ELEPHANT_PARK.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/ELEPHANT_PARK.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-3", "CH-5"],
         "fuelStationAminityId": "FS-045",
         "openingTime": "9:00 AM",
@@ -988,7 +988,7 @@
     {
         "destinationId": "D-053",
         "routeDestination": "CARMELGIRI BOTANICAL GARDEN",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/CARMALAGIRI_BOTANICAL_GARDEN.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/CARMALAGIRI_BOTANICAL_GARDEN.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-4"],
         "hospitalAminityId": ["1899-12-30T03:08:50.000Z"],
         "openingTime": "8:30 AM",
@@ -1004,7 +1004,7 @@
     {
         "destinationId": "D-054",
         "routeDestination": "TEA FACTORY",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/Tea_factory.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/Tea_factory.jpg",
         "challengesId": ["CH-1", "CH-2"],
         "destinationRouteId": "R7",
         "destinationDescription": "The Tea industrial facility visit in Munnar Tea Factory will give you all the data for your inquiries concerning the handling of tea leaves. An additional delight; you can see the cycle for yourself face to face! During the tea plant visit, see with your own eyes and appreciate each progression during which the tea leaves are handled and toward the finish of the visit, appreciate some delightful newly arranged tea! There are arrangements inside the manufacturing plant premises to purchase the newly arranged tea leaves all prepared and stuffed. With cool temperatures, Munnar has good climatic conditions that are reasonable for its development. Henceforth, the spot has various tea estates that have a place with the best tea makers in the business market. A significant sight for which Munnar is very popular is the green tea manors that one can spot as they show up at Munnar. Seeing the tea manors enhanced in nature's great tone, the impeccable green itself is a stunning one. Without a doubt, one would have given it an idea regarding how the tea leaves that we buy from the market are produced using these plants.",
@@ -1015,7 +1015,7 @@
     {
         "destinationId": "D-055",
         "routeDestination": "MATTUPETTY DAM",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/MATTUPETTY_DAM.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/MATTUPETTY_DAM.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-3", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-046",
         "openingTime": "9:00 AM",
@@ -1032,7 +1032,7 @@
     {
         "destinationId": "D-056",
         "routeDestination": "SUNMOON VALLEY BOATING CENTRE",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/SUN_MOON_VALLEY_BOATING_CENTRE.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/SUN_MOON_VALLEY_BOATING_CENTRE.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-3", "CH-5"],
         "fuelStationAminityId": "FS-047",
         "openingTime": "9:00 AM",
@@ -1049,7 +1049,7 @@
     {
         "destinationId": "D-057",
         "routeDestination": "ECHO POINT",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/ECHO_POINT.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/ECHO_POINT.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-3", "CH-5"],
         "fuelStationAminityId": "FS-048",
         "openingTime": "9:30 AM",
@@ -1066,7 +1066,7 @@
     {
         "destinationId": "D-058",
         "routeDestination": "KUNDALA DAM, LAKE",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/KUNDALA_LAKE.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/KUNDALA_LAKE.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-3", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-049",
         "hospitalAminityId": ["HL-009"],
@@ -1084,7 +1084,7 @@
     {
         "destinationId": "D-059",
         "routeDestination": "YELLAPPETTY VEGETABLE FARMING",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/Yellappetty.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/Yellappetty.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-5"],
         "openingTime": "6:00 AM",
         "closingTime": "6:00 PM",
@@ -1098,7 +1098,7 @@
     {
         "destinationId": "D-060",
         "routeDestination": "TOP STATION",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/TOP_STATION.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/TOP_STATION.jpg",
         "challengesId": ["CH-3", "CH-4", "CH-5"],
         "fuelStationAminityId": "FS-050",
         "openingTime": "7:00 AM",
@@ -1114,7 +1114,7 @@
     {
         "destinationId": "D-061",
         "routeDestination": "PAMPADUM SHOLA NATIONAL PARK",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/PAMPADUM_SHOLA_NATIONAL_PARK.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/PAMPADUM_SHOLA_NATIONAL_PARK.jpg",
         "fuelStationAminityId": "FS-051",
         "openingTime": "6:00 AM",
         "closingTime": "6:00 PM",
@@ -1130,7 +1130,7 @@
     {
         "destinationId": "D-062",
         "routeDestination": "KOVILOOR",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/KOVILOOR.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/KOVILOOR.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-3"],
         "is24hours": true,
         "destinationAvailability": "MON-SUN",
@@ -1146,7 +1146,7 @@
     {
         "destinationId": "D-063",
         "routeDestination": "VATTAVADA",
-        "bannerImg": "https://cdn.hellomunnar.in/destinations/red/VATTAVADA.jpg",
+        "bannerImg": "https://d2fv4b8wl6je35.cloudfront.net/destinations/red/VATTAVADA.jpg",
         "challengesId": ["CH-1", "CH-2", "CH-3", "CH-5"],
         "fuelStationAminityId": "FS-052",
         "is24hours": true,
